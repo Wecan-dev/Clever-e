@@ -55,10 +55,47 @@ $('.main-video__carousel').slick({
       settings: {
         arrows: false,
         centerMode: false,
-        dots: false,
-        autoplay: true,
+        dots: true,
+        autoplay: false,
         centerPadding: '0',
         slidesToShow: 1
+      }
+    }
+  ]
+});
+
+
+$('.main-products__carousel').slick({
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+
+  dots: false,
+  arrows: true,
+  responsive: [{
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        arrows: true,
+      }
+    },
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        // autoplay: true,
+        autoplaySpeed: 1000,
       }
     }
   ]
