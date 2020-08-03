@@ -465,6 +465,44 @@ body {
   background-image: url("../img/return.png");
 }
 
+.main-products__carousel .slick-prev-arrow,
+.main-products__carousel .slick-next-arrow {
+  position: absolute;
+  cursor: pointer;
+  font-family: 'HelveticaNeue';
+  display: flex;
+  align-items: center;
+  bottom: -40px;
+}
+
+.main-products__carousel .slick-prev-arrow p,
+  .main-products__carousel .slick-next-arrow p {
+  margin-bottom: 0;
+  margin: 0 6px;
+}
+
+.main-products__carousel .slick-prev-arrow {
+  left: 46%;
+  height: 49px;
+  transform: translateX(-46%);
+}
+
+.main-products__carousel .slick-prev-arrow::before {
+  content: "";
+  width: 1px;
+  height: 48px;
+  bottom: -4px;
+  background: #161616;
+  position: absolute;
+  right: -13px;
+  transform: rotateZ(25deg);
+}
+
+.main-products__carousel .slick-next-arrow {
+  right: 41%;
+  transform: translateX(-41%);
+}
+
 html {
   font-size: 14px;
   scroll-behavior: smooth;
@@ -819,10 +857,6 @@ button:focus {
   .nav-link.fixed-color {
     color: #fff;
   }
-}
-
-.nav-link:hover {
-  color: #9dcc49 !important;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {

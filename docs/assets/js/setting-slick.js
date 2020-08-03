@@ -72,6 +72,8 @@ $('.main-products__carousel').slick({
 
   dots: false,
   arrows: true,
+  prevArrow: '<div class="slick-prev-arrow"><i class="fa fa-chevron-left" aria-hidden="true"></i><p>Antenior</p></div>', //$('.slick-prev-arrow'),
+  nextArrow: '<div class="slick-next-arrow"><p>Siguiente</p><i class="fa fa-chevron-right" aria-hidden="true"></i></div>', //$('.slick-next-arrow'),
   responsive: [{
       breakpoint: 1200,
       settings: {
@@ -100,3 +102,5 @@ $('.main-products__carousel').slick({
     }
   ]
 });
+
+$('.main-products__carousel .slick-next').attr('value', 'Siguiente');
