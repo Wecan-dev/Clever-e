@@ -42,12 +42,12 @@ $('.main-video__carousel').slick({
   dots: true,
   slidesToShow: 3,
   responsive: [{
-      breakpoint: 768,
+      breakpoint: 997,
       settings: {
         arrows: false,
         centerMode: true,
         centerPadding: '40px',
-        slidesToShow: 3
+        slidesToShow: 1
       }
     },
     {

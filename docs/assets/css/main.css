@@ -365,6 +365,20 @@ body {
   }
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-video .slick-dots li {
+    left: 47%;
+    transform: translateX(-47%);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-video .slick-dots li {
+    left: 48%;
+    transform: translateX(-48%);
+  }
+}
+
 .main-video .slick-dots li:last-child {
   overflow: visible;
   visibility: visible;
@@ -376,6 +390,13 @@ body {
   .main-video .slick-dots li:last-child {
     left: 59%;
     transform: translateX(-59%);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-video .slick-dots li:last-child {
+    left: 55%;
+    transform: translateX(-55%);
   }
 }
 
@@ -669,6 +690,12 @@ button:focus {
   }
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .nav-padding {
+    padding-left: 25px;
+  }
+}
+
 .navbar {
   background-color: transparent;
   transition: .3s ease-in-out;
@@ -872,6 +899,78 @@ header {
   z-index: 1;
 }
 
+.pre-navbar {
+  padding: 9px 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .pre-navbar {
+    display: none;
+  }
+}
+
+.pre-navbar .icon-tarjeta {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.pre-navbar .icon-line {
+  width: 45px;
+  object-fit: contain;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .pre-navbar .icon-line {
+    display: none;
+  }
+}
+
+.pre-navbar .main-general__button {
+  padding: 6px 15px;
+  font-size: 7px;
+  letter-spacing: 2;
+}
+
+.pre-navbar .main-general__button img {
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+}
+
+.pre-navbar p:nth-child(1) {
+  font-size: 16px;
+}
+
+.pre-navbar p {
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin-bottom: 0;
+}
+
+.pre-navbar p:nth-child(2) {
+  font-size: 16px;
+}
+
+.pre-navbar p:nth-child(3) {
+  font-size: 16px;
+  margin: 0 9px;
+  font-weight: 600;
+}
+
+.pre-navbar p:nth-child(4) {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.pre-navbar p b {
+  font-weight: 600;
+}
+
 .nav-top__header {
   width: 100%;
   background-color: #0B1A1C;
@@ -1028,6 +1127,12 @@ header {
 @media (min-width: 0px) and (max-width: 767px) {
   .main-categories__item {
     width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-categories__item {
+    width: 50% !important;
   }
 }
 
@@ -1211,6 +1316,13 @@ header {
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-video__item {
+    height: auto;
+    margin: 0 10px;
+  }
+}
+
 .main-video__item img {
   opacity: 16%;
   width: 320px;
@@ -1221,6 +1333,19 @@ header {
   .main-video__item img {
     opacity: 1;
     width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-video__item img {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-video__item img {
+    object-fit: contain;
   }
 }
 
@@ -1241,6 +1366,12 @@ header {
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
+  .main-club .container-grid {
+    grid-template-columns: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
   .main-club .container-grid {
     grid-template-columns: 100%;
   }
@@ -1293,6 +1424,13 @@ header {
   text-transform: initial;
   letter-spacing: 1px;
   color: #000000;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-club .padding-right-left {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 .main-club__form form {
@@ -1422,6 +1560,13 @@ header {
   }
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-newsletter .main-newsletter__content {
+    width: 99%;
+    padding: 40px 20px;
+  }
+}
+
 .main-newsletter__form {
   box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.05);
   width: 542px;
@@ -1507,6 +1652,12 @@ header {
   height: 256px;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-seller .main-seller__img {
+    height: 141px;
+  }
+}
+
 .main-seller .main-general__button {
   letter-spacing: 0.18px;
   font-size: 14px;
@@ -1548,6 +1699,13 @@ header {
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
+  .main-footer .container-grid {
+    grid-template-columns: 100%;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
   .main-footer .container-grid {
     grid-template-columns: 100%;
     gap: 2rem;
