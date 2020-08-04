@@ -882,6 +882,20 @@ button:focus {
 @media (min-width: 0px) and (max-width: 767px) {
   .nav-item {
     margin: .5rem 0;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .nav-item {
+    margin: .5rem 0;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
   }
 }
 
@@ -892,14 +906,14 @@ button:focus {
   justify-content: center;
   display: flex;
   color: #fff;
-  transition: .4s;
+  transition: .2s;
   font-weight: bold;
   align-items: center;
 }
 
 .nav-item a:hover {
   color: #ff130d !important;
-  transition: .4s;
+  transition: .2s;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -991,11 +1005,38 @@ button:focus {
   }
 }
 
+.dropdown {
+  transition: .3s;
+}
+
+.dropdown:hover > .dropdown-menu {
+  transition: .3s;
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropdown > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+  transition: .3s;
+}
+
 .dropdown-menu {
-  background: #303030;
+  background: #3030304f;
+  top: 69%;
+  opacity: 0;
+  visibility: hidden;
+  opacity: 1;
+  display: block !important;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
+  .dropdown-menu {
+    background: transparent;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
   .dropdown-menu {
     background: transparent;
   }
