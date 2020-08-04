@@ -185,6 +185,45 @@ comprar ahora
       <div class="categories-sidebar">
         <div class="categories-sidebar__item">
           <h2 class="categories-sidebar__title">
+            Precio
+          </h2>
+          <div class="filter-price">
+            <div id="slider-distance" slider="">
+              <div>
+                <div inverse-left="" style="width:70%;"></div>
+                <div inverse-right="" style="width:70%;"></div>
+                <div range="" style="left:0%;right:0%;"></div>
+                <span style="left:0%;" thumb=""></span>
+                <span style="left:100%;" thumb=""></span>
+                <div sign="" style="left:0%;">
+                  Price:
+                  <span class="value-1" id="value">0</span>
+                </div>
+                <div sign="" style="left:100%;">
+                  <span id="value">100</span>
+                </div>
+              </div>
+              <input max="100" min="0" oninput="
+  this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
+  let value = (this.value/parseInt(this.max))*100
+  var children = this.parentNode.childNodes[1].childNodes;
+  children[1].style.width=value+&#39;%&#39;;
+  children[5].style.left=value+&#39;%&#39;;
+  children[7].style.left=value+&#39;%&#39;;children[11].style.left=value+&#39;%&#39;;
+  children[11].childNodes[1].innerHTML=this.value;" step="1" type="range" value="0">
+              <input max="100" min="0" oninput="
+  this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
+  let value = (this.value/parseInt(this.max))*100
+  var children = this.parentNode.childNodes[1].childNodes;
+  children[3].style.width=(100-value)+&#39;%&#39;;
+  children[5].style.right=(100-value)+&#39;%&#39;;
+  children[9].style.left=value+&#39;%&#39;;children[13].style.left=value+&#39;%&#39;;
+  children[13].childNodes[1].innerHTML=this.value;" step="1" type="range" value="100">
+            </div>
+          </div>
+        </div>
+        <div class="categories-sidebar__item">
+          <h2 class="categories-sidebar__title">
             Talla
           </h2>
           <div class="categories-sidebar__list">
@@ -329,6 +368,23 @@ Brief
         </div>
       </div>
       <div class="categories-product">
+        <div class="categories-product__header">
+          <div class="categories-product__view">
+            <p>
+              VIEW AS
+            </p>
+          </div>
+          <div class="categories-product__order">
+            <select aria-label="Shop order" class="orderby" name="orderby">
+<option selected="selected" value="menu_order">ORDENAR POR</option>
+<option value="popularity">1</option>
+<option value="rating">2</option>
+<option value="date">3</option>
+<option value="price">4</option>
+<option value="price-desc">5</option>
+</select>
+          </div>
+        </div>
         <div class="categorie-product__grid">
           <div class="main-products__item">
             <div class="main-products__img">
@@ -765,6 +821,7 @@ www.clevermoda.com
   <script src="assets/js/setting-slick.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 
