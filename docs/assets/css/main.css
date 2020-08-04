@@ -947,8 +947,6 @@ button:focus {
 
 .nav-idioma {
   font-weight: 500 !important;
-  font-size: 12px !important;
-  letter-spacing: 0 !important;
 }
 
 .nav-idioma span {
@@ -957,24 +955,10 @@ button:focus {
 }
 
 .nav-icon img {
-  width: 21px;
-  height: 21px;
+  width: 26px;
+  height: 26px;
   object-fit: contain;
   margin: 0 10px;
-}
-
-@media (min-width: 0px) and (max-width: 767px) {
-  .nav-money {
-    padding-right: 1.2rem !important;
-    padding-left: 1.2rem !important;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .nav-money {
-    padding-right: 1.2rem !important;
-    padding-left: 1.2rem !important;
-  }
 }
 
 .nav-money img {
@@ -993,28 +977,32 @@ button:focus {
 
 .content-icon {
   display: flex;
-  margin-top: 23px;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
   .content-icon {
     margin-top: 0;
-    padding-right: 1.2rem !important;
-    padding-left: 1.2rem !important;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .content-icon {
     margin-top: 0;
-    padding-right: 1.2rem !important;
-    padding-left: 1.2rem !important;
   }
 }
 
-.nav-flex {
-  flex-direction: column;
-  align-items: flex-end;
+.dropdown-menu {
+  background: #303030;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .dropdown-menu {
+    background: transparent;
+  }
+}
+
+.dropdown-item {
+  justify-content: start !important;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -1031,6 +1019,8 @@ button:focus {
 
 .nav-responsive {
   display: none;
+  padding-right: 1.2rem !important;
+  padding-left: 1.2rem !important;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -2457,7 +2447,8 @@ header {
   /* Create the indicator (the dot/circle - hidden when not checked) */
   /* Show the indicator (dot/circle) when checked */
   /* Style the indicator (dot/circle) */ }
-  .categories-sidebar__list label {
+  .categories-sidebar__list label,
+  .categories-sidebar__list li {
     display: block;
     position: relative;
     padding-left: 21px;
@@ -2472,10 +2463,13 @@ header {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none; }
+  .categories-sidebar__list li a {
+    color: #252525; }
   .categories-sidebar__list label input {
     position: absolute;
     opacity: 0;
     cursor: pointer; }
+  .categories-sidebar__list li span,
   .categories-sidebar__list .checkmark {
     position: absolute;
     top: 2px;
@@ -2484,6 +2478,25 @@ header {
     border: 1px solid #252525;
     width: 16px;
     border-radius: 50%; }
+  .categories-sidebar__list li span::after {
+    top: 2px;
+    left: 2px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background: #161616; }
+  .categories-sidebar__list li:nth-child(1) span::after {
+    background: #efa768; }
+  .categories-sidebar__list li:nth-child(2) span::after {
+    background: #606a58; }
+  .categories-sidebar__list li:nth-child(3) span::after {
+    background: #1f1b6b; }
+  .categories-sidebar__list li:nth-child(5) span::after {
+    background: #989898; }
+  .categories-sidebar__list li:nth-child(6) span::after {
+    background: #fff; }
   .categories-sidebar__list label:hover input ~ .checkmark {
     background-color: #ccc; }
   .categories-sidebar__list .checkmark:after {
@@ -2532,3 +2545,30 @@ header {
     .categories-sidebar__size a:hover {
       transition: .3s;
       background: #000; }
+
+.categories-paginator {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-top: 81px; }
+  .categories-paginator .categories-paginator__item {
+    width: 42px;
+    height: 42px;
+    margin: 0 5px;
+    border: 2px solid #dfdfdf;
+    font-size: 15px;
+    font-weight: 600;
+    color: #161616;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .categories-paginator .categories-paginator__item p {
+      margin-bottom: 0; }
+    .categories-paginator .categories-paginator__item:nth-child(1) {
+      background: #161616;
+      color: #fff;
+      border: #000; }
+    .categories-paginator .categories-paginator__item img {
+      width: 18px;
+      height: 18px;
+      object-fit: contain; }
