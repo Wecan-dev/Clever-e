@@ -37,6 +37,7 @@ $('.main-banner__content').slick({
 
 $('.pre-navbar__carousel').slick({
   autoplay: true,
+  autoplaySpeed: 3500,
   slidesToShow: 1,
   infinite: true,
   // slidesToScroll: 1,
