@@ -906,14 +906,12 @@ button:focus {
   justify-content: center;
   display: flex;
   color: #fff;
-  transition: .2s;
   font-weight: bold;
   align-items: center;
 }
 
 .nav-item a:hover {
   color: #ff130d !important;
-  transition: .2s;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -1005,20 +1003,7 @@ button:focus {
   }
 }
 
-.dropdown {
-  transition: .3s;
-}
-
-.dropdown-toggle {
-  transition: none !important;
-}
-
-.dropdown-toggle:hover {
-  transition: none !important;
-}
-
 .dropdown:hover > .dropdown-menu {
-  transition: .3s;
   visibility: visible;
   opacity: 1;
   height: auto;
@@ -1027,7 +1012,6 @@ button:focus {
 .dropdown > .dropdown-toggle:active {
   /*Without this, clicking will make it sticky*/
   pointer-events: none;
-  transition: .3s;
 }
 
 .dropdown-menu {
