@@ -1248,6 +1248,9 @@ header {
   padding: 6px 15px;
   font-size: 7px;
   letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {

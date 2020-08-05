@@ -35,6 +35,18 @@ $('.main-banner__content').slick({
   ]
 });
 
+$('.pre-navbar__carousel').slick({
+  autoplay: true,
+  slidesToShow: 1,
+  infinite: true,
+  // slidesToScroll: 1,
+  dots: false,
+  arrows: false,
+});
+
+
+
+
 $('.main-video__carousel').slick({
   centerMode: true,
   centerPadding: '0',
