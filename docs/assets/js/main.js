@@ -95,3 +95,7 @@ $(document).ready(function () {
     s.parentNode.insertBefore(wf, s);
   })();
 });
+
+$(document).ready(function () {
+  $('#myModal').modal('toggle')
+});

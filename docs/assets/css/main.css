@@ -1027,12 +1027,14 @@ button:focus {
 @media (min-width: 0px) and (max-width: 767px) {
   .dropdown-menu {
     background: transparent;
+    padding: 0 !important;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .dropdown-menu {
     background: transparent;
+    padding: 0 !important;
   }
 }
 
@@ -1177,14 +1179,14 @@ header {
 
 @media (min-width: 0px) and (max-width: 767px) {
   header {
-    position: fixed;
+    position: fixed !important;
     background: #fff;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   header {
-    position: fixed;
+    position: fixed !important;
     background: #fff;
   }
 }
@@ -1325,6 +1327,18 @@ header {
 
 .main-banner {
   overflow: hidden;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-banner {
+    margin-top: 133px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-banner {
+    margin-top: 133px;
+  }
 }
 
 .main-banner .main-banner__item {
@@ -2229,6 +2243,18 @@ header {
   width: 3rem;
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .contact {
+    margin-top: 132px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact {
+    margin-top: 132px;
+  }
+}
+
 .contact .padding-right-left {
   padding-left: 100px;
   padding-right: 100px;
@@ -2294,6 +2320,12 @@ header {
   margin-bottom: 70px;
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .contact .contact-title {
+    font-size: 36px;
+  }
+}
+
 .contact-item .contact-item__img {
   position: relative;
   margin-bottom: 40px;
@@ -2342,6 +2374,118 @@ header {
   color: #ff130d;
 }
 
+.contact-modal .contact-modal__title {
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+  font-size: 20px;
+  color: #161616;
+  margin-bottom: 58px;
+  margin-top: 16px;
+}
+
+.contact-modal .contact-modal__btn {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.contact-modal .contact-modal__btn .main-general__button {
+  padding: 8px 37px;
+  font-size: 10px;
+  letter-spacing: 3.5px;
+}
+
+.contact-modal form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-modal form label {
+  border: 1px solid #aeb5bd;
+  display: flex;
+  padding: 7.5px 12px;
+  width: 47%;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact-modal form label:nth-child(3) {
+  width: 100%;
+}
+
+.contact-modal form label img {
+  width: 13px;
+  height: 13px;
+  margin-right: 9px;
+  object-fit: contain;
+}
+
+.contact-modal form label input,
+    .contact-modal form label textarea {
+  border: none;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+.contact-modal form label input::placeholder,
+      .contact-modal form label textarea::placeholder {
+  font-size: 15px;
+  color: #2d2d2d;
+  letter-spacing: 1px;
+}
+
+.contact-modal form label textarea {
+  height: 165px;
+  resize: none;
+  width: 100%;
+}
+
+.contact-modal .close {
+  background: #000;
+  color: #fff;
+  opacity: 1;
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  right: 0;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  justify-content: center;
+  padding-bottom: 4px;
+}
+
+.contact-modal .contact-modal__icon {
+  width: 37px;
+  height: 37px;
+  margin-top: 82px;
+}
+
+.contact-modal .modal-body {
+  padding-top: 0;
+  padding-right: 55px;
+  padding-left: 55px;
+  padding-bottom: 64.4px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .contact-modal .modal-body {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.contact-modal .modal-content {
+  border-radius: 0;
+  border: none;
+}
+
 .contact-sitemap img {
   width: 100%;
   height: 100%;
@@ -2350,6 +2494,18 @@ header {
 .banner-small {
   height: 330px;
   position: relative;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .banner-small {
+    margin-top: 132px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner-small {
+    margin-top: 132px;
+  }
 }
 
 .banner-small .banner-small__img {
@@ -2362,6 +2518,12 @@ header {
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #fff;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .banner-small .banner-small__title {
+    font-size: 36px;
+  }
 }
 
 .banner-small .banner-small__title--small {
@@ -2401,6 +2563,17 @@ header {
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner-small .banner-small__text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.banner-small--bs .banner-small__title--small::before {
+  width: 500px;
 }
 
 .categories {
@@ -2451,6 +2624,13 @@ header {
   .categories .categorie-product__grid {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.categories-bs {
+  background-image: url("../img/categorie/best-seller.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -2551,6 +2731,25 @@ header {
 .categories-sidebar__size {
   position: relative;
   margin-top: 20px; }
+  .categories-sidebar__size .modal-content {
+    border: none;
+    border-radius: 0; }
+    .categories-sidebar__size .modal-content button {
+      width: 27px;
+      height: 27px;
+      /* color: #fff; */
+      background: white;
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      opacity: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .categories-sidebar__size .modal-content button span {
+        margin-top: -2px; }
+  .categories-sidebar__size .modal-body {
+    padding: 0; }
   .categories-sidebar__size p {
     font-size: 12px;
     letter-spacing: 0;
@@ -2572,7 +2771,8 @@ header {
   .categories-sidebar__size a {
     font-size: 12px;
     letter-spacing: 2.4px;
-    color: #fff;
+    color: #fff !important;
+    cursor: pointer;
     font-weight: 600;
     border: 1px solid #fff;
     padding: 7px 17px;
@@ -2622,6 +2822,7 @@ header {
   margin-top: 81px; }
   .categories-paginator .categories-paginator__item {
     width: 42px;
+    background: #fff;
     height: 42px;
     margin: 0 5px;
     border: 2px solid #dfdfdf;
