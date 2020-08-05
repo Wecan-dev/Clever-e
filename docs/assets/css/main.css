@@ -77,7 +77,7 @@ body {
     left: 100%;
     width: 100%;
     padding-right: 1rem;
-    z-index: 1;
+    z-index: 99;
     padding-left: 1rem;
     overflow-y: auto;
     visibility: hidden;
@@ -1021,6 +1021,7 @@ button:focus {
   transition: .3s;
   visibility: visible;
   opacity: 1;
+  height: auto;
 }
 
 .dropdown > .dropdown-toggle:active {
@@ -1036,6 +1037,7 @@ button:focus {
   visibility: hidden;
   opacity: 1;
   display: block !important;
+  height: 0;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
