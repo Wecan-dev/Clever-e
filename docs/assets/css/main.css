@@ -1009,6 +1009,10 @@ button:focus {
   height: auto;
 }
 
+.dropdown:hover > .dropdown-menu .dropdown-item {
+  text-transform: initial !important;
+}
+
 .dropdown > .dropdown-toggle:active {
   /*Without this, clicking will make it sticky*/
   pointer-events: none;
@@ -1494,12 +1498,14 @@ header {
 @media (min-width: 0px) and (max-width: 767px) {
   .main-categories__item {
     width: 100% !important;
+    height: 100%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .main-categories__item {
     width: 50% !important;
+    height: 100%;
   }
 }
 
@@ -1562,6 +1568,12 @@ header {
   background: #ff130d;
   width: 100%;
   height: 1px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-categories__mask .main-categories__title {
+    font-size: 26px;
+  }
 }
 
 .main-products .padding-top-bottom {
@@ -2028,7 +2040,13 @@ header {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .main-seller .main-seller__img {
-    height: 141px;
+    height: auto;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-seller .main-seller__img {
+    height: auto;
   }
 }
 
@@ -2363,6 +2381,12 @@ header {
   width: 100%;
   height: 229px;
   object-fit: cover;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .contact-item .contact-item__img img {
+    height: 100%;
+  }
 }
 
 .contact-item .content-item__list {
@@ -2977,6 +3001,34 @@ header {
 
 .banner-catalogo .banner-small__title--small::before {
   width: 248px; }
+
+.catalogo {
+  background: #fff; }
+  .catalogo .main-categories__title {
+    font-family: HelveticaNeue;
+    font-weight: 300;
+    letter-spacing: 0.93px;
+    font-size: 35px;
+    margin: 0; }
+    .catalogo .main-categories__title::before {
+      bottom: -9px; }
+    @media (min-width: 0px) and (max-width: 767px) {
+      .catalogo .main-categories__title {
+        font-size: 26px; } }
+  .catalogo .main-categories__item {
+    width: 50%;
+    border: 20px solid transparent; }
+    .catalogo .main-categories__item:nth-child(1), .catalogo .main-categories__item:nth-child(2) {
+      width: 50%; }
+    .catalogo .main-categories__item:nth-child(3) {
+      width: 43.82%; }
+    .catalogo .main-categories__item:nth-child(4) {
+      width: 56.18%; }
+    .catalogo .main-categories__item img {
+      height: 276px; }
+      @media (min-width: 0px) and (max-width: 767px) {
+        .catalogo .main-categories__item img {
+          height: 100%; } }
 
 .error-404 {
   display: flex;
