@@ -1487,7 +1487,7 @@ header {
 }
 
 .main-categories__item {
-  padding: 15px;
+  border: 15px solid transparent;
   position: relative;
 }
 
@@ -2806,12 +2806,20 @@ header {
   margin-bottom: 24.5px;
   display: flex;
   justify-content: space-between; }
-  .categories-product__header .categories-product__view p {
-    margin-bottom: 0;
-    font-size: 15px;
-    letter-spacing: 1px;
-    line-height: 41px;
-    text-transform: uppercase; }
+  .categories-product__header .categories-product__view {
+    display: flex;
+    align-items: center; }
+    .categories-product__header .categories-product__view p {
+      margin-bottom: 0;
+      font-size: 15px;
+      letter-spacing: 1px;
+      line-height: 41px;
+      text-transform: uppercase; }
+    .categories-product__header .categories-product__view img {
+      width: 19px;
+      margin-left: 15px;
+      height: 19px;
+      object-fit: contain; }
 
 .orderby {
   background: none;
@@ -2966,3 +2974,62 @@ header {
       content: "$"; }
   .filter-price [slider]:hover > div > [sign] {
     opacity: 1; }
+
+.banner-catalogo .banner-small__title--small::before {
+  width: 248px; }
+
+.error-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/404/bg-404.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 58px;
+  padding-top: 58px;
+  padding-left: 20px;
+  padding-right: 20px; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    .error-404 {
+      margin-top: 133px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .error-404 {
+      margin-top: 133px; } }
+  .error-404 .error-404__title {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff; }
+  .error-404 .main-general__button {
+    font-size: 10px;
+    font-stretch: normal;
+    font-style: normal;
+    padding: 10px 20.6px;
+    border: #000;
+    line-height: normal;
+    letter-spacing: 3.5px;
+    color: #ffffff; }
+    .error-404 .main-general__button:hover {
+      color: #000; }
+  .error-404 .error-404__subtitle {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+    color: #ffffff; }
+  .error-404 img {
+    width: 829px;
+    height: 100%;
+    object-fit: contain; }
+    @media (min-width: 0px) and (max-width: 767px) {
+      .error-404 img {
+        width: 100%; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .error-404 img {
+        width: 100%; } }
