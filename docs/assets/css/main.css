@@ -1516,6 +1516,12 @@ header {
   object-position: center;
 }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-categories__item img {
+    height: 100%;
+  }
+}
+
 .main-categories__item:nth-child(1) {
   width: 34.5%;
 }
