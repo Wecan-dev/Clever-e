@@ -1196,12 +1196,12 @@ header {
 }
 
 .header-gray {
-  background: #303030;
+  background: #3030304f;
   position: initial;
 }
 
 .header-gray .dropdown-menu {
-  background: #303030;
+  background: #3030304f;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
