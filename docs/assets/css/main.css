@@ -2815,6 +2815,8 @@ header {
   .categories-sidebar__size .modal-body {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.24);
     align-items: center; }
   .categories-sidebar__size .modal-size__title {
     text-transform: uppercase;
