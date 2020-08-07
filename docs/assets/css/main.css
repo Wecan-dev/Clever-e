@@ -2785,9 +2785,10 @@ header {
   margin-top: 20px; }
   .categories-sidebar__size .modal-content {
     justify-content: center;
+    background-position: center;
     align-items: center;
-    background-image: url("../img/categorie/image.png");
-    height: 680px;
+    background-image: url("../img/categorie/medidas-clever.jpg");
+    height: 850px;
     overflow: hidden; }
     @media (min-width: 0px) and (max-width: 767px) {
       .categories-sidebar__size .modal-content {
