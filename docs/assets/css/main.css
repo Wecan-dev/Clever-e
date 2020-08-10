@@ -2903,7 +2903,7 @@ header {
     padding: 6.1px;
     text-align: center; }
     .modal-size-tab .modal-size__item p {
-      font-size: 10px;
+      font-size: 14px;
       text-transform: uppercase;
       font-weight: 500;
       line-height: normal;
@@ -2929,7 +2929,7 @@ header {
       .modal-size-tab .modal-size__row .modal-size__row--item p {
         font-weight: 300;
         color: #fff;
-        font-size: 10px;
+        font-size: 14px;
         margin-bottom: 0; }
       .modal-size-tab .modal-size__row .modal-size__row--item:nth-child(1) {
         text-align: left;
@@ -2939,7 +2939,7 @@ header {
           color: #404040;
           font-weight: 500 !important; }
   .modal-size-tab .modal-size__header {
-    font-size: 12px;
+    font-size: 14px;
     background: #fff;
     margin-bottom: 14.5px;
     font-weight: 500;
