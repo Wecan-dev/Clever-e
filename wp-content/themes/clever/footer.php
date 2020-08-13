@@ -151,14 +151,7 @@ www.clevermoda.com
   <a class="boton-subir slider-top" href="#" id="js_up">
 <img src="<?php echo get_template_directory_uri();?>/assets/img/up.png">
 </a>
-  <script src="<?php echo get_template_directory_uri();?>/assets/js/jquery.min.js"></script>
-  <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="<?php echo get_template_directory_uri();?>/assets/js/bootstrap.min.js"></script>
-  <script src="<?php echo get_template_directory_uri();?>/assets/js/slick.min.js"></script>
   <script src="<?php echo get_template_directory_uri();?>/assets/js/setting-slick.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
-  <script src="<?php echo get_template_directory_uri();?>/assets/js/main.js"></script>
 </body>
 <?php wp_footer(); ?>
 </html>
