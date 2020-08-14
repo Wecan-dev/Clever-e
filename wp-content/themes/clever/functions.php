@@ -20,6 +20,7 @@ function clever_styles(){
   wp_enqueue_script( 'wow','https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js');
   wp_enqueue_script( 'blazy','https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js'); 
   wp_enqueue_script( 'main-js',get_bloginfo('stylesheet_directory') . '/assets/js/main.js', array( 'jquery' ) ); 
+  wp_enqueue_script( 'ctext',get_bloginfo('stylesheet_directory') . '/assets/js/ctext.js', array( 'jquery' ) ); 
 
 }
 
@@ -35,6 +36,7 @@ function theme_customize_register($wp_customize){
             )
         );
   require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer-main-banner.php';
+  require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer-main-categories.php';
   
 } 
 add_action('customize_register','theme_customize_register');
@@ -120,14 +122,14 @@ function yourtheme_setup() {
 add_theme_support( 'wc-product-gallery-slider' );
 } 
 
-/*****************Widge ************************/
-function dosher_widgets_init() {
+/*****************Widget ************************/
+function clever_widgets_init() {
 
   register_sidebar(
     array(
-      'name'          => __( 'Footer', 'Dosher' ),
+      'name'          => __( 'Lang', 'Clever' ),
       'id'            => 'sidebar-1',
-      'description'   => __( 'Add widgets here to appear in your footer.', 'Dosher' ),
+      'description'   => __( 'Add widgets here to appear in your header.', 'Clever' ),
       'before_widget' => '<section id="%1$s" class="widget %2$s">',
       'after_widget'  => '</section>',
       'before_title'  => '<h2 class="widget-title">',
@@ -136,7 +138,7 @@ function dosher_widgets_init() {
   );
 
 }
-add_action( 'widgets_init', 'dosher_widgets_init' );
+add_action( 'widgets_init', 'clever_widgets_init' );
 
 /****************Excerpt general****************/
 
@@ -150,4 +152,15 @@ function excerpt($limit) {
   }
   $excerpt = preg_replace('`[[^]]*]`','',$excerpt);
   return $excerpt;
+}
+
+/***************** Lang ********************/
+
+function lang(){
+    $currentlang = get_bloginfo('language');
+    if ($currentlang == 'en-US') {
+     $lang="en";
+    }
+    else $lang="es";
+    return $lang;
 }

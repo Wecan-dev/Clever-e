@@ -1,0 +1,14 @@
+2020-08-14T05:35:04+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp2\htdocs\Clever-e\wp-includes\Requests\Transport\cURL.php on line 441
+
+2020-08-14T05:35:29+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp2\htdocs\Clever-e\wp-includes\Requests\Transport\cURL.php on line 163
+
+2020-08-14T05:36:33+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp2\htdocs\Clever-e\wp-includes\Requests\Transport\cURL.php on line 163
+
+2020-08-14T05:37:16+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp2\htdocs\Clever-e\wp-includes\Requests\Transport\cURL.php on line 163
+
+2020-08-14T05:50:59+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp2\htdocs\Clever-e\wp-admin\includes\ajax-actions.php on line 22
+
+2020-08-14T05:51:05+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp2\htdocs\Clever-e\wp-includes\plugin.php on line 182
+
+2020-08-14T05:51:20+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp2\htdocs\Clever-e\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\API\Reports\Products\DataStore.php on line 10
+

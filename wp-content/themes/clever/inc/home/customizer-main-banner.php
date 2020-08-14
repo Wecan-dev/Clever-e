@@ -1,201 +1,235 @@
 <?php
   /////Banner
-  /*****************banner1 ******************/
+  
   $wp_customize->add_section('banner', array (
     'title' => 'Main Banner',
     'panel' => 'panel1'
   ));
-
-
-        $wp_customize->add_setting( 'onepress_header_transparent',
-            array(
-                'sanitize_callback' => 'onepress_sanitize_checkbox',
-                'default'           => '',
-                'active_callback'   => 'onepress_showon_frontpage'
-            )
-        );
-        $wp_customize->add_control( 'onepress_header_transparent',
-            array(
-              
-                'label'       => esc_html__('Header Transparent', 'banner'),
-                'section'     => 'banner',
-                'description' => esc_html__('Apply for front page template only.', 'banner')
-            )
-        );
-
-
-
-  $wp_customize->add_setting('banner1_title', array(
-    'default' => ''
-  ));
   
-  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner1_title_control', array (
-    'label' => 'Primer Banner',
-    'description' => 'Title',
+  /*****************banner1 ******************/
+  $wp_customize->add_setting('banner1_image');
+  
+  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'banner1_image_control', array (
+    'label' => 'Banner 1',
+    'description' => 'Imagen',
     'section' => 'banner',
-    'settings' => 'banner1_title',
-    'type' => 'message',
+    'settings' => 'banner1_image'
   )));
 
-  $wp_customize->add_setting('banner1_subtitle', array(
+  // es
+  $wp_customize->add_setting('banner1_title_es', array(
     'default' => ''
   ));
   
-  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner1_subtitle_control', array (
-    'description' => 'Subtitle',
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner1_title_es_control', array (
+    'description' => 'Texto ESP <img src="' . get_stylesheet_directory_uri() . '/assets/img/esp.png"><br><br>Título',
     'section' => 'banner',
-    'settings' => 'banner1_subtitle',
+    'settings' => 'banner1_title_es',
   )));
 
-  $wp_customize->add_setting('banner1_button', array(
+  $wp_customize->add_setting('banner1_subtitle_es', array(
     'default' => ''
   ));
   
-  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner1_button_control', array (
-    'label' => 'Button',
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner1_subtitle_es_control', array (
+    'description' => 'Subtítulo',
     'section' => 'banner',
-    'settings' => 'banner1_button',
+    'settings' => 'banner1_subtitle_es',
+  )));
+
+  $wp_customize->add_setting('banner1_description_es', array(
+    'default' => ''
+  ));
+  
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner1_description_es_control', array (
+    'description' => 'Descripción',
+    'section' => 'banner',
+    'settings' => 'banner1_description_es',
+  )));  
+
+  $wp_customize->add_setting('banner1_button_es', array(
+    'default' => ''
+  ));
+  
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner1_button_es_control', array (
+    'description' => 'Botón',
+    'section' => 'banner',
+    'settings' => 'banner1_button_es',
   ))); 
 
-  $wp_customize->add_setting('banner1_urlbutton', array(
+  $wp_customize->add_setting('banner1_urlbutton_es', array(
     'default' => ''
   ));
   
-  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner1_urlbutton_control', array (
-    'label' => 'Url Button',
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner1_urlbutton_es_control', array (
+    'description' => 'Url Botón',
     'section' => 'banner',
-    'settings' => 'banner1_urlbutton',
+    'settings' => 'banner1_urlbutton_es',
   )));
 
-  $wp_customize->add_setting('banner1_image_desktop');
+  // en
+   $wp_customize->add_setting('banner1_title_en', array(
+    'default' => ''
+  ));
   
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'banner1_image_desktop_control', array (
-    'description' => 'Image Desktop',
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner1_title_en_control', array (
+    'description' => 'Texto ENG <img src="' . get_stylesheet_directory_uri() . '/assets/img/eng.png"><br><br>Title',
     'section' => 'banner',
-    'settings' => 'banner1_image_desktop'
+    'settings' => 'banner1_title_en',
   )));
 
-  $wp_customize->add_setting('banner1_image_responsive');
+  $wp_customize->add_setting('banner1_subtitle_en', array(
+    'default' => ''
+  ));
   
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'banner1_image_responsive_control', array (
-    'description' => 'Image Responsive',
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner1_subtitle_en_control', array (
+    'description' => 'Subtitle',
     'section' => 'banner',
-    'settings' => 'banner1_image_responsive'
+    'settings' => 'banner1_subtitle_en',
+  )));
+
+  $wp_customize->add_setting('banner1_description_en', array(
+    'default' => ''
+  ));
+  
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner1_description_en_control', array (
+    'description' => 'Description',
+    'section' => 'banner',
+    'settings' => 'banner1_description_en',
   )));  
+
+  $wp_customize->add_setting('banner1_button_en', array(
+    'default' => ''
+  ));
+  
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner1_button_en_control', array (
+    'description' => 'Button',
+    'section' => 'banner',
+    'settings' => 'banner1_button_en',
+  ))); 
+
+  $wp_customize->add_setting('banner1_urlbutton_en', array(
+    'default' => ''
+  ));
+  
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner1_urlbutton_en_control', array (
+    'description' => 'Url Button',
+    'section' => 'banner',
+    'settings' => 'banner1_urlbutton_en',
+  )));  
+
 
   /*****************banner2 ******************/
-   $wp_customize->add_setting('banner2_title', array(
-    'default' => ''
-  ));
+  $wp_customize->add_setting('banner2_image');
   
-  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner2_title_control', array (
-    'label' => 'Second Banner',
-    'description' => 'Title',
+  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'banner2_image_control', array (
+    'label' => 'Banner 2',
+    'description' => 'Imagen',
     'section' => 'banner',
-    'settings' => 'banner2_title',
+    'settings' => 'banner2_image'
   )));
 
-  $wp_customize->add_setting('banner2_subtitle', array(
+  // es
+  $wp_customize->add_setting('banner2_title_es', array(
     'default' => ''
   ));
   
-  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner2_subtitle_control', array (
-    'description' => 'Subtitle',
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner2_title_es_control', array (
+    'description' => 'Texto ESP <img src="' . get_stylesheet_directory_uri() . '/assets/img/esp.png"><br><br>Título',
     'section' => 'banner',
-    'settings' => 'banner2_subtitle',
+    'settings' => 'banner2_title_es',
   )));
 
-  $wp_customize->add_setting('banner2_button', array(
+  $wp_customize->add_setting('banner2_subtitle_es', array(
     'default' => ''
   ));
   
-  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner2_button_control', array (
-    'label' => 'Button',
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner2_subtitle_es_control', array (
+    'description' => 'Subtítulo',
     'section' => 'banner',
-    'settings' => 'banner2_button',
-  ))); 
+    'settings' => 'banner2_subtitle_es',
+  )));
 
-  $wp_customize->add_setting('banner2_urlbutton', array(
+  $wp_customize->add_setting('banner2_description_es', array(
     'default' => ''
   ));
   
-  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner2_urlbutton_control', array (
-    'label' => 'Url Button',
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner2_description_es_control', array (
+    'description' => 'Descripción',
     'section' => 'banner',
-    'settings' => 'banner2_urlbutton',
+    'settings' => 'banner2_description_es',
   )));  
 
-  $wp_customize->add_setting('banner2_image_desktop');
+  $wp_customize->add_setting('banner2_button_es', array(
+    'default' => ''
+  ));
   
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'banner2_image_desktop_control', array (
-    'description' => 'Image Desktop',
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner2_button_es_control', array (
+    'description' => 'Botón',
     'section' => 'banner',
-    'settings' => 'banner2_image_desktop'
-  )));
-
-  $wp_customize->add_setting('banner2_image_responsive');
-  
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'banner2_image_responsive_control', array (
-    'description' => 'Image Responsive',
-    'section' => 'banner',
-    'settings' => 'banner2_image_responsive'
+    'settings' => 'banner2_button_es',
   ))); 
 
-  /*****************banner3 ******************/ 
-   $wp_customize->add_setting('banner3_title', array(
+  $wp_customize->add_setting('banner2_urlbutton_es', array(
     'default' => ''
   ));
   
-  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner3_title_control', array (
-    'label' => 'Third Banner',
-    'description' => 'Title',
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner2_urlbutton_es_control', array (
+    'description' => 'Url Botón',
     'section' => 'banner',
-    'settings' => 'banner3_title',
+    'settings' => 'banner2_urlbutton_es',
   )));
 
-  $wp_customize->add_setting('banner3_subtitle', array(
+  // en
+   $wp_customize->add_setting('banner2_title_en', array(
     'default' => ''
   ));
   
-  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner3_subtitle_control', array (
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner2_title_en_control', array (
+    'description' => 'Texto ENG <img src="' . get_stylesheet_directory_uri() . '/assets/img/eng.png"><br><br>Title',
+    'section' => 'banner',
+    'settings' => 'banner2_title_en',
+  )));
+
+  $wp_customize->add_setting('banner2_subtitle_en', array(
+    'default' => ''
+  ));
+  
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner2_subtitle_en_control', array (
     'description' => 'Subtitle',
     'section' => 'banner',
-    'settings' => 'banner3_subtitle',
+    'settings' => 'banner2_subtitle_en',
   )));
 
-  $wp_customize->add_setting('banner3_button', array(
+  $wp_customize->add_setting('banner2_description_en', array(
     'default' => ''
   ));
   
-  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner3_button_control', array (
-    'label' => 'Button',
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner2_description_en_control', array (
+    'description' => 'Description',
     'section' => 'banner',
-    'settings' => 'banner3_button',
-  ))); 
+    'settings' => 'banner2_description_en',
+  )));  
 
-  $wp_customize->add_setting('banner3_urlbutton', array(
+  $wp_customize->add_setting('banner2_button_en', array(
     'default' => ''
   ));
   
-  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner3_urlbutton_control', array (
-    'label' => 'Url Button',
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner2_button_en_control', array (
+    'description' => 'Button',
     'section' => 'banner',
-    'settings' => 'banner3_urlbutton',
-  )));
-
-  $wp_customize->add_setting('banner3_image_desktop');
-  
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'banner3_image_desktop_control', array (
-    'description' => 'Image Desktop',
-    'section' => 'banner',
-    'settings' => 'banner3_image_desktop'
-  )));
-
-  $wp_customize->add_setting('banner3_image_responsive');
-  
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'banner3_image_responsive_control', array (
-    'description' => 'Image Responsive',
-    'section' => 'banner',
-    'settings' => 'banner3_image_responsive'
+    'settings' => 'banner2_button_en',
   ))); 
+
+  $wp_customize->add_setting('banner2_urlbutton_en', array(
+    'default' => ''
+  ));
+  
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'banner2_urlbutton_en_control', array (
+    'description' => 'Url Button',
+    'section' => 'banner',
+    'settings' => 'banner2_urlbutton_en',
+  )));  
+
+  
 ?>
