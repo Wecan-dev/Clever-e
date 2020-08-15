@@ -1,0 +1,16 @@
+2020-08-13T23:50:35+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp2\htdocs\Clever-e\wp-includes\Requests\Transport\cURL.php on line 163
+
+2020-08-13T19:36:05+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp2\htdocs\Clever-e\wp-includes\wp-db.php on line 2024
+
+2020-08-13T19:36:06+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp2\htdocs\Clever-e\wp-includes\wp-db.php on line 2024
+
+2020-08-13T19:38:49+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp2\htdocs\Clever-e\wp-includes\wp-db.php on line 2024
+
+2020-08-13T20:14:45+00:00 CRITICAL syntax error, unexpected 'public' (T_PUBLIC), expecting end of file in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 149
+
+2020-08-13T20:14:50+00:00 CRITICAL syntax error, unexpected 'public' (T_PUBLIC), expecting end of file in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 149
+
+2020-08-13T21:08:53+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 164
+
+2020-08-13T21:08:58+00:00 CRITICAL syntax error, unexpected 'return' (T_RETURN) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 164
+

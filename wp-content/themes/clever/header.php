@@ -5,6 +5,13 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title><?php wp_title('|', true, 'right'); ?></title>
   <?php wp_head(); ?>
+  <?php
+  $currentlang = get_bloginfo('language');
+  if ($currentlang == 'en-US') {
+   $lang="en";
+  }
+  else $lang="es"
+  ?>  
 </head>
 <body>
   <div class="pre-navbar__carousel">
@@ -89,8 +96,8 @@
               <a class="nav-link nav-link-p" data="offcanvas" href="contacto.html"> contacto</a>
             </li>
             <li class="nav-item nav-responsive">
-              <a class="nav-idioma" href="">
-                <span>ESP /</span>ENG</a>
+                <a lang="es-CO" hreflang="es-CO" class="nav-idioma" href="<?php echo get_home_url() ?>"><span>ESP /</span></a>
+                <a lang="en-US" hreflang="en-US" class="nav-idioma" href="<?php echo get_home_url() ?>/en/">ENG</a>
               <div class="content-icon">
                 <a class="nav-icon" href="">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/user.png">
@@ -111,9 +118,7 @@
             </li>
             <li class="nav-item nav-flex">
               <div class="content-icon">
-                <a class="nav-idioma" href="">
-                  <span> ESP /</span>ENG
-                </a>
+              <?php echo dynamic_sidebar( 'sidebar-1' ); ?>
                 <a class="nav-icon" href="">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/user-2.png">
                 </a>

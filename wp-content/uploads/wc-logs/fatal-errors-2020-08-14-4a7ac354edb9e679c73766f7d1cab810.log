@@ -1,0 +1,55 @@
+2020-08-14T05:35:04+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp2\htdocs\Clever-e\wp-includes\Requests\Transport\cURL.php on line 441
+
+2020-08-14T05:35:29+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp2\htdocs\Clever-e\wp-includes\Requests\Transport\cURL.php on line 163
+
+2020-08-14T05:36:33+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp2\htdocs\Clever-e\wp-includes\Requests\Transport\cURL.php on line 163
+
+2020-08-14T05:37:16+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp2\htdocs\Clever-e\wp-includes\Requests\Transport\cURL.php on line 163
+
+2020-08-14T05:50:59+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp2\htdocs\Clever-e\wp-admin\includes\ajax-actions.php on line 22
+
+2020-08-14T05:51:05+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp2\htdocs\Clever-e\wp-includes\plugin.php on line 182
+
+2020-08-14T05:51:20+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp2\htdocs\Clever-e\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\API\Reports\Products\DataStore.php on line 10
+
+2020-08-14T22:48:09+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp2\htdocs\Clever-e\wp-includes\Requests\Transport\cURL.php on line 163
+
+2020-08-14T22:49:13+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp2\htdocs\Clever-e\wp-includes\http.php on line 551
+
+2020-08-14T22:59:45+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp2\htdocs\Clever-e\wp-includes\functions.wp-scripts.php on line 114
+
+2020-08-14T22:59:51+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp2\htdocs\Clever-e\wp-content\plugins\woocommerce\packages\woocommerce-rest-api\src\Controllers\Version1\class-wc-rest-coupons-v1-controller.php on line 13
+
+2020-08-14T23:04:19+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp2\htdocs\Clever-e\wp-includes\rest-api\class-wp-rest-server.php on line 794
+
+2020-08-14T23:27:09+00:00 CRITICAL syntax error, unexpected ';', expecting ')' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 37
+
+2020-08-14T23:29:02+00:00 CRITICAL require(): Failed opening required 'C:\xampp2\htdocs\Clever-e/wp-content/themes/clever/classes/class-twentynineteen-svg-icons.php' (include_path='C:\xampp2\php\PEAR') in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 300
+
+2020-08-14T23:29:32+00:00 CRITICAL require(): Failed opening required 'C:\xampp2\htdocs\Clever-e/wp-content/themes/clever/inc/template-functions.php' (include_path='C:\xampp2\php\PEAR') in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 320
+
+2020-08-14T23:29:49+00:00 CRITICAL Uncaught Error: Call to undefined function twentynineteen_hsl_hex() in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php:150
+Stack trace:
+#0 C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-hook.php(287): twentynineteen_setup('')
+#1 C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp2\htdocs\Clever-e\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\xampp2\htdocs\Clever-e\wp-settings.php(518): do_action('after_setup_the...')
+#4 C:\xampp2\htdocs\Clever-e\wp-config.php(90): require_once('C:\\xampp2\\htdoc...')
+#5 C:\xampp2\htdocs\Clever-e\wp-load.php(37): require_once('C:\\xampp2\\htdoc...')
+#6 C:\xampp2\htdocs\Clever-e\wp-admin\admin.php(34): require_once('C:\\xampp2\\htdoc...')
+#7 C:\xampp2\htdocs\Clever-e\wp-admin\customize.php(13): require_once('C:\\xampp2\\htdoc...')
+#8 {main}
+  thrown in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 150
+
+2020-08-14T23:35:10+00:00 CRITICAL Uncaught Error: Call to undefined function lang() in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\sections\home\main-banner.php:10
+Stack trace:
+#0 C:\xampp2\htdocs\Clever-e\wp-includes\template.php(725): require()
+#1 C:\xampp2\htdocs\Clever-e\wp-includes\template.php(672): load_template('C:\\xampp2\\htdoc...', false)
+#2 C:\xampp2\htdocs\Clever-e\wp-includes\general-template.php(168): locate_template(Array, true, false)
+#3 C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\home.php(3): get_template_part('sections/home/m...')
+#4 C:\xampp2\htdocs\Clever-e\wp-includes\template-loader.php(106): include('C:\\xampp2\\htdoc...')
+#5 C:\xampp2\htdocs\Clever-e\wp-blog-header.php(19): require_once('C:\\xampp2\\htdoc...')
+#6 C:\xampp2\htdocs\Clever-e\index.php(17): require('C:\\xampp2\\htdoc...')
+#7 {main}
+  thrown in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\sections\home\main-banner.php on line 10
+

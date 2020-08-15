@@ -1,60 +1,24 @@
   <section class="main-categories">
     <div class="padding-top-bottom">
       <h2 class="main-general__title--light">
-        Nuestras
+        <?php echo get_theme_mod('categories_title_'.lang().''); ?>
       </h2>
       <h2 class="main-general__title--bold">
-        Categorías
+        <?php echo get_theme_mod('categories_subtitle_'.lang().''); ?>
       </h2>
       <div class="main-categories__flex">
+      <?php $product_categories = get_categories( array( 'taxonomy' => 'product_cat', 'orderby' => 'menu_order', 'order' => 'asc' ));  ?>
+      <?php foreach($product_categories as $category):  global $wpdb;?>
+      <?php $result = $wpdb->get_results ("SELECT * FROM ".$wpdb->prefix."term_taxonomy where taxonomy = 'product_cat'");?>         
         <div class="main-categories__item">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/categorie-1.png">
-          <a class="main-categories__mask" href="categoria.html">
+          <img src="<?php echo wp_get_attachment_url( get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true ) );?>">
+          <a class="main-categories__mask" href="<?php echo get_category_link( $category_id ); ?>">
             <h2 class="main-categories__title">
-              Luxury
+              <?=$category->name ?>
             </h2>
           </a>
         </div>
-        <div class="main-categories__item">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/categorie-2.png">
-          <a class="main-categories__mask" href="categoria.html">
-            <h2 class="main-categories__title">
-              Pick & go
-            </h2>
-          </a>
-        </div>
-        <div class="main-categories__item">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/categorie-3.png">
-          <a class="main-categories__mask" href="categoria.html">
-            <h2 class="main-categories__title">
-              swimwear
-            </h2>
-          </a>
-        </div>
-        <div class="main-categories__item">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/categorie-4.png">
-          <a class="main-categories__mask" href="categoria.html">
-            <h2 class="main-categories__title">
-              sports wear
-            </h2>
-          </a>
-        </div>
-        <div class="main-categories__item">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/categorie-5.png">
-          <a class="main-categories__mask" href="categoria.html">
-            <h2 class="main-categories__title">
-              basic
-            </h2>
-          </a>
-        </div>
-        <div class="main-categories__item">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/categorie-6.png">
-          <a class="main-categories__mask" href="categoria.html">
-            <h2 class="main-categories__title">
-              sale
-            </h2>
-          </a>
-        </div>
+      <?php endforeach; ?>   
       </div>
     </div>
   </section>

@@ -2,199 +2,73 @@
     <div class="padding-top-bottom">
       <div class="padding-right-left">
         <h2 class="main-general__title--light">
-          Nuestros
+          <?php echo get_theme_mod('products_title_'.lang().''); ?>
         </h2>
         <h2 class="main-general__title--bold">
-          Productos
+          <?php echo get_theme_mod('products_subtitle_'.lang().''); ?>
         </h2>
       </div>
       <div class="main-products__carousel">
+        <?php
+          $args = array (
+             'post_type' => 'product',
+             'posts_per_page' => 100,
+             'post_status' => 'publish'
+
+          );
+        $loop = new WP_Query( $args ); 
+        while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>       
         <div class="main-products__item">
           <div class="main-products__img">
             <div class="main-products__mask">
               <div class="main-products__icon">
-                <a href="">
-<img src="<?php echo get_template_directory_uri();?>/assets/img/card.png">
-</a>
-                <a href="">
-<img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
-</a>
-                <a href="">
-<img src="<?php echo get_template_directory_uri();?>/assets/img/search.png">
-</a>
+              <?php if (variation(get_the_ID()) <= 0){ ?>
+                <a href="?add-to-cart=<?php echo get_the_ID(); ?>">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/card.png">
+                </a>
+              <?php } ?>  
+              <?php if (variation(get_the_ID()) > 0){ ?>
+               <a href="<?php the_permalink(); ?>">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/card.png">
+                </a>              
+              <?php } ?>   
+                <a href="?add_to_wishlist=<?php echo get_the_ID(); ?>">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
+                </a>
+                <a href="<?php echo get_home_url() ?>/search">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/search.png">
+                </a>
               </div>
             </div>
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/product-1.png">
+            <img src="<?php the_post_thumbnail_url('full');?>">
           </div>
           <div class="main-products__body">
             <a class="main-products__title" href="">
-Classic Brief
-</a>
+              <?php the_title(); ?>
+            </a>
             <p class="main-products__categorie">
-              categoría Pick&Go
+              <?php if(lang() == 'es'){echo "categoría ";}if(lang() == 'en'){echo "category ";}  echo array_shift( wp_get_post_terms( get_the_ID(), 'product_cat' ))->name;?>
             </p>
             <p class="main-products__price">
-              <span>
-35.000
-</span> $32.000
+              <?php echo $product->get_price_html(); ?>
             </p>
           </div>
         </div>
-        <div class="main-products__item">
-          <div class="main-products__img">
-            <div class="main-products__mask">
-              <div class="main-products__icon">
-                <a href="">
-<img src="<?php echo get_template_directory_uri();?>/assets/img/card.png">
-</a>
-                <a href="">
-<img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
-</a>
-                <a href="">
-<img src="<?php echo get_template_directory_uri();?>/assets/img/search.png">
-</a>
-              </div>
-            </div>
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/product-2.png">
-          </div>
-          <div class="main-products__body">
-            <a class="main-products__title" href="">
-Classic Brief
-</a>
-            <p class="main-products__categorie">
-              categoría Pick&Go
-            </p>
-            <p class="main-products__price">
-              <span>
-35.000
-</span> $32.000
-            </p>
-          </div>
-        </div>
-        <div class="main-products__item">
-          <div class="main-products__img">
-            <div class="main-products__mask">
-              <div class="main-products__icon">
-                <a href="">
-<img src="<?php echo get_template_directory_uri();?>/assets/img/card.png">
-</a>
-                <a href="">
-<img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
-</a>
-                <a href="">
-<img src="<?php echo get_template_directory_uri();?>/assets/img/search.png">
-</a>
-              </div>
-            </div>
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/product-3.png">
-          </div>
-          <div class="main-products__body">
-            <a class="main-products__title" href="">
-Classic Brief
-</a>
-            <p class="main-products__categorie">
-              categoría Pick&Go
-            </p>
-            <p class="main-products__price">
-              <span>
-35.000
-</span> $32.000
-            </p>
-          </div>
-        </div>
-        <div class="main-products__item">
-          <div class="main-products__img">
-            <div class="main-products__mask">
-              <div class="main-products__icon">
-                <a href="">
-<img src="<?php echo get_template_directory_uri();?>/assets/img/card.png">
-</a>
-                <a href="">
-<img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
-</a>
-                <a href="">
-<img src="<?php echo get_template_directory_uri();?>/assets/img/search.png">
-</a>
-              </div>
-            </div>
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/product-4.png">
-          </div>
-          <div class="main-products__body">
-            <a class="main-products__title" href="">
-Classic Brief
-</a>
-            <p class="main-products__categorie">
-              categoría Pick&Go
-            </p>
-            <p class="main-products__price">
-              <span>
-35.000
-</span> $32.000
-            </p>
-          </div>
-        </div>
-        <div class="main-products__item">
-          <div class="main-products__img">
-            <div class="main-products__mask">
-              <div class="main-products__icon">
-                <a href="">
-<img src="<?php echo get_template_directory_uri();?>/assets/img/card.png">
-</a>
-                <a href="">
-<img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
-</a>
-                <a href="">
-<img src="<?php echo get_template_directory_uri();?>/assets/img/search.png">
-</a>
-              </div>
-            </div>
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/product-5.png">
-          </div>
-          <div class="main-products__body">
-            <a class="main-products__title" href="">
-Classic Brief
-</a>
-            <p class="main-products__categorie">
-              categoría Pick&Go
-            </p>
-            <p class="main-products__price">
-              <span>
-35.000
-</span> $32.000
-            </p>
-          </div>
-        </div>
-        <div class="main-products__item">
-          <div class="main-products__img">
-            <div class="main-products__mask">
-              <div class="main-products__icon">
-                <a href="">
-<img src="<?php echo get_template_directory_uri();?>/assets/img/card.png">
-</a>
-                <a href="">
-<img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
-</a>
-                <a href="">
-<img src="<?php echo get_template_directory_uri();?>/assets/img/search.png">
-</a>
-              </div>
-            </div>
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/product-1.png">
-          </div>
-          <div class="main-products__body">
-            <a class="main-products__title" href="">
-Classic Brief
-</a>
-            <p class="main-products__categorie">
-              categoría Pick&Go
-            </p>
-            <p class="main-products__price">
-              <span>
-35.000
-</span> $32.000
-            </p>
-          </div>
-        </div>
+      <?php endwhile; ?>   
       </div>
     </div>
   </section>
+<script type="text/javascript">
+      $(document).ready(function() {       
+        var langu = "<?= get_bloginfo('language') ?>";         
+        if (langu == 'en-US'){ 
+          $(".be").html(function(serachreplace, replace) {
+            return replace.replace('Antes', 'Before');
+          });          
+          $(".af").html(function(serachreplace, replace) {
+            return replace.replace('Después', 'After');
+          }); 
+        }         
+
+    }); 
+</script>
