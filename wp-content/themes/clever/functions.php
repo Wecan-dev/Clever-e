@@ -37,6 +37,7 @@ function theme_customize_register($wp_customize){
         );
   require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer-main-banner.php';
   require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer-main-categories.php';
+  require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer-main-products.php';
   
 } 
 add_action('customize_register','theme_customize_register');
@@ -163,4 +164,16 @@ function lang(){
     }
     else $lang="es";
     return $lang;
+}
+
+/************ variation ***********************/
+function variation($id)
+{
+    global $wpdb;
+    $count = 0;
+      $result1 = $wpdb->get_results ("SELECT * FROM ".$wpdb->prefix."posts where post_parent = '$id' and post_type = 'product_variation' and post_status = 'publish'");
+      foreach ( $result1 as $page1 )
+      { $count = $count+1;}
+   
+    return $count;
 }
