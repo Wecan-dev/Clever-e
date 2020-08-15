@@ -47,7 +47,7 @@
               <?php the_title(); ?>
             </a>
             <p class="main-products__categorie">
-              categoría <?php echo get_term(get_the_ID())->name; ?>
+              <?php if(lang() == 'es'){echo "categoría ";}if(lang() == 'en'){echo "category ";}  echo array_shift( wp_get_post_terms( get_the_ID(), 'product_cat' ))->name;?>
             </p>
             <p class="main-products__price">
               <?php echo $product->get_price_html(); ?>
@@ -58,3 +58,17 @@
       </div>
     </div>
   </section>
+<script type="text/javascript">
+      $(document).ready(function() {       
+        var langu = "<?= get_bloginfo('language') ?>";         
+        if (langu == 'en-US'){ 
+          $(".be").html(function(serachreplace, replace) {
+            return replace.replace('Antes', 'Before');
+          });          
+          $(".af").html(function(serachreplace, replace) {
+            return replace.replace('Después', 'After');
+          }); 
+        }         
+
+    }); 
+</script>
