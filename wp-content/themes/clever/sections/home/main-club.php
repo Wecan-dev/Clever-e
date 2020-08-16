@@ -17,6 +17,10 @@
         </div>
         <div class="main-club__form">
           <div class="main-club__content">
+
+<?php echo do_shortcode('[formidable id=2]'); ?>
+
+
             <form>
               <label for="">
 <img class="main-seller__img" src="<?php echo get_template_directory_uri();?>/assets/img/user.png">

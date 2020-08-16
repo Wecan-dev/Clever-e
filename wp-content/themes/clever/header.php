@@ -4,51 +4,30 @@
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title><?php wp_title('|', true, 'right'); ?></title>
-  <?php wp_head(); ?>
-  <?php
-  $currentlang = get_bloginfo('language');
-  if ($currentlang == 'en-US') {
-   $lang="en";
-  }
-  else $lang="es"
-  ?>  
+  <?php wp_head(); ?>  
 </head>
 <body>
   <div class="pre-navbar__carousel">
+    <?php for ($i=1; $i <= 2; $i++) { ?>
+    <?php if (get_theme_mod('prenavbar'.$i.'_image')!= NULL ) { ?>   
     <div class="pre-navbar__item">
       <div class="pre-navbar">
-        <img class="icon-tarjeta" src="<?php echo get_template_directory_uri();?>/assets/img/tarjetas.png">
+        <img class="icon-tarjeta" src="<?php echo get_theme_mod('prenavbar'.$i.'_image'); ?>">
         <p>
-          Aprovecha las ofertas & <b> promociones</b>
+          <?php echo get_theme_mod('prenavbar'.$i.'_title_'.lang().''); ?>
         </p>
         <img class="icon-line" src="<?php echo get_template_directory_uri();?>/assets/img/line-2.png">
         <p>
-          Tarjetas de regalo
+          <?php echo get_theme_mod('prenavbar'.$i.'_line1_'.lang().''); ?>
         </p>
         <img class="icon-line" src="<?php echo get_template_directory_uri();?>/assets/img/line.png">
         <p>
-          Sorprende a tus seres queridos con un <b> regalo muy especial </b>
+          <?php echo get_theme_mod('prenavbar'.$i.'_line2_'.lang().''); ?>
         </p>
-        <a class="main-general__button" href="">comprar ahora <img class="icon-tarjeta" src="<?php echo get_template_directory_uri();?>/assets/img/next.png"></a>
+        <a class="main-general__button" href="<?php echo get_theme_mod('prenavbar'.$i.'_urlbutton_'.lang().''); ?>"><?php echo get_theme_mod('prenavbar'.$i.'_button_'.lang().''); ?><img class="icon-tarjeta" src="<?php echo get_template_directory_uri();?>/assets/img/next.png"></a>
       </div>
     </div>
-    <div class="pre-navbar__item">
-      <div class="pre-navbar">
-        <img class="icon-tarjeta" src="<?php echo get_template_directory_uri();?>/assets/img/tarjetas.png">
-        <p>
-          Aprovecha las ofertas & <b> promociones </b>
-        </p>
-        <img class="icon-line" src="<?php echo get_template_directory_uri();?>/assets/img/line-2.png">
-        <p>
-          Tarjetas de regalo
-        </p>
-        <img class="icon-line" src="<?php echo get_template_directory_uri();?>/assets/img/line.png">
-        <p>
-          Sorprende a tus seres queridos con un <b> regalo muy especial </b>
-        </p>
-        <a class="main-general__button" href=""> comprar ahora <img class="icon-tarjeta" src="<?php echo get_template_directory_uri();?>/assets/img/next.png"></a>
-      </div>
-    </div>
+   <?php }} ?>
   </div>
   <header>
     <nav class="navbar navbar-expand-lg">

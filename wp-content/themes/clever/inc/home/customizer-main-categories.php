@@ -3,7 +3,7 @@
   
   $wp_customize->add_section('categories', array (
     'title' => 'Main Categorías',
-    'panel' => 'panel1'
+    'panel' => 'panel2'
   ));
   
  

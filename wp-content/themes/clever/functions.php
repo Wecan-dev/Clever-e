@@ -29,10 +29,19 @@ add_action('wp_enqueue_scripts', 'clever_styles');
 /***************Functions theme ********************/
 
 function theme_customize_register($wp_customize){
+
   $wp_customize->add_panel('panel1',
         array(
-            'title' => 'Secciones Home',
+            'title' => 'Header Pre-navbar',
             'priority' => 1,
+            )
+        );
+  require_once trailingslashit( get_template_directory() ) . 'inc/header/customizer-pre-navbar.php';
+
+  $wp_customize->add_panel('panel2',
+        array(
+            'title' => 'Secciones Home',
+            'priority' => 2,
             )
         );
   require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer-main-banner.php';

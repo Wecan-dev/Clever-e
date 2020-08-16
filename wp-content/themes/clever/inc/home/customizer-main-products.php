@@ -3,7 +3,7 @@
   
   $wp_customize->add_section('products', array (
     'title' => 'Main Productos',
-    'panel' => 'panel1'
+    'panel' => 'panel2'
   ));
   
  

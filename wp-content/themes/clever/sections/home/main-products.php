@@ -43,7 +43,7 @@
             <img src="<?php the_post_thumbnail_url('full');?>">
           </div>
           <div class="main-products__body">
-            <a class="main-products__title" href="">
+            <a class="main-products__title" href="<?php the_permalink(); ?>">
               <?php the_title(); ?>
             </a>
             <p class="main-products__categorie">
