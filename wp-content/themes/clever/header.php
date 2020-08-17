@@ -34,20 +34,20 @@
       <div class="nav-padding">
         <div class="main-brand__top">
           <div class="main-brand">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="<?php echo get_home_url() ?>">
               <img alt="Logo Ekored" id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png">
             </a>
           </div>
         </div>
         <div class="main-brand__fixed">
           <div class="main-brand">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="<?php echo get_home_url() ?>">
               <img alt="Logo Ekored" id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png">
             </a>
           </div>
         </div>
         <div class="main-brand brand-responsive">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="<?php echo get_home_url() ?>">
             <img alt="Logo Ekored" id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/logo-black.png">
           </a>
           <button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas" type="button">
@@ -58,34 +58,38 @@
         <div class="navbar-collapse offcanvas-collapse">
           <ul class="navbar-nav mr-autos">
             <li class="nav-item dropdown">
-              <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button">Categorías</a>
+              <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><?php if(lang() == 'es'){echo "Categorías";}if(lang() == 'en'){echo "Category ";} ?></a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="categoria.html">Luxury</a>
-                <a class="dropdown-item" href="categoria.html">Pick & Go</a>
-                <a class="dropdown-item" href="categoria.html">Swimwear</a>
-                <a class="dropdown-item" href="categoria.html">Sportswear</a>
-                <a class="dropdown-item" href="categoria.html">Basic</a>
-                <a class="dropdown-item" href="categoria.html">Sale</a>
+                <?php $product_categories = get_categories( array( 'taxonomy' => 'product_cat', 'orderby' => 'menu_order', 'order' => 'asc' ));  ?>
+                <?php foreach($product_categories as $category):  global $wpdb;?>
+                <?php $result = $wpdb->get_results ("SELECT * FROM ".$wpdb->prefix."term_taxonomy where taxonomy = 'product_cat'");?>                       
+                  <a class="dropdown-item" href="<?php echo get_category_link( $category->term_id ); ?>"><?=$category->name ?></a>
+                <?php endforeach; ?> 
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-p" data="offcanvas" href="basicos-e-infaltables.html">Best Seller</a>
+              <a class="nav-link nav-link-p" data="offcanvas" href="<?php if(lang() == 'es'){echo ''.get_home_url().'/tienda';}if(lang() == 'en'){echo ''.get_home_url().'/shop';} ?>">Best Seller</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-p" data="offcanvas" href="contacto.html"> contacto</a>
+              <a class="nav-link nav-link-p" data="offcanvas" href="contacto.html"><?php if(lang() == 'es'){echo "Contacto";}if(lang() == 'en'){echo "Contact ";} ?></a>
             </li>
             <li class="nav-item nav-responsive">
-                <a lang="es-CO" hreflang="es-CO" class="nav-idioma" href="<?php echo get_home_url() ?>"><span>ESP /</span></a>
-                <a lang="en-US" hreflang="en-US" class="nav-idioma" href="<?php echo get_home_url() ?>/en/">ENG</a>
+              <?php echo dynamic_sidebar( 'sidebar-1' ); ?>
               <div class="content-icon">
-                <a class="nav-icon" href="">
+                <a class="nav-icon" href="<?php echo get_home_url() ?>/my-account">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/user.png">
                 </a>
-                <a class="nav-icon" href="">
+                <a class="nav-icon" href="<?php echo get_home_url() ?>/wishlist">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
+                  <span class="nav-item__number">
+                  <?php $wishlist_count = YITH_WCWL()->count_products(); echo esc_html( $wishlist_count ); ?>
+                  </span>
                 </a>
-                <a class="nav-icon" href="">
+                <a class="nav-icon" href="<?php echo get_home_url() ?>/cart">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/card.png">
+                  <span class="nav-item__number">
+                    <?php echo wp_kses_data(WC()->cart->get_cart_contents_count()); ?>
+                  </span>
                 </a>
                 <a class="nav-world" href="">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/world.png">
@@ -98,14 +102,20 @@
             <li class="nav-item nav-flex">
               <div class="content-icon">
               <?php echo dynamic_sidebar( 'sidebar-1' ); ?>
-                <a class="nav-icon" href="">
+                <a class="nav-icon" href="<?php echo get_home_url() ?>/my-account">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/user-2.png">
                 </a>
-                <a class="nav-icon" href="">
+                <a class="nav-icon" href="<?php echo get_home_url() ?>/wishlist">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/love.png">
+                  <span class="nav-item__number">
+                    <?php $wishlist_count = YITH_WCWL()->count_products(); echo esc_html( $wishlist_count ); ?>
+                  </span                  
                 </a>
-                <a class="nav-icon" href="">
+                <a class="nav-icon" href="<?php echo get_home_url() ?>/cart">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/card-2.png">
+                  <span class="nav-item__number">
+                    <?php echo wp_kses_data(WC()->cart->get_cart_contents_count()); ?>
+                  </span>                  
                 </a>
                 <a class="nav-world" href="">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/world.png">
@@ -116,20 +126,20 @@
               </a>
             </li>
             <div class="pre-navbar pre-navbar--mobile">
-              <img class="icon-tarjeta" src="<?php echo get_template_directory_uri();?>/assets/img/tarjetas.png">
+              <img class="icon-tarjeta" src="<?php echo get_theme_mod('prenavbar1_image'); ?>">
               <p>
-                Aprovecha las ofertas & <b> promociones</b>
+                <?php echo get_theme_mod('prenavbar1_title_'.lang().''); ?>
               </p>
               <img class="icon-line" src="<?php echo get_template_directory_uri();?>/assets/img/line-2.png">
               <p>
-                Tarjetas de regalo
+                <?php echo get_theme_mod('prenavbar1_line1_'.lang().''); ?>
               </p>
               <img class="icon-line" src="<?php echo get_template_directory_uri();?>/assets/img/line.png">
               <p>
-                Sorprende a tus seres queridos con un <b> regalo muy especial </b>
+                <?php echo get_theme_mod('prenavbar1_line2_'.lang().''); ?>
               </p>
-              <a class="main-general__button" href="">
-                comprar ahora
+              <a class="main-general__button" href="<?php echo get_theme_mod('prenavbar1_urlbutton_'.lang().''); ?>">
+                <?php echo get_theme_mod('prenavbar1_button_'.lang().''); ?>
                 <img class="icon-tarjeta" src="<?php echo get_template_directory_uri();?>/assets/img/next.png">
               </a>
             </div>

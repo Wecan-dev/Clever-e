@@ -12,7 +12,7 @@
       <?php $result = $wpdb->get_results ("SELECT * FROM ".$wpdb->prefix."term_taxonomy where taxonomy = 'product_cat'");?>         
         <div class="main-categories__item">
           <img src="<?php echo wp_get_attachment_url( get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true ) );?>">
-          <a class="main-categories__mask" href="<?php echo get_category_link( $category_id ); ?>">
+          <a class="main-categories__mask" href="<?php echo get_category_link( $category->term_id ); ?>">
             <h2 class="main-categories__title">
               <?=$category->name ?>
             </h2>
