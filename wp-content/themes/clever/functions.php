@@ -48,6 +48,7 @@ function theme_customize_register($wp_customize){
   require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer-main-categories.php';
   require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer-main-products.php';
   require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer-main-club.php';
+  require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer-main-newsletter.php';
   
 } 
 add_action('customize_register','theme_customize_register');

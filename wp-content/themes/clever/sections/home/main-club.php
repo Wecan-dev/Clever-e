@@ -12,7 +12,7 @@
             <?php echo get_theme_mod('club_title_bold_'.lang().''); ?>
           </p>
           <p class="main-club__description">
-            <?php echo get_theme_mod('club_description_'.lang().''); ?>
+            <?php echo str_replace("\n", "<br>", get_theme_mod('club_description_'.lang().'')); ?>
           </p>
         </div>
         <div class="main-club__form">
