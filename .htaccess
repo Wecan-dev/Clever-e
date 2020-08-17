@@ -1,15 +1,15 @@
 
 # BEGIN WordPress
-# Las directivas (líneas) entre `BEGIN WordPress` y `END WordPress` se generan dinámicamente
-# , y solo se deberían modificar mediante filtros de WordPress.
-# Cualquier cambio en las directivas que hay entre esos marcadores se sobreescribirán.
+# Las directivas (líneas) entre `BEGIN WordPress` y `END WordPress` son
+# generadas dinámicamente, y sólo debe ser modificadas a través de los filtros de WordPress.
+# Cualquier cambio en las directivas entre estos marcadores se sobrescribirá.
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /clever-e/
+RewriteBase /Clever-e/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /clever-e/index.php [L]
+RewriteRule . /Clever-e/index.php [L]
 </IfModule>
 
 # END WordPress
