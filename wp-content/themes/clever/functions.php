@@ -50,6 +50,7 @@ function theme_customize_register($wp_customize){
   require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer-main-club.php';
   require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer-main-newsletter.php';
   require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer-main-seller.php';
+  require_once trailingslashit( get_template_directory() ) . 'inc/home/customizer-main-video.php';
   
 } 
 add_action('customize_register','theme_customize_register');
@@ -189,3 +190,59 @@ function variation($id)
    
     return $count;
 }
+
+/*********** ITEMS Video***********/
+function custom_post_type_Items_video() {
+
+  $labels = array(
+    'name'                  => _x( 'Items Video', 'Post Type General Name', 'text_domain' ),
+    'singular_name'         => _x( 'Items Video', 'Post Type Singular Name', 'text_domain' ),
+    'menu_name'             => __( 'Items Video', 'text_domain' ),
+    'name_admin_bar'        => __( 'Items Video', 'text_domain' ),
+    'archives'              => __( 'Archives', 'text_domain' ),
+    'attributes'            => __( 'Attributes', 'text_domain' ),
+    'parent_item_colon'     => __( 'Main Items Video', 'text_domain' ),
+    'all_items Video'             => __( 'All Items Video', 'text_domain' ),
+    'add_new_item'          => __( 'Add New Items Video', 'text_domain' ),
+    'add_new'               => __( 'Add New', 'text_domain' ),
+    'new_item'              => __( 'New Items Video', 'text_domain' ),
+    'edit_item'             => __( 'Edit Items Video', 'text_domain' ),
+    'update_item'           => __( 'Update Items Video', 'text_domain' ),
+    'view_items Video'            => __( 'See Items Video', 'text_domain' ),
+    'search_items Video'          => __( 'Search Items Video', 'text_domain' ),
+    'not_found'             => __( 'Not found', 'text_domain' ),
+    'not_found_in_trash'    => __( 'It is not in the trash', 'text_domain' ),
+    'featured_image'        => __( 'Featured Image', 'text_domain' ),
+    'set_featured_image'    => __( 'Set Featured Image', 'text_domain' ),
+    'remove_featured_image' => __( 'Remove Featured Image', 'text_domain' ),
+    'use_featured_image'    => __( 'Use Featured Image', 'text_domain' ),
+    'insert_into_item'      => __( 'Insert Into Item', 'text_domain' ),
+    'uploaded_to_this_item' => __( 'Uploaded to this item', 'text_domain' ),
+    'items Video_list'            => __( 'items Video List', 'text_domain' ),
+    'items Video_list_navigation' => __( 'items Video List Navigation', 'text_domain' ),
+    'filter_items Video_list'     => __( 'filter Items Video List', 'text_domain' ),
+  );
+  $args = array(
+    'label'                 => __( 'Items Video', 'text_domain' ),
+    'description'           => __( 'Items Video image', 'text_domain' ),
+    'labels'                => $labels,
+    'supports'              => array( 'title', 'custom-fields' ),
+    'taxonomies'            => array( '' ),
+    'hierarchical'          => false,
+    'public'                => true,
+    'show_ui'               => true,
+    'show_in_menu'          => true,
+    'menu_position'         => 5,
+    'menu_icon'             => 'dashicons-format-video',
+    'show_in_admin_bar'     => true,
+    'show_in_nav_menus'     => true,
+    'can_export'            => true,
+    'has_archive'           => true,
+    'exclude_from_search'   => false,
+    'publicly_queryable'    => true,
+    'capability_type'       => 'page', 
+  );
+  register_post_type( 'Items Video', $args );
+
+}
+add_action( 'init', 'custom_post_type_Items_video', 0 );

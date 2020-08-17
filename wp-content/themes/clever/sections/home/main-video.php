@@ -3,26 +3,21 @@
       <div class="padding-right-left">
         <div class="main-video__title">
           <h2 class="main-general__title--light">
-            Galería
+            <?php echo get_theme_mod('video_title_light_'.lang().''); ?>
           </h2>
           <h2 class="main-general__title--bold">
-            de videos
+            <?php echo get_theme_mod('video_title_bold_'.lang().''); ?>
           </h2>
         </div>
       </div>
       <div class="main-video__carousel">
+      <?php $args = array('post_type' => 'itemsvideo', 'order'=> 'ASC','post_status' => 'publish', 'posts_per_page' => 100); ?>        
+      <?php $loop = new WP_Query( $args ); ?>
+      <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>        
         <div class="main-video__item">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/video.png">
+          <img src="<?php the_field('image_items_video'); ?>">
         </div>
-        <div class="main-video__item">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/video.png">
-        </div>
-        <div class="main-video__item">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/video.png">
-        </div>
-        <div class="main-video__item">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/video.png">
-        </div>
+      <?php endwhile; ?> 
       </div>
     </div>
   </section>

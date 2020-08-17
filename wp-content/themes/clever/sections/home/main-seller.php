@@ -10,7 +10,7 @@
         <?php }} ?>
       </div>
       <div class="d-flex justify-content-center">
-        <a class="main-general__button" href="<?php get_theme_mod('seller_urlbuttom_'.lang().'');?>"><?php echo  get_theme_mod('seller_buttom_'.lang().''); ?></a>
+        <a class="main-general__button" href="<?php echo get_theme_mod('seller_urlbuttom_'.lang().'');?>"><?php echo  get_theme_mod('seller_buttom_'.lang().''); ?></a>
       </div>
     </div>
   </section>
