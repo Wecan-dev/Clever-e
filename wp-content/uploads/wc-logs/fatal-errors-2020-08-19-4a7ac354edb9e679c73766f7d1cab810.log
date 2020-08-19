@@ -144,3 +144,7 @@ Stack trace:
 #3 {main}
   thrown in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\page.php on line 25
 
+2020-08-19T23:15:29+00:00 CRITICAL syntax error, unexpected '<' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\myaccount\form-login.php on line 91
+
+2020-08-19T19:21:33+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\myaccount\form-login.php on line 59
+
