@@ -1129,8 +1129,8 @@ button:focus {
 }
 
 .navbar-brand img {
-  width: 156px;
-  height: 79px;
+  width: 170px;
+  height: 104px;
   object-fit: contain;
 }
 
@@ -1197,7 +1197,8 @@ header {
 }
 
 .header-gray {
-  background: #3030304f;
+  background: #303030;
+  position: initial;
 }
 
 .header-gray .dropdown-menu {
@@ -3454,7 +3455,7 @@ header {
 
 
 /* woocommerce */
-.woocommerce-form-login {
+.form-custom {
   background: #fff;
   padding: 81px 142px !important;
   border-radius: 0 !important;
@@ -3476,7 +3477,7 @@ header {
 
 
 
-.woocommerce-form-login h2 {
+.form-custom h2 {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 58px;
@@ -3489,14 +3490,14 @@ header {
   text-transform: uppercase;
 }
 
-.woocommerce-form-login label {
+.form-custom label {
   border: solid 1px #aeb5bd;
   width: 100%;
   display: flex !important;
   align-items: center;
 }
 
-.woocommerce-form-login label img {
+.form-custom label img {
   width: 12px;
   height: 12px;
   margin-right: 9px;
@@ -3504,7 +3505,7 @@ header {
   object-fit: contain;
 }
 
-.woocommerce-form-login input {
+.form-custom input {
   border: none !important;
   background: none !important;
   height: 43px;
@@ -3522,7 +3523,7 @@ header {
 
 
 
-.woocommerce-form-login input::placeholder {
+.form-custom input::placeholder {
 
   font-size: 15px;
   font-weight: normal;
@@ -3540,7 +3541,7 @@ header {
   justify-content: center;
 }
 
-.woocommerce-form-login .main-general__button {
+.form-custom .main-general__button {
   width: 100%;
   font-size: 10px;
   padding-top: 12px;
@@ -3602,6 +3603,62 @@ header {
 .form-login__register .woocommerce-in-account {
   padding-left: 10px;
   text-decoration: underline !important;
+}
+
+.checkout-custom .woocommerce-cart-form__contents thead {
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2.8px;
+  text-align: center;
+  color: #010101;
+}
+
+.checkout-custom .cart_item {
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #010101;
+}
+
+.checkout-custom .cart_item a {
+  color: #010101;
+}
+
+.custom-cart {
+  display: grid;
+  padding-left: 162px;
+  padding-right: 162px;
+}
+
+.custom-cart .cart_totals {
+  width: 100% !important;
+}
+
+.checkout-custom .remove {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 20px;
+  font-size: 17px !important;
+  width: 20px;
+  font-weight: 300 !important;
+  color: #010101 !important;
+  border: 1px solid !important;
+}
+
+.checkout-custom .form-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
