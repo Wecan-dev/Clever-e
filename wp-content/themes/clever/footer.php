@@ -9,17 +9,17 @@
             <?php echo str_replace("\n", "<br>", get_theme_mod('description_'.lang().'')); ?>
           </p>
           <div class="main-footer__rrss">
-            <?php if (get_theme_mod('icon_rrss_facebook_'.lang().'') != NULL) { ?>         
+            <?php if (get_theme_mod('facebook_'.lang().'') != NULL) { ?>         
               <a class="rrss__item" href="<?php echo get_theme_mod('facebook_'.lang().''); ?>" target="_blank">
                 <img alt="Facebook" src="<?php echo get_template_directory_uri();?>/assets/img/fb.png">
               </a>
             <?php } ?>
-            <?php if (get_theme_mod('icon_rrss_instagram_'.lang().'') != NULL) { ?>         
+            <?php if (get_theme_mod('instagram_'.lang().'') != NULL) { ?>         
               <a class="rrss__item" href="<?php echo get_theme_mod('instagram_'.lang().''); ?>" target="_blank">
                 <img alt="Instagram" src="<?php echo get_template_directory_uri();?>/assets/img/instagram.png">
               </a>
             <?php } ?>  
-            <?php if (get_theme_mod('icon_rrss_youtube_'.lang().'') != NULL) { ?>         
+            <?php if (get_theme_mod('youtube_'.lang().'') != NULL) { ?>         
               <a class="rrss__item" href="<?php echo get_theme_mod('youtube_'.lang().''); ?>" target="_blank">
                 <img alt="Youtube" src="<?php echo get_template_directory_uri();?>/assets/img/youtube.png">
               </a>
@@ -88,18 +88,38 @@
             <?php if(lang() == 'es'){echo "Contacto";}if(lang() == 'en'){echo "Contact";}?>
           </h2>
           <ul class="list-contact">
-            <li>
+          <?php if (get_theme_mod('address1_'.lang().'') != NULL) { ?>
+            <li>            
               <a href="">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/place.png">
-                <?php echo get_theme_mod('address_'.lang().''); ?>
+                <?php echo get_theme_mod('address1_'.lang().''); ?>
               </a>
             </li>
+          <?php } ?>  
+          <?php if (get_theme_mod('address2_'.lang().'') != NULL) { ?>
+            <li>            
+              <a href="">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/place.png">
+                <?php echo get_theme_mod('address2_'.lang().''); ?>
+              </a>
+            </li>
+          <?php } ?>  
+          <?php if (get_theme_mod('phone1_'.lang().'') != NULL) { ?>         
             <li>
-              <a href="tel:+5744464353">
+              <a href="tel:<?php echo get_theme_mod('phone1_'.lang().''); ?>">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/phone.png">
-                <?php echo get_theme_mod('phone_'.lang().''); ?>
+                <?php echo get_theme_mod('phone1_'.lang().''); ?>
               </a>
             </li>
+          <?php } ?> 
+          <?php if (get_theme_mod('phone2_'.lang().'') != NULL) { ?>         
+            <li>
+              <a href="tel:<?php echo get_theme_mod('phone1_'.lang().''); ?>">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/phone.png">
+                <?php echo get_theme_mod('phone2_'.lang().''); ?>
+              </a>
+            </li>
+          <?php } ?>           
             <li>
               <a href="mailto:ventasonline@clevermoda.com">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/icon.png">
@@ -124,7 +144,7 @@
       </div>
     </div>
   </div>
-  <?php if (get_theme_mod('icon_rrss_whatsapp') != NULL) { ?>  
+  <?php if (get_theme_mod('whatsapp_'.lang().'') != NULL) { ?>  
   <div class="main-whatsapp">
     <a href="https://api.whatsapp.com/send?phone=<?php echo get_theme_mod('whatsapp_'.lang().''); ?>">
       <img alt="icon whatsapp" src="<?php echo get_template_directory_uri();?>/assets/img/whatsapp.png">

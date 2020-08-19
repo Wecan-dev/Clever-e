@@ -17,26 +17,47 @@
     'type' => 'textarea'
   )));
 
-  $wp_customize->add_setting('address_es', array(
+  $wp_customize->add_setting('address1_es', array(
     'default' => ''
   ));
 
-  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'address_es_control', array (
-    'description' => 'Dirección',
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'address1_es_control', array (
+    'description' => 'Dirección 1',
     'section' => 'contact',
-    'settings' => 'address_es',
+    'settings' => 'address1_es',
     'type' => 'textarea'
   )));    
 
-  $wp_customize->add_setting('phone_es', array(
+  $wp_customize->add_setting('address2_es', array(
+    'default' => ''
+  ));
+
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'address2_es_control', array (
+    'description' => 'Dirección 2',
+    'section' => 'contact',
+    'settings' => 'address2_es',
+    'type' => 'textarea'
+  )));
+
+  $wp_customize->add_setting('phone1_es', array(
     'default' => ''
   ));
   
-  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'phone_es_control', array (
-    'label' => 'Teléfonos',
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'phone1_es_control', array (
+    'label' => 'Teléfonos 1',
     'section' => 'contact',
-    'settings' => 'phone_es'
-  ))); 
+    'settings' => 'phone1_es'
+  )));
+
+  $wp_customize->add_setting('phone2_es', array(
+    'default' => ''
+  ));
+  
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'phone2_es_control', array (
+    'label' => 'Teléfonos 2',
+    'section' => 'contact',
+    'settings' => 'phone2_es'
+  )));   
 
   $wp_customize->add_setting('email_es', array(
     'default' => ''
@@ -70,26 +91,47 @@
     'type' => 'textarea'
   )));
 
-  $wp_customize->add_setting('address_en', array(
+  $wp_customize->add_setting('address1_en', array(
     'default' => ''
   ));
 
-  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'address_en_control', array (
-    'description' => 'Address',
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'address1_en_control', array (
+    'description' => 'Address 1',
     'section' => 'contact',
-    'settings' => 'address_en',
+    'settings' => 'address1_en',
+    'type' => 'textarea'
+  )));  
+
+  $wp_customize->add_setting('address2_en', array(
+    'default' => ''
+  ));
+
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'address2_en_control', array (
+    'description' => 'Address 2',
+    'section' => 'contact',
+    'settings' => 'address2_en',
     'type' => 'textarea'
   )));    
 
-  $wp_customize->add_setting('phone_en', array(
+  $wp_customize->add_setting('phone1_en', array(
     'default' => ''
   ));
   
-  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'phone_en_control', array (
-    'label' => 'Phone',
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'phone1_en_control', array (
+    'label' => 'Phone 1',
     'section' => 'contact',
-    'settings' => 'phone_en'
+    'settings' => 'phone1_en'
   )));       
+
+  $wp_customize->add_setting('phone2_en', array(
+    'default' => ''
+  ));
+  
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'phone2_en_control', array (
+    'label' => 'Phone 2',
+    'section' => 'contact',
+    'settings' => 'phone2_en'
+  ))); 
 
   $wp_customize->add_setting('email_en', array(
     'default' => ''
