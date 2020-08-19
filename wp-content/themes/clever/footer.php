@@ -11,29 +11,20 @@
           <div class="main-footer__rrss">
             <?php if (get_theme_mod('icon_rrss_facebook_'.lang().'') != NULL) { ?>         
               <a class="rrss__item" href="<?php echo get_theme_mod('facebook_'.lang().''); ?>" target="_blank">
-                <img alt="Facebook" src="<?php echo get_theme_mod('icon_rrss_facebook_'.lang().''); ?>">
+                <img alt="Facebook" src="<?php echo get_template_directory_uri();?>/assets/img/fb.png">
               </a>
             <?php } ?>
             <?php if (get_theme_mod('icon_rrss_instagram_'.lang().'') != NULL) { ?>         
               <a class="rrss__item" href="<?php echo get_theme_mod('instagram_'.lang().''); ?>" target="_blank">
-                <img alt="Instagram" src="<?php echo get_theme_mod('icon_rrss_instagram_'.lang().''); ?>">
-              </a>
-            <?php } ?>
-            <?php if (get_theme_mod('icon_rrss_twitter_'.lang().'') != NULL) { ?>         
-              <a class="rrss__item" href="<?php echo get_theme_mod('twitter_'.lang().''); ?>" target="_blank">
-                <img alt="Twitter" src="<?php echo get_theme_mod('icon_rrss_twitter_'.lang().''); ?>">
+                <img alt="Instagram" src="<?php echo get_template_directory_uri();?>/assets/img/instagram.png">
               </a>
             <?php } ?>  
             <?php if (get_theme_mod('icon_rrss_youtube_'.lang().'') != NULL) { ?>         
               <a class="rrss__item" href="<?php echo get_theme_mod('youtube_'.lang().''); ?>" target="_blank">
-                <img alt="Youtube" src="<?php echo get_theme_mod('icon_rrss_youtube_'.lang().''); ?>">
+                <img alt="Youtube" src="<?php echo get_template_directory_uri();?>/assets/img/youtube.png">
               </a>
             <?php } ?>  
-            <?php if (get_theme_mod('icon_rrss_linkedin_'.lang().'') != NULL) { ?>         
-              <a class="rrss__item" href="<?php echo get_theme_mod('linkedin_'.lang().''); ?>" target="_blank">
-                <img alt="Linkedin" src="<?php echo get_theme_mod('icon_rrss_linkedin_'.lang().''); ?>">
-              </a>
-            <?php } ?>                                  
+                                 
           </div>
         </div>
         <div class="main-footer__item">
@@ -136,7 +127,7 @@
   <?php if (get_theme_mod('icon_rrss_whatsapp') != NULL) { ?>  
   <div class="main-whatsapp">
     <a href="https://api.whatsapp.com/send?phone=<?php echo get_theme_mod('whatsapp_'.lang().''); ?>">
-      <img alt="icon whatsapp" src="<?php echo get_theme_mod('icon_rrss_whatsapp'); ?>">
+      <img alt="icon whatsapp" src="<?php echo get_template_directory_uri();?>/assets/img/whatsapp.png">
     </a>
   <?php } ?>  
   </div>

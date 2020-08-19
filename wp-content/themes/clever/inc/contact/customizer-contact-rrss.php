@@ -5,55 +5,6 @@
     'panel' => 'panel3'
   ));
   
-  $wp_customize->add_setting('icon_rrss_facebook');
-  
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'icon_rrss_facebook_control', array (
-    'label' => 'ïconos RRSS',
-    'description' => 'Facebook',
-    'section' => 'contact_rrss',
-    'settings' => 'icon_rrss_facebook'
-  )));
-
-  $wp_customize->add_setting('icon_rrss_instagram');
-  
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'icon_rrss_instagram_control', array (
-    'description' => 'Instagram',
-    'section' => 'contact_rrss',
-    'settings' => 'icon_rrss_instagram'
-  )));  
-
-  $wp_customize->add_setting('icon_rrss_twitter');
-  
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'icon_rrss_twitter_control', array (
-    'description' => 'Twitter',
-    'section' => 'contact_rrss',
-    'settings' => 'icon_rrss_twitter'
-  )));   
-
-  $wp_customize->add_setting('icon_rrss_youtube');
-  
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'icon_rrss_youtube_control', array (
-    'description' => 'Youtube',
-    'section' => 'contact_rrss',
-    'settings' => 'icon_rrss_youtube'
-  )));  
-
-  $wp_customize->add_setting('icon_rrss_linkedin');
-  
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'icon_rrss_linkedin_control', array (
-    'description' => 'Linkedin',
-    'section' => 'contact_rrss',
-    'settings' => 'icon_rrss_linkedin'
-  )));  
-
-  $wp_customize->add_setting('icon_rrss_whatsapp');
-  
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'icon_rrss_whatsapp_control', array (
-    'description' => 'Whatsapp',
-    'section' => 'contact_rrss',
-    'settings' => 'icon_rrss_whatsapp'
-  )));  
-
 
  //ESP 
   $wp_customize->add_setting('facebook_es', array(
