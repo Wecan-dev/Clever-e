@@ -27,11 +27,7 @@
  * @version 1.0
  */
 ?>	
-<div class="grid-woocommerce">
-	<div class="padding-left-right padding-top-bottom">
 		<?php echo do_shortcode('[woocommerce_my_account]'); ?>
-	</div>
-</div>
 
 
 

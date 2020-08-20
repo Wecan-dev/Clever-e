@@ -30,6 +30,11 @@ if ( ! defined( 'ABSPATH' ) ) {
                 $acc = "Create an account";
                 $log = "Log in";
             } 
+?>
+<div class="grid-woocommerce">
+	<div class="padding-left-right padding-top-bottom">
+ 
+<?php           
 do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 <?php if ( 'yes' === get_option( 'woocommerce_enable_myaccount_registration' ) ) : ?>
@@ -124,6 +129,8 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 <?php do_action( 'woocommerce_after_customer_login_form' ); ?>
 
+	</div>
+</div>
 <style>
 	.banner-small {
 display: none;

@@ -4,9 +4,7 @@
  
  ?>
 
-<?php if( get_the_content() != NULL){ ?> 
-<section class="main-blog">
-  <div class="padding-top-bottom">
+<?php if( get_the_content() != NULL){ ?>
     <?php
               // Include the page content template.
     /*  get_template_part( 'content', 'page' );*/
@@ -16,10 +14,7 @@
     if ( comments_open() || get_comments_number() ) :
       comments_template();
     endif;           
-    ?>
-
-  </div>
-</section>  
+    ?>  
 <?php } ?>   
 
 <?php if(get_field('template_clever') == 'General Page'){ ?>  

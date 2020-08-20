@@ -77,7 +77,7 @@
             <li class="nav-item nav-responsive">
               
               <div class="content-icon">
-                <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "my-account";}else{echo "mi-cuenta";} ?>">
+                <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "mi-cuenta";}else{echo "my-account";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/user.png">
                 </a>
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/wishlist">
@@ -104,7 +104,7 @@
             <li class="nav-item nav-flex">
               <div class="content-icon">
               
-                <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "my-account";}else{echo "mi-cuenta";} ?>">
+                <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "mi-cuenta";}else{echo "my-account";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/user-2.png">
                 </a>
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/wishlist">
@@ -202,7 +202,7 @@
             <li class="nav-item nav-responsive">
               
               <div class="content-icon">
-                <a class="nav-icon" href="<?php echo get_home_url() ?>/my-account">
+                <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "mi-cuenta";}else{echo "my-account";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/user.png">
                 </a>
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/wishlist">
@@ -229,7 +229,7 @@
             <li class="nav-item nav-flex">
               <div class="content-icon">
               
-                <a class="nav-icon" href="<?php echo get_home_url() ?>/my-account">
+                <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "mi-cuenta";}else{echo "my-account";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/user-2.png">
                 </a>
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/wishlist">
