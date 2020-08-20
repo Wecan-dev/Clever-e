@@ -111,7 +111,7 @@
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/love.png">
                   <span class="nav-item__number">
                     <?php $wishlist_count = YITH_WCWL()->count_products(); echo esc_html( $wishlist_count ); ?>
-                  </span                  
+  </span>                  
                 </a>
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/cart">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/card-2.png">
@@ -236,7 +236,7 @@
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/love.png">
                   <span class="nav-item__number">
                     <?php $wishlist_count = YITH_WCWL()->count_products(); echo esc_html( $wishlist_count ); ?>
-                  </span                  
+  </span >                 
                 </a>
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/cart">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/card-2.png">

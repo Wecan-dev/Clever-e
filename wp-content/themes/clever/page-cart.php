@@ -28,7 +28,7 @@ get_header(); ?>
     </div>
   </section>
 
-<div class="padding-left-right checkout-custom padding-top-bottom">
+<div class="padding-left-right checkout-custom">
 	<?php echo do_shortcode('[woocommerce_cart]'); ?>
 </div>
 
