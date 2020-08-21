@@ -80,7 +80,7 @@
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "mi-cuenta";}else{echo "my-account";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/user.png">
                 </a>
-                <a class="nav-icon" href="<?php echo get_home_url() ?>/wishlist">
+                <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "lista-de-deseos";}else{echo "wishlist";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
                   <span class="nav-item__number">
                   <?php $wishlist_count = YITH_WCWL()->count_products(); echo esc_html( $wishlist_count ); ?>
@@ -107,7 +107,7 @@
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "mi-cuenta";}else{echo "my-account";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/user-2.png">
                 </a>
-                <a class="nav-icon" href="<?php echo get_home_url() ?>/wishlist">
+                <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "lista-de-deseos";}else{echo "wishlist";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/love.png">
                   <span class="nav-item__number">
                     <?php $wishlist_count = YITH_WCWL()->count_products(); echo esc_html( $wishlist_count ); ?>
@@ -205,7 +205,7 @@
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "mi-cuenta";}else{echo "my-account";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/user.png">
                 </a>
-                <a class="nav-icon" href="<?php echo get_home_url() ?>/wishlist">
+                <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "lista-de-deseos";}else{echo "wishlist";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
                   <span class="nav-item__number">
                   <?php $wishlist_count = YITH_WCWL()->count_products(); echo esc_html( $wishlist_count ); ?>
@@ -232,7 +232,7 @@
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "mi-cuenta";}else{echo "my-account";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/user-2.png">
                 </a>
-                <a class="nav-icon" href="<?php echo get_home_url() ?>/wishlist">
+                <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "lista-de-deseos";}else{echo "wishlist";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/love.png">
                   <span class="nav-item__number">
                     <?php $wishlist_count = YITH_WCWL()->count_products(); echo esc_html( $wishlist_count ); ?>

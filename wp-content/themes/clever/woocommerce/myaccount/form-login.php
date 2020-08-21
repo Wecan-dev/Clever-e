@@ -106,11 +106,11 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 		<?php if(lang() == 'es')
 		{ 
-		  echo do_shortcode('[user_registration_form id="89"]');
+		  echo do_shortcode('[user_registration_form id="90"]');
 		}  
 		if(lang() == 'en')
 		{ 
-		  echo do_shortcode('[user_registration_form id="90"]');
+		  echo do_shortcode('[user_registration_form id="91"]');
 		} ?>
 
 			<div class="form-login__register" >
