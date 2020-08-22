@@ -16,8 +16,23 @@
  */
 
 defined( 'ABSPATH' ) || exit;
-
+?>
+ <section class="banner-small banner-catalogo">
+    <img class="banner-small__img" src="<?php echo get_template_directory_uri();?>/assets/img/cart.png">
+    <div class="banner-small__text">
+      <p class="banner-small__title--small">
+        Clever style
+      </p>
+      <h2 class="banner-small__title">
+			<?php if(lang() == 'es'){echo "Carrito de compra";} else{echo "Shopping cart";}?>
+      </h2>
+    </div>
+  </section>
+<div class="padding-left-right checkout-custom">
+<?php
 do_action( 'woocommerce_before_cart' ); ?>
+
+
 <div class="custom-cart">
 
 <span class="custom-cart__line" ></span>
@@ -178,7 +193,8 @@ do_action( 'woocommerce_before_cart' ); ?>
 </div>
 
 <?php do_action( 'woocommerce_after_cart' ); ?>
-<div>
+</div>
+</div>
 <style>
 
 	.flex-quantity {
