@@ -95,11 +95,11 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 <?php if ($_GET["create"] == 'account') { ?>
 
 	<div class="u-column2 col-12 flex-login">
-		<div class="form-custom">
+		<div class="form-custom form-register">
 		<div class="login-img">
 			<img class="" src="<?php echo get_template_directory_uri();?>/assets/img/user.png">
 		</div>
-		<h2><?php if(lang() == 'es'){$la = "Registrarse";} else{$la = "Register";}?></h2>
+		<?php if(lang() == 'es'){$la = "Registrarse";} else{$la = "Register";}?>
 
 		<h2><?php esc_html_e( $la, 'woocommerce' ); ?></h2>
 

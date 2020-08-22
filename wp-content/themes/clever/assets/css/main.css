@@ -3457,7 +3457,7 @@ button:focus {
 /* woocommerce */
 .form-custom {
   background: #fff;
-  padding: 81px 142px !important;
+  padding: 81px 131px !important;
   border-radius: 0 !important;
   width: 628px;
   border: none !important;
@@ -4187,49 +4187,157 @@ button:focus {
 
 .ur-frontend-form form {
   width: 100%;
-  padding: 0;
-  margin: 0;
-  border: none;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
 }
 
-.ur-frontend-form form label {
-  border: solid 1px #aeb5bd;
+.ur-frontend-form form .form-row {
+  border: solid 1px #aeb5bd !important;
   width: 100%;
   display: flex !important;
+  margin-bottom: 20px;
   align-items: center;
+  position: relative;
 }
 
-.ur-frontend-form form label input {
-  border: none !important;
-  background: none !important;
-  height: 43px;
-  height: 43px;
-  padding-left: 5px;
-  width: 100%;
-  padding-right: 5px;
+.ur-frontend-form form .form-row::after {
+  content: "";
+  width: 13px;
+  top: 19px;
+  height: 13px;
+  margin-left: 13px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../img/usergray.png');
 }
+
+
+.ur-frontend-form form .hide_show_password::after {
+  background-image: url('../img/pass.png');
+
+}
+
+.form-register {
+  width: 670px;
+}
+
+.user-registration-error {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none !important;
+  font-size: 13px;
+}
+
+#input_box_1597875009_field::after {
+  background-image: url('../img/id.png');
+
+}
+
+.field-user_email .form-row::after {
+  background-image: url('../img/maill.png');
+
+}
+
+#input_box_1597875434_field::after {
+  background-image: url('../img/phone-call.png');
+
+}
+
+
+
+.user-registration-error::before {
+  display: none;
+}
+
+.ur-frontend-form input::placeholder {
+  color: #2d2d2d !important;
+  font-size: 15px !important;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+.ur-frontend-form input {
+  padding-left: 36px !important;
+  margin-bottom: 0 !important;
+  font-size: 15px !important;
+  width: 100%;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #2d2d2d;
+}
+
 
 .ur-submit-button {
   display: inline-block;
-  background-color: #161616;
-  color: #fff;
-  font-weight: bold;
-  transition: .5s;
-  border: 1px solid;
-  border-radius: 0;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 3px;
-  font-size: 10px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  background-color: #161616 !important;
+  color: #fff !important;
+  font-weight: bold !important;
+  transition: .5s !important;
+  border: 1px solid !important;
+  border-radius: 0 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 3px !important;
+  font-size: 10px !important;
+  width: 100%;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
 }
 
+.ur-button-container {
+  padding: 0 !important;
+}
+
+.woocommerce-ResetPassword input {
+  height: 43px;
+  border: solid 1px #aeb5bd;
+  width: 100%;
+  background-color: #ffffff;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-radius: 0;
+  font-size: 15px;
+  /* font-weight: bold; */
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.form-custom--lost_password {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 670px;
+}
+
+.form-custom--lost_password .main-general__button {
+  padding: 12px 16.6px;
+  font-size: 14px;
+}
+
+.form-custom--lost_password .woocommerce-form-row {
+  width: 100% !important;
+}
 
 @media (min-width: 0px) and (max-width: 767px) {
   .woocommerce-form-login {
     width: 90%;
     padding: 20px !important;
+  }
+
+
+  .form-custom--lost_password {
+
+    width: 90%;
   }
 
   .grid-woocommerce {
