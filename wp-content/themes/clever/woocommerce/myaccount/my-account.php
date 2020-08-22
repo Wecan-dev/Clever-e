@@ -1,3 +1,7 @@
+
+
+<div class="padding-right-left padding-top-bottom">
+	<div class="grid-woocommerce">
 <?php
 /**
  * My Account page
@@ -24,7 +28,7 @@ defined( 'ABSPATH' ) || exit;
  */
 do_action( 'woocommerce_account_navigation' ); ?>
 
-<div class="woocommerce-MyAccount-content">
+<div class="woocommerce-MyAccount-content my-account__custom">
 	<?php
 		/**
 		 * My Account content.
@@ -33,4 +37,6 @@ do_action( 'woocommerce_account_navigation' ); ?>
 		 */
 		do_action( 'woocommerce_account_content' );
 	?>
+</div>
+</div>
 </div>

@@ -30,7 +30,7 @@
    <?php }} ?>
   </div>
   <?php if ( is_home() ) : ?>
-  <header>
+  <header class="nav-custom">
     <nav class="navbar navbar-expand-lg">
       <div class="nav-padding">
         <div class="main-brand__top">
@@ -155,7 +155,7 @@
   <?php else: ?> 
 
 
-    <header class="header-gray" >
+    <header class="header-gray nav-custom" >
     <nav class="navbar navbar-expand-lg">
       <div class="nav-padding">
         <div class="main-brand__top">
