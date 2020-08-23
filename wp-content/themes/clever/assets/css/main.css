@@ -4328,10 +4328,17 @@ button:focus {
   width: 100% !important;
 }
 
+.product-details {
+  padding-left: 40px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-right: 40px;
+}
+
 .product-details .product {
   display: grid;
-  grid-template-columns: 44.6% 1fr;
-  gap: 36px;
+  grid-template-columns: 58.6% 1fr;
+  gap: 15px;
 }
 
 .woocommerce-product-gallery__wrapper img {
@@ -4365,14 +4372,112 @@ button:focus {
 
 .flex-add_to_cart {
   display: flex;
+  margin-bottom: 38px;
+  margin-top: 38px;
+
 }
 
 .product-details .single_add_to_wishlist {
-  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.75px;
+  color: #000000;
+
+}
+
+.product-details .product_title {
+  font-size: 60px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 3px;
+  margin-bottom: 38px;
+  color: #000000;
+}
+
+.product_meta {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.93px;
+  color: #6d7278;
+  text-transform: uppercase;
+  margin-top: 38px;
+  margin-bottom: 38px;
+}
+
+.product_meta a {
+  color: #6d7278;
+  text-transform: uppercase;
+  font-weight: 500;
+
+}
+
+.product-details .product_count {
+  border: none;
+  margin-right: 35px;
+}
+
+.product-details .items-count {
+  width: auto;
+  height: auto;
+  background-color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  text-align: center;
+  color: #161616;
+}
+
+.product-details .quantity .qty {
+  width: 35px !important;
+  height: 48px;
+}
+
+.single_add_to_cart_button {
+  padding: 12px 16.6px;
+}
+
+.product_meta .posted_in {
+  font-weight: 600;
+}
+
+.product-details .price {
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  color: #000000;
+  margin-bottom: 38px;
 }
 
 .product-details .price del {
   text-decoration: line-through !important;
+  color: #6d7278;
+}
+
+
+.product_meta {
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.product-details .categories-sidebar__size {
+  width: 255px;
+  height: 255px;
 }
 
 ol.flex-control-nav.flex-control-thumbs {
@@ -4381,7 +4486,7 @@ ol.flex-control-nav.flex-control-thumbs {
   height: 778px;
   margin: 0;
   padding: 0;
-  width: 13%;
+  width: 14%;
   display: flex;
   /* order: -1; */
   flex-direction: column-reverse;
@@ -4416,6 +4521,67 @@ ol.flex-control-nav.flex-control-thumbs img.flex-active {
     padding: 20px !important;
   }
 
+  .product-details .categories-sidebar__size {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-details {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 120px;
+  }
+
+  .product-details .product {
+    grid-template-columns: 100%;
+  }
+
+  .woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images {
+    width: 100%;
+    float: none;
+    flex-wrap: wrap;
+  }
+
+  .flex-viewport {
+    width: 100% !important;
+    margin: 0;
+  }
+
+  .woocommerce-product-gallery__wrapper img {
+    height: 440px !important;
+  }
+
+  ol.flex-control-nav.flex-control-thumbs {
+    flex-direction: row;
+    height: 127px;
+    width: 100%;
+  }
+
+  ol.flex-control-nav.flex-control-thumbs img {
+    width: auto !important;
+  }
+
+  ol.flex-control-nav.flex-control-thumbs li {
+    border: 2px solid transparent;
+
+  }
+
+  .product-details .price {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  .product-details .product_title {
+    font-size: 35px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .flex-add_to_cart {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+  }
 
   .form-custom--lost_password {
 
@@ -4520,5 +4686,31 @@ ol.flex-control-nav.flex-control-thumbs img.flex-active {
   .form-check__custom #customer_details {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  ol.flex-control-nav.flex-control-thumbs {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+  }
+
+  .woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images {
+    flex-wrap: wrap;
+  }
+
+  .product-details .flex-viewport {
+    width: 100%;
+  }
+
+  .product-details {
+    margin-top: 120px;
+
+  }
+
+  .flex-add_to_cart {
+
+    flex-wrap: wrap;
   }
 }
