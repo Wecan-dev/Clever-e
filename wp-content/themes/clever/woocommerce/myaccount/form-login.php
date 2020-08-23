@@ -92,15 +92,14 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 <?php if ( 'yes' === get_option( 'woocommerce_enable_myaccount_registration' ) ) : ?>
 
-	</div>
-
 <?php if ($_GET["create"] == 'account') { ?>
 
 	<div class="u-column2 col-12 flex-login">
+		<div class="form-custom form-register">
 		<div class="login-img">
 			<img class="" src="<?php echo get_template_directory_uri();?>/assets/img/user.png">
 		</div>
-		<h2><?php if(lang() == 'es'){$la = "Registrarse";} else{$la = "Register";}?></h2>
+		<?php if(lang() == 'es'){$la = "Registrarse";} else{$la = "Register";}?>
 
 		<h2><?php esc_html_e( $la, 'woocommerce' ); ?></h2>
 
@@ -120,7 +119,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 					<p class="woocommerce-in-account"><a href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php esc_html_e( $pass, 'woocommerce' ); ?></a></p>
 				</p>
 			</div>				
-
+			</div>
 	</div>
 <?php } ?>
 
@@ -141,5 +140,6 @@ display: none;
 background-repeat: no-repeat;
 background-size: cover;
 /* padding-top: 33px; */
+display: inherit;
 	}
 </style>

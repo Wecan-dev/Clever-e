@@ -1,3 +1,17 @@
+<section class="banner-small banner-catalogo">
+    <img class="banner-small__img" src="<?php echo get_template_directory_uri();?>/assets/img/my-account.png">
+    <div class="banner-small__text">
+      <p class="banner-small__title--small">
+        Clever style
+      </p>
+      <h2 class="banner-small__title">
+        Mi perfil
+      </h2>
+    </div>
+  </section>
+
+<div class="padding-right-left padding-top-bottom">
+	<div class="grid-woocommerce">
 <?php
 /**
  * My Account page
@@ -24,7 +38,7 @@ defined( 'ABSPATH' ) || exit;
  */
 do_action( 'woocommerce_account_navigation' ); ?>
 
-<div class="woocommerce-MyAccount-content">
+<div class="woocommerce-MyAccount-content my-account__custom">
 	<?php
 		/**
 		 * My Account content.
@@ -33,4 +47,6 @@ do_action( 'woocommerce_account_navigation' ); ?>
 		 */
 		do_action( 'woocommerce_account_content' );
 	?>
+</div>
+</div>
 </div>

@@ -194,7 +194,10 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 <?php do_action( 'woocommerce_after_cart' ); ?>
 </div>
+<<<<<<< HEAD
 </div>
+=======
+>>>>>>> 01e222257344a58c7b043d622bb520cffb34cb78
 <style>
 
 	.flex-quantity {
