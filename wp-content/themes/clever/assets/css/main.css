@@ -4328,6 +4328,88 @@ button:focus {
   width: 100% !important;
 }
 
+.product-details .product {
+  display: grid;
+  grid-template-columns: 44.6% 1fr;
+  gap: 36px;
+}
+
+.woocommerce-product-gallery__wrapper img {
+  width: 100%;
+  object-fit: cover;
+  height: 778px !important;
+  object-position: center;
+}
+
+.product-details .flex-viewport {
+  width: 87%;
+  margin-left: 10px;
+  /* height: 585px !important; */
+}
+
+.woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images {
+  width: 100%;
+  float: left;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
+}
+
+.woocommerce-product-gallery__wrapper {
+  width: 100%;
+}
+
+.product-details .onsale {
+  display: none;
+}
+
+.flex-add_to_cart {
+  display: flex;
+}
+
+.product-details .single_add_to_wishlist {
+  color: #000;
+}
+
+.product-details .price del {
+  text-decoration: line-through !important;
+}
+
+ol.flex-control-nav.flex-control-thumbs {
+  overflow-y: scroll;
+  zoom: 1;
+  height: 778px;
+  margin: 0;
+  padding: 0;
+  width: 13%;
+  display: flex;
+  /* order: -1; */
+  flex-direction: column-reverse;
+}
+
+ol.flex-control-nav.flex-control-thumbs li {
+  float: left;
+  margin: 0;
+  list-style: none;
+  margin-top: 15px;
+  width: 100%;
+  /* clear: left; */
+}
+
+ol.flex-control-nav.flex-control-thumbs img {
+  display: block;
+  width: 100% !important;
+  height: auto;
+  box-shadow: none;
+  cursor: pointer;
+  opacity: 0.5;
+  margin: 0;
+}
+
+ol.flex-control-nav.flex-control-thumbs img.flex-active {
+  opacity: 1;
+}
+
 @media (min-width: 0px) and (max-width: 767px) {
   .woocommerce-form-login {
     width: 90%;
