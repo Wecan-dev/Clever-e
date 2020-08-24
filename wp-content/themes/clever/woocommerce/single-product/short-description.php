@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $post;
 
-$short_description = apply_filters( 'woocommerce_short_description', $post->post_excerpt );
+$short_description = apply_filters( 'woocommerce_short_description', $post->post_content );
 
 if ( ! $short_description ) {
 	return;

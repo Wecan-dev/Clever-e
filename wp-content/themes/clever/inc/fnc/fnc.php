@@ -136,4 +136,20 @@ function variation($id)
     return $count;
 }
 
+/************ product sku ***********************/
+function woocommerce_template_single_sku(){
+  require_once trailingslashit( get_template_directory() ) . 'woocommerce/content-single-product.php';
+  $id = products();
+  global $wpdb;  
+  $result_link = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix."postmeta WHERE meta_key = '_sku' and post_id = '$id'"); 
+  foreach($result_link as $r)
+  {
+          //$value = '<div class="product_meta"><span class="sku_wrapper">Ref: '.$r->meta_value.'</span></div>'; 
+          $value = '<div class="product_metas"><span class="sku_wrapper">Ref: '.$r->meta_value.'</span></div>';                    
+  }
+  echo $value;
+}
+
+
+
 ?>

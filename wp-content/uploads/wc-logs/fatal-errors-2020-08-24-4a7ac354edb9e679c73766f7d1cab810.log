@@ -1,0 +1,12 @@
+2020-08-24T22:10:57+00:00 CRITICAL Uncaught Error: Call to undefined function products() in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\fnc\fnc.php:142
+Stack trace:
+#0 C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\content-single-product.php(62): woocommerce_template_single_sku()
+#1 C:\xampp2\htdocs\Clever-e\wp-includes\template.php(725): require('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\Clever-e\wp-content\plugins\woocommerce\includes\wc-core-functions.php(283): load_template('C:\\xampp2\\htdoc...', false)
+#3 C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\single-product.php(37): wc_get_template_part('content', 'single-product')
+#4 C:\xampp2\htdocs\Clever-e\wp-includes\template-loader.php(106): include('C:\\xampp2\\htdoc...')
+#5 C:\xampp2\htdocs\Clever-e\wp-blog-header.php(19): require_once('C:\\xampp2\\htdoc...')
+#6 C:\xampp2\htdocs\Clever-e\index.php(17): require('C:\\xampp2\\htdoc...')
+#7 {main}
+  thrown in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\fnc\fnc.php on line 142
+

@@ -203,3 +203,22 @@ function custom_quantity_fields_script(){
     </script>
     <?php
 }
+
+//* Personalization page of product WooCommerce
+
+function mar_de_rosas_custom_product_woocommmerce() {
+ // remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
+ // remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
+ // remove_action( 'woocommerce_sidebar' , 'woocommerce_get_sidebar' , 10);
+ // add_action( 'woocommerce_before_single_product', 'wc_print_notices', 10 ); 
+ // add_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10 );
+ // add_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20 );
+ // add_action( 'woocommerce_product_thumbnails', 'woocommerce_show_product_thumbnails', 20 );
+ // add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
+ // add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_sku', 5 );
+ // add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 ); 
+ // add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
+ // add_action( 'woocommerce_variable_add_to_cart', 'woocommerce_variable_add_to_cart', 30 );  
+ // remove_action( 'woocommerce_review_meta', 'woocommerce_review_display_meta', 10 );
+ // remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );  
+}
