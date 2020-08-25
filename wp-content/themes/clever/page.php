@@ -78,5 +78,107 @@
   </section>
 <?php } ?> 
 
+<?php if(get_field('template_clever') == 'Contacto'){ ?>  
+  <!-- Modal HTML -->
+  <div class="contact-modal">
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog modal-login">
+        <div class="modal-content">
+          <button aria-hidden="true" class="close" data-dismiss="modal" type="button">×</button>
+          <div class="modal-body">
+            <div class="d-flex justify-content-center">
+              <img class="contact-modal__icon" src="<?php echo get_template_directory_uri();?>/assets/img/contact/mail.png">
+            </div>
+            <h2 class="contact-modal__title">
+              <?php the_field('title-contacto'); ?>
+            </h2>
+            <?php if (lang() == "es") {
+              echo do_shortcode('[formidable id=3]');
+            }?>
+            <?php if (lang() == "en") {
+              echo do_shortcode('[formidable id=4]');
+            }?>           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="contact">
+    <div class="padding-top-bottom padding-right-left">
+      <p class="contact-title--small">
+         <?php the_field('title-distribuidor'); ?>
+      </p>
+      <h2 class="contact-title">
+         <?php the_field('subtitle-distribuidor'); ?>
+      </h2>
+      <div class="container-grid">
+        <div class="contact-item">
+          <div class="contact-item__img">
+            <img src="<?php the_field('image-national-distribuidor'); ?>">
+            <a class="main-categories__mask" data-target="#myModal" data-toggle="modal">
+              <h2 class="main-categories__title">
+                 <?php the_field('title-national-distribuidor'); ?>
+              </h2>
+            </a>
+          </div>
+          <ul class="content-item__list">
+            <li>
+              <a href="tel:+<?php the_field('phone-national-distribuidor'); ?>">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/phone.png">
+                <?php the_field('phone-national-distribuidor'); ?>
+              </a>
+            </li>
+            <li>
+              <a href="https://api.whatsapp.com/send?phone=<?php the_field('whatsapp-national-distribuidor'); ?>">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/ws.png">
+                <?php the_field('whatsapp-national-distribuidor'); ?>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:ventasonline@clevermoda.com">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/icon.png">
+                <?php the_field('email-national-distribuidor'); ?>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item__img">
+            <img src="<?php the_field('image-international-distribuidor'); ?>">
+            <a class="main-categories__mask" data-target="#myModal" data-toggle="modal">
+              <h2 class="main-categories__title">
+                <?php the_field('title-international-distribuidor'); ?>
+              </h2>
+            </a>
+          </div>
+          <ul class="content-item__list">
+            <li>
+              <a href="tel:+<?php the_field('phone-international-distribuidor'); ?>">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/phone.png">
+                <?php the_field('phone-international-distribuidor'); ?>
+              </a>
+            </li>
+            <li>
+              <a href="https://api.whatsapp.com/send?phone=<?php the_field('whatsapp-international-distribuidor'); ?>">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/ws.png">
+               <?php the_field('whatsapp-international-distribuidor'); ?>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:ventasonline@clevermoda.com">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/icon.png">
+                <?php the_field('email-international-distribuidor'); ?>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact-sitemap">
+    <?php the_field('map_contacto'); ?>
+  </section>
+<?php } ?> 
+
 <?php  endwhile; ?>
 <?php get_footer(); ?>

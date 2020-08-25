@@ -72,7 +72,7 @@
               <a class="nav-link nav-link-p" data="offcanvas" href="<?php if(lang() == 'es'){echo ''.get_home_url().'/tienda';}if(lang() == 'en'){echo ''.get_home_url().'/shop';} ?>">Best Seller</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-p" data="offcanvas" href="contacto.html"><?php if(lang() == 'es'){echo "Contacto";}if(lang() == 'en'){echo "Contact ";} ?></a>
+              <a class="nav-link nav-link-p" data="offcanvas" href="<?php echo get_home_url() ?>/contacto"><?php if(lang() == 'es'){echo "Contacto";}if(lang() == 'en'){echo "Contact ";} ?></a>
             </li>
             <li class="nav-item nav-responsive">
               
@@ -197,7 +197,7 @@
               <a class="nav-link nav-link-p" data="offcanvas" href="<?php if(lang() == 'es'){echo ''.get_home_url().'/tienda';}if(lang() == 'en'){echo ''.get_home_url().'/shop';} ?>">Best Seller</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-p" data="offcanvas" href="contacto.html"><?php if(lang() == 'es'){echo "Contacto";}if(lang() == 'en'){echo "Contact ";} ?></a>
+              <a class="nav-link nav-link-p" data="offcanvas" href="<?php echo get_home_url() ?>/contacto"><?php if(lang() == 'es'){echo "Contacto";}if(lang() == 'en'){echo "Contact ";} ?></a>
             </li>
             <li class="nav-item nav-responsive">
               
