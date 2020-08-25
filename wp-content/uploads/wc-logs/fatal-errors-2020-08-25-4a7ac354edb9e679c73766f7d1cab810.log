@@ -1,0 +1,12 @@
+2020-08-25T00:45:18+00:00 CRITICAL syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 227
+
+2020-08-25T00:45:44+00:00 CRITICAL syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 227
+
+2020-08-25T00:46:27+00:00 CRITICAL syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 227
+
+2020-08-25T00:52:08+00:00 CRITICAL syntax error, unexpected ',' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 235
+
+2020-08-25T00:52:31+00:00 CRITICAL syntax error, unexpected ';' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 235
+
+2020-08-25T00:52:45+00:00 CRITICAL syntax error, unexpected ';' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 235
+

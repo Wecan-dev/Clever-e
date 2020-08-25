@@ -1,12 +1,27 @@
+<?php
+            if(lang() == 'es'){
+            	$pro = "Producto";
+            	$price = "Precio";
+            	$qu = "Cantidad";
+            	$re = "Quitar este producto";
+            	$no = "No se agregaron productos a la lista de deseos";
+            	$Out_stock = "Agotado";
+            	$stock = "En stock";
+            } 
+            else{
+            	$pro = "Product";
+            	$price = "Price";
+            	$qu = "Quantity";
+            	$re = "Remove this product";
+            	$no = "No products added to the wishlist";
+            	$Out_stock = "Out of stock";
+            	$stock = "In stock";
+            } 
+?>
 <section class="banner-small banner-catalogo">
     <img class="banner-small__img" src="<?php echo get_template_directory_uri();?>/assets/img/my-account.png">
     <div class="banner-small__text">
-      <p class="banner-small__title--small">
-        Clever style
-      </p>
-      <h2 class="banner-small__title">
-        Lista de deseos
-      </h2>
+    <?php if(lang() == 'es'){echo '<p class="banner-small__title--small">Clever style</p><h2 class="banner-small__title">Lista de deseos</h2>';}else{echo '<p class="banner-small__title--small">Clever style</p><h2 class="banner-small__title">My wishtlist</h2>';} ?>    
     </div>
   </section>
 <?php
@@ -54,24 +69,6 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 	exit;
 } // Exit if accessed directly
 
-            if(lang() == 'es'){
-            	$pro = "Producto";
-            	$price = "Precio";
-            	$qu = "Cantidad";
-            	$re = "Quitar este producto";
-            	$no = "No se agregaron productos a la lista de deseos";
-            	$Out_stock = "Agotado";
-            	$stock = "En stock";
-            } 
-            else{
-            	$pro = "Product";
-            	$price = "Price";
-            	$qu = "Quantity";
-            	$re = "Remove this product";
-            	$no = "No products added to the wishlist";
-            	$Out_stock = "Out of stock";
-            	$stock = "In stock";
-            } 
 ?>
 
 <!-- WISHLIST TABLE -->
