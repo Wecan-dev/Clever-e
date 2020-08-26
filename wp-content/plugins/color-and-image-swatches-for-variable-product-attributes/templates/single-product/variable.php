@@ -702,22 +702,6 @@ span.phoen_tooltip img {
 }					
 
 
-<?php
-
-	if($swatches_style == 2)
-	{
-		
-		?>
-			.variations .variation_buttons_wrapper a span.phoen_swatches{ border-radius:50px; }
-
-			.variations .variation_buttons_wrapper a span.phoen_swatches img { border-radius:50px;}
-		
-		
-		<?php
-		
-	}
-
-?>
 
 </style>
 

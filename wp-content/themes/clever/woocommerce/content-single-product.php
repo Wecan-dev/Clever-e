@@ -50,8 +50,10 @@ if ( post_password_required() ) {
     </div>
 
     <div class="categories-paginator next-product" style="margin-top:0px !important">
-      <div class='dcms-prev categories-paginator__item'><?php echo previous_post_link( '%link', '<img src="'.get_template_directory_uri().'/assets/img/categorie/prev-2.png">', '' ,'product_cat' );?></div>
-      <div class='dcms-next categories-paginator__item'><?php echo next_post_link( '%link', '<img src="'.get_template_directory_uri().'/assets/img/categorie/next-2.png">', '' , 'product_cat' ); ?> </div>
+      <div class='dcms-prev categories-paginator__item'><?php echo previous_post_link( '%link', '<i class="fa fa-angle-left"></i>
+', '' ,'product_cat' );?></div>
+      <div class='dcms-next categories-paginator__item'><?php echo next_post_link( '%link', '<i class="fa fa-angle-right"></i>
+', '' , 'product_cat' ); ?> </div>
 
     </div> 
 
