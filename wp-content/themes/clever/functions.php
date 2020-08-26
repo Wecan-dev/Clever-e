@@ -286,3 +286,4 @@ class PLL_Walker_List extends Walker {
     return parent::walk( $elements, $max_depth, $args );
   }
 }
+
