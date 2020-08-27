@@ -73,7 +73,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-p" data="offcanvas" href="<?php echo get_home_url() ?>/contacto"><?php if(lang() == 'es'){echo "Contacto";}if(lang() == 'en'){echo "Contact ";} ?></a>
-            </li>
+            </li>            
             <li class="nav-item nav-responsive">
               
               <div class="content-icon">

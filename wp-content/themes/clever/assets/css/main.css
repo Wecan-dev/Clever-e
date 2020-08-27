@@ -2490,17 +2490,44 @@ button:focus {
   letter-spacing: 3.5px;
 }
 
-.contact-modal form {
-  display: flex;
+.contact-modal label::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  /* margin-left: 13px; */
+  margin-right: 9px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-image: url('../img/user.png'); */
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between; */
+}
+
+.contact-modal .input-name label::before {
+  background-image: url('../img/contact/user.png');
+}
+
+.contact-modal .input-mail label::before {
+  background-image: url('../img/contact/mail-2.png');
+}
+
+
+
+
+.contact-modal .frm_form_fields .frm_fields_container {
+  /* display: block; */
+}
+
+.contact-modal .frm_form_field.frm_inline_container {
+  display: block;
 }
 
 .contact-modal form label {
   border: 1px solid #aeb5bd;
   display: flex;
   padding: 7.5px 12px;
-  width: 47%;
+  /* width: 47%; */
   align-items: center;
   margin-bottom: 15px;
 }
@@ -4599,6 +4626,15 @@ ol.flex-control-nav.flex-control-thumbs img.flex-active {
     padding: 20px !important;
   }
 
+  .grid-woocommerce {
+    margin-top: 130px;
+  }
+
+  .form-register {
+    width: 100%;
+    padding: 20px !important;
+  }
+
   .variations_button {
     flex-wrap: wrap;
   }
@@ -4715,6 +4751,14 @@ ol.flex-control-nav.flex-control-thumbs img.flex-active {
 @media (min-width: 0px) and (max-width: 997px) {
   .variations_button {
     flex-wrap: wrap;
+  }
+
+  .grid-woocommerce {
+    margin-top: 130px;
+  }
+
+  .form-register {
+    width: 100%;
   }
 
   .woocommerce table.cart .product-thumbnail {
