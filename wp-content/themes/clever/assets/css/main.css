@@ -2324,9 +2324,7 @@ button:focus {
   width: 3rem;
 }
 
-.contact {
-  margin-top: 104px;
-}
+
 
 @media (min-width: 0px) and (max-width: 767px) {
   .contact {
