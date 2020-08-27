@@ -431,6 +431,50 @@ else { ?>
 				margin-bottom: 20px;
 				width: 100%;
 			}
+
+			.wishlist_table .product-add-to-cart a>img {
+				max-width:18px;
+			}
+
+			.listt {
+				padding: 0!important;
+			}
+
+			.listt p {
+				font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #161616;
+		margin-bottom: 2px;
+		text-align: initial;
+    text-transform: uppercase;
+			}
+
+			.listd {
+				padding: 0!important;
+
+			}
+
+			.listd p {
+				text-align: initial;
+			}
+
+			.list_table {
+				margin-left: 15px;
+			}
+
+			.wishlist_table .product-add-to-cart a {
+				border: none!important;
+				background-color: transparent!important;
+			}
+
+			.list_div table {
+				margin-left: 0;
+			}
+
+			.product-price>.list del {
+				text-decoration: line-through!important;
+			}
 		</style>
 
 <?php get_footer(); ?>

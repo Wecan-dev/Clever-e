@@ -3118,6 +3118,7 @@ button:focus {
   padding-bottom: 10.5px;
   border-bottom: 1px solid #d0d0d0;
   margin-bottom: 24.5px;
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
 }
