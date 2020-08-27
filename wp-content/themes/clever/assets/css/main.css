@@ -2830,7 +2830,7 @@ button:focus {
   background: #161616;
 }
 
-.categories-sidebar__list li:nth-child(1) span::after {
+/*.categories-sidebar__list li:nth-child(1) span::after {
   background: #efa768;
 }
 
@@ -2848,7 +2848,7 @@ button:focus {
 
 .categories-sidebar__list li:nth-child(6) span::after {
   background: #fff;
-}
+} */
 
 .categories-sidebar__list label:hover input~.checkmark {
   background-color: #ccc;

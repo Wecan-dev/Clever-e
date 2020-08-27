@@ -124,6 +124,240 @@ function lang(){
     return $lang;
 }
 
+
+
+/***************** Tags ***********************/
+function verify_tags($var)
+{
+    global $wpdb;
+    $tag = 0;
+    $result = $wpdb->get_results ("SELECT * FROM ".$wpdb->prefix."term_relationships where object_id = $var");
+    foreach ( $result as $page )
+    { 
+      $valor=$page->term_taxonomy_id;
+      $result = $wpdb->get_results ("SELECT * FROM ".$wpdb->prefix."term_taxonomy where term_taxonomy_id = $valor and taxonomy = 'post_tag'");
+      foreach ( $result as $page )
+      { $tag = $tag+1;}
+    }  
+    return $tag;
+}
+
+/***************** Author ***********************/
+function author_name($id_author)
+{
+    global $wpdb;
+    $result = $wpdb->get_results ("SELECT * FROM ".$wpdb->prefix."users where ID = $id_author");
+    foreach ( $result as $page )
+    { 
+      return $valor=$page->user_nicename;
+    } 
+}   
+
+/************** Count post cat ****************/
+function count_post($cat_id)
+{
+    global $wpdb;
+    $count = 0;
+    $result = $wpdb->get_results ("SELECT * FROM ".$wpdb->prefix."term_relationships where term_taxonomy_id = $cat_id");
+    foreach ( $result as $page )
+    { 
+      $valor=$page->object_id;
+      $result1 = $wpdb->get_results ("SELECT * FROM ".$wpdb->prefix."posts where ID = $valor and post_status = 'publish'");
+      foreach ( $result1 as $page1 )
+      { $count = $count+1;}
+    }  
+    return $count;
+}  
+
+/************** Count post tag ****************/
+function count_post_tag($tag_id)
+{
+    global $wpdb;
+    $count = 0;
+    $result = $wpdb->get_results ("SELECT * FROM ".$wpdb->prefix."term_relationships where term_taxonomy_id = $tag_id");
+    foreach ( $result as $page )
+    { 
+      $valor=$page->object_id;
+      $result1 = $wpdb->get_results ("SELECT * FROM ".$wpdb->prefix."posts where ID = $valor and post_status = 'publish'");
+      foreach ( $result1 as $page1 )
+      { $count = $count+1;}
+    }  
+    return $count;
+} 
+/************** Count product ****************/
+ 
+function count_post_product($cat,$tax,$lower,$upper,$category_name)
+{ $count = 0;
+  if ($category_name == NULL){ 
+    if ($cat != NULL) {
+        $args = 
+        array(
+          'post_type' => 'product',
+          'post_status' => 'publish',
+          'posts_per_page' => 99999,
+          'tax_query' => array(
+             'relation'=>'AND', // 'AND' 'OR' ...
+              array(
+                'taxonomy'        => $tax,
+                'field'           => 'slug',
+                'terms'           => array($cat),
+                'operator'        => 'IN',
+               )),
+          ); 
+      }  
+    if ($cat == NULL AND $lower == NULL) {
+        $args = 
+        array(
+          'post_type' => 'product',
+          'post_status' => 'publish',
+          'posts_per_page' => 99999,
+          ); 
+    }
+    if ($lower != NULL) {
+        $args = 
+        array(
+          'post_type' => 'product',
+          'posts_per_page' => 99999,        
+          'post_status' => 'publish',
+          'meta_query' => array(
+             'relation'=>'AND', // 'AND' 'OR' ...
+              array(
+                'key' => '_price',
+                'value' => array($lower, $upper),
+                'compare' => 'BETWEEN',
+                'type' => 'NUMERIC'
+               )),
+          );
+        
+      } 
+  }//if category_name    
+
+if ($category_name != NULL){ 
+    if ($cat != NULL) {
+        $args = 
+        array(
+          'post_type' => 'product',
+          'post_status' => 'publish',
+          'posts_per_page' => 99999,
+          'tax_query' => array(
+             'relation'=>'AND', // 'AND' 'OR' ...
+              array(
+                'taxonomy'        => $tax,
+                'field'           => 'slug',
+                'terms'           => array($cat),
+                'operator'        => 'IN',
+               ),
+             'relation'=>'AND', // 'AND' 'OR' ...
+              array(
+                'taxonomy'        => 'product_cat',
+                'field'           => 'slug',
+                'terms'           => array($category_name),
+                'operator'        => 'IN',
+               )),              
+          ); 
+      }
+
+    if ($cat == NULL AND $lower == NULL) {
+        $args = 
+        array(
+          'post_type' => 'product',
+          'post_status' => 'publish',
+          'posts_per_page' => 99999,
+          'tax_query' => array(
+             'relation'=>'AND', // 'AND' 'OR' ...
+              array(
+                'taxonomy'        => 'product_cat',
+                'field'           => 'slug',
+                'terms'           => array($category_name),
+                'operator'        => 'IN',
+               )),                 
+          ); 
+    }
+
+    if ($lower != NULL) {
+        $args = 
+        array(
+          'post_type' => 'product',
+          'posts_per_page' => 99999,        
+          'post_status' => 'publish',
+          'tax_query' => array(
+             'relation'=>'AND', // 'AND' 'OR' ...
+              array(
+                'taxonomy'        => 'product_cat',
+                'field'           => 'slug',
+                'terms'           => array($category_name),
+                'operator'        => 'IN',
+               )),           
+          'meta_query' => array(
+             'relation'=>'AND', // 'AND' 'OR' ...
+              array(
+                'key' => '_price',
+                'value' => array($lower, $upper),
+                'compare' => 'BETWEEN',
+                'type' => 'NUMERIC'
+               )),
+          );
+        
+      } 
+  }//if category_name       
+
+         $loop = new WP_Query( $args ); 
+         while ( $loop->have_posts() ) : $loop->the_post(); global $product;
+              $count = $count+1;
+         endwhile; 
+          return $count;    
+}
+
+/************** Count product taxonomy****************/
+ 
+function count_post_product_taxonomy($cat,$tax,$categor)
+{ $count = 0;
+    if ($cat != NULL) {
+        $args = 
+        array(
+          'post_type' => 'product',
+          'post_status' => 'publish',
+          'posts_per_page' => 99999,
+          'tax_query' => array(
+             'relation'=>'AND', // 'AND' 'OR' ...
+              array(
+                'taxonomy'        => $tax,
+                'field'           => 'slug',
+                'terms'           => $cat,
+                'operator'        => 'IN',
+               ),
+             'relation'=>'AND', // 'AND' 'OR' ...
+              array(
+                'taxonomy'        => 'collection',
+                'field'           => 'slug',
+                'terms'           => $categor,
+                'operator'        => 'IN',
+               )),          
+          ); 
+      }  
+    if ($cat == NULL) {
+        $args = 
+        array(
+          'post_type' => 'product',
+          'post_status' => 'publish',
+          'posts_per_page' => 99999,
+          'tax_query' => array(
+             'relation'=>'AND', // 'AND' 'OR' ...
+              array(
+                'taxonomy'        => 'collection',
+                'field'           => 'slug',
+                'terms'           => array($categor),
+                'operator'        => 'IN',
+               )),          
+          ); 
+      }      
+         $loop = new WP_Query( $args ); 
+         while ( $loop->have_posts() ) : $loop->the_post(); global $product;
+              $count = $count+1;
+         endwhile; 
+          return $count;    
+}
+
 /************ variation ***********************/
 function variation($id)
 {
@@ -136,19 +370,341 @@ function variation($id)
     return $count;
 }
 
-/************ product sku ***********************/
-function woocommerce_template_single_sku(){
-  require_once trailingslashit( get_template_directory() ) . 'woocommerce/content-single-product.php';
-  $id = products();
-  global $wpdb;  
-  $result_link = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix."postmeta WHERE meta_key = '_sku' and post_id = '$id'"); 
-  foreach($result_link as $r)
-  {
-          //$value = '<div class="product_meta"><span class="sku_wrapper">Ref: '.$r->meta_value.'</span></div>'; 
-          $value = '<div class="product_metas"><span class="sku_wrapper">Ref: '.$r->meta_value.'</span></div>';                    
-  }
-  echo $value;
+/************ color ***********************/
+function color($id)
+{
+    global $wpdb;
+    $count = 0;
+      $result1 = $wpdb->get_results ("SELECT * FROM ".$wpdb->prefix."termmeta where term_id = '$id' and meta_key = 'pa_color_swatches_id_phoen_color'");
+      foreach ( $result1 as $page1 )
+      { $color = $page1->meta_value;}
+   
+    return $color;
 }
+
+
+
+function arg($cat,$tax,$lower,$upper,$orderby,$paged,$category_name){ 
+if ($category_name == NULL){   
+  if ($cat != NULL) {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' => 8,        
+      'post_status' => 'publish',
+      'tax_query' => array(
+      'relation'=>'AND', // 'AND' 'OR' ...
+        array(
+        'taxonomy'        => $tax,
+        'field'           => 'slug',
+        'terms'           => array($cat),
+        'operator'        => 'IN',
+        )),
+    );
+  } 
+        
+  if ($cat == NULL AND $lower == NULL) {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' =>8,
+    );
+  } 
+        
+  if ($lower != NULL) {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' => 9,        
+      'post_status' => 'publish',
+      'meta_query' => array(
+          'relation'=>'AND', // 'AND' 'OR' ...
+          array(
+            'key' => '_price',
+            'value' => array($lower, $upper),
+            'compare' => 'BETWEEN',
+            'type' => 'NUMERIC'
+          )),
+    );
+  }  
+       
+  if ($orderby == 'rating') {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' => 8,        
+      'post_status' => 'publish',
+      'orderby' => 'meta_value', // orderby the meta_value of the following meta_key
+      'meta_key' => '_wc_average_rating', // the custom meta_key name
+      'order'=> 'DESC' // sort descending
+    );
+  } 
+        
+  if ($orderby == 'popularity') {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' => 8,        
+      'post_status' => 'publish',
+      'orderby' => 'meta_value', // orderby the meta_value of the following meta_key
+      'meta_key' => 'total_sales', // the custom meta_key name
+      'order'=> 'DESC' // sort descending
+    );
+  }          
+        
+  if ($orderby == 'menu_order') {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' => 8,        
+      'post_status' => 'publish',
+      'orderby' => 'menu_order',
+      'order' => 'ASC'
+    );
+  }  
+        
+  if ($orderby == 'date') {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' => 8,        
+      'post_status' => 'publish',
+      'orderby' => 'date',
+      'order' => 'DESC'
+    );
+  }  
+        
+  if ($orderby == 'price') {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' => 8,        
+      'post_status' => 'publish',
+      'orderby' => 'meta_value', // orderby the meta_value of the following meta_key
+      'meta_key' => '_price', // the custom meta_key name
+      'order'=> 'ASC' // sort descending
+    );
+  } 
+        
+  if ($orderby == 'price-desc') {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' => 8,        
+      'post_status' => 'publish',
+      'orderby' => 'meta_value', // orderby the meta_value of the following meta_key
+      'meta_key' => '_price', // the custom meta_key name
+      'order'=> 'DESC' // sort descending
+    );
+  } 
+}//if category_name
+
+if ($category_name != NULL){   
+  if ($cat == NULL AND $category_name != NULL) {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' => 8,        
+      'post_status' => 'publish',
+      'tax_query' => array(
+      'relation'=>'AND', // 'AND' 'OR' ...
+        array(
+        'taxonomy'        => 'product_cat',
+        'field'           => 'slug',
+        'terms'           => array($category_name),
+        'operator'        => 'IN',
+        )),
+    );
+  } 
+        
+  if ($cat != NULL) {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' => 8,        
+      'post_status' => 'publish',
+      'tax_query' => array(
+      'relation'=>'AND', // 'AND' 'OR' ...
+        array(
+        'taxonomy'        => $tax,
+        'field'           => 'slug',
+        'terms'           => array($cat),
+        'operator'        => 'IN',
+        ),
+      'relation'=>'AND', // 'AND' 'OR' ...
+        array(
+        'taxonomy'        => 'product_cat',
+        'field'           => 'slug',
+        'terms'           => array($category_name),
+        'operator'        => 'IN',
+        )),        
+    );
+  } 
+       
+  if ($lower != NULL) {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' => 9,        
+      'post_status' => 'publish',
+      'tax_query' => array(
+      'relation'=>'AND', // 'AND' 'OR' ...
+        array(
+        'taxonomy'        => 'product_cat',
+        'field'           => 'slug',
+        'terms'           => array($category_name),
+        'operator'        => 'IN',
+        )),      
+      'meta_query' => array(
+          'relation'=>'AND', // 'AND' 'OR' ...
+          array(
+            'key' => '_price',
+            'value' => array($lower, $upper),
+            'compare' => 'BETWEEN',
+            'type' => 'NUMERIC'
+          )),
+    );
+  }  
+       
+  if ($orderby == 'rating') {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' => 8,        
+      'post_status' => 'publish',
+      'tax_query' => array(
+      'relation'=>'AND', // 'AND' 'OR' ...
+        array(
+        'taxonomy'        => 'product_cat',
+        'field'           => 'slug',
+        'terms'           => array($category_name),
+        'operator'        => 'IN',
+        )),      
+      'orderby' => 'meta_value', // orderby the meta_value of the following meta_key
+      'meta_key' => '_wc_average_rating', // the custom meta_key name
+      'order'=> 'DESC' // sort descending
+    );
+  } 
+        
+  if ($orderby == 'popularity') {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' => 8,        
+      'post_status' => 'publish',
+      'tax_query' => array(
+      'relation'=>'AND', // 'AND' 'OR' ...
+        array(
+        'taxonomy'        => 'product_cat',
+        'field'           => 'slug',
+        'terms'           => array($category_name),
+        'operator'        => 'IN',
+        )),      
+      'orderby' => 'meta_value', // orderby the meta_value of the following meta_key
+      'meta_key' => 'total_sales', // the custom meta_key name
+      'order'=> 'DESC' // sort descending
+    );
+  }          
+        
+  if ($orderby == 'menu_order') {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' => 8,        
+      'post_status' => 'publish',
+      'tax_query' => array(
+      'relation'=>'AND', // 'AND' 'OR' ...
+        array(
+        'taxonomy'        => 'product_cat',
+        'field'           => 'slug',
+        'terms'           => array($category_name),
+        'operator'        => 'IN',
+        )),      
+      'orderby' => 'menu_order',
+      'order' => 'ASC'
+    );
+  }  
+        
+  if ($orderby == 'date') {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' => 8,        
+      'post_status' => 'publish',
+      'tax_query' => array(
+      'relation'=>'AND', // 'AND' 'OR' ...
+        array(
+        'taxonomy'        => 'product_cat',
+        'field'           => 'slug',
+        'terms'           => array($category_name),
+        'operator'        => 'IN',
+        )),      
+      'orderby' => 'date',
+      'order' => 'DESC'
+    );
+  }  
+        
+  if ($orderby == 'price') {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' => 8,        
+      'post_status' => 'publish',
+      'tax_query' => array(
+      'relation'=>'AND', // 'AND' 'OR' ...
+        array(
+        'taxonomy'        => 'product_cat',
+        'field'           => 'slug',
+        'terms'           => array($category_name),
+        'operator'        => 'IN',
+        )),      
+      'orderby' => 'meta_value', // orderby the meta_value of the following meta_key
+      'meta_key' => '_price', // the custom meta_key name
+      'order'=> 'ASC' // sort descending
+    );
+  } 
+        
+  if ($orderby == 'price-desc') {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' => 8,        
+      'post_status' => 'publish',
+      'tax_query' => array(
+      'relation'=>'AND', // 'AND' 'OR' ...
+        array(
+        'taxonomy'        => 'product_cat',
+        'field'           => 'slug',
+        'terms'           => array($category_name),
+        'operator'        => 'IN',
+        )),      
+      'orderby' => 'meta_value', // orderby the meta_value of the following meta_key
+      'meta_key' => '_price', // the custom meta_key name
+      'order'=> 'DESC' // sort descending
+    );
+  }    
+}//else       
+  return $args; 
+}  
+
 
 
 

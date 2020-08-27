@@ -287,3 +287,15 @@ class PLL_Walker_List extends Walker {
   }
 }
 
+function ayudawp_custom_pre_get_posts( $query ) {
+if( $query->is_main_query() && !$query->is_feed() && !is_admin() && is_category()) {
+    $query->set( 'paged', str_replace( '/', '', get_query_var( 'page' ) ) );  }  }
+
+add_action('pre_get_posts','ayudawp_custom_pre_get_posts');
+
+function ayudawp_custom_request($query_string ) {
+     if( isset( $query_string['page'] ) ) {
+         if( ''!=$query_string['page'] ) {
+             if( isset( $query_string['name'] ) ) { unset( $query_string['name'] ); } } } return $query_string; }
+
+add_filter('request', 'ayudawp_custom_request');
