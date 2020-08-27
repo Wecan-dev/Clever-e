@@ -2798,7 +2798,8 @@ button:focus {
   user-select: none;
 }
 
-.categories-sidebar__list li a {
+.categories-sidebar__list li a,
+.categories-sidebar__list a {
   color: #252525;
 }
 
@@ -3210,7 +3211,17 @@ button:focus {
 }
 
 .filter-price {
-  height: 58px;
+  height: 118px;
+}
+
+.filter-price .main-general__button {
+  padding: 7px 16.6px;
+  border: 1px solid;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-top: 10px;
 }
 
 .filter-price [slider] {

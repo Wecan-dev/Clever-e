@@ -61,7 +61,7 @@ else { ?>
     </div>
   </section>
 <?php } ?>
-<section class="categories categories-bs">
+<section class="categories">
 	<div class="container-grid">
 		<div class="categories-sidebar">
 			<div class="categories-sidebar__item">
@@ -84,7 +84,7 @@ else { ?>
 								<div sign="" style="left:100%;">
 									<span id="value">100</span>
 								</div>
-								<div><button class="shop-btn trans" type="submit"><?php if(lang() == 'es'){echo "Filtrar";}else{echo "Filter";} ?></button></div>
+								<div><button class="shop-btn trans main-general__button" type="submit"><?php if(lang() == 'es'){echo "Filtrar";}else{echo "Filter";} ?></button></div>
 							</div>
 							<input name="lower" max="100" min="0" oninput="
 							this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
