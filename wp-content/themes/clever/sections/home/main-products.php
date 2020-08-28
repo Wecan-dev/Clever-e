@@ -35,7 +35,7 @@
                 <a href="?add_to_wishlist=<?php echo get_the_ID(); ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
                 </a>
-                <a href="<?php echo get_home_url() ?>/search">
+                <a href="<?php the_permalink(); ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/search.png">
                 </a>
               </div>
