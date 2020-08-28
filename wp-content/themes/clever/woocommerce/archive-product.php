@@ -17,6 +17,8 @@
 
 defined( 'ABSPATH' ) || exit;
 
+if (strpos($_SERVER['REQUEST_URI'],'wp-admin') === false) {
+
 get_header();
 if ($_GET['orderby'] == 'menu_order' ){ $selectm = 'selected="selected"';}
 if ($_GET['orderby'] == 'popularity' ){ $selectp = 'selected="selected"';}
@@ -35,7 +37,7 @@ $urlsinparametros= explode('?', $_SERVER['REQUEST_URI'], 2);
 
 $args = arg($_GET["cat"],$_GET["tax"],$_GET["lower"],$_GET["upper"],$_GET['orderby'],$paged,$category_name);         
 ?>
-<?php if (get_queried_object_id() == NULL) { ?>
+<?php if ($category_name == NULL) { ?>
 <section class="banner-small banner-small--bs">
 	<img class="banner-small__img" src="<?php echo get_template_directory_uri();?>/assets/img/categorie/banner-bs.png">
 	<div class="banner-small__text">
@@ -226,13 +228,13 @@ else { ?>
 				<div class="categories-product__order">
 					<form class="woocommerce-ordering" method="get">
 						<select name="orderby" class="orderby" aria-label="Shop order">
-							<option selected="selected" ><?php if(lang() == 'es'){echo "ORDENAR POR";}else{echo "ORDEN BY";} ?></option>
-							<option value="menu_order" <?php echo $selectm ?>>Default sorting</option>
-							<option value="popularity" <?php echo $selectp ?>>Sort by popularity</option>
-							<option value="rating" <?php echo $selectr ?>>Sort by average rating</option>
-							<option value="date" <?php echo $selectd ?>>Sort by latest</option>
-							<option value="price" <?php echo $selectpr ?>>Sort by price: low to high</option>
-							<option value="price-desc" <?php echo $selectpr_desc ?>>Sort by price: high to low</option>
+							<option selected="selected" ><?php if(lang() == 'es'){echo "ORDENAR POR";}else{echo "SORT BY";} ?></option>
+							<option value="menu_order" <?php echo $selectm ?>><?php if(lang() == 'es'){echo "Por defecto";}else{echo "Default sorting";} ?></option>
+							<option value="popularity" <?php echo $selectp ?>><?php if(lang() == 'es'){echo "Por popularidad";}else{echo "Sort by popularity";} ?></option>
+							<option value="rating" <?php echo $selectr ?>><?php if(lang() == 'es'){echo "Por calificación promedio";}else{echo "Sort by average rating";} ?></option>
+							<option value="date" <?php echo $selectd ?>><?php if(lang() == 'es'){echo "Por último";}else{echo "Sort by latest";} ?></option>
+							<option value="price" <?php echo $selectpr ?>><?php if(lang() == 'es'){echo "Por precio: de menor a mayor";}else{echo "Sort by price: low to high";} ?></option>
+							<option value="price-desc" <?php echo $selectpr_desc ?>><?php if(lang() == 'es'){echo "Por precio: de mayor a menor";}else{echo "Sort by price: high to low";} ?></option>
 						</select>
 					</form>  					
 				</div>
@@ -264,7 +266,7 @@ else { ?>
 											<a href="?add_to_wishlist=<?php echo get_the_ID(); ?>">
 												<img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
 											</a>
-											<a href="<?php echo get_home_url() ?>/search">
+											<a href="<?php the_permalink(); ?>">
 												<img src="<?php echo get_template_directory_uri();?>/assets/img/search.png">
 											</a>
 										</div>
@@ -276,7 +278,12 @@ else { ?>
 										<?php the_title(); ?>
 									</a>
 									<p class="main-products__categorie">
-										<?php if(lang() == 'es'){echo "categoría ";}if(lang() == 'en'){echo "category ";}  echo array_shift( wp_get_post_terms( get_the_ID(), 'product_cat' ))->name;?>
+										<?php if(lang() == 'es'){echo "categoría: ";}if(lang() == 'en'){echo "category: ";}  
+										$product_categories = wp_get_post_terms( get_the_ID(), 'product_cat' ); 
+										foreach($product_categories as $category):
+											if ($i > 0 ) {echo " / "; } echo $category->name; $i=$i+1;
+										endforeach;?>
+
 									</p>
 									<p class="main-products__price">
 										<?php echo $product->get_price_html(); ?>
@@ -305,7 +312,11 @@ else { ?>
 													<td class="listt"> <a href="<?php the_permalink(); ?>" class="collection-item__title list"><?php the_title(); ?></a></td>
 												</tr>
 												<tr>
-													<td class="listd"><p class="main-products__categorie"><?php if(lang() == 'es'){echo "Categoría: ";}if(lang() == 'en'){echo "Category: ";}  echo array_shift( wp_get_post_terms( get_the_ID(), 'product_cat' ))->name;?></p></td>
+													<td class="listd"><p class="main-products__categorie"><?php if(lang() == 'es'){echo "Categoría: ";}if(lang() == 'en'){echo "Category: ";}  
+														$product_categories = wp_get_post_terms( get_the_ID(), 'product_cat' ); 
+														foreach($product_categories as $category):
+															if ($i > 0 ) {echo " / "; } echo $category->name; $i=$i+1;
+														endforeach;?></p></td>
 												</tr>          
 											</table>                         
 										</td>  
@@ -478,4 +489,6 @@ else { ?>
 			}
 		</style>
 
-<?php get_footer(); ?>
+<?php get_footer(); 
+
+} ?>

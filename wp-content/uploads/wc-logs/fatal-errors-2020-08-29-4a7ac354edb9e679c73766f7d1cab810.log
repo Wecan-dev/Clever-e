@@ -1,0 +1,52 @@
+2020-08-29T03:48:34+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\header.php:217
+Stack trace:
+#0 C:\xampp2\htdocs\Clever-e\wp-includes\template.php(723): require_once()
+#1 C:\xampp2\htdocs\Clever-e\wp-includes\template.php(672): load_template('C:\\xampp2\\htdoc...', true)
+#2 C:\xampp2\htdocs\Clever-e\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\archive-product.php(20): get_header()
+#4 C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\fnc\fnc.php(711): require_once('C:\\xampp2\\htdoc...')
+#5 C:\xampp2\htdocs\Clever-e\wp-includes\shortcodes.php(343): shop_basico('', '', 'shop_basic')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp2\htdocs\Clever-e\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(shop_b...', 'do_shortcode_ta...', '[shop_basic]\n')
+#8 C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-hook.php(287): do_shortcode('[sh in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\header.php on line 217
+
+2020-08-29T03:49:28+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\header.php:217
+Stack trace:
+#0 C:\xampp2\htdocs\Clever-e\wp-includes\template.php(723): require_once()
+#1 C:\xampp2\htdocs\Clever-e\wp-includes\template.php(672): load_template('C:\\xampp2\\htdoc...', true)
+#2 C:\xampp2\htdocs\Clever-e\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\archive-product.php(20): get_header()
+#4 C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\fnc\fnc.php(711): require_once('C:\\xampp2\\htdoc...')
+#5 C:\xampp2\htdocs\Clever-e\wp-includes\shortcodes.php(343): shop_basico('', '', 'shop_basic')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp2\htdocs\Clever-e\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(shop_b...', 'do_shortcode_ta...', '[shop_basic]\n')
+#8 C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-hook.php(287): do_shortcode('[sh in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\header.php on line 217
+
+2020-08-29T03:53:16+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\header.php:217
+Stack trace:
+#0 C:\xampp2\htdocs\Clever-e\wp-includes\template.php(723): require_once()
+#1 C:\xampp2\htdocs\Clever-e\wp-includes\template.php(672): load_template('C:\\xampp2\\htdoc...', true)
+#2 C:\xampp2\htdocs\Clever-e\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\archive-product.php(20): get_header()
+#4 C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\fnc\fnc.php(711): require_once('C:\\xampp2\\htdoc...')
+#5 C:\xampp2\htdocs\Clever-e\wp-includes\shortcodes.php(343): shop_basico('', '', 'shop_basic')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp2\htdocs\Clever-e\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(shop_b...', 'do_shortcode_ta...', '[shop_basic]\n')
+#8 C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-hook.php(287): do_shortcode('[sh in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\header.php on line 217
+
+2020-08-29T03:55:41+00:00 CRITICAL require_once(): Failed opening required 'C:\xampp2\htdocs\Clever-e/wp-content/themes/clever/woocommerce/prueba.php' (include_path='C:\xampp2\php\PEAR') in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\fnc\fnc.php on line 711
+
+2020-08-29T04:08:48+00:00 CRITICAL syntax error, unexpected '?>' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\archive-product.php on line 59
+
+2020-08-29T04:09:37+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents_count() on null in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\header.php:217
+Stack trace:
+#0 C:\xampp2\htdocs\Clever-e\wp-includes\template.php(723): require_once()
+#1 C:\xampp2\htdocs\Clever-e\wp-includes\template.php(672): load_template('C:\\xampp2\\htdoc...', true)
+#2 C:\xampp2\htdocs\Clever-e\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\archive-product.php(20): get_header()
+#4 C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\fnc\fnc.php(711): require_once('C:\\xampp2\\htdoc...')
+#5 C:\xampp2\htdocs\Clever-e\wp-includes\shortcodes.php(343): shop_basico('', '', 'shop_basic')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp2\htdocs\Clever-e\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(shop_b...', 'do_shortcode_ta...', '[shop_basic]\n')
+#8 C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-hook.php(287): do_shortcode('[sh in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\header.php on line 217
+

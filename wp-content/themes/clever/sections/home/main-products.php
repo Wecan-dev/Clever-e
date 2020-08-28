@@ -35,7 +35,7 @@
                 <a href="?add_to_wishlist=<?php echo get_the_ID(); ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
                 </a>
-                <a href="<?php echo get_home_url() ?>/search">
+                <a href="<?php the_permalink(); ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/search.png">
                 </a>
               </div>
@@ -47,7 +47,11 @@
               <?php the_title(); ?>
             </a>
             <p class="main-products__categorie">
-              <?php if(lang() == 'es'){echo "categoría ";}if(lang() == 'en'){echo "category ";}  echo array_shift( wp_get_post_terms( get_the_ID(), 'product_cat' ))->name;?>
+              <?php if(lang() == 'es'){echo "categoría: ";}if(lang() == 'en'){echo "category: ";}  
+              $product_categories = wp_get_post_terms( get_the_ID(), 'product_cat' ); 
+              foreach($product_categories as $category):
+                if ($i > 0 ) {echo " / "; } echo $category->name; $i=$i+1;
+              endforeach;?>
             </p>
             <p class="main-products__price">
               <?php echo $product->get_price_html(); ?>
