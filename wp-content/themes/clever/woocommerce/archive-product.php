@@ -226,13 +226,13 @@ else { ?>
 				<div class="categories-product__order">
 					<form class="woocommerce-ordering" method="get">
 						<select name="orderby" class="orderby" aria-label="Shop order">
-							<option selected="selected" ><?php if(lang() == 'es'){echo "ORDENAR POR";}else{echo "ORDEN BY";} ?></option>
-							<option value="menu_order" <?php echo $selectm ?>>Default sorting</option>
-							<option value="popularity" <?php echo $selectp ?>>Sort by popularity</option>
-							<option value="rating" <?php echo $selectr ?>>Sort by average rating</option>
-							<option value="date" <?php echo $selectd ?>>Sort by latest</option>
-							<option value="price" <?php echo $selectpr ?>>Sort by price: low to high</option>
-							<option value="price-desc" <?php echo $selectpr_desc ?>>Sort by price: high to low</option>
+							<option selected="selected" ><?php if(lang() == 'es'){echo "ORDENAR POR";}else{echo "SORT BY";} ?></option>
+							<option value="menu_order" <?php echo $selectm ?>><?php if(lang() == 'es'){echo "Por defecto";}else{echo "Default sorting";} ?></option>
+							<option value="popularity" <?php echo $selectp ?>><?php if(lang() == 'es'){echo "Por popularidad";}else{echo "Sort by popularity";} ?></option>
+							<option value="rating" <?php echo $selectr ?>><?php if(lang() == 'es'){echo "Por calificación promedio";}else{echo "Sort by average rating";} ?></option>
+							<option value="date" <?php echo $selectd ?>><?php if(lang() == 'es'){echo "Por último";}else{echo "Sort by latest";} ?></option>
+							<option value="price" <?php echo $selectpr ?>><?php if(lang() == 'es'){echo "Por precio: de menor a mayor";}else{echo "Sort by price: low to high";} ?></option>
+							<option value="price-desc" <?php echo $selectpr_desc ?>><?php if(lang() == 'es'){echo "Por precio: de mayor a menor";}else{echo "Sort by price: high to low";} ?></option>
 						</select>
 					</form>  					
 				</div>

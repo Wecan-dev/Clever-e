@@ -1,11 +1,8 @@
 <div class="categories-sidebar__size">
 	<img src="<?php echo get_template_directory_uri();?>/assets/img/categorie/size.png">
 	<div class="categories-sidebar__text">
-		<p>
-			Tabla de medidas de
-			<br> acuerdo con tu cuerpo
-		</p>
-		<a data-target="#exampleModal" data-toggle="modal">VER MÁS</a>
+		<p><?php if(lang() == 'es'){echo "Tabla de medidas de <br> acuerdo con tu cuerpo";}else{echo "Measurement table <br> according to your body";} ?></p>
+		<a data-target="#exampleModal" data-toggle="modal"><?php if(lang() == 'es'){echo "VER MÁS";}else{echo "SEE MORE";} ?></a>
 	</div>
 	<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade modal-size" id="exampleModal" role="dialog" tabindex="-1">
 		<div class="modal-dialog" role="document">
@@ -15,20 +12,16 @@
 				</button>
 				<div class="modal-body">
 					<h2 class="modal-size__title">
-						Tabla de
-						<br>
-						<span>
-							Medidas
-						</span>
+						<?php if(lang() == 'es'){echo "Tabla de <br><span>Medidas</span>";}else{echo "measurement <br><span>table</span>";} ?>
 					</h2>
 					<div class="modal-size-tab">
 						<img src="<?php echo get_template_directory_uri();?>/assets/img/categorie/lines.png">
 						<p class="modal-size__header">
-							Prendas inferiores
+							<?php if(lang() == 'es'){echo "Prendas inferiores";}else{echo "Lower garments";} ?>
 						</p>
 						<div class="modal-size__ref">
 							<div class="modal-size__item">
-								<p>Tallas</p>
+								<p><?php if(lang() == 'es'){echo "Categorías";}else{echo "Categories";} ?></p>
 							</div>
 							<div class="modal-size__item">
 								<p>S</p>
@@ -45,7 +38,7 @@
 						</div>
 						<div class="modal-size__row">
 							<div class="modal-size__row--item">
-								<p>Cintura</p>
+								<p><?php if(lang() == 'es'){echo "Cintura";}else{echo "Waist";} ?></p>
 							</div>
 							<div class="modal-size__row--item">
 								<p>28-30</p>
