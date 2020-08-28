@@ -272,7 +272,7 @@ else { ?>
 									<img src="<?php the_post_thumbnail_url('full');?>">
 								</div>
 								<div class="main-products__body">
-									<a class="main-products__title" href="">
+									<a class="main-products__title" href="<?php the_permalink(); ?>">
 										<?php the_title(); ?>
 									</a>
 									<p class="main-products__categorie">
@@ -297,12 +297,12 @@ else { ?>
 								<tbody class="wishlist-items-wrapper list">
 									<tr id="yith-wcwl-row-20" data-row-id="20">        
 										<td class="product-thumbnail list">
-											<a href="http://localhost/mar-de-rosas/product/set-frida-swimwear2/">
+											<a href="<?php the_permalink(); ?>">
 												<img class="list" src="<?php the_post_thumbnail_url('full'); ?>">          
 											</a> 
 											<table class="list_table">
 												<tr>
-													<td class="listt"> <p class="collection-item__title list"><?php the_title(); ?></p></td>
+													<td class="listt"> <a href="<?php the_permalink(); ?>" class="collection-item__title list"><?php the_title(); ?></a></td>
 												</tr>
 												<tr>
 													<td class="listd"><p class="main-products__categorie"><?php if(lang() == 'es'){echo "Categoría: ";}if(lang() == 'en'){echo "Category: ";}  echo array_shift( wp_get_post_terms( get_the_ID(), 'product_cat' ))->name;?></p></td>
@@ -440,7 +440,8 @@ else { ?>
 				padding: 0!important;
 			}
 
-			.listt p {
+			.listt a {
+				max-width: 100%!important;
 				font-size: 15px;
     font-weight: 600;
     letter-spacing: 3px;
