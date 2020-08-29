@@ -17,6 +17,8 @@
 
 defined( 'ABSPATH' ) || exit;
 
+if (strpos($_SERVER['REQUEST_URI'],'wp-admin') === false) {
+
 get_header();
 if ($_GET['orderby'] == 'menu_order' ){ $selectm = 'selected="selected"';}
 if ($_GET['orderby'] == 'popularity' ){ $selectp = 'selected="selected"';}
@@ -35,7 +37,7 @@ $urlsinparametros= explode('?', $_SERVER['REQUEST_URI'], 2);
 
 $args = arg($_GET["cat"],$_GET["tax"],$_GET["lower"],$_GET["upper"],$_GET['orderby'],$paged,$category_name);         
 ?>
-<?php if (get_queried_object_id() == NULL) { ?>
+<?php if ($category_name == NULL) { ?>
 <section class="banner-small banner-small--bs">
 	<img class="banner-small__img" src="<?php echo get_template_directory_uri();?>/assets/img/categorie/banner-bs.png">
 	<div class="banner-small__text">
@@ -486,4 +488,6 @@ else { ?>
 			}
 		</style>
 
-<?php get_footer(); ?>
+<?php get_footer(); 
+
+} ?>
