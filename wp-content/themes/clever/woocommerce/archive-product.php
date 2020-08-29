@@ -276,7 +276,12 @@ else { ?>
 										<?php the_title(); ?>
 									</a>
 									<p class="main-products__categorie">
-										<?php if(lang() == 'es'){echo "categoría ";}if(lang() == 'en'){echo "category ";}  echo array_shift( wp_get_post_terms( get_the_ID(), 'product_cat' ))->name;?>
+										<?php if(lang() == 'es'){echo "categoría: ";}if(lang() == 'en'){echo "category: ";}  
+										$product_categories = wp_get_post_terms( get_the_ID(), 'product_cat' ); 
+										foreach($product_categories as $category):
+											if ($i > 0 ) {echo " / "; } echo $category->name; $i=$i+1;
+										endforeach;?>
+
 									</p>
 									<p class="main-products__price">
 										<?php echo $product->get_price_html(); ?>
@@ -305,7 +310,11 @@ else { ?>
 													<td class="listt"> <p class="collection-item__title list"><?php the_title(); ?></p></td>
 												</tr>
 												<tr>
-													<td class="listd"><p class="main-products__categorie"><?php if(lang() == 'es'){echo "Categoría: ";}if(lang() == 'en'){echo "Category: ";}  echo array_shift( wp_get_post_terms( get_the_ID(), 'product_cat' ))->name;?></p></td>
+													<td class="listd"><p class="main-products__categorie"><?php if(lang() == 'es'){echo "Categoría: ";}if(lang() == 'en'){echo "Category: ";}  
+														$product_categories = wp_get_post_terms( get_the_ID(), 'product_cat' ); 
+														foreach($product_categories as $category):
+															if ($i > 0 ) {echo " / "; } echo $category->name; $i=$i+1;
+														endforeach;?></p></td>
 												</tr>          
 											</table>                         
 										</td>  
