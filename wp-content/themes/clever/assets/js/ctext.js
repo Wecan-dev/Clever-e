@@ -6,6 +6,7 @@
 
         $(".lang-item").html(function(serachreplace, replace) {
         return replace.replace('English', 'ENG');
-        });          
+        }); 
+
 
     });

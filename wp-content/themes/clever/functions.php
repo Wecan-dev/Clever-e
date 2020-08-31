@@ -203,14 +203,17 @@ function custom_quantity_fields_script(){
     </script>
     <?php
 }
+?>
 
+
+<?php
 //* Personalization page of product WooCommerce
 /**
  * Displays a language list
  *
  * @since 1.2
  */
-class PLL_Walker_List extends Walker {
+class PLL_Walker_List extends Walker { 
   public $db_fields = array( 'parent' => 'parent', 'id' => 'id' );
 
   /**
@@ -224,9 +227,29 @@ class PLL_Walker_List extends Walker {
    * @param array  $args              An array of additional arguments.
    * @param int    $current_object_id ID of the current item.
    */
+
+
   public function start_el( &$output, $element, $depth = 0, $args = array(), $current_object_id = 0 ) {
+
+    if (lang() == "es") { $lan = "esp"; ?>
+    <style type="text/css">
+      a.lang-item-es {
+        display: none;
+      }
+    </style>
+    <?php } 
+    if (lang() == "en") { $lan = "eng";?>
+    <style type="text/css">
+      a.lang-item-en {
+        display: none;
+      }
+    </style>
+    <?php } ?>
+
+
+<?php
     $output .= sprintf(
-      '%6$s<li class="%1$s"><a lang="%2$s" hreflang="%2$s" href="%3$s">%4$s%5$s</a></li>%7$s',
+      '<a lang="%2$s" class="%1$s" hreflang="%2$s" href="%3$s"><img src="' . get_stylesheet_directory_uri() . '/assets/img/'.$lan.'.png"> <img class="next1" src="'.get_template_directory_uri().'/assets/img/next1.png"></a>',
       esc_attr( implode( ' ', $element->classes ) ),
       esc_attr( $element->locale ),
       esc_url( $element->url ),

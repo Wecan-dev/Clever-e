@@ -4853,3 +4853,25 @@ ol.flex-control-nav.flex-control-thumbs img.flex-active {
     flex-wrap: wrap;
   }
 }
+
+
+section#polylang-2 {
+    background: white;
+    padding: 10px;
+border: 2px solid;
+    border-top-color: red;    
+}
+section#polylang-2 ul {
+    background: white;
+    padding: 05px;
+    border: 1px solid;
+    border-color: #e7e7e7;}
+img.next1 {
+    width: 12px;
+    margin-left: 5px;
+} 
+section#polylang-2 img {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+}
