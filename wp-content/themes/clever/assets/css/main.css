@@ -1418,6 +1418,8 @@ button:focus {
 
 .main-banner .main-banner__text .main-banner__title--small {
   font-weight: 300;
+  position: relative;
+
   color: #fff;
   font-size: 20px;
   letter-spacing: 10px;
@@ -1426,17 +1428,16 @@ button:focus {
 
 .main-banner .main-banner__text .main-banner__title--small p {
   margin-bottom: 0;
-  position: relative;
 }
 
-.main-banner .main-banner__text .main-banner__title--small p::before {
+.main-banner .main-banner__text .main-banner__title--small::before {
   position: absolute;
   width: 248px;
   content: "";
   height: 1px;
   background: #fff;
   top: 50%;
-  left: 218px;
+  left: 100%;
 }
 
 .main-banner .main-banner__text .main-banner__subtitle {
@@ -2381,6 +2382,7 @@ button:focus {
   letter-spacing: 10px;
   font-size: 20px;
   position: relative;
+  width: fit-content;
   color: #000;
 }
 
@@ -2391,7 +2393,7 @@ button:focus {
   height: 1px;
   background: #000;
   top: 50%;
-  left: 218px;
+  left: 100%;
 }
 
 .contact .contact-title {
