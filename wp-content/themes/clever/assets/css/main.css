@@ -3179,7 +3179,8 @@ button:focus {
   width: 100%;
   justify-content: center;
   position: absolute;
-  right: 0;
+  /* right: 0; */
+  justify-content: flex-end;
   display: flex;
   margin-top: 81px;
 }
