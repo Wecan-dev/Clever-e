@@ -5,7 +5,7 @@
         Clever style
       </p>
       <h2 class="banner-small__title">
-        Mi perfil
+        <?php if (lang() == "es"){ echo "Mi perfil"; }else{ echo "My Profile"; } ?>
       </h2>
     </div>
   </section>

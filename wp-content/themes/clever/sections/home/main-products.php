@@ -48,7 +48,7 @@
             </a>
             <p class="main-products__categorie">
               <?php if(lang() == 'es'){echo "categoría: ";}if(lang() == 'en'){echo "category: ";}  
-              $product_categories = wp_get_post_terms( get_the_ID(), 'product_cat' ); 
+              $product_categories = wp_get_post_terms( get_the_ID(), 'product_cat' ); $i = 0;
               foreach($product_categories as $category):
                 if ($i > 0 ) {echo " / "; } echo $category->name; $i=$i+1;
               endforeach;?>

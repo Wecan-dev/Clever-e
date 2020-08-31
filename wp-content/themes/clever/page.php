@@ -17,6 +17,10 @@
     ?>  
 <?php } ?>   
 
+<?php if(get_field('template_clever') == 'Shop'){  
+   require_once trailingslashit( get_template_directory() ) . 'woocommerce/archive-product.php';
+} ?>
+
 <?php if(get_field('template_clever') == 'Página General'){ ?>  
   <section class="banner-small banner-catalogo">
     <img class="banner-small__img" src="<?php the_field('image-banner-general-page'); ?>">

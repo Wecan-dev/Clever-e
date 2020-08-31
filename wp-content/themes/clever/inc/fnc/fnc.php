@@ -704,12 +704,3 @@ if ($category_name != NULL){
 }//else       
   return $args; 
 }  
-
-///////////////// Shortcode shop ///////////////
-function shop_basico()
-{
-  require_once trailingslashit( get_template_directory() ) . 'woocommerce/archive-product.php';
-}
-add_shortcode('shop_basic', 'shop_basico');
-
-?>

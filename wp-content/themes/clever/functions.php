@@ -72,7 +72,7 @@ require_once trailingslashit( get_template_directory() ) . 'inc/fnc/fnc.php';
 
 /***************** Local field group ************/
 
-//require_once trailingslashit( get_template_directory() ) . 'inc/local-field-group.php';
+require_once trailingslashit( get_template_directory() ) . 'inc/fnc/local-field-group.php';
 
 /*********** ITEMS Video***********/
 function custom_post_type_Items_video() {

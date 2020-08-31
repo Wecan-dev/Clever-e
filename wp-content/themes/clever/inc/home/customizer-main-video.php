@@ -49,4 +49,16 @@
     'settings' => 'video_title_bold_en',
   )));
 
+
+  $wp_customize->add_setting('video_link_en', array(
+    'default' => ''
+  ));
+  
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'video_link_en_control', array (
+    'description' => '<hr>Add Video <a target=”_blank href="edit.php?post_type=itemsvideo">here </a><hr>',
+    'section' => 'video',
+    'settings' => 'video_link_en',
+    'type' => 'hidden'
+  )));
+
 ?>
