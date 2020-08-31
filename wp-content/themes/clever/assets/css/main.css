@@ -2701,6 +2701,10 @@ button:focus {
   padding-right: 20px;
 }
 
+.categorie-product {
+  position: relative;
+}
+
 .categories .main-products__item {
   margin: 0;
 }
@@ -3130,6 +3134,10 @@ button:focus {
   align-items: center;
 }
 
+.categories-product {
+  position: relative;
+}
+
 .categories-product__header .categories-product__view p {
   margin-bottom: 0;
   font-size: 15px;
@@ -3168,8 +3176,8 @@ button:focus {
 }
 
 .categories-paginator {
-  /* width: 100%; */
-  /* justify-content: center; */
+  width: 100%;
+  justify-content: center;
   position: absolute;
   right: 0;
   display: flex;
