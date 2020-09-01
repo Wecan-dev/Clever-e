@@ -231,7 +231,23 @@ class PLL_Walker_List extends Walker {
 
   public function start_el( &$output, $element, $depth = 0, $args = array(), $current_object_id = 0 ) {
 
+    if (lang() == "es") { $lan = "esp"; ?>
+    <style type="text/css">
+      a.lang-item-es {
+        display: none;
+      }
+    </style>
+    <?php } 
+    if (lang() == "en") { $lan = "eng";?>
+    <style type="text/css">
+      a.lang-item-en {
+        display: none;
+      }
+    </style>
+    <?php } ?>
 
+
+<?php
     $output .= sprintf(
       '<a lang="%2$s" class="%1$s" hreflang="%2$s" href="%3$s">%4$s%5$s<i class="fa fa-angle-right"></i>
       </a>',
@@ -240,10 +256,9 @@ class PLL_Walker_List extends Walker {
       esc_url( $element->url ),
       $element->flag,
       $args['show_flags'] && $args['show_names'] ? sprintf( '<span style="margin-%1$s:0.3em;">%2$s</span>', is_rtl() ? 'right' : 'left', esc_html( $element->name ) ) : esc_html( $element->name ),
-      'discard' === $args['item_spacing'] ? '' : "\t",
-      'discard' === $args['item_spacing'] ? '' : "\n"
+      'discard' === $args['item_spacing'] ? '' : "",
+      'discard' === $args['item_spacing'] ? '' : ""
     );
- 
   }
 
   /**
@@ -295,7 +310,7 @@ class PLL_Walker_List extends Walker {
     return parent::walk( $elements, $max_depth, $args );
   }
 }
- //////////////////custm /////////////////////////
+
 function ayudawp_custom_pre_get_posts( $query ) {
 if( $query->is_main_query() && !$query->is_feed() && !is_admin() && is_category()) {
     $query->set( 'paged', str_replace( '/', '', get_query_var( 'page' ) ) );  }  }

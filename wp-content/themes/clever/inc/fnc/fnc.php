@@ -86,7 +86,7 @@ function clever_widgets_init() {
 
   register_sidebar(
     array(
-      'name'          => __( 'Lang', 'Clever' ),
+      'name'          => __( 'Sidebar Header', 'Clever' ),
       'id'            => 'sidebar-1',
       'description'   => __( 'Add widgets here to appear in your header.', 'Clever' ),
       'before_widget' => '<section id="%1$s" class="widget %2$s">',

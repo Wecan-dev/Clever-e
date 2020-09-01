@@ -96,3 +96,13 @@ $(document).ready(function () {
   })();
 });
 
+      $(document).ready(function() {       
+        var langu = "<?= get_bloginfo('language') ?>";         
+        if (langu == 'en-US'){ 
+          $(".nav-world").hide();
+        } 
+        else 
+        {
+          $(".nav-world").hide();
+        }
+      }); 

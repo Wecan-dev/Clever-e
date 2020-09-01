@@ -156,5 +156,20 @@
   </a>
   <script src="<?php echo get_template_directory_uri();?>/assets/js/setting-slick.js"></script>
 </body>
+<script type="text/javascript">
+  $(document).ready(function() {       
+    var langu = "<?= get_bloginfo('language') ?>";         
+    if (langu == 'en-US'){ 
+      $(".lang-item-en").hide();
+    } 
+    else 
+    {
+      $(".lang-item-es").hide();
+    }
+    $(".hid").html(function(serachreplace, replace) {
+        return replace.replace('1', '23');
+    });
+  }); 
+</script>
 <?php wp_footer(); ?>
 </html>

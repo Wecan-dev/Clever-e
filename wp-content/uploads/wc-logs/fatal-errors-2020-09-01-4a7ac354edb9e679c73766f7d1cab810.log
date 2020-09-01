@@ -1,0 +1,42 @@
+2020-09-01T00:28:48+00:00 CRITICAL syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 249
+
+2020-09-01T00:28:58+00:00 CRITICAL syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 249
+
+2020-09-01T00:29:48+00:00 CRITICAL syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 249
+
+2020-09-01T02:04:57+00:00 CRITICAL syntax error, unexpected '?>' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\header.php on line 99
+
+2020-09-01T02:10:30+00:00 CRITICAL syntax error, unexpected '0' (T_LNUMBER), expecting variable (T_VARIABLE) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 261
+
+2020-09-01T02:10:43+00:00 CRITICAL syntax error, unexpected '0' (T_LNUMBER), expecting variable (T_VARIABLE) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 261
+
+2020-09-01T02:10:49+00:00 CRITICAL syntax error, unexpected ''0'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 261
+
+2020-09-01T02:41:25+00:00 CRITICAL Uncaught Error: Class 'PLL_Widget_Languages' not found in C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp2\htdocs\Clever-e\wp-includes\widgets.php(115): WP_Widget_Factory->register('PLL_Widget_Lang...')
+#1 C:\xampp2\htdocs\Clever-e\wp-content\plugins\polylang\include\base.php(70): register_widget('PLL_Widget_Lang...')
+#2 C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-hook.php(287): PLL_Base->widgets_init('')
+#3 C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp2\htdocs\Clever-e\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#5 C:\xampp2\htdocs\Clever-e\wp-includes\widgets.php(1765): do_action('widgets_init')
+#6 C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-hook.php(287): wp_widgets_init('')
+#7 C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp2\htdocs\Clever-e\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#9 C:\xampp2\htdocs\Cleve in C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-widget-factory.php on line 61
+
+2020-09-01T02:51:18+00:00 CRITICAL Uncaught Error: Class 'PLL_Widget_Languages' not found in C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp2\htdocs\Clever-e\wp-includes\widgets.php(115): WP_Widget_Factory->register('PLL_Widget_Lang...')
+#1 C:\xampp2\htdocs\Clever-e\wp-content\plugins\polylang\include\base.php(70): register_widget('PLL_Widget_Lang...')
+#2 C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-hook.php(287): PLL_Base->widgets_init('')
+#3 C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp2\htdocs\Clever-e\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#5 C:\xampp2\htdocs\Clever-e\wp-includes\widgets.php(1765): do_action('widgets_init')
+#6 C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-hook.php(287): wp_widgets_init('')
+#7 C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp2\htdocs\Clever-e\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#9 C:\xampp2\htdocs\Cleve in C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-widget-factory.php on line 61
+
+2020-09-01T03:05:11+00:00 CRITICAL syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 231
+
