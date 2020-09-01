@@ -40,3 +40,5 @@ Stack trace:
 
 2020-09-01T03:05:11+00:00 CRITICAL syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 231
 
+2020-09-01T04:32:23+00:00 CRITICAL syntax error, unexpected ''description'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' en C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\home\customizer-main-banner.php en la línea 16
+
