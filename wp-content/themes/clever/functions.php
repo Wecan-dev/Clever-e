@@ -249,7 +249,7 @@ class PLL_Walker_List extends Walker {
 
 <?php
     $output .= sprintf(
-      '<a lang="%2$s" class="%1$s" hreflang="%2$s" href="%3$s"><img src="' . get_stylesheet_directory_uri() . '/assets/img/'.$lan.'.png"><i class="fa fa-angle-right"></i>
+      '<a lang="%2$s" class="%1$s" hreflang="%2$s" href="%3$s">%4$s%5$s<i class="fa fa-angle-right"></i>
       </a>',
       esc_attr( implode( ' ', $element->classes ) ),
       esc_attr( $element->locale ),

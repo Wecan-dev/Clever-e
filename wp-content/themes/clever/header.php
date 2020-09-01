@@ -72,7 +72,7 @@
               <a class="nav-link nav-link-p" data="offcanvas" href="<?php if(lang() == 'es'){echo ''.get_home_url().'/tienda';}if(lang() == 'en'){echo ''.get_home_url().'/shop';} ?>">Best Seller</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-p" data="offcanvas" href="<?php echo get_home_url() ?>/contacto"><?php if(lang() == 'es'){echo "Contacto";}if(lang() == 'en'){echo "Contact ";} ?></a>
+              <a class="nav-link nav-link-p" data="offcanvas" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "contacto";}else{echo "contact ";} ?>"><?php if(lang() == 'es'){echo "Contacto";}if(lang() == 'en'){echo "Contact ";} ?></a>
             </li>            
             <li class="nav-item nav-responsive">
               
@@ -97,9 +97,7 @@
                 </a>
               </div>
               <?php echo dynamic_sidebar( 'sidebar-1' ); ?>
-              <a class="nav-money" href="">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/money-box.png">
-              </a>
+
             </li>
             <li class="nav-item nav-flex">
               <div class="content-icon">
@@ -124,9 +122,7 @@
                 </a>
               </div>
               <?php echo dynamic_sidebar( 'sidebar-1' ); ?>
-              <a class="nav-money" href="">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/money-box.png">
-              </a>
+
             </li>
             <div class="pre-navbar pre-navbar--mobile">
               <img class="icon-tarjeta" src="<?php echo get_theme_mod('prenavbar1_image'); ?>">
@@ -197,7 +193,7 @@
               <a class="nav-link nav-link-p" data="offcanvas" href="<?php if(lang() == 'es'){echo ''.get_home_url().'/tienda';}if(lang() == 'en'){echo ''.get_home_url().'/shop';} ?>">Best Seller</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-p" data="offcanvas" href="<?php echo get_home_url() ?>/contacto"><?php if(lang() == 'es'){echo "Contacto";}if(lang() == 'en'){echo "Contact ";} ?></a>
+              <a class="nav-link nav-link-p" data="offcanvas" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "contacto";}else{echo "contact ";} ?>"><?php if(lang() == 'es'){echo "Contacto";}if(lang() == 'en'){echo "Contact ";} ?></a>
             </li>
             <li class="nav-item nav-responsive">
               
@@ -222,9 +218,7 @@
                 </a>
               </div>
               <?php echo dynamic_sidebar( 'sidebar-1' ); ?>
-              <a class="nav-money" href="">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/money-box.png">
-              </a>
+
             </li>
             <li class="nav-item nav-flex">
               <div class="content-icon">
@@ -249,9 +243,7 @@
                 </a>
               </div>
               <?php echo dynamic_sidebar( 'sidebar-1' ); ?>
-              <a class="nav-money" href="">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/money-box.png">
-              </a>
+
             </li>
             <div class="pre-navbar pre-navbar--mobile">
               <img class="icon-tarjeta" src="<?php echo get_theme_mod('prenavbar1_image'); ?>">
