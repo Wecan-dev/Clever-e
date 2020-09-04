@@ -166,9 +166,7 @@
     {
       $(".lang-item-es").hide();
     }
-    $(".hid").html(function(serachreplace, replace) {
-        return replace.replace('1', '23');
-    });
+
   }); 
 </script>
 <?php wp_footer(); ?>

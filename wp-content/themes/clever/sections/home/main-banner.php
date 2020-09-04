@@ -18,7 +18,7 @@
               <?php the_field('banner_description'); ?>
             </p>
             <br>
-            <a class="main-general__button main-general__button--white" href="<?php the_field('banner_urlbuttom'); ?>"><?php the_field('banner_button'); ?></a>
+            <a class="main-general__button main-general__button--white" href="<?php the_field('banner_urlbutton'); ?>"><?php the_field('banner_button'); ?></a>
           </div>
         </div>
         <div class="main-banner__img">
