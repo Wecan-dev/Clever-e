@@ -1,0 +1,774 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-05 07:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/woo-multi-currency.php:51
+msgid ""
+"Please install and active WooCommerce. Multi Currency for WooCommerce is going "
+"to working."
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/admin.php:42
+msgid ""
+"You are using <strong>WP Super Cache</strong>. Please install and active "
+"<strong>Country Caching For WP Super Cache</strong> that helps <strong>"
+"Multi Currency for WooCommerce</strong> is working fine with WP Super Cache."
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/admin.php:54
+msgid ""
+"You are using <strong>WP Fastest Cache</strong>. Please make follow these "
+"steps these help <strong>Multi Currency for WooCommerce</strong> is working fine "
+"with WP Fastest Cache."
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/admin.php:57
+msgid ""
+"1. In <strong>WooCommerce → Settings → General → Default customer "
+"location</strong> make sure you have selected: <strong>Geolocate with page "
+"caching support</strong>"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/admin.php:58
+msgid ""
+"2. Open wp-config.php file via FTP then insert <strong>"
+"define(‘WPFC_CACHE_QUERYSTRING’, true);</strong>"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/admin.php:81
+msgid ""
+"The following options affect how prices are displayed on the frontend. Woo "
+"Multi Currency is working. Please go to "
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/admin.php:81
+msgid "Multi Currency for WooCommerce setting page"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/admin.php:81
+msgid " to set default currency."
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/admin.php:224
+msgid "Settings"
+msgstr ""
+
+#. Name of the plugin
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/admin.php:259
+msgid "Multi Currency for WooCommerce"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/admin.php:259
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/product.php:67
+msgid "Multi Currency"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/order.php:23
+msgid "Currency Information"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/order.php:62
+msgid ""
+"This order created when multi currency disabled, so base currency and rate "
+"is current info"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/order.php:76
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:274
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:500
+msgid "Currency"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/order.php:82
+msgid "Base on Currency"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/order.php:88
+msgid "Currency Rate"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/product.php:74
+msgid "Set regular prices"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/product.php:75
+msgid "Set sale prices"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/product.php:95
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/plugins/yith_product_bundles.php:36
+msgid "Regular Price"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/product.php:102
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/plugins/yith_product_bundles.php:40
+msgid "Sale Price"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/product.php:140
+msgid "Regular Price:"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/product.php:147
+msgid "Sale Price:"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:156
+msgid "Multi Currency for WooCommerce Settings"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:162
+msgid "General"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:165
+msgid "Location"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:168
+msgid "Checkout"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:171
+msgid "Design"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:174
+msgid "Update"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:184
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:580
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:616
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:842
+msgid "Enable"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:200
+msgid "Fixed Price"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:211
+msgid ""
+"Set up product price in each currency manually, this price will overwrite "
+"the calculated price."
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:217
+msgid "Use SESSION"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:222
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:255
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:425
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:564
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:601
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:863
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:878
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:898
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:909
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:920
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:931
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:941
+msgid "Unlock This Feature"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:223
+msgid "Use SESSION instead of COOKIE."
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:229
+msgid "Currency Price Switcher"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:236
+msgid "Not Show"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:238
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:718
+msgid "Flag"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:240
+msgid "Flag + Currency Code"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:242
+msgid "Flag + Price"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:244
+msgid ""
+"Display a currency switcher under product price in single product pages."
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:250
+msgid "Switch Currency by JS"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:256
+msgid ""
+"Currency will be changed but It does not use URL. It will good for SEO. Now "
+"It is not compatible with Cache plugins."
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:262
+msgid "Currency Options"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:272
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:714
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/includes/data.php:688
+msgid "Default"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:273
+msgid "Hidden"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:275
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:641
+msgid "Position"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:277
+msgid "Rate + Exchange Fee"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:278
+msgid "Number of Decimals"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:279
+msgid "Custom symbol"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:280
+msgid "Action"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:332
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:333
+msgid "Hidden currencies on widget, shortcode and sidebar"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:336
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:448
+msgid "No"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:338
+msgid "Yes"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:352
+msgid "Left $99"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:354
+msgid "Right 99$"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:356
+msgid "Left with space $ 99"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:358
+msgid "Right with space 99 $"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:370
+msgid ""
+"It is fixed rate. Eg: (Original rate)1.62 + 0.1(Exchange fee rate) = 1."
+"72(End rate)"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:391
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:392
+msgid "Update Rate"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:397
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:398
+msgid "Remove"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:412
+msgid "Add Currency"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:415
+msgid "Update All Rates"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:423
+msgid ""
+"You can add only 2 currencies. Please update Pro version to add unlimited "
+"currencies."
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:427
+msgid ""
+"Custom symbol: You can set custom symbol for each currency in your list and "
+"how to it will be displayed (used when you have many currency have same "
+"symbol). Leave it empty to used default symbol. Example: if you set US$ for "
+"US dolar, system will display US$100 instead of $100 like default. Or you "
+"can use with pramater #PRICE# to display price in special format, example: "
+"if you set US #PRICE# $, system will display: US 100 $."
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:442
+msgid "Auto Detect"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:450
+msgid "Auto select currency"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:452
+msgid "Approximate Price"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:454
+msgid "Language Polylang"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:462
+msgid "Geo API"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:468
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/plugins/visual_composer.php:35
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/plugins/visual_composer.php:50
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/plugins/visual_composer.php:65
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/plugins/visual_composer.php:80
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/plugins/visual_composer.php:95
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/plugins/visual_composer.php:109
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/plugins/visual_composer.php:124
+msgid "WooCommerce"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:470
+msgid "External"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:472
+msgid "API will help detect customer country code base on IP address."
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:479
+msgid "Currency by Country"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:490
+msgid ""
+"Only working with AUTO SELECT CURRENCY feature. Currency will be selected "
+"base on country."
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:501
+msgid "Countries"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:502
+msgid "Actions"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:516
+msgid "Please select countries"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:536
+msgid "Select all"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:539
+msgid "Remove All"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:553
+msgid "Polylang"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:559
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:596
+msgid "Language switcher"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:575
+msgid "WPML.org"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:590
+msgid ""
+"All product fields of Multi Currency for WooCommerce will be copied. When you "
+"switch language, Currency will change. "
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:610
+msgid "Currencies Bar"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:631
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/plugins/visual_composer.php:39
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/plugins/visual_composer.php:54
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/plugins/visual_composer.php:69
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/plugins/visual_composer.php:84
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/plugins/visual_composer.php:99
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/plugins/visual_composer.php:113
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/plugins/visual_composer.php:128
+msgid "Title"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:656
+msgid "Left"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:672
+msgid "Right"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:682
+msgid "Desktop"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:691
+msgid "Enable Collapse"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:693
+msgid "Sidebar will collapse if you have many currencies."
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:698
+msgid "Text color"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:709
+msgid "Style"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:716
+msgid "Symbol"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:720
+msgid "Flag + Currency code"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:722
+msgid "Flag + Currency symbol"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:728
+msgid "Main color"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:739
+msgid "Background color"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:750
+msgid "Conditional Tags"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:756
+msgid "Checkout page"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:767
+msgid "Enable to hide Currencies Bar on Checkout page."
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:773
+msgid "Cart page"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:784
+msgid "Enable to hide Currencies Bar on Cart page."
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:790
+msgid "Other pages"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:794
+msgid "eg: !is_page(array(34,98,73))"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:799
+msgid "Let you adjust which pages will appear using WP's conditional tags."
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:804
+msgid "Widget"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:809
+msgid "Flag Custom"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:814
+msgid ""
+"Some countries use the same currency. You can choice flag correctly. Each "
+"line is the flag. Structure [currency_code,country_code]. Example: EUR,ES"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:819
+msgid "Custom"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:824
+msgid "CSS"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:852
+msgid "Pay in many currencies"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:858
+msgid "Enable Cart Page"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:865
+msgid "Change the currency in cart page to a check out currency."
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:872
+msgid "Checkout currency"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:880
+msgid ""
+"Payment method depend on Payment Gateway. If Payment Gateway is not support "
+"currency, customer can not checkout with currency. Example: Paypal is not "
+"support IDR, Customer can not checkout IDR by Paypal."
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:893
+msgid "Auto Update Exchange Rate"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:900
+msgid "Exchange will be updated automatically."
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:905
+msgid "Finance API"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:911
+msgid "Exchange rate resources."
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:916
+msgid "Rate Decimals"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:926
+msgid "Email"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:932
+msgid "Send email to admin when exchange rate is updated."
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:937
+msgid "Email Custom"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:943
+msgid "If empty, notification will sent to "
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:953
+msgid "Save"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/settings.php:957
+msgid "Save & Check Key"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/system.php:21
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/system.php:122
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/system.php:122
+msgid "System Status"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/system.php:51
+msgid "PHP Time Limit"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/system.php:55
+msgid "PHP Max Input Vars"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/system.php:60
+msgid "Memory Limit"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/system.php:65
+msgid "Allow URL Open"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/system.php:77
+msgid "Session path"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/system.php:83
+#, php-format
+msgid "To allow logging, make %1$s writable."
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/system.php:88
+msgid "Your IP"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/system.php:94
+msgid "[WooCommerce] Your IP"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/system.php:100
+msgid "[WooCommerce] Your GEO IP"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/admin/system.php:106
+msgid "_SERVER system"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/frontend/cryptocurrency.php:29
+msgid "Litecoin"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/frontend/cryptocurrency.php:30
+msgid "Ethereum"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/frontend/price.php:91
+msgid "Please select your currency"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/frontend/price.php:324
+msgid "Approximately"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/includes/data.php:566
+msgid "European Union"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/includes/data.php:689
+msgid "Plain Horizontal"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/includes/data.php:690
+msgid "Plain Vertical"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/includes/data.php:691
+msgid "List Flag Horizontal"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/includes/data.php:692
+msgid "List Flag Vertical"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/includes/data.php:693
+msgid "List Flag + Currency Code"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/includes/data.php:694
+msgid "Horizontal Currency Symbols"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/includes/data.php:695
+msgid "Vertical Currency Symbols"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/plugins/visual_composer.php:31
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/plugins/visual_composer.php:46
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/plugins/visual_composer.php:61
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/plugins/visual_composer.php:76
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/plugins/visual_composer.php:91
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/plugins/visual_composer.php:105
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/plugins/visual_composer.php:120
+msgid "Woo multi currency"
+msgstr ""
+
+#. Base ID
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/frontend/widgets/widget-rates.php:18
+msgid "List Currency Rates"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/frontend/widgets/widget-rates.php:19
+msgid ""
+"Show list currency exchange rates of Multi Currency for WooCommerce by VillaTheme"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/frontend/widgets/widget-rates.php:53
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/frontend/widgets/widget-selector.php:55
+msgid "Title:"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/frontend/widgets/widget-rates.php:54
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/frontend/widgets/widget-selector.php:56
+msgid "Please enter your title"
+msgstr ""
+
+#. Base ID
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/frontend/widgets/widget-selector.php:18
+msgid "Currency Selector"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/frontend/widgets/widget-selector.php:19
+msgid ""
+"Change display currency on shop page. Widget of Multi Currency for WooCommerce "
+"by VillaTheme"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/frontend/widgets/widget-selector.php:62
+msgid "Layout"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/frontend/widgets/widget-selector.php:72
+msgid "Flag size"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/frontend/widgets/widget-selector.php:77
+msgid "Small"
+msgstr ""
+
+#: Volumes/DATA/Git/VillaTheme2017/free-version/woo-multi-currency/woo-multi-currency/frontend/widgets/widget-selector.php:78
+msgid "Large"
+msgstr ""
+
+#. Name of the plugin
+msgid "Multi Currency for WooCommerce"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Allows display prices and accepts payments in multiple currencies. Working "
+"only with WooCommerce."
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "http://villatheme.com"
+msgstr ""
+
+#. Author of the plugin
+msgid "VillaTheme"
+msgstr ""

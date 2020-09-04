@@ -97,11 +97,11 @@
                 <li class="nav-item dropdown">
                   <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><img src="<?php echo get_template_directory_uri();?>/assets/img/world.png"></a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item woocs_flag_view_item" href="#" data-currency="USD" title="USD, $ USA dollar">USD, $</a>
-                    <a href="#" class="dropdown-item woocs_flag_view_item" data-currency="COP" title="COP, $ Peso Colombiano">COP, $</a>
+                    <a class="dropdown-item wmc-currency" href="?wmc-currency=USD" data-currency="USD" title="United States (US) dollar">USD</a>
+                    <a class="dropdown-item woocs_flag_view_item" href="?wmc-currency=COP" data-currency="COP" title="Colombian peso">COP</a>
                   </div>
                 </li>
-              </ul>              
+              </ul>             
               <?php if ( is_active_sidebar( 'sidebar-1' ) ) { ?>
               <aside class="in-header widget-area right" role="complementary">
                 <?php dynamic_sidebar( 'sidebar-1' ); ?>
@@ -132,8 +132,8 @@
                 <li class="nav-item dropdown">
                   <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><img src="<?php echo get_template_directory_uri();?>/assets/img/world.png"></a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item woocs_flag_view_item" href="#" data-currency="USD" title="USD, $ USA dollar">USD, $</a>
-                    <a href="#" class="dropdown-item woocs_flag_view_item" data-currency="COP" title="COP, $ Peso Colombiano">COP, $</a>
+                    <a class="dropdown-item wmc-currency" href="?wmc-currency=USD" data-currency="USD" title="United States (US) dollar">USD</a>
+                    <a class="dropdown-item woocs_flag_view_item" href="?wmc-currency=COP" data-currency="COP" title="Colombian peso">COP</a>
                   </div>
                 </li>
               </ul>
@@ -238,8 +238,8 @@
                 <li class="nav-item dropdown">
                   <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><img src="<?php echo get_template_directory_uri();?>/assets/img/world.png"></a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item woocs_flag_view_item" href="#" data-currency="USD" title="USD, $ USA dollar">USD, $</a>
-                    <a href="#" class="dropdown-item woocs_flag_view_item" data-currency="COP" title="COP, $ Peso Colombiano">COP, $</a>
+                    <a class="dropdown-item wmc-currency" href="?wmc-currency=USD" data-currency="USD" title="United States (US) dollar">USD</a>
+                    <a class="dropdown-item woocs_flag_view_item" href="?wmc-currency=COP" data-currency="COP" title="Colombian peso">COP</a>
                   </div>
                 </li>
               </ul>              
@@ -273,8 +273,8 @@
                 <li class="nav-item dropdown">
                   <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><img src="<?php echo get_template_directory_uri();?>/assets/img/world.png"></a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item woocs_flag_view_item" href="#" data-currency="USD" title="USD, $ USA dollar">USD, $</a>
-                    <a href="#" class="dropdown-item woocs_flag_view_item" data-currency="COP" title="COP, $ Peso Colombiano">COP, $</a>
+                    <a class="dropdown-item wmc-currency" href="?wmc-currency=USD" data-currency="USD" title="United States (US) dollar">USD</a>
+                    <a class="dropdown-item woocs_flag_view_item" href="?wmc-currency=COP" data-currency="COP" title="Colombian peso">COP</a>
                   </div>
                 </li>
               </ul>
