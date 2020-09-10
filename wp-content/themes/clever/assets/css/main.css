@@ -1472,6 +1472,16 @@ button:focus {
   height: 779px;
 }
 
+@media (min-width: 768px) and (max-width: 997px) {
+  .main-banner .main-banner__img {
+    height: 446px;
+  }
+
+
+}
+
+
+
 .main-banner .main-banner__img img {
   width: 100%;
   height: 100%;
@@ -1552,6 +1562,7 @@ button:focus {
   position: absolute;
   width: 100%;
   height: 100%;
+  cursor: pointer;
   top: 0;
   left: 0;
   display: flex;
@@ -1569,6 +1580,8 @@ button:focus {
   position: relative;
 }
 
+
+
 .main-categories__mask .main-categories__title::before {
   content: "";
   position: absolute;
@@ -1576,6 +1589,17 @@ button:focus {
   background: #ff130d;
   width: 100%;
   height: 1px;
+}
+
+.main-categories__item .main-categories__title::before {
+  opacity: 0;
+  transition: .3s;
+
+}
+
+.main-categories__item:hover .main-categories__title::before {
+  opacity: 1;
+  transition: .3s;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -2628,6 +2652,8 @@ button:focus {
 
 .banner-small .banner-small__img {
   height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .banner-small .banner-small__title {
@@ -3502,6 +3528,22 @@ button:focus {
   .error-404 img {
     width: 100%;
   }
+
+  .main-banner .main-banner__text .main-banner__title {
+    font-size: 44px;
+  }
+
+  .main-banner .main-banner__width {
+    width: 89%;
+  }
+
+  .main-banner .main-banner__img {
+    height: 400px;
+  }
+
+  .main-banner .main-banner__text .main-banner__title--small::before {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -3623,7 +3665,7 @@ button:focus {
 .woocommerce-form-login__rememberme input {
   width: auto !important;
   height: auto !important;
-
+  margin-right: 7px;
 }
 
 .form-login__register {
