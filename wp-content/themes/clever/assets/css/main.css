@@ -988,6 +988,17 @@ button:focus {
   margin: 0 5px;
 }
 
+.nav-world2 img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  margin: 0 5px;
+}
+
+a.nav-world {
+    display: block !important;
+}
+
 .content-icon {
   display: flex;
 }
@@ -4945,4 +4956,11 @@ section#polylang-2 img {
   width: 16px;
   height: 16px;
   border-radius: 8px;
+}
+
+a.woocs_flag_view_item {
+  display: inline-block;
+  margin: 0 3px 3px 0;
+  width: 100% !important;
+  height: 40px;
 }

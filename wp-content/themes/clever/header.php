@@ -91,12 +91,22 @@
                   <span class="nav-item__number">
                     <?php echo wp_kses_data(WC()->cart->get_cart_contents_count()); ?>
                   </span>
-                </a>                
-                <a class="nav-world" href="">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/world.png">
-                </a>
+                </a>              
               </div>
-              <?php echo dynamic_sidebar( 'sidebar-1' ); ?>
+              <ul class="navbar-nav mr-autos">
+                <li class="nav-item dropdown">
+                  <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><img src="<?php echo get_template_directory_uri();?>/assets/img/world.png"></a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item woocs_flag_view_item" href="#" data-currency="USD" title="USD, $ USA dollar">USD, $</a>
+                    <a href="#" class="dropdown-item woocs_flag_view_item" data-currency="COP" title="COP, $ Peso Colombiano">COP, $</a>
+                  </div>
+                </li>
+              </ul>              
+              <?php if ( is_active_sidebar( 'sidebar-1' ) ) { ?>
+              <aside class="in-header widget-area right" role="complementary">
+                <?php dynamic_sidebar( 'sidebar-1' ); ?>
+              </aside>
+              <?php } ?>
 
             </li>
             <li class="nav-item nav-flex">
@@ -116,12 +126,22 @@
                   <span class="nav-item__number">
                     <?php echo wp_kses_data(WC()->cart->get_cart_contents_count()); ?>
                   </span>                  
-                </a>                
-                <a class="nav-world" href="">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/world.png">
-                </a>
+                </a>              
               </div>
-              <?php echo dynamic_sidebar( 'sidebar-1' ); ?>
+              <ul class="navbar-nav mr-autos">
+                <li class="nav-item dropdown">
+                  <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><img src="<?php echo get_template_directory_uri();?>/assets/img/world.png"></a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item woocs_flag_view_item" href="#" data-currency="USD" title="USD, $ USA dollar">USD, $</a>
+                    <a href="#" class="dropdown-item woocs_flag_view_item" data-currency="COP" title="COP, $ Peso Colombiano">COP, $</a>
+                  </div>
+                </li>
+              </ul>
+              <?php if ( is_active_sidebar( 'sidebar-1' ) ) { ?>
+              <aside class="in-header widget-area right" role="complementary">
+                <?php dynamic_sidebar( 'sidebar-1' ); ?>
+              </aside>
+              <?php } ?>
 
             </li>
             <div class="pre-navbar pre-navbar--mobile">
@@ -213,11 +233,21 @@
                     <?php echo wp_kses_data(WC()->cart->get_cart_contents_count()); ?>
                   </span>
                 </a>                
-                <a class="nav-world" href="">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/world.png">
-                </a>
               </div>
-              <?php echo dynamic_sidebar( 'sidebar-1' ); ?>
+              <ul class="navbar-nav mr-autos">
+                <li class="nav-item dropdown">
+                  <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><img src="<?php echo get_template_directory_uri();?>/assets/img/world.png"></a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item woocs_flag_view_item" href="#" data-currency="USD" title="USD, $ USA dollar">USD, $</a>
+                    <a href="#" class="dropdown-item woocs_flag_view_item" data-currency="COP" title="COP, $ Peso Colombiano">COP, $</a>
+                  </div>
+                </li>
+              </ul>              
+              <?php if ( is_active_sidebar( 'sidebar-1' ) ) { ?>
+              <aside class="in-header widget-area right" role="complementary">
+                <?php dynamic_sidebar( 'sidebar-1' ); ?>
+              </aside>
+              <?php } ?>
 
             </li>
             <li class="nav-item nav-flex">
@@ -230,7 +260,7 @@
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/love.png">
                   <span class="nav-item__number">
                     <?php $wishlist_count = YITH_WCWL()->count_products(); echo esc_html( $wishlist_count ); ?>
-  </span >                 
+                  </span >                 
                 </a>
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/cart">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/card-2.png">
@@ -238,11 +268,21 @@
                     <?php echo wp_kses_data(WC()->cart->get_cart_contents_count()); ?>
                   </span>                  
                 </a>                
-                <a class="nav-world" href="">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/world.png">
-                </a>
               </div>
-              <?php echo dynamic_sidebar( 'sidebar-1' ); ?>
+              <ul class="navbar-nav mr-autos">
+                <li class="nav-item dropdown">
+                  <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><img src="<?php echo get_template_directory_uri();?>/assets/img/world.png"></a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item woocs_flag_view_item" href="#" data-currency="USD" title="USD, $ USA dollar">USD, $</a>
+                    <a href="#" class="dropdown-item woocs_flag_view_item" data-currency="COP" title="COP, $ Peso Colombiano">COP, $</a>
+                  </div>
+                </li>
+              </ul>
+              <?php if ( is_active_sidebar( 'sidebar-1' ) ) { ?>
+              <aside class="in-header widget-area right" role="complementary">
+                <?php dynamic_sidebar( 'sidebar-1' ); ?>
+              </aside>
+              <?php } ?>
 
             </li>
             <div class="pre-navbar pre-navbar--mobile">

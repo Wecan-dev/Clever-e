@@ -1,0 +1,40 @@
+2020-09-02T19:02:41+00:00 CRITICAL Cannot redeclare clever_widgets_init() (previously declared in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\fnc\fnc.php:87) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\fnc\fnc.php on line 116
+
+2020-09-02T19:04:49+00:00 CRITICAL Cannot redeclare clever_widgets_init() (previously declared in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\fnc\fnc.php:87) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\fnc\fnc.php on line 116
+
+2020-09-02T19:06:49+00:00 CRITICAL Cannot redeclare clever_widgets_init() (previously declared in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\fnc\fnc.php:87) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\fnc\fnc.php on line 116
+
+2020-09-02T19:08:51+00:00 CRITICAL Cannot redeclare clever_widgets_init() (previously declared in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\fnc\fnc.php:87) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\fnc\fnc.php on line 116
+
+2020-09-02T19:08:54+00:00 CRITICAL Cannot redeclare clever_widgets_init() (previously declared in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\fnc\fnc.php:87) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\fnc\fnc.php on line 116
+
+2020-09-02T19:08:55+00:00 CRITICAL Cannot redeclare clever_widgets_init() (previously declared in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\fnc\fnc.php:87) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\fnc\fnc.php on line 116
+
+2020-09-02T19:09:00+00:00 CRITICAL Cannot redeclare clever_widgets_init() (previously declared in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\fnc\fnc.php:87) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\fnc\fnc.php on line 116
+
+2020-09-02T19:09:31+00:00 CRITICAL Cannot redeclare clever_widgets_init() (previously declared in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\fnc\fnc.php:87) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\fnc\fnc.php on line 116
+
+2020-09-02T21:48:23+00:00 CRITICAL Uncaught Error: Call to a member function get_field_id() on null in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\header.php:134
+Stack trace:
+#0 C:\xampp2\htdocs\Clever-e\wp-includes\template.php(723): require_once()
+#1 C:\xampp2\htdocs\Clever-e\wp-includes\template.php(672): load_template('C:\\xampp2\\htdoc...', true)
+#2 C:\xampp2\htdocs\Clever-e\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\home.php(1): get_header()
+#4 C:\xampp2\htdocs\Clever-e\wp-includes\template-loader.php(106): include('C:\\xampp2\\htdoc...')
+#5 C:\xampp2\htdocs\Clever-e\wp-blog-header.php(19): require_once('C:\\xampp2\\htdoc...')
+#6 C:\xampp2\htdocs\Clever-e\index.php(17): require('C:\\xampp2\\htdoc...')
+#7 {main}
+  thrown en C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\header.php en la línea 134
+
+2020-09-02T21:49:17+00:00 CRITICAL Uncaught Error: Call to a member function get_field_id() on null in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\header.php:134
+Stack trace:
+#0 C:\xampp2\htdocs\Clever-e\wp-includes\template.php(723): require_once()
+#1 C:\xampp2\htdocs\Clever-e\wp-includes\template.php(672): load_template('C:\\xampp2\\htdoc...', true)
+#2 C:\xampp2\htdocs\Clever-e\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\home.php(1): get_header()
+#4 C:\xampp2\htdocs\Clever-e\wp-includes\template-loader.php(106): include('C:\\xampp2\\htdoc...')
+#5 C:\xampp2\htdocs\Clever-e\wp-blog-header.php(19): require_once('C:\\xampp2\\htdoc...')
+#6 C:\xampp2\htdocs\Clever-e\index.php(17): require('C:\\xampp2\\htdoc...')
+#7 {main}
+  thrown en C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\header.php en la línea 134
+
