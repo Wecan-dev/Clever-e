@@ -365,7 +365,7 @@ else { ?>
             //$published_posts = wp_count_posts()->publish;
 				$published_posts = count_post_product($_GET["cat"],$_GET["tax"],$_GET["lower"],$_GET["upper"],$category_name);
            // $posts_per_page = get_option('posts_per_page');
-				$posts_per_page = 8;
+				$posts_per_page = 4;
 				$page_number_max = ceil($published_posts / $posts_per_page);
 				$max_page = $page_number_max;
 				if (!$paged && $max_page >= 1) {
