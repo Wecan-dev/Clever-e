@@ -978,6 +978,8 @@ button:focus {
   margin: 0 10px;
 }
 
+
+
 .nav-money img {
   width: 69px;
   height: 66px;
@@ -5003,10 +5005,20 @@ section#polylang-2 {
 
 section#polylang-2 ul {
   background: white;
-  padding: 6px 8px;
+  padding: 0;
   border: 1px solid;
   border-color: #c3c3c3;
   border-radius: 2px;
+  width: 37px;
+  height: 34px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+section#polylang-2 ul a {
+  overflow: hidden;
+  height: 100%;
 }
 
 img.next1 {
