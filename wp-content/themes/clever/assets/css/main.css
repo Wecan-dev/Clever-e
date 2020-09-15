@@ -2257,6 +2257,7 @@ a.nav-world {
   font-weight: normal;
   transition: .3s;
   font-size: 15px;
+  letter-spacing: normal;
 }
 
 .main-footer .list-contact a:hover {
@@ -2270,6 +2271,8 @@ a.nav-world {
   text-transform: uppercase;
   margin-bottom: 25px;
   color: #161616;
+
+
 }
 
 .main-footer .main-footer__description {
@@ -2277,7 +2280,7 @@ a.nav-world {
   color: #161616;
   margin-bottom: 25px;
   font-size: 15px;
-  letter-spacing: 0;
+  letter-spacing: normal;
 }
 
 .main-footer .main-footer__rrss {
@@ -2318,7 +2321,7 @@ a.nav-world {
   transition: .3s;
   font-size: 15px;
   font-weight: normal;
-  letter-spacing: 0;
+  letter-spacing: normal;
 }
 
 .site-map li a:hover {
@@ -3284,7 +3287,7 @@ a.nav-world {
 .categories-paginator {
   width: 100%;
   justify-content: center;
-  position: absolute;
+  /* position: absolute; */
   /* right: 0; */
   display: flex;
   margin-top: 81px;
