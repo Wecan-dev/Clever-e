@@ -85,7 +85,7 @@ $('.main-products__carousel').slick({
 
   dots: false,
   arrows: true,
-  prevArrow: '<div class="slick-prev-arrow"><i class="fa fa-chevron-left" aria-hidden="true"></i><p class="be">Antes</p></div>', //$('.slick-prev-arrow'),
+  prevArrow: '<div> <div class="slick-prev-arrow"><i class="fa fa-chevron-left" aria-hidden="true"></i><p class="be">Antes</p></div> </div>', //$('.slick-prev-arrow'),
   nextArrow: '<div class="slick-next-arrow"><p class="af">Después</p><i class="fa fa-chevron-right" aria-hidden="true"></i></div>', //$('.slick-next-arrow'),
   responsive: [{
       breakpoint: 1200,

@@ -135,7 +135,7 @@ body {
 }
 
 .nav-underline .active {
-  font-weight: 500;
+  font-weight: normal;
   color: #343a40;
 }
 
@@ -604,7 +604,7 @@ a:hover {
 @font-face {
   font-family: 'HelveticaNeue';
   src: url("../fonts/HelveticaNeueMedium.woff") format("woff");
-  font-weight: 500;
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
@@ -1359,7 +1359,7 @@ a.nav-world {
 
 .pre-navbar p:nth-child(4) {
   font-size: 13px;
-  font-weight: 500;
+  font-weight: normal;
 }
 
 .pre-navbar p b {
@@ -1452,7 +1452,7 @@ a.nav-world {
 }
 
 .main-banner .main-banner__text .main-banner__title {
-  font-weight: 500;
+  font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 60px;
@@ -2046,7 +2046,7 @@ a.nav-world {
 }
 
 .main-newsletter p {
-  font-weight: 500;
+  font-weight: normal;
   color: #585e59;
   font-size: 16px;
   text-align: center;
@@ -2254,7 +2254,7 @@ a.nav-world {
 
 .main-footer .list-contact a {
   color: #161616;
-  font-weight: 500;
+  font-weight: normal;
   transition: .3s;
   font-size: 15px;
 }
@@ -2273,7 +2273,7 @@ a.nav-world {
 }
 
 .main-footer .main-footer__description {
-  font-weight: 500;
+  font-weight: normal;
   color: #161616;
   margin-bottom: 25px;
   font-size: 15px;
@@ -2317,7 +2317,7 @@ a.nav-world {
   color: #161616;
   transition: .3s;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: normal;
   letter-spacing: 0;
 }
 
@@ -2477,7 +2477,7 @@ a.nav-world {
 }
 
 .contact .contact-title {
-  font-weight: 500;
+  font-weight: normal;
   letter-spacing: 2px;
   font-size: 40px;
   color: #000;
@@ -2547,7 +2547,7 @@ a.nav-world {
 
 .contact-modal .contact-modal__title {
   text-align: center;
-  font-weight: 500;
+  font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.25px;
   font-size: 20px;
@@ -2713,7 +2713,7 @@ a.nav-world {
 }
 
 .banner-small .banner-small__title {
-  font-weight: 500;
+  font-weight: normal;
   font-size: 60px;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -2926,14 +2926,14 @@ a.nav-world {
   top: 2px;
   left: 0;
   height: 12px;
-  border: 1px solid #252525;
+  border: 0;
   width: 12px;
   border-radius: 50%;
 }
 
 .categories-sidebar__list li span::after {
-  top: -3px;
-  left: -3px;
+  top: -2px;
+  left: -2px;
   content: "";
   width: 16px;
   height: 16px;
@@ -3162,7 +3162,7 @@ a.nav-world {
 .modal-size-tab .modal-size__item p {
   font-size: 14px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: normal;
   line-height: normal;
   margin-bottom: 0;
   letter-spacing: normal;
@@ -3214,7 +3214,7 @@ a.nav-world {
   font-size: 14px;
   background: #fff;
   margin-bottom: 14.5px;
-  font-weight: 500;
+  font-weight: normal;
   text-transform: uppercase;
   padding: 5px;
   text-align: center;
@@ -3592,7 +3592,7 @@ a.nav-world {
   font-size: 30px;
   text-align: center;
   margin-top: 25px;
-  font-weight: 500;
+  font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   margin-bottom: 25px;
@@ -3659,7 +3659,7 @@ a.nav-world {
 
 .form-custom h2 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: normal;
   margin-bottom: 58px;
   font-stretch: normal;
   font-style: normal;
@@ -3959,7 +3959,7 @@ a.nav-world {
 
 .form-check__custom .woocommerce-privacy-policy-text {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -4188,7 +4188,7 @@ a.nav-world {
 
 .wishlist-items-wrapper {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -4605,7 +4605,7 @@ a.nav-world {
 .product_meta a {
   color: #6d7278;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: normal;
 
 }
 
@@ -4742,7 +4742,7 @@ ol.flex-control-nav.flex-control-thumbs img.flex-active {
 
 .woocommerce-breadcrumb a {
   font-size: 13px;
-  font-weight: 500;
+  font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -4753,7 +4753,7 @@ ol.flex-control-nav.flex-control-thumbs img.flex-active {
 .woocommerce-breadcrumb {
   color: #000;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
