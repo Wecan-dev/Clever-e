@@ -313,7 +313,7 @@ else { ?>
 						<div class="list_div" id="view" style="display:">
 							<table class="shop_table cart wishlist_table wishlist_view traditional responsive  list_table " data-pagination="no" data-per-page="5" data-page="1" data-id="5" data-token="6OL1RPFP5C1P">  
 								<tbody class="wishlist-items-wrapper list">
-									<tr id="yith-wcwl-row-20" data-row-id="20">        
+									<tr id="yith-wcwl-row-20 " class="list-product" data-row-id="20">        
 										<td class="product-thumbnail list">
 											<a href="<?php the_permalink(); ?>">
 												<img class="list" src="<?php the_post_thumbnail_url('full'); ?>">          
@@ -365,7 +365,7 @@ else { ?>
             //$published_posts = wp_count_posts()->publish;
 				$published_posts = count_post_product($_GET["cat"],$_GET["tax"],$_GET["lower"],$_GET["upper"],$category_name);
            // $posts_per_page = get_option('posts_per_page');
-				$posts_per_page = 8;
+				$posts_per_page = 4;
 				$page_number_max = ceil($published_posts / $posts_per_page);
 				$max_page = $page_number_max;
 				if (!$paged && $max_page >= 1) {
@@ -455,9 +455,12 @@ else { ?>
 			}
 
 			.wishlist_table .product-add-to-cart a>img {
-				max-width:18px;
+				max-width: 23px;
+    margin: 5px;
 			}
-
+			.wishlist_table tr td.product-thumbnail a {
+				max-width:118px;
+			}
 			.listt {
 				padding: 0!important;
 			}
@@ -470,17 +473,36 @@ else { ?>
     color: #161616;
 		margin-bottom: 2px;
 		text-align: initial;
-    text-transform: uppercase;
-			}
+		display: -webkit-box;
+  display: -moz-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  overflow: hidden;			}
 
 			.listd {
 				padding: 0!important;
 
 			}
 
+			.list-product {
+				display: grid;
+		grid-template-columns: 50% 1fr 1fr;
+		width: 100%;
+			}
+
 			.listd p {
+				display: -webkit-box;
+  display: -moz-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  overflow: hidden;
 				text-align: initial;
 			}
+		.product-add-to-cart.list > span {
+				display: flex;
+			} 
 
 			.list_table {
 				margin-left: 15px;
@@ -492,12 +514,39 @@ else { ?>
 			}
 
 			.list_div table {
-				margin-left: 0;
+		    margin-left: 10px;
+
 			}
 
 			.product-price>.list del {
 				text-decoration: line-through!important;
 			}
+
+			.list {
+				display: flex;
+				text-align: center;
+    /* justify-content: center; */
+    align-items: center;
+			}
+
+			@media (min-width: 768px) and (max-width: 997px) {
+
+				.list-product {	
+		grid-template-columns: 1fr 1fr 1fr;
+		width: 100%;
+			}
+
+		}
+			@media (min-width: 0px) and (max-width: 767px) {
+
+.list-product {	
+grid-template-columns: 100%;
+width: 100%;
+}
+}
+
+
+			
 		</style>
 
 <?php get_footer(); 

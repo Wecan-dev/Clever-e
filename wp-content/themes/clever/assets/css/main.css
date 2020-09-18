@@ -16,7 +16,7 @@
   font-size: 14px;
   line-height: 1.5em;
   letter-spacing: 0;
-  font-weight: 600;
+  font-weight: 700;
   outline: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -135,7 +135,7 @@ body {
 }
 
 .nav-underline .active {
-  font-weight: 500;
+  font-weight: normal;
   color: #343a40;
 }
 
@@ -425,7 +425,7 @@ body {
 }
 
 .main-video .slick-dots li.slick-active::before {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 20px;
   letter-spacing: 4px;
   content: counter(item, decimal-leading-zero) "/";
@@ -476,11 +476,11 @@ body {
   position: absolute;
   cursor: pointer;
   color: #161616;
-  font-family: 'HelveticaNeue';
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   font-size: 12px;
   letter-spacing: 2.4px;
-  font-weight: 600;
+  font-weight: 700;
   align-items: center;
   bottom: -60px;
 }
@@ -601,69 +601,61 @@ a:hover {
   text-decoration: none !important;
 }
 
-@font-face {
-  font-family: 'HelveticaNeue';
-  src: url("../fonts/HelveticaNeueMedium.woff") format("woff");
-  font-weight: 500;
+/* @font-face {
+font-family: 'Montserrat', sans-serif;  src: url("../fonts/HelveticaNeueMedium.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'HelveticaNeue';
-  src: url("../fonts/HelveticaNeueThin.woff") format("woff");
+font-family: 'Montserrat', sans-serif;  src: url("../fonts/HelveticaNeueThin.woff") format("woff");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'HelveticaNeue';
-  src: url("../fonts/HelveticaNeueRegular.woff") format("woff");
+font-family: 'Montserrat', sans-serif;  src: url("../fonts/HelveticaNeueRegular.woff") format("woff");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'HelveticaNeue';
-  src: url("../fonts/HelveticaNeueHeavy.woff") format("woff");
+font-family: 'Montserrat', sans-serif;  src: url("../fonts/HelveticaNeueHeavy.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'HelveticaNeue';
-  src: url("../fonts/HelveticaNeueLight.woff") format("woff");
+font-family: 'Montserrat', sans-serif;  src: url("../fonts/HelveticaNeueLight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'HelveticaNeue';
-  src: url("../fonts/HelveticaNeueBlackCond.woff") format("woff");
+font-family: 'Montserrat', sans-serif;  src: url("../fonts/HelveticaNeueBlackCond.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'HelveticaNeue';
-  src: url("../fonts/HelveticaNeueLight.woff") format("woff");
+font-family: 'Montserrat', sans-serif;  src: url("../fonts/HelveticaNeueLight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'HelveticaNeue';
-  src: url("../fonts/HelveticaNeueBold.woff") format("woff");
+font-family: 'Montserrat', sans-serif;  src: url("../fonts/HelveticaNeueBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 .main-brand__fixed {
   display: none;
@@ -676,7 +668,7 @@ a:hover {
 }
 
 body {
-  font-family: 'HelveticaNeue';
+  font-family: 'Montserrat', sans-serif;
   color: #161616;
 }
 
@@ -707,7 +699,7 @@ body :focus {
   border: 1px solid;
   text-transform: uppercase;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 3px;
 }
 
@@ -761,7 +753,7 @@ body :focus {
   margin-bottom: 38px;
   letter-spacing: 6px;
   color: #000000;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
 }
@@ -877,7 +869,7 @@ button:focus {
 
 .nav-item {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -963,16 +955,22 @@ button:focus {
 }
 
 .nav-idioma span {
-  font-weight: 600;
+  font-weight: 700;
   margin-right: 5px;
 }
 
+.nav-item__custom {
+  margin-bottom: 23px;
+}
+
 .nav-icon img {
-  width: 26px;
-  height: 26px;
+  width: 21px;
+  height: 22px;
   object-fit: contain;
   margin: 0 10px;
 }
+
+
 
 .nav-money img {
   width: 69px;
@@ -996,11 +994,12 @@ button:focus {
 }
 
 a.nav-world {
-    display: block !important;
+  display: block !important;
 }
 
 .content-icon {
   display: flex;
+  align-items: flex-start;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -1032,12 +1031,44 @@ a.nav-world {
 
 .dropdown-menu {
   background: #3030304f;
-  top: 69%;
+  top: 95%;
   opacity: 0;
   visibility: hidden;
   opacity: 1;
   display: block !important;
   height: 0;
+}
+
+.nav-flex {
+  align-items: flex-end;
+  margin-left: 20px;
+  flex-direction: column;
+}
+
+.content-icon .navbar-nav {
+  min-height: auto;
+}
+
+.drop-money a {
+  padding-right: 0 !important;
+  padding-top: 0;
+}
+
+.drop-money {
+  align-items: start;
+}
+
+.drop-money a {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.drop-money a::-ms-expand {
+  display: none;
+}
+
+.drop-money a::after {
+  display: none;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -1306,6 +1337,7 @@ a.nav-world {
   text-transform: uppercase;
   letter-spacing: 0;
   margin-bottom: 0;
+  font-weight: 500;
 }
 
 .pre-navbar p:nth-child(2) {
@@ -1315,16 +1347,16 @@ a.nav-world {
 .pre-navbar p:nth-child(3) {
   font-size: 16px;
   margin: 0 9px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .pre-navbar p:nth-child(4) {
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .pre-navbar p b {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .nav-top__header {
@@ -1413,7 +1445,7 @@ a.nav-world {
 }
 
 .main-banner .main-banner__text .main-banner__title {
-  font-weight: 500;
+  font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 60px;
@@ -1482,6 +1514,16 @@ a.nav-world {
   width: 100%;
   height: 779px;
 }
+
+@media (min-width: 768px) and (max-width: 997px) {
+  .main-banner .main-banner__img {
+    height: 446px;
+  }
+
+
+}
+
+
 
 .main-banner .main-banner__img img {
   width: 100%;
@@ -1563,6 +1605,7 @@ a.nav-world {
   position: absolute;
   width: 100%;
   height: 100%;
+  cursor: pointer;
   top: 0;
   left: 0;
   display: flex;
@@ -1580,6 +1623,8 @@ a.nav-world {
   position: relative;
 }
 
+
+
 .main-categories__mask .main-categories__title::before {
   content: "";
   position: absolute;
@@ -1587,6 +1632,17 @@ a.nav-world {
   background: #ff130d;
   width: 100%;
   height: 1px;
+}
+
+.main-categories__item .main-categories__title::before {
+  opacity: 0;
+  transition: .3s;
+
+}
+
+.main-categories__item:hover .main-categories__title::before {
+  opacity: 1;
+  transition: .3s;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -1651,12 +1707,12 @@ a.nav-world {
 }
 
 .main-products__item .main-products__title {
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 700;
   letter-spacing: 3px;
   color: #161616;
   margin-bottom: 2px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   display: -webkit-box;
   display: -moz-box;
   -webkit-line-clamp: 1;
@@ -1666,15 +1722,21 @@ a.nav-world {
 }
 
 .main-products__item .main-products__categorie {
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 300;
   letter-spacing: 2px;
   margin-bottom: 0;
   color: #161616;
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  overflow: hidden;
 }
 
 .main-products__item .main-products__price {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 900;
   letter-spacing: 3px;
   color: #161616;
@@ -1682,9 +1744,9 @@ a.nav-world {
 
 .main-products__item .main-products__price del {
   color: #6d7278;
-  font-size: 10px;
+  font-size: 13px;
   letter-spacing: 2.5px;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: line-through !important;
 }
 
@@ -1815,7 +1877,7 @@ a.nav-world {
 .main-club .main-club__title--bold {
   font-size: 45px;
   letter-spacing: 5.6px;
-  font-weight: 600;
+  font-weight: 700;
   position: relative;
   padding-bottom: 7px;
 }
@@ -1831,6 +1893,7 @@ a.nav-world {
 }
 
 .main-club .main-club__description {
+  font-weight: 500;
   font-size: 15px;
   line-height: 19px;
   text-transform: initial;
@@ -1917,11 +1980,14 @@ a.nav-world {
 .main-club__form input {
   border: none;
   letter-spacing: 1px;
+  font-weight: 500;
+
   width: 100%;
 }
 
 .main-club__form input::placeholder {
   color: #161616;
+  font-weight: 500;
   letter-spacing: 1px;
 }
 
@@ -1934,12 +2000,16 @@ a.nav-world {
   letter-spacing: 1px;
   resize: none;
   border: none;
+  font-weight: 500;
+
   height: 104px;
 }
 
 .main-club__form textarea::placeholder {
   color: #161616;
   letter-spacing: 1px;
+  font-weight: 500;
+
 }
 
 .main-club__form .main-general__button {
@@ -1962,7 +2032,7 @@ a.nav-world {
 }
 
 .main-newsletter h2 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 40px;
   color: #161616;
   text-align: center;
@@ -2188,6 +2258,7 @@ a.nav-world {
   font-weight: 500;
   transition: .3s;
   font-size: 15px;
+  letter-spacing: normal;
 }
 
 .main-footer .list-contact a:hover {
@@ -2196,11 +2267,13 @@ a.nav-world {
 }
 
 .main-footer .main-footer__title {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 15px;
   text-transform: uppercase;
   margin-bottom: 25px;
   color: #161616;
+
+
 }
 
 .main-footer .main-footer__description {
@@ -2208,7 +2281,7 @@ a.nav-world {
   color: #161616;
   margin-bottom: 25px;
   font-size: 15px;
-  letter-spacing: 0;
+  letter-spacing: normal;
 }
 
 .main-footer .main-footer__rrss {
@@ -2249,7 +2322,7 @@ a.nav-world {
   transition: .3s;
   font-size: 15px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: normal;
 }
 
 .site-map li a:hover {
@@ -2408,8 +2481,8 @@ a.nav-world {
 }
 
 .contact .contact-title {
-  font-weight: 500;
   letter-spacing: 2px;
+  font-weight: 600;
   font-size: 40px;
   color: #000;
   text-transform: uppercase;
@@ -2428,7 +2501,7 @@ a.nav-world {
 }
 
 .contact-item .main-categories__title {
-  font-family: 'HelveticaNeue';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
 
@@ -2467,6 +2540,7 @@ a.nav-world {
 .contact-item .content-item__list a {
   font-size: 15px;
   color: #161616;
+  font-weight: 500;
   letter-spacing: 0;
   transition: .3s;
 }
@@ -2478,7 +2552,7 @@ a.nav-world {
 
 .contact-modal .contact-modal__title {
   text-align: center;
-  font-weight: 500;
+  font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.25px;
   font-size: 20px;
@@ -2621,7 +2695,7 @@ a.nav-world {
 }
 
 .banner-small {
-  height: 340px;
+  height: 330px;
   position: relative;
 }
 
@@ -2639,10 +2713,12 @@ a.nav-world {
 
 .banner-small .banner-small__img {
   height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .banner-small .banner-small__title {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 60px;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -2659,6 +2735,7 @@ a.nav-world {
   font-weight: 300;
   font-size: 20px;
   margin-bottom: 6px;
+  width: fit-content;
   letter-spacing: 10px;
   color: #fff;
   position: relative;
@@ -2671,7 +2748,7 @@ a.nav-world {
   background: #fff;
   position: absolute;
   top: 50%;
-  left: 218px;
+  left: 100%;
 }
 
 .banner-small .banner-small__text {
@@ -2783,7 +2860,7 @@ a.nav-world {
   letter-spacing: 3.6px;
   color: #161616;
   margin-bottom: 30px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .categories-sidebar__list {
@@ -2846,6 +2923,30 @@ a.nav-world {
   position: absolute;
   border-radius: 50%;
   background: #161616;
+}
+
+
+
+.categories-sidebar__list li span {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 12px;
+  border: 0;
+  width: 12px;
+  border-radius: 50%;
+}
+
+.categories-sidebar__list li span::after {
+  top: -2px;
+  left: -2px;
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid #252525;
 }
 
 /*.categories-sidebar__list li:nth-child(1) span::after {
@@ -2974,7 +3075,7 @@ a.nav-world {
 }
 
 .categories-sidebar__size .modal-size__title span {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .categories-sidebar__size .modal-body {
@@ -3010,7 +3111,7 @@ a.nav-world {
   letter-spacing: 2.4px;
   color: #fff !important;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 700;
   border: 1px solid #fff;
   padding: 7px 17px;
   transition: .3s;
@@ -3067,7 +3168,7 @@ a.nav-world {
 .modal-size-tab .modal-size__item p {
   font-size: 14px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: normal;
   line-height: normal;
   margin-bottom: 0;
   letter-spacing: normal;
@@ -3119,7 +3220,7 @@ a.nav-world {
   font-size: 14px;
   background: #fff;
   margin-bottom: 14.5px;
-  font-weight: 500;
+  font-weight: normal;
   text-transform: uppercase;
   padding: 5px;
   text-align: center;
@@ -3189,9 +3290,8 @@ a.nav-world {
 .categories-paginator {
   width: 100%;
   justify-content: center;
-  position: absolute;
+  /* position: absolute; */
   /* right: 0; */
-  justify-content: flex-end;
   display: flex;
   margin-top: 81px;
 }
@@ -3242,7 +3342,8 @@ a.nav-world {
   border: 1px solid;
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 600;
+  margin-left: -7px;
+  font-weight: 700;
   letter-spacing: 3px;
   margin-top: 10px;
 }
@@ -3253,8 +3354,8 @@ a.nav-world {
 
 .filter-price [slider]>div {
   position: absolute;
-  left: 0;
-  width: 100%;
+  left: 9px;
+  width: 95%;
   right: 0;
 }
 
@@ -3349,6 +3450,7 @@ a.nav-world {
 .filter-price [sign] {
   margin-top: 33px;
   font-size: 18px;
+  margin-left: -7px;
   font-weight: 300;
   letter-spacing: 3.6px;
   z-index: 3;
@@ -3469,7 +3571,7 @@ a.nav-world {
 
 .error-404 .error-404__title {
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 2px;
   margin-top: 60px;
   text-align: center;
@@ -3496,7 +3598,7 @@ a.nav-world {
   font-size: 30px;
   text-align: center;
   margin-top: 25px;
-  font-weight: 500;
+  font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   margin-bottom: 25px;
@@ -3512,6 +3614,22 @@ a.nav-world {
 @media (min-width: 0px) and (max-width: 767px) {
   .error-404 img {
     width: 100%;
+  }
+
+  .main-banner .main-banner__text .main-banner__title {
+    font-size: 44px;
+  }
+
+  .main-banner .main-banner__width {
+    width: 89%;
+  }
+
+  .main-banner .main-banner__img {
+    height: 400px;
+  }
+
+  .main-banner .main-banner__text .main-banner__title--small::before {
+    display: none;
   }
 }
 
@@ -3547,7 +3665,7 @@ a.nav-world {
 
 .form-custom h2 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 58px;
   font-stretch: normal;
   font-style: normal;
@@ -3581,6 +3699,8 @@ a.nav-world {
   padding-left: 5px;
   width: 100%;
   padding-right: 5px;
+  font-weight: 500;
+
 
 }
 
@@ -3594,7 +3714,7 @@ a.nav-world {
 .form-custom input::placeholder {
 
   font-size: 15px;
-  font-weight: normal;
+  font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -3621,7 +3741,8 @@ a.nav-world {
   border: none !important;
   height: auto !important;
   font-size: 15px;
-  font-weight: normal;
+  font-weight: 500;
+
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -3634,7 +3755,7 @@ a.nav-world {
 .woocommerce-form-login__rememberme input {
   width: auto !important;
   height: auto !important;
-
+  margin-right: 7px;
 }
 
 .form-login__register {
@@ -3645,7 +3766,7 @@ a.nav-world {
 
 .form-login__register a {
   font-size: 15px;
-  font-weight: normal;
+  font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.27;
@@ -3847,7 +3968,7 @@ a.nav-world {
 
 .form-check__custom .woocommerce-privacy-policy-text {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -4076,7 +4197,7 @@ a.nav-world {
 
 .wishlist-items-wrapper {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -4205,7 +4326,7 @@ a.nav-world {
 
 .woocommerce-MyAccount-content a {
   color: #000;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .woocommerce-MyAccount-navigation li a {
@@ -4493,7 +4614,7 @@ a.nav-world {
 .product_meta a {
   color: #6d7278;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: normal;
 
 }
 
@@ -4532,12 +4653,12 @@ a.nav-world {
   border: 1px solid;
   text-transform: uppercase;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 3px;
 }
 
 .product_meta .posted_in {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .product-details .price {
@@ -4630,7 +4751,7 @@ ol.flex-control-nav.flex-control-thumbs img.flex-active {
 
 .woocommerce-breadcrumb a {
   font-size: 13px;
-  font-weight: 500;
+  font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -4641,7 +4762,7 @@ ol.flex-control-nav.flex-control-thumbs img.flex-active {
 .woocommerce-breadcrumb {
   color: #000;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -4886,14 +5007,27 @@ section#polylang-2 {
   padding: 10px;
   border: 2px solid;
   border-top-color: red;
+  width: 61px;
+  height: 58px;
+  box-sizing: border-box;
 }
 
 section#polylang-2 ul {
   background: white;
-  padding: 6px 8px;
+  padding: 0;
   border: 1px solid;
   border-color: #c3c3c3;
   border-radius: 2px;
+  width: 37px;
+  height: 34px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+section#polylang-2 ul a {
+  overflow: hidden;
+  height: 100%;
 }
 
 img.next1 {
