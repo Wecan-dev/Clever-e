@@ -16,7 +16,7 @@
   font-size: 14px;
   line-height: 1.5em;
   letter-spacing: 0;
-  font-weight: 600;
+  font-weight: 700;
   outline: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -425,7 +425,7 @@ body {
 }
 
 .main-video .slick-dots li.slick-active::before {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 20px;
   letter-spacing: 4px;
   content: counter(item, decimal-leading-zero) "/";
@@ -476,11 +476,11 @@ body {
   position: absolute;
   cursor: pointer;
   color: #161616;
-  font-family: 'HelveticaNeue';
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   font-size: 12px;
   letter-spacing: 2.4px;
-  font-weight: 600;
+  font-weight: 700;
   align-items: center;
   bottom: -60px;
 }
@@ -601,69 +601,61 @@ a:hover {
   text-decoration: none !important;
 }
 
-@font-face {
-  font-family: 'HelveticaNeue';
-  src: url("../fonts/HelveticaNeueMedium.woff") format("woff");
+/* @font-face {
+font-family: 'Montserrat', sans-serif;  src: url("../fonts/HelveticaNeueMedium.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'HelveticaNeue';
-  src: url("../fonts/HelveticaNeueThin.woff") format("woff");
+font-family: 'Montserrat', sans-serif;  src: url("../fonts/HelveticaNeueThin.woff") format("woff");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'HelveticaNeue';
-  src: url("../fonts/HelveticaNeueRegular.woff") format("woff");
+font-family: 'Montserrat', sans-serif;  src: url("../fonts/HelveticaNeueRegular.woff") format("woff");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'HelveticaNeue';
-  src: url("../fonts/HelveticaNeueHeavy.woff") format("woff");
+font-family: 'Montserrat', sans-serif;  src: url("../fonts/HelveticaNeueHeavy.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'HelveticaNeue';
-  src: url("../fonts/HelveticaNeueLight.woff") format("woff");
+font-family: 'Montserrat', sans-serif;  src: url("../fonts/HelveticaNeueLight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'HelveticaNeue';
-  src: url("../fonts/HelveticaNeueBlackCond.woff") format("woff");
+font-family: 'Montserrat', sans-serif;  src: url("../fonts/HelveticaNeueBlackCond.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'HelveticaNeue';
-  src: url("../fonts/HelveticaNeueLight.woff") format("woff");
+font-family: 'Montserrat', sans-serif;  src: url("../fonts/HelveticaNeueLight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'HelveticaNeue';
-  src: url("../fonts/HelveticaNeueBold.woff") format("woff");
+font-family: 'Montserrat', sans-serif;  src: url("../fonts/HelveticaNeueBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 .main-brand__fixed {
   display: none;
@@ -676,7 +668,7 @@ a:hover {
 }
 
 body {
-  font-family: 'HelveticaNeue';
+  font-family: 'Montserrat', sans-serif;
   color: #161616;
 }
 
@@ -707,7 +699,7 @@ body :focus {
   border: 1px solid;
   text-transform: uppercase;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 3px;
 }
 
@@ -761,7 +753,7 @@ body :focus {
   margin-bottom: 38px;
   letter-spacing: 6px;
   color: #000000;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
 }
@@ -963,7 +955,7 @@ button:focus {
 }
 
 .nav-idioma span {
-  font-weight: 600;
+  font-weight: 700;
   margin-right: 5px;
 }
 
@@ -1345,6 +1337,7 @@ a.nav-world {
   text-transform: uppercase;
   letter-spacing: 0;
   margin-bottom: 0;
+  font-weight: 500;
 }
 
 .pre-navbar p:nth-child(2) {
@@ -1354,16 +1347,16 @@ a.nav-world {
 .pre-navbar p:nth-child(3) {
   font-size: 16px;
   margin: 0 9px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .pre-navbar p:nth-child(4) {
   font-size: 13px;
-  font-weight: normal;
+  font-weight: 700;
 }
 
 .pre-navbar p b {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .nav-top__header {
@@ -1715,7 +1708,7 @@ a.nav-world {
 
 .main-products__item .main-products__title {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 3px;
   color: #161616;
   margin-bottom: 2px;
@@ -1753,7 +1746,7 @@ a.nav-world {
   color: #6d7278;
   font-size: 13px;
   letter-spacing: 2.5px;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: line-through !important;
 }
 
@@ -1884,7 +1877,7 @@ a.nav-world {
 .main-club .main-club__title--bold {
   font-size: 45px;
   letter-spacing: 5.6px;
-  font-weight: 600;
+  font-weight: 700;
   position: relative;
   padding-bottom: 7px;
 }
@@ -1900,6 +1893,7 @@ a.nav-world {
 }
 
 .main-club .main-club__description {
+  font-weight: 500;
   font-size: 15px;
   line-height: 19px;
   text-transform: initial;
@@ -1986,11 +1980,14 @@ a.nav-world {
 .main-club__form input {
   border: none;
   letter-spacing: 1px;
+  font-weight: 500;
+
   width: 100%;
 }
 
 .main-club__form input::placeholder {
   color: #161616;
+  font-weight: 500;
   letter-spacing: 1px;
 }
 
@@ -2003,12 +2000,16 @@ a.nav-world {
   letter-spacing: 1px;
   resize: none;
   border: none;
+  font-weight: 500;
+
   height: 104px;
 }
 
 .main-club__form textarea::placeholder {
   color: #161616;
   letter-spacing: 1px;
+  font-weight: 500;
+
 }
 
 .main-club__form .main-general__button {
@@ -2031,7 +2032,7 @@ a.nav-world {
 }
 
 .main-newsletter h2 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 40px;
   color: #161616;
   text-align: center;
@@ -2046,7 +2047,7 @@ a.nav-world {
 }
 
 .main-newsletter p {
-  font-weight: normal;
+  font-weight: 500;
   color: #585e59;
   font-size: 16px;
   text-align: center;
@@ -2254,7 +2255,7 @@ a.nav-world {
 
 .main-footer .list-contact a {
   color: #161616;
-  font-weight: normal;
+  font-weight: 500;
   transition: .3s;
   font-size: 15px;
   letter-spacing: normal;
@@ -2266,7 +2267,7 @@ a.nav-world {
 }
 
 .main-footer .main-footer__title {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 15px;
   text-transform: uppercase;
   margin-bottom: 25px;
@@ -2276,7 +2277,7 @@ a.nav-world {
 }
 
 .main-footer .main-footer__description {
-  font-weight: normal;
+  font-weight: 500;
   color: #161616;
   margin-bottom: 25px;
   font-size: 15px;
@@ -2320,7 +2321,7 @@ a.nav-world {
   color: #161616;
   transition: .3s;
   font-size: 15px;
-  font-weight: normal;
+  font-weight: 500;
   letter-spacing: normal;
 }
 
@@ -2480,8 +2481,8 @@ a.nav-world {
 }
 
 .contact .contact-title {
-  font-weight: normal;
   letter-spacing: 2px;
+  font-weight: 600;
   font-size: 40px;
   color: #000;
   text-transform: uppercase;
@@ -2500,7 +2501,7 @@ a.nav-world {
 }
 
 .contact-item .main-categories__title {
-  font-family: 'HelveticaNeue';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
 
@@ -2539,6 +2540,7 @@ a.nav-world {
 .contact-item .content-item__list a {
   font-size: 15px;
   color: #161616;
+  font-weight: 500;
   letter-spacing: 0;
   transition: .3s;
 }
@@ -2716,7 +2718,7 @@ a.nav-world {
 }
 
 .banner-small .banner-small__title {
-  font-weight: normal;
+  font-weight: 600;
   font-size: 60px;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -2733,6 +2735,7 @@ a.nav-world {
   font-weight: 300;
   font-size: 20px;
   margin-bottom: 6px;
+  width: fit-content;
   letter-spacing: 10px;
   color: #fff;
   position: relative;
@@ -2745,7 +2748,7 @@ a.nav-world {
   background: #fff;
   position: absolute;
   top: 50%;
-  left: 218px;
+  left: 100%;
 }
 
 .banner-small .banner-small__text {
@@ -2857,7 +2860,7 @@ a.nav-world {
   letter-spacing: 3.6px;
   color: #161616;
   margin-bottom: 30px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .categories-sidebar__list {
@@ -3072,7 +3075,7 @@ a.nav-world {
 }
 
 .categories-sidebar__size .modal-size__title span {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .categories-sidebar__size .modal-body {
@@ -3108,7 +3111,7 @@ a.nav-world {
   letter-spacing: 2.4px;
   color: #fff !important;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 700;
   border: 1px solid #fff;
   padding: 7px 17px;
   transition: .3s;
@@ -3340,7 +3343,7 @@ a.nav-world {
   text-transform: uppercase;
   font-size: 12px;
   margin-left: -7px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 3px;
   margin-top: 10px;
 }
@@ -3568,7 +3571,7 @@ a.nav-world {
 
 .error-404 .error-404__title {
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 2px;
   margin-top: 60px;
   text-align: center;
@@ -3662,7 +3665,7 @@ a.nav-world {
 
 .form-custom h2 {
   font-size: 20px;
-  font-weight: normal;
+  font-weight: 600;
   margin-bottom: 58px;
   font-stretch: normal;
   font-style: normal;
@@ -3696,6 +3699,8 @@ a.nav-world {
   padding-left: 5px;
   width: 100%;
   padding-right: 5px;
+  font-weight: 500;
+
 
 }
 
@@ -3709,7 +3714,7 @@ a.nav-world {
 .form-custom input::placeholder {
 
   font-size: 15px;
-  font-weight: normal;
+  font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -3736,7 +3741,8 @@ a.nav-world {
   border: none !important;
   height: auto !important;
   font-size: 15px;
-  font-weight: normal;
+  font-weight: 500;
+
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -3760,7 +3766,7 @@ a.nav-world {
 
 .form-login__register a {
   font-size: 15px;
-  font-weight: normal;
+  font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.27;
@@ -4320,7 +4326,7 @@ a.nav-world {
 
 .woocommerce-MyAccount-content a {
   color: #000;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .woocommerce-MyAccount-navigation li a {
@@ -4647,12 +4653,12 @@ a.nav-world {
   border: 1px solid;
   text-transform: uppercase;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 3px;
 }
 
 .product_meta .posted_in {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .product-details .price {
