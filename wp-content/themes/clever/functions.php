@@ -285,10 +285,15 @@ class PLL_Walker_List extends Walker {
 
 
   public function start_el( &$output, $element, $depth = 0, $args = array(), $current_object_id = 0 ) {
-
+    if (lang() == 'es'){
+      $img_lang = get_template_directory_uri().'/assets/img/esp.png';
+    }
+    if (lang() == 'en'){
+      $img_lang = get_template_directory_uri().'/assets/img/eng.png';
+    }    
 
     $output .= sprintf(
-      '<a lang="%2$s" class="%1$s" hreflang="%2$s" href="%3$s">%4$s%5$s<i class="fa fa-angle-right"></i>
+      '<a lang="%2$s" class="%1$s" hreflang="%2$s" href="%3$s"><img src="'.$img_lang.'"><i class="fa fa-angle-right"></i>
       </a>',
       esc_attr( implode( ' ', $element->classes ) ),
       esc_attr( $element->locale ),
