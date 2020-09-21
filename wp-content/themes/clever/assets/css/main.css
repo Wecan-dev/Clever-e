@@ -3498,8 +3498,8 @@ a.nav-world {
 }
 
 .catalogo .main-categories__title {
-  font-family: HelveticaNeue;
-  font-weight: 300;
+  /* font-family: HelveticaNeue; */
+  /* font-weight: 300; */
   letter-spacing: 0.93px;
   font-size: 35px;
   margin: 0;
