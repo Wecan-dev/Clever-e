@@ -286,7 +286,7 @@ else { ?>
 								</div>
 								<div class="main-products__body">
 									<a class="main-products__title" href="<?php the_permalink(); ?>">
-										<?php the_title(); ?>
+										<?php the_title();?>
 									</a>
 									<p class="main-products__categorie">
 										<?php if(lang() == 'es'){echo "categoría: ";}if(lang() == 'en'){echo "category: ";}  
