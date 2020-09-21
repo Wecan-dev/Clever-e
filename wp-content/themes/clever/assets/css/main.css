@@ -3708,9 +3708,6 @@ a.nav-world {
   width: 100%;
 }
 
-
-
-
 .form-custom input::placeholder {
 
   font-size: 15px;
@@ -4522,6 +4519,10 @@ a.nav-world {
   padding-top: 45px;
   padding-bottom: 45px;
   padding-right: 40px;
+}
+
+.product-details .categories-paginator {
+  justify-content: flex-end;
 }
 
 .product-details .product {

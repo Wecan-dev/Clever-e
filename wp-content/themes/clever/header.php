@@ -86,7 +86,7 @@
                   <?php $wishlist_count = YITH_WCWL()->count_products(); echo esc_html( $wishlist_count ); ?>
                   </span>
                 </a>
-                <a class="nav-icon" href="<?php echo get_home_url() ?>/cart">
+                <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "carrito";}else{echo "cart";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/card.png">
                   <span class="nav-item__number">
                     <?php echo wp_kses_data(WC()->cart->get_cart_contents_count()); ?>
@@ -121,7 +121,7 @@
                     <?php $wishlist_count = YITH_WCWL()->count_products(); echo esc_html( $wishlist_count ); ?>
   </span>                  
                 </a>
-                <a class="nav-icon" href="<?php echo get_home_url() ?>/cart">
+                <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "carrito";}else{echo "cart";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/card-2.png">
                   <span class="nav-item__number">
                     <?php echo wp_kses_data(WC()->cart->get_cart_contents_count()); ?>
@@ -227,7 +227,7 @@
                   <?php $wishlist_count = YITH_WCWL()->count_products(); echo esc_html( $wishlist_count ); ?>
                   </span>
                 </a>
-                <a class="nav-icon" href="<?php echo get_home_url() ?>/cart">
+                <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "carrito";}else{echo "cart";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/card.png">
                   <span class="nav-item__number">
                     <?php echo wp_kses_data(WC()->cart->get_cart_contents_count()); ?>
@@ -262,7 +262,7 @@
                     <?php $wishlist_count = YITH_WCWL()->count_products(); echo esc_html( $wishlist_count ); ?>
                   </span >                 
                 </a>
-                <a class="nav-icon" href="<?php echo get_home_url() ?>/cart">
+                <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "carrito";}else{echo "cart";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/card-2.png">
                   <span class="nav-item__number">
                     <?php echo wp_kses_data(WC()->cart->get_cart_contents_count()); ?>
