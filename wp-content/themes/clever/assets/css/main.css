@@ -1445,7 +1445,7 @@ a.nav-world {
 }
 
 .main-banner .main-banner__text .main-banner__title {
-  font-weight: normal;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 60px;
