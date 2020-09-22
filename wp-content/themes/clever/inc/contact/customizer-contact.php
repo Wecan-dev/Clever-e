@@ -26,7 +26,18 @@
     'section' => 'contact',
     'settings' => 'address1_es',
     'type' => 'textarea'
-  )));    
+  ))); 
+
+  $wp_customize->add_setting('address1_map_es', array(
+    'default' => ''
+  ));
+
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'address1_map_es_control', array (
+    'description' => 'Map Dirección 1',
+    'section' => 'contact',
+    'settings' => 'address1_map_es',
+    'type' => 'textarea'
+  ))); 
 
   $wp_customize->add_setting('address2_es', array(
     'default' => ''
@@ -36,6 +47,17 @@
     'description' => 'Dirección 2',
     'section' => 'contact',
     'settings' => 'address2_es',
+    'type' => 'textarea'
+  )));
+
+  $wp_customize->add_setting('address2_map_es', array(
+    'default' => ''
+  ));
+
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'address2_map_es_control', array (
+    'description' => 'Map Dirección 2',
+    'section' => 'contact',
+    'settings' => 'address2_map_es',
     'type' => 'textarea'
   )));
 
@@ -100,7 +122,18 @@
     'section' => 'contact',
     'settings' => 'address1_en',
     'type' => 'textarea'
-  )));  
+  ))); 
+
+  $wp_customize->add_setting('address1_map_en', array(
+    'default' => ''
+  ));
+
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'address1_map_en_control', array (
+    'description' => 'Map Address 1',
+    'section' => 'contact',
+    'settings' => 'address1_map_en',
+    'type' => 'textarea'
+  )));   
 
   $wp_customize->add_setting('address2_en', array(
     'default' => ''
@@ -112,6 +145,17 @@
     'settings' => 'address2_en',
     'type' => 'textarea'
   )));    
+
+  $wp_customize->add_setting('address2_map_en', array(
+    'default' => ''
+  ));
+
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'address2_map_en_control', array (
+    'description' => 'Map Address 2',
+    'section' => 'contact',
+    'settings' => 'address2_map_en',
+    'type' => 'textarea'
+  ))); 
 
   $wp_customize->add_setting('phone1_en', array(
     'default' => ''

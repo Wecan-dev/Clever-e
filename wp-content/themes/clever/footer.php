@@ -90,7 +90,7 @@
           <ul class="list-contact">
           <?php if (get_theme_mod('address1_'.lang().'') != NULL) { ?>
             <li>            
-              <a href="">
+              <a href="<?php echo get_theme_mod('address1_map_'.lang().''); ?>">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/place.png">
                 <?php echo get_theme_mod('address1_'.lang().''); ?>
               </a>
@@ -98,7 +98,7 @@
           <?php } ?>  
           <?php if (get_theme_mod('address2_'.lang().'') != NULL) { ?>
             <li>            
-              <a href="">
+              <a href="<?php echo get_theme_mod('address2_map_'.lang().''); ?>">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/place.png">
                 <?php echo get_theme_mod('address2_'.lang().''); ?>
               </a>
@@ -121,13 +121,13 @@
             </li>
           <?php } ?>           
             <li>
-              <a href="mailto:ventasonline@clevermoda.com">
+              <a href="mailto:<?php echo get_theme_mod('email_'.lang().''); ?>">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/icon.png">
                 <?php echo get_theme_mod('email_'.lang().''); ?>
               </a>
             </li>
             <li>
-              <a href="www.clevermoda.com">
+              <a href="<?php echo get_theme_mod('web_'.lang().''); ?>">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/www.png">
                 <?php echo get_theme_mod('web_'.lang().''); ?>
               </a>
