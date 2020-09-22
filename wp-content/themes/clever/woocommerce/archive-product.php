@@ -54,9 +54,7 @@ $args = arg($_GET["cat"],$_GET["tax"],$_GET["lower"],$_GET["upper"],$_GET['order
 <section class="banner-small banner-small--bs">
 	<img class="banner-small__img" src="<?php echo get_template_directory_uri();?>/assets/img/categorie/banner-bs.png">
 	<div class="banner-small__text">
-		<p class="banner-small__title--small">
-			Clever style
-		</p>
+
 		<h2 class="banner-small__title">
 		    <?php if ($page_name == "Best Seller"){
                echo "Best Seller"; 
@@ -72,9 +70,6 @@ else { ?>
   <section class="banner-small">
     <img class="banner-small__img" src="<?php echo get_template_directory_uri();?>/assets/img/categorie/banner-small.png">
     <div class="banner-small__text">
-      <p class="banner-small__title--small">
-        Clever style
-      </p>
       <h2 class="banner-small__title">
         <?php echo single_cat_title("", false); ?>
       </h2>

@@ -2279,6 +2279,7 @@ a.nav-world {
 .main-footer .main-footer__description {
   font-weight: 500;
   color: #161616;
+  text-align: justify;
   margin-bottom: 25px;
   font-size: 15px;
   letter-spacing: normal;
@@ -4651,6 +4652,7 @@ a.nav-world {
   color: #fff;
   font-weight: bold;
   transition: .5s;
+  cursor: pointer;
   border: 1px solid;
   text-transform: uppercase;
   font-size: 15px;

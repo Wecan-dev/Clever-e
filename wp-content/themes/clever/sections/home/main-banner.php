@@ -6,11 +6,6 @@
       <div class="main-banner__item">
         <div class="main-banner__text wow animated fadeIn" style="visibility: visible; animation-delay: .3s  ;">
           <div class="main-banner__width">
-            <div class="main-banner__title--small">
-              <p>
-                <?php the_field('banner_title'); ?>
-              </p>
-            </div>
             <h2 class="main-banner__title">
               <?php the_field('banner_subtitle'); ?>
             </h2>
