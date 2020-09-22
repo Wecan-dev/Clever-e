@@ -1445,7 +1445,7 @@ a.nav-world {
 }
 
 .main-banner .main-banner__text .main-banner__title {
-  font-weight: normal;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 60px;
@@ -3498,8 +3498,8 @@ a.nav-world {
 }
 
 .catalogo .main-categories__title {
-  font-family: HelveticaNeue;
-  font-weight: 300;
+  /* font-family: HelveticaNeue; */
+  /* font-weight: 300; */
   letter-spacing: 0.93px;
   font-size: 35px;
   margin: 0;
