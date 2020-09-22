@@ -15,6 +15,7 @@
  * @version 3.4.0
  */
 
+
 defined( 'ABSPATH' ) || exit;
 
 if (strpos($_SERVER['REQUEST_URI'],'wp-admin') === false) {
@@ -46,6 +47,7 @@ else{
 	$pa_color_swatches = "pa_colors_swatches_id_phoen_color";
 }
 
+$page_name = get_post(get_the_ID())->post_title;
 $args = arg($_GET["cat"],$_GET["tax"],$_GET["lower"],$_GET["upper"],$_GET['orderby'],$paged,$category_name);         
 ?>
 <?php if ($category_name == NULL) { ?>
@@ -56,7 +58,12 @@ $args = arg($_GET["cat"],$_GET["tax"],$_GET["lower"],$_GET["upper"],$_GET['order
 			Clever style
 		</p>
 		<h2 class="banner-small__title">
-			<?php if(lang() == 'es'){echo "básicos infaltables";}else{echo "Basic and unavoidable";} ?>
+		    <?php if ($page_name == "Best Seller"){
+               echo "Best Seller"; 
+		    }
+		    else{ ?>
+			   <?php if(lang() == 'es'){echo "Básicos infaltables";}else{echo "Basic and unavoidable";} ?>
+		    <?php } ?>	
 		</h2>
 	</div>
 </section>
@@ -129,10 +136,10 @@ else { ?>
 					$product_categories = get_categories( array( 'taxonomy' => $sizetalla, 'orderby' => 'menu_order', 'order' => 'asc' ));  
 					?>                                                        
 					<?php foreach($product_categories as $category): ?>
-						<?php $categoria = $category->name; $category_id = $category->term_id; $category_link = get_category_link( $category_id ); ?> 				
+						<?php $checked =NULL;  if ($category->slug == $_GET['cat']) { $checked = "checked='checked'"; } $categoria = $category->name; $category_id = $category->term_id; $category_link = get_category_link( $category_id ); ?> 				
 						<label>
 							<a href="<?php echo $urlsinparametros[0].'/?cat='.$category->slug.'&tax='.$sizetalla.'';?>"><?= $categoria ?>
-								<input checked="checked" name="radio" type="radio">
+								<input <?php echo $checked; ?> name="radio" type="radio">
 								<span class="checkmark"></span>
 							</a>		
 						</label>
@@ -150,11 +157,11 @@ else { ?>
 					$product_categories = get_categories( array( 'taxonomy' => 'product_cat', 'orderby' => 'menu_order', 'order' => 'asc' ));  
 					?>                                                        
 					<?php foreach($product_categories as $category): ?>
-						<?php $categoria = $category->name; $category_id = $category->term_id; $category_link = get_category_link( $category_id ); ?> 				
+						<?php $checked =NULL;  if ($category->slug == $_GET['cat']) { $checked = "checked='checked'"; } $categoria = $category->name; $category_id = $category->term_id; $category_link = get_category_link( $category_id ); ?> 				
 						<?php if ($category_name == NULL) { ?>		
 						<label>
 							<a href="<?php echo $urlsinparametros[0].'/?cat='.$category->slug.'&tax=product_cat'?>"><?= $categoria ?>
-								<input checked="checked" name="radio" type="radio">
+								<input <?php echo $checked; ?> name="radio" type="radio">
 								<span class="checkmark"></span>
 							</a>
 						</label>
@@ -162,7 +169,7 @@ else { ?>
 						else { ?>		
 						<label>
 							<a href="<?php echo get_category_link( $category->term_id ); ?>"><?= $categoria ?>
-								<input checked="checked" name="radio" type="radio">
+								<input <?php echo $checked; ?> name="radio" type="radio">
 								<span class="checkmark"></span>
 							</a>
 						</label>
@@ -180,8 +187,9 @@ else { ?>
 					$product_categories = get_categories( array( 'taxonomy' => $colorpattern, 'orderby' => 'menu_order', 'order' => 'asc' ));  
 					?>                                                        
 					<?php foreach($product_categories as $category): ?>
-						<?php $categoria = $category->name; $category_id = $category->term_id; $category_link = get_category_link( $category_id ); ?> 
+						<?php $checked = NULL; $categoria = $category->name; $category_id = $category->term_id; $category_link = get_category_link( $category_id ); ?> 
 						<?php 
+						if ($category->slug == $_GET['cat']) { $checked = "checked='checked'"; }
 						global $wpdb;
 						$count = 0;
 						$result1 = $wpdb->get_results ("SELECT * FROM ".$wpdb->prefix."termmeta where term_id = '$category_id' and meta_key = '$pa_color_swatches'");
@@ -190,6 +198,7 @@ else { ?>
 						?>				
 						<li>
 							<a href="<?php echo $urlsinparametros[0].'/?cat='.$category->slug.'&tax='.$colorpattern.'';?>"><?= $categoria ?>
+							    <input <?php echo $checked; ?> name="radio" type="radio">
 								<span style="background: <?php echo $color; ?>">&nbsp;</span>
 							</a>
 						</li>
@@ -206,10 +215,11 @@ else { ?>
 					$product_categories = get_categories( array( 'taxonomy' => $siluet, 'orderby' => 'menu_order', 'order' => 'asc' ));  
 					?>                                                        
 					<?php foreach($product_categories as $category): ?>
-						<?php $categoria = $category->name; $category_id = $category->term_id; $category_link = get_category_link( $category_id ); ?> 
+						<?php $checked = NULL; $categoria = $category->name; $category_id = $category->term_id; $category_link = get_category_link( $category_id ); 
+						if ($category->slug == $_GET['cat']) { $checked = "checked='checked'"; }?> 
 						<label>
 							<a href="<?php echo $urlsinparametros[0].'/?cat='.$category->slug.'&tax='.$siluet.''?>"><?= $categoria ?>
-								<input checked="checked" name="radio" type="radio">
+								<input <?php echo $checked; ?> name="radio" type="radio">
 								<span class="checkmark"></span>
 							</a>
 						</label>

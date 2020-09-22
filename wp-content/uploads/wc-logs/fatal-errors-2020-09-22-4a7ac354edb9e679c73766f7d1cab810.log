@@ -1,0 +1,20 @@
+2020-09-22T00:25:57+00:00 CRITICAL syntax error, unexpected ')' en C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\archive-product.php en la línea 53
+
+2020-09-22T00:26:30+00:00 CRITICAL Uncaught Error: Call to undefined function gest_post() in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\archive-product.php:50
+Stack trace:
+#0 C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\page.php(21): require_once()
+#1 C:\xampp2\htdocs\Clever-e\wp-includes\template-loader.php(106): include('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\Clever-e\wp-blog-header.php(19): require_once('C:\\xampp2\\htdoc...')
+#3 C:\xampp2\htdocs\Clever-e\index.php(17): require('C:\\xampp2\\htdoc...')
+#4 {main}
+  thrown en C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\archive-product.php en la línea 50
+
+2020-09-22T00:28:16+00:00 CRITICAL Uncaught Error: Call to undefined function wp_get_post() in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\archive-product.php:50
+Stack trace:
+#0 C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\page.php(21): require_once()
+#1 C:\xampp2\htdocs\Clever-e\wp-includes\template-loader.php(106): include('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\Clever-e\wp-blog-header.php(19): require_once('C:\\xampp2\\htdoc...')
+#3 C:\xampp2\htdocs\Clever-e\index.php(17): require('C:\\xampp2\\htdoc...')
+#4 {main}
+  thrown en C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\archive-product.php en la línea 50
+

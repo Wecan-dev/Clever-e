@@ -69,7 +69,7 @@
               </div>
             </li>
             <li class="nav-item nav-item__custom">
-              <a class="nav-link nav-link-p" data="offcanvas" href="<?php if(lang() == 'es'){echo ''.get_home_url().'/tienda';}if(lang() == 'en'){echo ''.get_home_url().'/shop';} ?>">Best Seller</a>
+              <a class="nav-link nav-link-p" data="offcanvas" href="<?php if(lang() == 'es'){echo ''.get_home_url().'/best-seller';}if(lang() == 'en'){echo ''.get_home_url().'/best-seller-en';} ?>">Best Seller</a>
             </li>
             <li class="nav-item nav-item__custom">
               <a class="nav-link nav-link-p" data="offcanvas" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "contacto";}else{echo "contact ";} ?>"><?php if(lang() == 'es'){echo "Contacto";}if(lang() == 'en'){echo "Contact ";} ?></a>
@@ -210,7 +210,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-p" data="offcanvas" href="<?php if(lang() == 'es'){echo ''.get_home_url().'/tienda';}if(lang() == 'en'){echo ''.get_home_url().'/shop';} ?>">Best Seller</a>
+              <a class="nav-link nav-link-p" data="offcanvas" href="<?php if(lang() == 'es'){echo ''.get_home_url().'/best-seller';}if(lang() == 'en'){echo ''.get_home_url().'/best-seller-en';} ?>">Best Seller</a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-p" data="offcanvas" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "contacto";}else{echo "contact ";} ?>"><?php if(lang() == 'es'){echo "Contacto";}if(lang() == 'en'){echo "Contact ";} ?></a>
