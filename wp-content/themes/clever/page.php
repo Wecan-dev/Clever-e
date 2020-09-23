@@ -109,9 +109,6 @@
   </div>
   <section class="contact">
     <div class="padding-top-bottom padding-right-left">
-      <p class="contact-title--small">
-         <?php the_field('title-distribuidor'); ?>
-      </p>
       <h2 class="contact-title">
          <?php the_field('subtitle-distribuidor'); ?>
       </h2>
