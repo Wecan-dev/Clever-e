@@ -48,7 +48,7 @@ else{
 }
 
 $page_name = get_post(get_the_ID())->post_title;
-$args = arg($_GET["cat"],$_GET["tax"],$_GET["lower"],$_GET["upper"],$_GET['orderby'],$paged,$category_name);         
+$args = arg($_GET["cat"],$_GET["tax"],$_GET["lower"],$_GET["upper"],$_GET['orderby'],$paged,$category_name,$page_name);         
 ?>
 <?php if ($category_name == NULL) { ?>
 <section class="banner-small banner-small--bs">
@@ -259,6 +259,7 @@ else { ?>
 
 
 			<!-- Tab panes -->
+           <?php if ($page_name != "Best Seller"){?>	    			
 			<div class="tab-content">
 				<div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
@@ -291,7 +292,7 @@ else { ?>
 								</div>
 								<div class="main-products__body">
 									<a class="main-products__title" href="<?php the_permalink(); ?>">
-										<?php the_title();?>
+										<?php echo get_post_meta( get_the_ID(), 'total_sales', true ); the_title();?>
 									</a>
 									<p class="main-products__categorie">
 										<?php if(lang() == 'es'){echo "categoría: ";}if(lang() == 'en'){echo "category: ";}  
@@ -360,17 +361,11 @@ else { ?>
 					</div>
 				</div>
 
-
-
-
-
-
-
 				<?php
             //$published_posts = wp_count_posts()->publish;
 				$published_posts = count_post_product($_GET["cat"],$_GET["tax"],$_GET["lower"],$_GET["upper"],$category_name);
            // $posts_per_page = get_option('posts_per_page');
-				$posts_per_page = 4;
+				$posts_per_page = 8;
 				$page_number_max = ceil($published_posts / $posts_per_page);
 				$max_page = $page_number_max;
 				if (!$paged && $max_page >= 1) {
@@ -406,6 +401,153 @@ else { ?>
 
 				</div>
 			</div>
+		  <?php } ?>	
+
+           <!-- Tab panes Best Seller-->
+           <?php if ($page_name == "Best Seller") { ?> 
+			<div class="tab-content">
+				<div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+					<div class="categorie-product__grid">
+						<?php $loop = new WP_Query( $args ); ?>
+						<?php while ( $loop->have_posts() ) : $loop->the_post(); global $product;?>	
+						<?php if (get_post_meta( get_the_ID(), 'total_sales', true ) > 0) { $count_best_seller = $count_best_seller;?> 		
+							<div class="main-products__item">
+								<div class="main-products__img">
+									<div class="main-products__mask">
+										<div class="main-products__icon">
+											<?php if (variation(get_the_ID()) <= 0){ ?>
+											<a href="?add-to-cart=<?php echo get_the_ID(); ?>">
+												<img src="<?php echo get_template_directory_uri();?>/assets/img/card.png">
+											</a>
+											<?php } ?>  
+											<?php if (variation(get_the_ID()) > 0){ ?>	
+											<a href="<?php the_permalink(); ?>">
+												<img src="<?php echo get_template_directory_uri();?>/assets/img/card.png">
+											</a>
+											<?php } ?>              							
+											<a href="?add_to_wishlist=<?php echo get_the_ID(); ?>">
+												<img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
+											</a>
+											<a href="<?php the_permalink(); ?>">
+												<img src="<?php echo get_template_directory_uri();?>/assets/img/search.png">
+											</a>
+										</div>
+									</div>
+									<img src="<?php the_post_thumbnail_url('full');?>">
+								</div>
+								<div class="main-products__body">
+									<a class="main-products__title" href="<?php the_permalink(); ?>">
+										<?php the_title();?>
+									</a>
+									<p class="main-products__categorie">
+										<?php if(lang() == 'es'){echo "categoría: ";}if(lang() == 'en'){echo "category: ";}  
+										$product_categories = wp_get_post_terms( get_the_ID(), 'product_cat' ); $i = 0;
+										foreach($product_categories as $category):
+											if ($i > 0 ) {echo " / "; } echo $category->name; $i=$i+1;
+										endforeach;?>
+
+									</p>
+									<p class="main-products__price">
+										<?php echo $product->get_price_html(); ?>
+									</p>
+									<a class="main-general__button" href="<?php the_permalink(); ?>"><?php if(lang() == 'es'){echo "Comprar";}if(lang() == 'en'){echo "To buy";}?></a>
+								</div>
+							</div>
+						<?php } endwhile; ?>  	
+					</div>
+
+
+				</div>
+				<div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+					<?php $loop = new WP_Query( $args ); ?>
+					<?php while ( $loop->have_posts() ) : $loop->the_post(); global $product;?>             
+						<div class="list_div" id="view" style="display:">
+							<table class="shop_table cart wishlist_table wishlist_view traditional responsive  list_table " data-pagination="no" data-per-page="5" data-page="1" data-id="5" data-token="6OL1RPFP5C1P">  
+								<tbody class="wishlist-items-wrapper list">
+									<tr id="yith-wcwl-row-20 " class="list-product" data-row-id="20">        
+										<td class="product-thumbnail list">
+											<a href="<?php the_permalink(); ?>">
+												<img class="list" src="<?php the_post_thumbnail_url('full'); ?>">          
+											</a> 
+											<table class="list_table">
+												<tr>
+													<td class="listt"> <a href="<?php the_permalink(); ?>" class="collection-item__title list"><?php the_title(); ?></a></td>
+												</tr>
+												<tr>
+													<td class="listd"><p class="main-products__categorie"><?php if(lang() == 'es'){echo "Categoría: ";}if(lang() == 'en'){echo "Category: ";}  
+														$product_categories = wp_get_post_terms( get_the_ID(), 'product_cat' ); $i = 0;
+														foreach($product_categories as $category):
+															if ($i > 0 ) {echo " / "; } echo $category->name; $i=$i+1;
+														endforeach;?></p></td>
+												</tr>          
+											</table>                         
+										</td>  
+										<td class="product-price list">              
+											<span class="woocommerce-Price-amount amount list"><?php echo $product->get_price_html(); ?>
+											</td>
+											<td class="product-add-to-cart list">
+												<span>
+													<?php if (variation(get_the_ID()) <= 0){ ?>
+													<a href="?add-to-cart=<?php echo get_the_ID(); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/card.png"></a>
+													<?php } ?>  
+													<?php if (variation(get_the_ID()) > 0){ ?>
+													<a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/card.png"></a>
+													<?php } ?> 
+													<a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/search.png"></a> 
+													<a href="?add_to_wishlist=<?php echo get_the_ID(); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png"></a>  
+
+												</span>             
+											</td>                    
+										</tr>    
+									</tbody>
+								</table>
+							</div>
+						<?php endwhile; ?>        	
+					</div>
+				</div>
+
+				<?php
+            //$published_posts = wp_count_posts()->publish;
+				$published_posts = count_post_product($_GET["cat"],$_GET["tax"],$_GET["lower"],$_GET["upper"],$category_name);
+           // $posts_per_page = get_option('posts_per_page');
+				$posts_per_page = 8;
+				$page_number_max = ceil($published_posts / $posts_per_page);
+				$max_page = $page_number_max;
+				if (!$paged && $max_page >= 1) {
+					$current_page = 1;
+				}
+				else {
+					$current_page = $paged;
+				} ?>     
+
+
+				<div class="categories-paginator">
+					<div id="pagination">
+						<div class="page-nav fix">
+							<div class="suf-page-nav fix">
+								<?php echo paginate_links(array(
+									"base" => add_query_arg("paged", "%#%"),
+									"format" => '',
+									"type" => "plain",
+									"total" => $max_page,
+									"current" => $current_page,
+									"show_all" => false,
+									"end_size" => 2,
+									"mid_size" => 2,
+									"prev_next" => true,
+									"next_text" => __('<img src="'.get_template_directory_uri().'/assets/img/categorie/next-2.png">'),
+									"prev_text" => __('<img src="'.get_template_directory_uri().'/assets/img/categorie/prev-2.png">'),
+									)); ?>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>	
+		  <?php } ?>			
 		</section>
 		<style type="text/css">
 			a.page-numbers {

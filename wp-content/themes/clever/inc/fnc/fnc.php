@@ -397,8 +397,9 @@ function color($id)
 
 
 
-function arg($cat,$tax,$lower,$upper,$orderby,$paged,$category_name){ 
-if ($category_name == NULL){   
+function arg($cat,$tax,$lower,$upper,$orderby,$paged,$category_name,$page_name){ 
+if ($category_name == NULL){  
+if ($page_name != "Best Seller"){    
   if ($cat != NULL) {
     $args = 
     array(
@@ -431,7 +432,7 @@ if ($category_name == NULL){
     array(
       'post_type' => 'product',
       'paged' => $paged,
-      'posts_per_page' => 9,        
+      'posts_per_page' => 8,        
       'post_status' => 'publish',
       'meta_query' => array(
           'relation'=>'AND', // 'AND' 'OR' ...
@@ -519,6 +520,202 @@ if ($category_name == NULL){
       'order'=> 'DESC' // sort descending
     );
   } 
+ } 
+
+if ($page_name == "Best Seller"){    
+  if ($cat != NULL) {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' => 8,     
+      'meta_key' => 'total_sales',
+      'orderby' => 'meta_value_num', 
+      'meta_query' => array(
+        array(
+            'key' => 'total_sales',
+            'value' => 0,
+            'compare' => '>'
+        )
+      ),
+      'post_status' => 'publish',
+      'tax_query' => array(
+      'relation'=>'AND', // 'AND' 'OR' ...
+        array(
+        'taxonomy'        => $tax,
+        'field'           => 'slug',
+        'terms'           => array($cat),
+        'operator'        => 'IN',
+        )),
+    );
+  } 
+        
+  if ($cat == NULL AND $lower == NULL) {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' =>8,
+      'meta_key' => 'total_sales',
+      'orderby' => 'meta_value_num',   
+      'meta_query' => array(
+        array(
+            'key' => 'total_sales',
+            'value' => 0,
+            'compare' => '>'
+        )
+      ),
+
+    );
+  } 
+        
+  if ($lower != NULL) {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' => 8,  
+      'meta_key' => 'total_sales',
+      'orderby' => 'meta_value_num',             
+      'post_status' => 'publish',
+      'meta_query' => array(
+          'relation'=>'AND', // 'AND' 'OR' ...
+          array(
+            'key' => '_price',
+            'value' => array($lower, $upper),
+            'compare' => 'BETWEEN',
+            'type' => 'NUMERIC'
+          ),
+          'relation'=>'AND', // 'AND' 'OR' ...
+          array(
+            'key' => 'total_sales',
+            'value' => 0,
+            'compare' => '>',
+          )
+      ),
+    );
+  }  
+       
+  if ($orderby == 'rating') {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' => 8,        
+      'post_status' => 'publish',
+      'orderby' => 'meta_value', // orderby the meta_value of the following meta_key
+      'meta_key' => '_wc_average_rating', // the custom meta_key name
+      'order'=> 'DESC', // sort descending
+      'meta_query' => array(
+        array(
+            'key' => 'total_sales',
+            'value' => 0,
+            'compare' => '>'
+        )
+      ),      
+    );
+  } 
+        
+  if ($orderby == 'popularity') {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' => 8,        
+      'post_status' => 'publish',
+      'orderby' => 'meta_value', // orderby the meta_value of the following meta_key
+      'meta_key' => 'total_sales', // the custom meta_key name
+      'order'=> 'DESC', // sort descending
+      'meta_query' => array(
+        array(
+            'key' => 'total_sales',
+            'value' => 0,
+            'compare' => '>'
+        )
+      ),      
+    );
+  }          
+        
+  if ($orderby == 'menu_order') {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' => 8,        
+      'post_status' => 'publish',
+      'orderby' => 'menu_order',
+      'order' => 'ASC',
+      'meta_query' => array(
+        array(
+            'key' => 'total_sales',
+            'value' => 0,
+            'compare' => '>'
+        )
+      ),      
+
+    );
+  }  
+        
+  if ($orderby == 'date') {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' => 8,        
+      'post_status' => 'publish',
+      'orderby' => 'date',
+      'order' => 'DESC',
+      'meta_query' => array(
+        array(
+            'key' => 'total_sales',
+            'value' => 0,
+            'compare' => '>'
+        )
+      ),      
+    );
+  }  
+        
+  if ($orderby == 'price') {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' => 8,        
+      'post_status' => 'publish',
+      'orderby' => 'meta_value', // orderby the meta_value of the following meta_key
+      'meta_key' => '_price', // the custom meta_key name
+      'order'=> 'ASC', // sort descending
+      'meta_query' => array(
+        array(
+            'key' => 'total_sales',
+            'value' => 0,
+            'compare' => '>'
+        )
+      ),
+
+    );
+  } 
+        
+  if ($orderby == 'price-desc') {
+    $args = 
+    array(
+      'post_type' => 'product',
+      'paged' => $paged,
+      'posts_per_page' => 8,        
+      'post_status' => 'publish',
+      'orderby' => 'meta_value', // orderby the meta_value of the following meta_key
+      'meta_key' => '_price', // the custom meta_key name
+      'order'=> 'DESC', // sort descending
+      'meta_query' => array(
+        array(
+            'key' => 'total_sales',
+            'value' => 0,
+            'compare' => '>'
+        )
+      ),      
+    );
+  } 
+} 
 }//if category_name
 
 if ($category_name != NULL){   
@@ -570,7 +767,7 @@ if ($category_name != NULL){
     array(
       'post_type' => 'product',
       'paged' => $paged,
-      'posts_per_page' => 9,        
+      'posts_per_page' => 8,        
       'post_status' => 'publish',
       'tax_query' => array(
       'relation'=>'AND', // 'AND' 'OR' ...

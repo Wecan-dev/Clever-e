@@ -18,3 +18,7 @@ Stack trace:
 #4 {main}
   thrown en C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\archive-product.php en la línea 50
 
+2020-09-22T06:01:12+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\page-example.php on line 57
+
+2020-09-22T23:28:56+00:00 CRITICAL Maximum execution time of 360 seconds exceeded en C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-list-util.php en la línea 109
+
