@@ -438,7 +438,7 @@ else { ?>
 								</div>
 								<div class="main-products__body">
 									<a class="main-products__title" href="<?php the_permalink(); ?>">
-										<?php echo get_post_meta( get_the_ID(), 'total_sales', true ); the_title();?>
+										<?php the_title();?>
 									</a>
 									<p class="main-products__categorie">
 										<?php if(lang() == 'es'){echo "categoría: ";}if(lang() == 'en'){echo "category: ";}  
@@ -509,7 +509,7 @@ else { ?>
 
 				<?php
             //$published_posts = wp_count_posts()->publish;
-				$published_posts = $count_best_seller;
+				$published_posts = count_post_product($_GET["cat"],$_GET["tax"],$_GET["lower"],$_GET["upper"],$category_name);
            // $posts_per_page = get_option('posts_per_page');
 				$posts_per_page = 8;
 				$page_number_max = ceil($published_posts / $posts_per_page);
