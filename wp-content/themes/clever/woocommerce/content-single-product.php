@@ -89,12 +89,15 @@ if ( post_password_required() ) {
 
 <script type="text/javascript">
   $('.woocommerce-breadcrumb').appendTo('.nav-content-product');
-    var langu = "<?= lang() ?>";         
+    var langu = "<?= lang() ?>";  
+    var url = "<?= get_home_url() ?>";       
     if (langu == 'en'){ 
-       $('.woocommerce-message a').prop('href','cart');
+       var url_en = "<?= get_home_url() ?>/cart";   
+       $('.woocommerce-message a').prop('href', url_en);
     } 
     else 
     {
-       $('.woocommerce-message a').prop('href','carrito');
+       var url_es = "<?= get_home_url() ?>/carrito";
+       $('.woocommerce-message a').prop('href', url_es);
     }  
 </script>
