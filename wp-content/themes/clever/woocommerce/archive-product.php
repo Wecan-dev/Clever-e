@@ -279,10 +279,16 @@ else { ?>
 											<a href="<?php the_permalink(); ?>">
 												<img src="<?php echo get_template_directory_uri();?>/assets/img/card.png">
 											</a>
-											<?php } ?>              							
+											<?php } ?> 
+											<?php if (is_user_logged_in()){ ?>               							
 											<a href="?add_to_wishlist=<?php echo get_the_ID(); ?>">
 												<img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
 											</a>
+                                            <?php }else { ?>  
+                                                <div data-toggle="tooltip" data-placement="top" title="" data-original-title="<?php if(lang() == 'es'){echo "Debes estar iniciar sesión";}else{echo "You must be logged";} ?>" class="collection-item__icon" >
+                                                  <img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
+                                                </div>              
+                                            <?php } ?>											
 											<a href="<?php the_permalink(); ?>">
 												<img src="<?php echo get_template_directory_uri();?>/assets/img/search.png">
 											</a>
@@ -349,8 +355,13 @@ else { ?>
 													<a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/card.png"></a>
 													<?php } ?> 
 													<a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/search.png"></a> 
-													<a href="?add_to_wishlist=<?php echo get_the_ID(); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png"></a>  
-
+													<?php if (is_user_logged_in()){ ?>   
+													   <a href="?add_to_wishlist=<?php echo get_the_ID(); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png"></a>  
+                                                    <?php }else { ?>  
+                                                    <div data-toggle="tooltip" data-placement="top" title="" data-original-title="<?php if(lang() == 'es'){echo "Debes estar iniciar sesión";}else{echo "You must be logged";} ?>" class="collection-item__icon" >
+                                                      <img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
+                                                    </div>              
+                                                    <?php } ?>
 												</span>             
 											</td>                    
 										</tr>    

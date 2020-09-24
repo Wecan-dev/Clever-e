@@ -80,12 +80,18 @@
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "mi-cuenta";}else{echo "my-account";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/user.png">
                 </a>
+               <?php if(is_user_logged_in() != NULL){ ?>
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "lista-de-deseos";}else{echo "wishlist";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
                   <span class="nav-item__number">
                   <?php $wishlist_count = YITH_WCWL()->count_products(); echo esc_html( $wishlist_count ); ?>
                   </span>
                 </a>
+                <?php }else { ?>
+                    <div data-toggle="tooltip" data-placement="top" title="" data-original-title="<?php if(lang() == 'es'){echo "Debes estar iniciar sesión";}else{echo "You must be logged";} ?>" class="collection-item__icon nav-icon" >
+                      <img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
+                    </div>                
+                <?php } ?>
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "carrito";}else{echo "cart";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/card.png">
                   <span class="nav-item__number">
@@ -115,12 +121,18 @@
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "mi-cuenta";}else{echo "my-account";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/user-2.png">
                 </a>
+                <?php if(is_user_logged_in() != NULL){ ?>
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "lista-de-deseos";}else{echo "wishlist";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/love.png">
                   <span class="nav-item__number">
                     <?php $wishlist_count = YITH_WCWL()->count_products(); echo esc_html( $wishlist_count ); ?>
-  </span>                  
+                  </span>                  
                 </a>
+                <?php }else { ?>
+                    <div data-toggle="tooltip" data-placement="top" title="" data-original-title="<?php if(lang() == 'es'){echo "Debes estar iniciar sesión";}else{echo "You must be logged";} ?>" class="collection-item__icon nav-icon" >
+                      <img src="<?php echo get_template_directory_uri();?>/assets/img/love.png">
+                    </div>                
+                <?php } ?>
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "carrito";}else{echo "cart";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/card-2.png">
                   <span class="nav-item__number">
@@ -221,12 +233,18 @@
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "mi-cuenta";}else{echo "my-account";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/user.png">
                 </a>
+                <?php if(is_user_logged_in() != NULL){ ?> 
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "lista-de-deseos";}else{echo "wishlist";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
                   <span class="nav-item__number">
                   <?php $wishlist_count = YITH_WCWL()->count_products(); echo esc_html( $wishlist_count ); ?>
                   </span>
                 </a>
+                <?php }else { ?>
+                    <div data-toggle="tooltip" data-placement="top" title="" data-original-title="<?php if(lang() == 'es'){echo "Debes estar iniciar sesión";}else{echo "You must be logged";} ?>" class="collection-item__icon nav-icon" >
+                      <img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
+                    </div>                
+                <?php } ?>
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "carrito";}else{echo "cart";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/card.png">
                   <span class="nav-item__number">
@@ -256,12 +274,18 @@
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "mi-cuenta";}else{echo "my-account";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/user-2.png">
                 </a>
+                <?php if(is_user_logged_in() != NULL){ ?>
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "lista-de-deseos";}else{echo "wishlist";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/love.png">
                   <span class="nav-item__number">
                     <?php $wishlist_count = YITH_WCWL()->count_products(); echo esc_html( $wishlist_count ); ?>
                   </span >                 
                 </a>
+                <?php }else { ?>
+                    <div data-toggle="tooltip" data-placement="top" title="" data-original-title="<?php if(lang() == 'es'){echo "Debes estar iniciar sesión";}else{echo "You must be logged";} ?>" class="collection-item__icon nav-icon" >
+                      <img src="<?php echo get_template_directory_uri();?>/assets/img/love.png">
+                    </div>                
+                <?php } ?>
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "carrito";}else{echo "cart";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/card-2.png">
                   <span class="nav-item__number">

@@ -1,0 +1,4 @@
+2020-09-24T13:25:25+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE) en C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\wishlist-view.php en la línea 351
+
+2020-09-24T13:28:14+00:00 CRITICAL Cannot redeclare lang() (previously declared in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\fnc\fnc.php:132) en C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\wishlist-view.php en la línea 9
+
