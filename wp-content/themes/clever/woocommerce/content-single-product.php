@@ -89,4 +89,12 @@ if ( post_password_required() ) {
 
 <script type="text/javascript">
   $('.woocommerce-breadcrumb').appendTo('.nav-content-product');
+    var langu = "<?= lang() ?>";         
+    if (langu == 'en'){ 
+       $('.woocommerce-message a').prop('href','cart');
+    } 
+    else 
+    {
+       $('.woocommerce-message a').prop('href','carrito');
+    }  
 </script>
