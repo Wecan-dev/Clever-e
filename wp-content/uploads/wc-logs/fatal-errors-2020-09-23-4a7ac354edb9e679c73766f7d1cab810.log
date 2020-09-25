@@ -20,3 +20,5 @@ Stack trace:
 
 2020-09-23T23:41:19+00:00 CRITICAL syntax error, unexpected ''relation'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\fnc\fnc.php on line 589
 
+2020-09-23T23:13:10+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE) en C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\wishlist-view.php en la línea 345
+

@@ -24,7 +24,7 @@ global $product;
  *
  * @hooked woocommerce_output_all_notices - 10
  */
-//do_action( 'woocommerce_before_single_product' );
+do_action( 'woocommerce_before_single_product' );
 
 if ( post_password_required() ) {
 	echo get_the_password_form(); // WPCS: XSS ok.
@@ -89,4 +89,15 @@ if ( post_password_required() ) {
 
 <script type="text/javascript">
   $('.woocommerce-breadcrumb').appendTo('.nav-content-product');
+    var langu = "<?= lang() ?>";  
+    var url = "<?= get_home_url() ?>";       
+    if (langu == 'en'){ 
+       var url_en = "<?= get_home_url() ?>/cart";   
+       $('.woocommerce-message a').prop('href', url_en);
+    } 
+    else 
+    {
+       var url_es = "<?= get_home_url() ?>/carrito";
+       $('.woocommerce-message a').prop('href', url_es);
+    }  
 </script>

@@ -33,7 +33,14 @@ $category_id = get_queried_object_id();
 $category_name = get_queried_object()->slug; 
 $current_uri = home_url( add_query_arg( NULL, NULL ) );
 
+$page_name = get_post(get_the_ID())->post_title;
+
 $urlsinparametros= explode('?', $_SERVER['REQUEST_URI'], 2);
+if ($category_name == NULL){ 
+    $urlsinparametros = get_home_url().'/'.get_post(get_the_ID())->post_name;
+}else{
+	$urlsinparametros = get_home_url().'/'.$category_name;
+}    
 if (lang() == "es") {
 	$sizetalla = "pa_talla";
 	$colorpattern = "pa_color";
@@ -47,8 +54,13 @@ else{
 	$pa_color_swatches = "pa_colors_swatches_id_phoen_color";
 }
 
+<<<<<<< HEAD
 $page_name = get_post(get_the_ID())->post_title;
 $args = arg($_GET["cat"],$_GET["tax"],$_GET["lower"],$_GET["upper"],$_GET['orderby'],$paged,$category_name);         
+=======
+
+$args = arg($_GET["cat"],$_GET["tax"],$_GET["lower"],$_GET["upper"],$_GET['orderby'],$paged,$category_name,$page_name);         
+>>>>>>> 3ad968eb9697466c34bfb52ff0dba9b0069604c5
 ?>
 <?php if ($category_name == NULL) { ?>
 <section class="banner-small banner-small--bs">
@@ -68,7 +80,7 @@ $args = arg($_GET["cat"],$_GET["tax"],$_GET["lower"],$_GET["upper"],$_GET['order
 <?php } 
 else { ?>
   <section class="banner-small">
-    <img class="banner-small__img" src="<?php echo get_template_directory_uri();?>/assets/img/categorie/banner-small.png">
+    <img class="banner-small__img" src="<?php echo wp_get_attachment_url( get_woocommerce_term_meta( $category_id, 'thumbnail_id', true ) );?>">
     <div class="banner-small__text">
       <h2 class="banner-small__title">
         <?php echo single_cat_title("", false); ?>
@@ -76,7 +88,7 @@ else { ?>
     </div>
   </section>
 <?php } ?>
-<section class="categories">
+<section class="categories <?php if ($page_name == "Best Seller"){ echo "categories-bs";}?>">
 	<div class="container-grid">
 		<div class="categories-sidebar">
 			<div class="categories-sidebar__item">
@@ -133,7 +145,7 @@ else { ?>
 					<?php foreach($product_categories as $category): ?>
 						<?php $checked =NULL;  if ($category->slug == $_GET['cat']) { $checked = "checked='checked'"; } $categoria = $category->name; $category_id = $category->term_id; $category_link = get_category_link( $category_id ); ?> 				
 						<label>
-							<a href="<?php echo $urlsinparametros[0].'/?cat='.$category->slug.'&tax='.$sizetalla.'';?>"><?= $categoria ?>
+							<a href="<?php echo $urlsinparametros.'/?cat='.$category->slug.'&tax='.$sizetalla.'';?>"><?= $categoria ?>
 								<input <?php echo $checked; ?> name="radio" type="radio">
 								<span class="checkmark"></span>
 							</a>		
@@ -155,7 +167,7 @@ else { ?>
 						<?php $checked =NULL;  if ($category->slug == $_GET['cat']) { $checked = "checked='checked'"; } $categoria = $category->name; $category_id = $category->term_id; $category_link = get_category_link( $category_id ); ?> 				
 						<?php if ($category_name == NULL) { ?>		
 						<label>
-							<a href="<?php echo $urlsinparametros[0].'/?cat='.$category->slug.'&tax=product_cat'?>"><?= $categoria ?>
+							<a href="<?php echo $urlsinparametros.'/?cat='.$category->slug.'&tax=product_cat'?>"><?= $categoria ?>
 								<input <?php echo $checked; ?> name="radio" type="radio">
 								<span class="checkmark"></span>
 							</a>
@@ -192,7 +204,7 @@ else { ?>
 							{  $color = $page1->meta_value;}
 						?>				
 						<li>
-							<a href="<?php echo $urlsinparametros[0].'/?cat='.$category->slug.'&tax='.$colorpattern.'';?>"><?= $categoria ?>
+							<a href="<?php echo $urlsinparametros.'/?cat='.$category->slug.'&tax='.$colorpattern.'';?>"><?= $categoria ?>
 							    <input <?php echo $checked; ?> name="radio" type="radio">
 								<span style="background: <?php echo $color; ?>">&nbsp;</span>
 							</a>
@@ -213,7 +225,7 @@ else { ?>
 						<?php $checked = NULL; $categoria = $category->name; $category_id = $category->term_id; $category_link = get_category_link( $category_id ); 
 						if ($category->slug == $_GET['cat']) { $checked = "checked='checked'"; }?> 
 						<label>
-							<a href="<?php echo $urlsinparametros[0].'/?cat='.$category->slug.'&tax='.$siluet.''?>"><?= $categoria ?>
+							<a href="<?php echo $urlsinparametros.'/?cat='.$category->slug.'&tax='.$siluet.''?>"><?= $categoria ?>
 								<input <?php echo $checked; ?> name="radio" type="radio">
 								<span class="checkmark"></span>
 							</a>
@@ -278,10 +290,16 @@ else { ?>
 											<a href="<?php the_permalink(); ?>">
 												<img src="<?php echo get_template_directory_uri();?>/assets/img/card.png">
 											</a>
-											<?php } ?>              							
+											<?php } ?> 
+											<?php if (is_user_logged_in()){ ?>               							
 											<a href="?add_to_wishlist=<?php echo get_the_ID(); ?>">
 												<img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
 											</a>
+                                            <?php }else { ?>  
+                                                <div data-toggle="tooltip" data-placement="top" title="" data-original-title="<?php if(lang() == 'es'){echo "Debes estar iniciar sesión";}else{echo "You must be logged";} ?>" class="collection-item__icon" >
+                                                  <img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
+                                                </div>              
+                                            <?php } ?>											
 											<a href="<?php the_permalink(); ?>">
 												<img src="<?php echo get_template_directory_uri();?>/assets/img/search.png">
 											</a>
@@ -348,8 +366,13 @@ else { ?>
 													<a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/card.png"></a>
 													<?php } ?> 
 													<a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/search.png"></a> 
-													<a href="?add_to_wishlist=<?php echo get_the_ID(); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png"></a>  
-
+													<?php if (is_user_logged_in()){ ?>   
+													   <a href="?add_to_wishlist=<?php echo get_the_ID(); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png"></a>  
+                                                    <?php }else { ?>  
+                                                    <div data-toggle="tooltip" data-placement="top" title="" data-original-title="<?php if(lang() == 'es'){echo "Debes estar iniciar sesión";}else{echo "You must be logged";} ?>" class="collection-item__icon" >
+                                                      <img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
+                                                    </div>              
+                                                    <?php } ?>
 												</span>             
 											</td>                    
 										</tr>    
