@@ -2938,6 +2938,11 @@ a.nav-world {
   border-radius: 50%;
 }
 
+.categories-sidebar__list li input {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .categories-sidebar__list li span::after {
   top: -2px;
   left: -2px;
