@@ -33,7 +33,14 @@ $category_id = get_queried_object_id();
 $category_name = get_queried_object()->slug; 
 $current_uri = home_url( add_query_arg( NULL, NULL ) );
 
+$page_name = get_post(get_the_ID())->post_title;
+
 $urlsinparametros= explode('?', $_SERVER['REQUEST_URI'], 2);
+if ($category_name == NULL){ 
+    $urlsinparametros = get_home_url().'/'.get_post(get_the_ID())->post_name;
+}else{
+	$urlsinparametros = get_home_url().'/'.$category_name;
+}    
 if (lang() == "es") {
 	$sizetalla = "pa_talla";
 	$colorpattern = "pa_color";
@@ -47,7 +54,7 @@ else{
 	$pa_color_swatches = "pa_colors_swatches_id_phoen_color";
 }
 
-$page_name = get_post(get_the_ID())->post_title;
+
 $args = arg($_GET["cat"],$_GET["tax"],$_GET["lower"],$_GET["upper"],$_GET['orderby'],$paged,$category_name,$page_name);         
 ?>
 <?php if ($category_name == NULL) { ?>
@@ -133,7 +140,7 @@ else { ?>
 					<?php foreach($product_categories as $category): ?>
 						<?php $checked =NULL;  if ($category->slug == $_GET['cat']) { $checked = "checked='checked'"; } $categoria = $category->name; $category_id = $category->term_id; $category_link = get_category_link( $category_id ); ?> 				
 						<label>
-							<a href="<?php echo $urlsinparametros[0].'/?cat='.$category->slug.'&tax='.$sizetalla.'';?>"><?= $categoria ?>
+							<a href="<?php echo $urlsinparametros.'/?cat='.$category->slug.'&tax='.$sizetalla.'';?>"><?= $categoria ?>
 								<input <?php echo $checked; ?> name="radio" type="radio">
 								<span class="checkmark"></span>
 							</a>		
@@ -155,7 +162,7 @@ else { ?>
 						<?php $checked =NULL;  if ($category->slug == $_GET['cat']) { $checked = "checked='checked'"; } $categoria = $category->name; $category_id = $category->term_id; $category_link = get_category_link( $category_id ); ?> 				
 						<?php if ($category_name == NULL) { ?>		
 						<label>
-							<a href="<?php echo $urlsinparametros[0].'/?cat='.$category->slug.'&tax=product_cat'?>"><?= $categoria ?>
+							<a href="<?php echo $urlsinparametros.'/?cat='.$category->slug.'&tax=product_cat'?>"><?= $categoria ?>
 								<input <?php echo $checked; ?> name="radio" type="radio">
 								<span class="checkmark"></span>
 							</a>
@@ -192,7 +199,7 @@ else { ?>
 							{  $color = $page1->meta_value;}
 						?>				
 						<li>
-							<a href="<?php echo $urlsinparametros[0].'/?cat='.$category->slug.'&tax='.$colorpattern.'';?>"><?= $categoria ?>
+							<a href="<?php echo $urlsinparametros.'/?cat='.$category->slug.'&tax='.$colorpattern.'';?>"><?= $categoria ?>
 							    <input <?php echo $checked; ?> name="radio" type="radio">
 								<span style="background: <?php echo $color; ?>">&nbsp;</span>
 							</a>
@@ -213,7 +220,7 @@ else { ?>
 						<?php $checked = NULL; $categoria = $category->name; $category_id = $category->term_id; $category_link = get_category_link( $category_id ); 
 						if ($category->slug == $_GET['cat']) { $checked = "checked='checked'"; }?> 
 						<label>
-							<a href="<?php echo $urlsinparametros[0].'/?cat='.$category->slug.'&tax='.$siluet.''?>"><?= $categoria ?>
+							<a href="<?php echo $urlsinparametros.'/?cat='.$category->slug.'&tax='.$siluet.''?>"><?= $categoria ?>
 								<input <?php echo $checked; ?> name="radio" type="radio">
 								<span class="checkmark"></span>
 							</a>
@@ -298,7 +305,7 @@ else { ?>
 								</div>
 								<div class="main-products__body">
 									<a class="main-products__title" href="<?php the_permalink(); ?>">
-										<?php echo get_post_meta( get_the_ID(), 'total_sales', true ); the_title();?>
+										<?php the_title();?>
 									</a>
 									<p class="main-products__categorie">
 										<?php if(lang() == 'es'){echo "categoría: ";}if(lang() == 'en'){echo "category: ";}  
