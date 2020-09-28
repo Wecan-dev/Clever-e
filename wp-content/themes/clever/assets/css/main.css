@@ -1426,6 +1426,7 @@ a.nav-world {
   justify-content: center;
   padding-left: 145px;
   padding-right: 145px;
+  background-color: rgba(0, 0, 0, .23);
 }
 
 @media (min-width: 0px) and (max-width: 767px) {

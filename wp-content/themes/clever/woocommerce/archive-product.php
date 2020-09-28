@@ -54,13 +54,8 @@ else{
 	$pa_color_swatches = "pa_colors_swatches_id_phoen_color";
 }
 
-<<<<<<< HEAD
-$page_name = get_post(get_the_ID())->post_title;
-$args = arg($_GET["cat"],$_GET["tax"],$_GET["lower"],$_GET["upper"],$_GET['orderby'],$paged,$category_name);         
-=======
 
 $args = arg($_GET["cat"],$_GET["tax"],$_GET["lower"],$_GET["upper"],$_GET['orderby'],$paged,$category_name,$page_name);         
->>>>>>> 3ad968eb9697466c34bfb52ff0dba9b0069604c5
 ?>
 <?php if ($category_name == NULL) { ?>
 <section class="banner-small banner-small--bs">
@@ -368,11 +363,11 @@ else { ?>
 													<a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/search.png"></a> 
 													<?php if (is_user_logged_in()){ ?>   
 													   <a href="?add_to_wishlist=<?php echo get_the_ID(); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png"></a>  
-                                                    <?php }else { ?>  
-                                                    <div data-toggle="tooltip" data-placement="top" title="" data-original-title="<?php if(lang() == 'es'){echo "Debes estar iniciar sesión";}else{echo "You must be logged";} ?>" class="collection-item__icon" >
-                                                      <img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
-                                                    </div>              
-                                                    <?php } ?>
+															<?php }else { ?>  
+															<div data-toggle="tooltip" data-placement="top" title="" data-original-title="<?php if(lang() == 'es'){echo "Debes estar iniciar sesión";}else{echo "You must be logged";} ?>" class="collection-item__icon" >
+																<img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
+															</div>              
+															<?php } ?>
 												</span>             
 											</td>                    
 										</tr>    
