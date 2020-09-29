@@ -39,7 +39,7 @@ $urlsinparametros= explode('?', $_SERVER['REQUEST_URI'], 2);
 if ($category_name == NULL){ 
     $urlsinparametros = get_home_url().'/'.get_post(get_the_ID())->post_name;
 }else{
-	$urlsinparametros = get_home_url().'/'.$category_name;
+	$urlsinparametros = get_home_url().'/product-category/'.$category_name;
 }    
 if (lang() == "es") {
 	$sizetalla = "pa_talla";
@@ -378,17 +378,11 @@ else { ?>
 					</div>
 				</div>
 
-
-
-
-
-
-
 				<?php
             //$published_posts = wp_count_posts()->publish;
-				$published_posts = count_post_product($_GET["cat"],$_GET["tax"],$_GET["lower"],$_GET["upper"],$category_name);
+				$published_posts = count_post_product($_GET["cat"],$_GET["tax"],$_GET["lower"],$_GET["upper"],$category_name,$page_name);
            // $posts_per_page = get_option('posts_per_page');
-				$posts_per_page = 4;
+				$posts_per_page = 12;
 				$page_number_max = ceil($published_posts / $posts_per_page);
 				$max_page = $page_number_max;
 				if (!$paged && $max_page >= 1) {
