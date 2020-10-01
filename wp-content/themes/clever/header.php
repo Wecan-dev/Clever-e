@@ -36,20 +36,20 @@
         <div class="main-brand__top">
           <div class="main-brand">
             <a class="navbar-brand" href="<?php echo get_home_url() ?>">
-              <img alt="Logo Ekored" id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png">
+              <img alt="Logo Clever" id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png">
             </a>
           </div>
         </div>
         <div class="main-brand__fixed">
           <div class="main-brand">
             <a class="navbar-brand" href="<?php echo get_home_url() ?>">
-              <img alt="Logo Ekored" id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png">
+              <img alt="Logo Clever" id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png">
             </a>
           </div>
         </div>
         <div class="main-brand brand-responsive">
           <a class="navbar-brand" href="<?php echo get_home_url() ?>">
-            <img alt="Logo Ekored" id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/logo-black.png">
+            <img alt="Logo Clever" id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/logo-black.png">
           </a>
           <button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas" type="button">
             <span class="hamburger-box"></span>
@@ -59,7 +59,7 @@
         <div class="navbar-collapse offcanvas-collapse">
           <ul class="navbar-nav mr-autos">
             <li class="nav-item nav-item__custom dropdown">
-              <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><?php if(lang() == 'es'){echo "Categorías";}if(lang() == 'en'){echo "Category ";} ?></a>
+              <a aria-expanded="false" aria-haspopup="true" class="nav-link"  href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "catalogo";}else{echo "catalogue ";} ?>" role="button"><?php if(lang() == 'es'){echo "Categorías";}if(lang() == 'en'){echo "Category ";} ?></a>
               <div class="dropdown-menu">
                 <?php $product_categories = get_categories( array( 'taxonomy' => 'product_cat', 'orderby' => 'menu_order', 'order' => 'asc' ));  ?>
                 <?php foreach($product_categories as $category):  global $wpdb;?>
@@ -101,7 +101,7 @@
               </div>
               <ul class="navbar-nav mr-autos">
                 <li class="nav-item dropdown drop-money">
-                  <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><img src="<?php echo get_template_directory_uri();?>/assets/img/world.png"></a>
+                  <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link" data-toggle="" href="catalogo.html"><img src="<?php echo get_template_directory_uri();?>/assets/img/world.png"></a>
                   <div class="dropdown-menu">
                     <a class="dropdown-item woocs_flag_view_item" href="?wmc-currency=USD" data-currency="USD" title="USD, $ USA dollar">USD, $</a>
                     <a href="?wmc-currency=COP" class="dropdown-item woocs_flag_view_item" data-currency="COP" title="COP, $ Peso Colombiano">COP, $</a>
@@ -189,20 +189,20 @@
         <div class="main-brand__top">
           <div class="main-brand">
             <a class="navbar-brand" href="<?php echo get_home_url() ?>">
-              <img alt="Logo Ekored" id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png">
+              <img alt="Logo Clever" id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png">
             </a>
           </div>
         </div>
         <div class="main-brand__fixed">
           <div class="main-brand">
             <a class="navbar-brand" href="<?php echo get_home_url() ?>">
-              <img alt="Logo Ekored" id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png">
+              <img alt="Logo Clever" id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png">
             </a>
           </div>
         </div>
         <div class="main-brand brand-responsive">
           <a class="navbar-brand" href="<?php echo get_home_url() ?>">
-            <img alt="Logo Ekored" id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/logo-black.png">
+            <img alt="Logo Clever" id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/logo-black.png">
           </a>
           <button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas" type="button">
             <span class="hamburger-box"></span>
@@ -212,8 +212,7 @@
         <div class="navbar-collapse offcanvas-collapse">
           <ul class="navbar-nav mr-autos">
             <li class="nav-item dropdown">
-              <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><?php if(lang() == 'es'){echo "Categorías";}if(lang() == 'en'){echo "Category ";} ?></a>
-              <div class="dropdown-menu">
+            <a aria-expanded="false" aria-haspopup="true" class="nav-link"  href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "catalogo";}else{echo "catalogue ";} ?>" role="button"><?php if(lang() == 'es'){echo "Categorías";}if(lang() == 'en'){echo "Category ";} ?></a>
                 <?php $product_categories = get_categories( array( 'taxonomy' => 'product_cat', 'orderby' => 'menu_order', 'order' => 'asc' ));  ?>
                 <?php foreach($product_categories as $category):  global $wpdb;?>
                 <?php $result = $wpdb->get_results ("SELECT * FROM ".$wpdb->prefix."term_taxonomy where taxonomy = 'product_cat'");?>                       
