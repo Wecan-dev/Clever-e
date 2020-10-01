@@ -1804,6 +1804,12 @@ a.nav-world {
   transition: .3s;
 }
 
+.main-video__item video {
+  opacity: 16%;
+  width: 320px;
+  transition: .3s;
+}
+
 @media (min-width: 0px) and (max-width: 767px) {
   .main-video__item img {
     opacity: 1;
@@ -1825,6 +1831,13 @@ a.nav-world {
 }
 
 .main-video__item.slick-active.slick-center img {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  transition: .3s;
+}
+
+.main-video__item.slick-active.slick-center video {
   opacity: 1;
   width: 100%;
   height: 100%;
