@@ -75,7 +75,6 @@
               <a class="nav-link nav-link-p" data="offcanvas" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "contacto";}else{echo "contact ";} ?>"><?php if(lang() == 'es'){echo "Contacto";}if(lang() == 'en'){echo "Contact ";} ?></a>
             </li>            
             <li class="nav-item nav-responsive">
-              
               <div class="content-icon">
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "mi-cuenta";}else{echo "my-account";} ?>">
                   <img src="<?php echo get_template_directory_uri();?>/assets/img/user.png">
@@ -113,7 +112,6 @@
                 <?php dynamic_sidebar( 'sidebar-1' ); ?>
               </aside>
               <?php } ?>
-
             </li>
             <li class="nav-item nav-flex">
               <div class="content-icon">
@@ -211,8 +209,9 @@
         </div>
         <div class="navbar-collapse offcanvas-collapse">
           <ul class="navbar-nav mr-autos">
-            <li class="nav-item dropdown">
-            <a aria-expanded="false" aria-haspopup="true" class="nav-link"  href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "catalogo";}else{echo "catalogue ";} ?>" role="button"><?php if(lang() == 'es'){echo "Categorías";}if(lang() == 'en'){echo "Category ";} ?></a>
+                       <li class="nav-item  dropdown">
+              <a aria-expanded="false" aria-haspopup="true" class="nav-link"  href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "catalogo";}else{echo "catalogue ";} ?>" role="button"><?php if(lang() == 'es'){echo "Categorías";}if(lang() == 'en'){echo "Category ";} ?></a>
+              <div class="dropdown-menu">
                 <?php $product_categories = get_categories( array( 'taxonomy' => 'product_cat', 'orderby' => 'menu_order', 'order' => 'asc' ));  ?>
                 <?php foreach($product_categories as $category):  global $wpdb;?>
                 <?php $result = $wpdb->get_results ("SELECT * FROM ".$wpdb->prefix."term_taxonomy where taxonomy = 'product_cat'");?>                       
