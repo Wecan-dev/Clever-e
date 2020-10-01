@@ -1,36 +1,0 @@
-2020-08-30T08:11:21+00:00 CRITICAL syntax error, unexpected '$i' (T_VARIABLE), expecting ')' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 243
-
-2020-08-30T08:11:52+00:00 CRITICAL syntax error, unexpected ''"><a lang="%2$s" hreflang="%2' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 243
-
-2020-08-30T08:12:12+00:00 CRITICAL syntax error, unexpected ''"><a lang="%2$s" hreflang="%2' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 243
-
-2020-08-30T08:13:00+00:00 CRITICAL syntax error, unexpected ''"><a lang="%2$s" hreflang="%2' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 243
-
-2020-08-30T08:13:59+00:00 CRITICAL syntax error, unexpected '=', expecting ')' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 243
-
-2020-08-30T08:14:15+00:00 CRITICAL syntax error, unexpected ''"><a lang="%2$s" hreflang="%2' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 243
-
-2020-08-30T08:14:35+00:00 CRITICAL syntax error, unexpected ''"><a lang="%2$s" hreflang="%2' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 243
-
-2020-08-30T08:14:59+00:00 CRITICAL syntax error, unexpected ';', expecting ')' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 242
-
-2020-08-30T09:17:39+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 317
-
-2020-08-30T09:19:33+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 316
-
-2020-08-30T09:19:37+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 316
-
-2020-08-30T09:21:26+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 319
-
-2020-08-30T09:24:08+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 319
-
-2020-08-30T09:27:04+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 319
-
-2020-08-30T09:27:29+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 315
-
-2020-08-30T09:39:36+00:00 CRITICAL syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 228
-
-2020-08-30T09:40:36+00:00 CRITICAL syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 228
-
-2020-08-30T10:03:51+00:00 CRITICAL syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 216
-

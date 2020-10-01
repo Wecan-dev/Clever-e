@@ -3809,6 +3809,32 @@ a.nav-world {
   color: #010101;
 }
 
+.select2-container .select2-selection--single {
+  height: 40px !important;
+  border-radius: 0 !important;
+}
+
+.woocommerce-message {
+  font-size: 16px;
+}
+
+
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 7px !important;
+}
+
+.checkout-custom .woocommerce-info {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkout-custom .woocommerce-info a {
+  margin-top: 9px;
+}
+
 .checkout-custom .cart_item {
   font-size: 15px;
   font-weight: normal;
