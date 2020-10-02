@@ -25,7 +25,7 @@
   <section class="banner-small banner-catalogo">
     <img class="banner-small__img" src="<?php the_field('image-banner-general-page'); ?>">
     <div class="banner-small__text">
-      <p class="banner-small__title--small">
+   <p>
         <?php the_field('title-banner-general-page'); ?>
       </p>
       <h2 class="banner-small__title">
@@ -54,9 +54,7 @@
   <section class="banner-small banner-catalogo">
     <img class="banner-small__img" src="<?php the_field('image-banner-catalogo'); ?>">
     <div class="banner-small__text">
-      <p class="banner-small__title--small">
-        <?php the_field('title-banner-catalogo'); ?>
-      </p>
+   
       <h2 class="banner-small__title">
         <?php the_field('subtitle-banner-catalogo'); ?>
       </h2>
