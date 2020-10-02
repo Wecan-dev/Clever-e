@@ -4,7 +4,7 @@ if(lang() == 'es'){$p = 'Product name'; $pr = 'Unit price'; }else{$p = 'Product'
 <section class="banner-small banner-catalogo">
     <img class="banner-small__img" src="<?php echo get_template_directory_uri();?>/assets/img/my-account.png">
     <div class="banner-small__text">
-    <?php if(lang() == 'es'){echo '<p class="banner-small__title--small">Clever style</p><h2 class="banner-small__title">Lista de deseos</h2>';}else{echo '<p class="banner-small__title--small">Clever style</p><h2 class="banner-small__title">My wishtlist</h2>';} ?>    
+    <?php if(lang() == 'es'){echo '<h2 class="banner-small__title">Lista de deseos</h2>';}else{echo '<h2 class="banner-small__title">My wishtlist</h2>';} ?>    
     </div>
   </section>
 <?php

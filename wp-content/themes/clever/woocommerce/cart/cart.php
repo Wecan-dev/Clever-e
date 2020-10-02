@@ -20,9 +20,6 @@ defined( 'ABSPATH' ) || exit;
  <section class="banner-small banner-catalogo">
     <img class="banner-small__img" src="<?php echo get_template_directory_uri();?>/assets/img/cart.png">
     <div class="banner-small__text">
-      <p class="banner-small__title--small">
-        Clever style
-      </p>
       <h2 class="banner-small__title">
 			<?php if(lang() == 'es'){echo "Carrito de compra";} else{echo "Shopping cart";}?>
       </h2>
