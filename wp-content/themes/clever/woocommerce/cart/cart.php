@@ -159,7 +159,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 						</div>
 					<?php } ?>
 					<div class="content-buttons" >
-						<a href="" class="main-general__button" >Continue shopping</a>
+						<a href="<?php if(lang() == 'es'){echo ''.get_home_url().'/tienda';} else{echo ''.get_home_url().'/shop';}?>" class="main-general__button" ><?php if(lang() == 'es'){echo "Continuar comprando";} else{echo "Continue shopping";}?></a>
 						<button type="submit" class="button  main-btn__disable" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
 					</div>
 
