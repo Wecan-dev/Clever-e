@@ -4,3 +4,5 @@
 
 2020-10-04T00:14:28+00:00 CRITICAL syntax error, unexpected '$wp_customize' (T_VARIABLE) en C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\contact\customizer-contact-more-info.php en la línea 62
 
+2020-10-04T01:09:22+00:00 CRITICAL syntax error, unexpected '}', expecting ',' or ';' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\archive-product.php on line 107
+

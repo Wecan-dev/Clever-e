@@ -248,6 +248,12 @@ function count_post_product($cat,$tax,$lower,$upper,$category_name,$page_name)
         ); 
     }
     if ($lower != NULL) {
+    if($lower > 100){
+      $lower = $lower/1000;
+    } 
+    if($upper > 100){
+      $upper = $upper/1000;
+    }      
         $args = 
         array(
           'post_type' => 'product',
@@ -300,6 +306,12 @@ if ($page_name != "Best Seller"){
           ); 
     }
     if ($lower != NULL) {
+    if($lower > 100){
+      $lower = $lower/1000;
+    } 
+    if($upper > 100){
+      $upper = $upper/1000;
+    }      
         $args = 
         array(
           'post_type' => 'product',
@@ -361,6 +373,12 @@ if ($category_name != NULL){
     }
 
     if ($lower != NULL) {
+    if($lower > 100){
+      $lower = $lower/1000;
+    } 
+    if($upper > 100){
+      $upper = $upper/1000;
+    }      
         $args = 
         array(
           'post_type' => 'product',
@@ -501,6 +519,12 @@ if ($page_name != "Best Seller"){
   } 
         
   if ($lower != NULL) {
+    if($lower > 100){
+      $lower = $lower/1000;
+    } 
+    if($upper > 100){
+      $upper = $upper/1000;
+    }    
     $args = 
     array(
       'post_type' => 'product',
@@ -643,6 +667,12 @@ if ($page_name == "Best Seller"){
   } 
         
   if ($lower != NULL) {
+    if($lower > 100){
+      $lower = $lower/1000;
+    } 
+    if($upper > 100){
+      $upper = $upper/1000;
+    }    
     $args = 
     array(
       'post_type' => 'product',
@@ -836,6 +866,12 @@ if ($category_name != NULL){
   } 
        
   if ($lower != NULL) {
+    if($lower > 100){
+      $lower = $lower/1000;
+    } 
+    if($upper > 100){
+      $upper = $upper/1000;
+    }    
     $args = 
     array(
       'post_type' => 'product',

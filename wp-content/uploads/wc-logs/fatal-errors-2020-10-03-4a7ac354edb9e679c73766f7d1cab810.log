@@ -92,3 +92,23 @@ Stack trace:
 #7 {main}
   thrown en C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\footer.php en la línea 49
 
+2020-10-03T23:10:37+00:00 CRITICAL syntax error, unexpected ',' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\fnc\fnc.php on line 511
+
+2020-10-03T23:38:56+00:00 CRITICAL Uncaught Error: Call to undefined function get_current_currency() in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\archive-product.php:103
+Stack trace:
+#0 C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\page.php(21): require_once()
+#1 C:\xampp2\htdocs\Clever-e\wp-includes\template-loader.php(106): include('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\Clever-e\wp-blog-header.php(19): require_once('C:\\xampp2\\htdoc...')
+#3 C:\xampp2\htdocs\Clever-e\index.php(17): require('C:\\xampp2\\htdoc...')
+#4 {main}
+  thrown en C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\archive-product.php en la línea 103
+
+2020-10-03T23:41:33+00:00 CRITICAL Uncaught Error: Call to a member function get_list_currencies() on null in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\archive-product.php:21
+Stack trace:
+#0 C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\page.php(21): require_once()
+#1 C:\xampp2\htdocs\Clever-e\wp-includes\template-loader.php(106): include('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\Clever-e\wp-blog-header.php(19): require_once('C:\\xampp2\\htdoc...')
+#3 C:\xampp2\htdocs\Clever-e\index.php(17): require('C:\\xampp2\\htdoc...')
+#4 {main}
+  thrown en C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\archive-product.php en la línea 21
+
