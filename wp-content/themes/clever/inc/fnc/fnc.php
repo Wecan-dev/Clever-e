@@ -987,3 +987,14 @@ if ($category_name != NULL){
 }//else       
   return $args; 
 }  
+
+/***************** File Customizer ***********************/
+function file_customizer($id_file)
+{
+    global $wpdb;
+    $result = $wpdb->get_results ("SELECT * FROM ".$wpdb->prefix."posts where ID = $id_file");
+    foreach ( $result as $page )
+    { 
+      return $valor=$page->guid;
+    } 
+}   

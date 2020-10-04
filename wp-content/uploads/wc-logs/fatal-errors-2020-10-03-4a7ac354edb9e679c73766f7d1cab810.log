@@ -1,0 +1,94 @@
+2020-10-03T23:15:56+00:00 CRITICAL require_once(): Failed opening required 'C:\xampp2\htdocs\Clever-e/wp-content/themes/clever/inc/contact/customizer-contact-mor-info.php' (include_path='C:\xampp2\php\PEAR') en C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php en la línea 64
+
+2020-10-03T23:18:23+00:00 CRITICAL require_once(): Failed opening required 'C:\xampp2\htdocs\Clever-e/wp-content/themes/clever/inc/contact/customizer-contact-mor-info.php' (include_path='C:\xampp2\php\PEAR') en C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php en la línea 64
+
+2020-10-03T23:20:06+00:00 CRITICAL require_once(): Failed opening required 'C:\xampp2\htdocs\Clever-e/wp-content/themes/clever/inc/contact/customizer-contact-mor-info.php' (include_path='C:\xampp2\php\PEAR') en C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php en la línea 64
+
+2020-10-03T23:22:05+00:00 CRITICAL require_once(): Failed opening required 'C:\xampp2\htdocs\Clever-e/wp-content/themes/clever/inc/contact/customizer-contact-mor-info.php' (include_path='C:\xampp2\php\PEAR') en C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php en la línea 64
+
+2020-10-03T23:23:05+00:00 CRITICAL require_once(): Failed opening required 'C:\xampp2\htdocs\Clever-e/wp-content/themes/clever/inc/contact/customizer-contact-mor-info.php' (include_path='C:\xampp2\php\PEAR') en C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php en la línea 64
+
+2020-10-03T23:24:24+00:00 CRITICAL Uncaught Error: Class 'WP_Customize_File_Control' not found in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\contact\customizer-contact-more-info.php:13
+Stack trace:
+#0 C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php(64): require_once()
+#1 C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-hook.php(287): theme_customize_register(Object(WP_Customize_Manager))
+#2 C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp2\htdocs\Clever-e\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-customize-manager.php(928): do_action('customize_regis...', Object(WP_Customize_Manager))
+#5 C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-hook.php(287): WP_Customize_Manager->wp_loaded('')
+#6 C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#7 C:\xampp2\htdocs\Clever-e\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#8 C:\xampp2\htdocs\Clever-e\w en C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\contact\customizer-contact-more-info.php en la línea 13
+
+2020-10-03T23:24:26+00:00 CRITICAL Uncaught Error: Class 'WP_Customize_File_Control' not found in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\contact\customizer-contact-more-info.php:13
+Stack trace:
+#0 C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php(64): require_once()
+#1 C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-hook.php(287): theme_customize_register(Object(WP_Customize_Manager))
+#2 C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp2\htdocs\Clever-e\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-customize-manager.php(928): do_action('customize_regis...', Object(WP_Customize_Manager))
+#5 C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-hook.php(287): WP_Customize_Manager->wp_loaded('')
+#6 C:\xampp2\htdocs\Clever-e\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#7 C:\xampp2\htdocs\Clever-e\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#8 C:\xampp2\htdocs\Clever-e\w en C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\inc\contact\customizer-contact-more-info.php en la línea 13
+
+2020-10-03T23:48:50+00:00 CRITICAL Uncaught Error: Call to undefined function file_customizer() in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\footer.php:49
+Stack trace:
+#0 C:\xampp2\htdocs\Clever-e\wp-includes\template.php(723): require_once()
+#1 C:\xampp2\htdocs\Clever-e\wp-includes\template.php(672): load_template('C:\\xampp2\\htdoc...', true)
+#2 C:\xampp2\htdocs\Clever-e\wp-includes\general-template.php(76): locate_template(Array, true)
+#3 C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\home.php(16): get_footer()
+#4 C:\xampp2\htdocs\Clever-e\wp-includes\template-loader.php(106): include('C:\\xampp2\\htdoc...')
+#5 C:\xampp2\htdocs\Clever-e\wp-blog-header.php(19): require_once('C:\\xampp2\\htdoc...')
+#6 C:\xampp2\htdocs\Clever-e\index.php(17): require('C:\\xampp2\\htdoc...')
+#7 {main}
+  thrown en C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\footer.php en la línea 49
+
+2020-10-03T23:49:07+00:00 CRITICAL Uncaught Error: Call to undefined function file_customizer() in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\footer.php:49
+Stack trace:
+#0 C:\xampp2\htdocs\Clever-e\wp-includes\template.php(723): require_once()
+#1 C:\xampp2\htdocs\Clever-e\wp-includes\template.php(672): load_template('C:\\xampp2\\htdoc...', true)
+#2 C:\xampp2\htdocs\Clever-e\wp-includes\general-template.php(76): locate_template(Array, true)
+#3 C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\404.php(15): get_footer()
+#4 C:\xampp2\htdocs\Clever-e\wp-includes\template-loader.php(106): include('C:\\xampp2\\htdoc...')
+#5 C:\xampp2\htdocs\Clever-e\wp-blog-header.php(19): require_once('C:\\xampp2\\htdoc...')
+#6 C:\xampp2\htdocs\Clever-e\index.php(17): require('C:\\xampp2\\htdoc...')
+#7 {main}
+  thrown en C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\footer.php en la línea 49
+
+2020-10-03T23:50:05+00:00 CRITICAL Uncaught Error: Call to undefined function file_customizer() in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\footer.php:49
+Stack trace:
+#0 C:\xampp2\htdocs\Clever-e\wp-includes\template.php(723): require_once()
+#1 C:\xampp2\htdocs\Clever-e\wp-includes\template.php(672): load_template('C:\\xampp2\\htdoc...', true)
+#2 C:\xampp2\htdocs\Clever-e\wp-includes\general-template.php(76): locate_template(Array, true)
+#3 C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\home.php(16): get_footer()
+#4 C:\xampp2\htdocs\Clever-e\wp-includes\template-loader.php(106): include('C:\\xampp2\\htdoc...')
+#5 C:\xampp2\htdocs\Clever-e\wp-blog-header.php(19): require_once('C:\\xampp2\\htdoc...')
+#6 C:\xampp2\htdocs\Clever-e\index.php(17): require('C:\\xampp2\\htdoc...')
+#7 {main}
+  thrown en C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\footer.php en la línea 49
+
+2020-10-03T23:50:09+00:00 CRITICAL Uncaught Error: Call to undefined function file_customizer() in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\footer.php:49
+Stack trace:
+#0 C:\xampp2\htdocs\Clever-e\wp-includes\template.php(723): require_once()
+#1 C:\xampp2\htdocs\Clever-e\wp-includes\template.php(672): load_template('C:\\xampp2\\htdoc...', true)
+#2 C:\xampp2\htdocs\Clever-e\wp-includes\general-template.php(76): locate_template(Array, true)
+#3 C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\404.php(15): get_footer()
+#4 C:\xampp2\htdocs\Clever-e\wp-includes\template-loader.php(106): include('C:\\xampp2\\htdoc...')
+#5 C:\xampp2\htdocs\Clever-e\wp-blog-header.php(19): require_once('C:\\xampp2\\htdoc...')
+#6 C:\xampp2\htdocs\Clever-e\index.php(17): require('C:\\xampp2\\htdoc...')
+#7 {main}
+  thrown en C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\footer.php en la línea 49
+
+2020-10-03T23:50:52+00:00 CRITICAL Uncaught Error: Call to undefined function file_customizer() in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\footer.php:49
+Stack trace:
+#0 C:\xampp2\htdocs\Clever-e\wp-includes\template.php(723): require_once()
+#1 C:\xampp2\htdocs\Clever-e\wp-includes\template.php(672): load_template('C:\\xampp2\\htdoc...', true)
+#2 C:\xampp2\htdocs\Clever-e\wp-includes\general-template.php(76): locate_template(Array, true)
+#3 C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\home.php(16): get_footer()
+#4 C:\xampp2\htdocs\Clever-e\wp-includes\template-loader.php(106): include('C:\\xampp2\\htdoc...')
+#5 C:\xampp2\htdocs\Clever-e\wp-blog-header.php(19): require_once('C:\\xampp2\\htdoc...')
+#6 C:\xampp2\htdocs\Clever-e\index.php(17): require('C:\\xampp2\\htdoc...')
+#7 {main}
+  thrown en C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\footer.php en la línea 49
+
