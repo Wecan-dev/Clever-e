@@ -17,7 +17,11 @@
           </div>
         </div>
         <div class="main-banner__img">
+        <?php if (get_field('banner_option') == "Imagen") { ?>
           <img alt="Imagen Banner" src="<?php the_field('banner_image'); ?>">
+        <?php }else{ ?>  
+          <video src="<?php the_field('banner_video'); ?>" controls> </video>
+        <?php } ?>  
         </div>
       </div>
     <?php endwhile; ?>   
