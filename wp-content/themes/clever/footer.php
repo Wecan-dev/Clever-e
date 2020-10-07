@@ -46,32 +46,32 @@
         <div class="main-footer__item">
           <ul class="list-contact">
             <li>
-              <a href="http://159.89.229.55/Clever-e/wp-content/uploads/2020/10/ENVÍOS-ONLINE.pdf" download="Envios Online">
+              <a href="<?php echo file_customizer(get_theme_mod('envios_online_'.lang().'')); ?>" download="Envios Online">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/business.png">
                 <?php if(lang() == 'es'){echo "Envios Online";}if(lang() == 'en'){echo "Shipping Online";}?>
               </a>
             </li>
             <li>
-              <a href="http://159.89.229.55/Clever-e/wp-content/uploads/2020/10/TERMINOS-Y-CONDICIONES.pdf" download="Términos y Condiciones">
+              <a href="<?php echo file_customizer(get_theme_mod('terms_conditions_'.lang().'')); ?>" download="Términos y Condiciones">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/symbol.png">
                 <?php if(lang() == 'es'){echo "Términos y Condiciones";}if(lang() == 'en'){echo "Terms and Conditions";}?>
               </a>
             </li>
             <li>
-              <a href="http://159.89.229.55/Clever-e/wp-content/uploads/2020/10/POLÍTICA-DE-TRATAMIENTO-DE-DATOS-PERSONALES-CLEVER-MODA-SAS.pdf" download="Política de Tratamiento de Datos Personales">
+              <a href="<?php echo file_customizer(get_theme_mod('personal_data_processing_policy_'.lang().'')); ?>" download="Política de Tratamiento de Datos Personales">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/tools-and-utensils.png">
                 <?php if(lang() == 'es'){echo "Política de Tratamiento de Datos Personales";}if(lang() == 'en'){echo "Personal Data Processing Policy";}?>
               </a>
             </li>
             <li>
-              <a href="http://159.89.229.55/Clever-e/wp-content/uploads/2020/10/POLITICA-DE-GARANTÍA-CLEVER-MODA.pdf" download="Política de Garantía">
+              <a href="<?php echo file_customizer(get_theme_mod('guarantee_policy_'.lang().'')); ?>" download="Política de Garantía">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/dollar.png">
                 <?php if(lang() == 'es'){echo "Política de Garantía";}if(lang() == 'en'){echo "Guarantee Policy";}?>
               </a>
             </li>
   
             <li>
-              <a href="http://159.89.229.55/Clever-e/wp-content/uploads/2020/10/NUESTRA-HISTORIA.pdf" download="Nuestra Historia">
+              <a href="<?php echo file_customizer(get_theme_mod('our_history_'.lang().'')); ?>" download="Nuestra Historia">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/history.png">
                 <?php if(lang() == 'es'){echo "Nuestra Historia";}if(lang() == 'en'){echo "Our History";}?>
               </a>

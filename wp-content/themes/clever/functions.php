@@ -61,6 +61,7 @@ function theme_customize_register($wp_customize){
         );
   require_once trailingslashit( get_template_directory() ) . 'inc/contact/customizer-contact.php';
   require_once trailingslashit( get_template_directory() ) . 'inc/contact/customizer-contact-rrss.php';
+  require_once trailingslashit( get_template_directory() ) . 'inc/contact/customizer-contact-more-info.php';
 
   
 } 

@@ -6,13 +6,45 @@
         "title": "Items Banner",
         "fields": [
             {
+                "key": "field_5f7ceb64a027e",
+                "label": "",
+                "name": "banner_option",
+                "type": "radio",
+                "instructions": "Opción Banner",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Imagen": "Imagen",
+                    "Vídeo": "Vídeo"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "Imagen",
+                "layout": "horizontal",
+                "return_format": "value",
+                "save_other_choice": 0
+            },
+            {
                 "key": "field_5f4dc8aab07b7",
                 "label": "",
                 "name": "banner_image",
                 "type": "image",
                 "instructions": "Imagen",
                 "required": 0,
-                "conditional_logic": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5f7ceb64a027e",
+                            "operator": "==",
+                            "value": "Imagen"
+                        }
+                    ]
+                ],
                 "wrapper": {
                     "width": "",
                     "class": "",
@@ -26,6 +58,33 @@
                 "min_size": "",
                 "max_width": "",
                 "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5f7cebf4a027f",
+                "label": "",
+                "name": "banner_video",
+                "type": "file",
+                "instructions": "Vídeo",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5f7ceb64a027e",
+                            "operator": "==",
+                            "value": "Vídeo"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_size": "",
                 "max_size": "",
                 "mime_types": ""
             },

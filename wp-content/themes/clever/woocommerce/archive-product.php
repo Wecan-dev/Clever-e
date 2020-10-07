@@ -104,11 +104,11 @@ else { ?>
 									<span class="value-1" id="value">0</span>
 								</div>
 								<div sign="" style="left:100%;">
-									<span id="value">100</span>
+									<span id="value"><?php if (get_woocommerce_currency() != "COP"){ echo "100"; $max = "100";}else{echo "100000"; $max = "100000";} ?></span>
 								</div>
 								<div><button class="shop-btn trans main-general__button" type="submit"><?php if(lang() == 'es'){echo "Filtrar";}else{echo "Filter";} ?></button></div>
 							</div>
-							<input name="lower" max="100" min="0" oninput="
+							<input name="lower" max="<?php echo $max; ?>" min="0" oninput="
 							this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
 							let value = (this.value/parseInt(this.max))*100
 							var children = this.parentNode.childNodes[1].childNodes;
@@ -116,14 +116,14 @@ else { ?>
 							children[5].style.left=value+&#39;%&#39;;
 							children[7].style.left=value+&#39;%&#39;;children[11].style.left=value+&#39;%&#39;;
 							children[11].childNodes[1].innerHTML=this.value;" step="1" type="range" value="0">
-							<input name="upper" max="100" min="0" oninput="
+							<input name="upper" max="<?php echo $max; ?>" min="0" oninput="
 							this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
 							let value = (this.value/parseInt(this.max))*100
 							var children = this.parentNode.childNodes[1].childNodes;
 							children[3].style.width=(100-value)+&#39;%&#39;;
 							children[5].style.right=(100-value)+&#39;%&#39;;
 							children[9].style.left=value+&#39;%&#39;;children[13].style.left=value+&#39;%&#39;;
-							children[13].childNodes[1].innerHTML=this.value;" step="1" type="range" value="100">
+							children[13].childNodes[1].innerHTML=this.value;" step="1" type="range" value="<?php echo $max; ?>">
 						</div>
 					</form>
 				</div>
