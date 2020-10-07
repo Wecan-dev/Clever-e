@@ -20,7 +20,7 @@
         <?php if (get_field('banner_option') == "Imagen") { ?>
           <img alt="Imagen Banner" src="<?php the_field('banner_image'); ?>">
         <?php }else{ ?>  
-          <video src="<?php the_field('banner_video'); ?>" controls> </video>
+          <video src="<?php the_field('banner_video'); ?>"autoplay="true"> </video>
         <?php } ?>  
         </div>
       </div>
