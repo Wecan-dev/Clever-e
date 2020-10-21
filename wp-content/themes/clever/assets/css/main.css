@@ -987,7 +987,7 @@ button:focus {
 
 .nav-world img {
   width: 32px;
-  height: 32px;
+     height: 27px;
   object-fit: contain;
   margin: 0 5px;
 }
@@ -1056,8 +1056,9 @@ a.nav-world {
 }
 
 .drop-money a {
-  padding-right: 0 !important;
-  padding-top: 0;
+  margin: 0 !important;
+	    padding: 5px!important;
+	    padding-top: 0!important;
 }
 
 .drop-money {
@@ -2419,8 +2420,8 @@ a.nav-world {
 }
 
 .main-whatsapp img {
-  width: 52px;
-  height: 52px;
+    width: 62px;
+    height: 62px;
   object-fit: contain;
 }
 
@@ -5063,15 +5064,22 @@ ol.flex-control-nav.flex-control-thumbs img.flex-active {
 
 
 section#polylang-2 {
-  background: white;
-  padding: 10px;
-  border: 2px solid;
-  border-top-color: red;
-  width: 61px;
-  height: 58px;
-  box-sizing: border-box;
+background: white;
+    padding: 3px;
+    border: 2px solid;
+    border-top-color: red;
+    width: 47px;
+    height: 44px;
+    box-sizing: border-box;
 }
 
+.drop-money .dropdown-menu{
+	    padding: 0!important;
+}
+.drop-money .dropdown-item{
+	    height: 100%;
+    padding: 4px!important;
+}
 section#polylang-2 ul {
   background: white;
   padding: 0;
