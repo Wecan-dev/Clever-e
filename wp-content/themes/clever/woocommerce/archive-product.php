@@ -59,7 +59,7 @@ $args = arg($_GET["cat"],$_GET["tax"],$_GET["lower"],$_GET["upper"],$_GET['order
 ?>
 <?php if ($category_name == NULL) { ?>
 <section class="banner-small banner-small--bs">
-	<img class="banner-small__img" src="<?php echo get_template_directory_uri();?>/assets/img/categorie/banner-bs.png">
+	<img class="banner-small__img" src="<?php echo get_template_directory_uri();?>/assets/img/categorie/best-seller.jpg">
 	<div class="banner-small__text">
 
 		<h2 class="banner-small__title">
@@ -75,7 +75,7 @@ $args = arg($_GET["cat"],$_GET["tax"],$_GET["lower"],$_GET["upper"],$_GET['order
 <?php } 
 else { ?>
   <section class="banner-small">
-    <img class="banner-small__img" src="<?php echo wp_get_attachment_url( get_woocommerce_term_meta( $category_id, 'thumbnail_id', true ) );?>">
+    <img class="banner-small__img" src="<?php echo termmeta_value_img( 'image_banner_categories', $category_id ); ?>">
     <div class="banner-small__text">
       <h2 class="banner-small__title">
         <?php echo single_cat_title("", false); ?>
