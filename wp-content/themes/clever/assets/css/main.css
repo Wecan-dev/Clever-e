@@ -1426,6 +1426,7 @@ a.nav-world {
 .main-banner .main-banner__text {
   position: absolute;
   width: 100%;
+	    z-index: 1;
   display: flex;
   height: 100%;
   align-items: flex-start;
@@ -1435,7 +1436,10 @@ a.nav-world {
   padding-right: 145px;
   background-color: rgba(0, 0, 0, .23);
 }
-
+.main-banner__title--video {
+display: flex;	
+	align-items:  center;
+}
 @media (min-width: 0px) and (max-width: 767px) {
   .main-banner .main-banner__text {
     width: 100%;
