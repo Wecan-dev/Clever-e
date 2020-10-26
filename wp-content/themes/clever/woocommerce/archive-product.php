@@ -59,7 +59,7 @@ $args = arg($_GET["cat"],$_GET["tax"],$_GET["lower"],$_GET["upper"],$_GET['order
 ?>
 <?php if ($category_name == NULL) { ?>
 <section class="banner-small banner-small--bs">
-	<img class="banner-small__img" src="<?php echo get_template_directory_uri();?>/assets/img/categorie/banner-bs.png">
+	<img class="banner-small__img" src="<?php echo get_template_directory_uri();?>/assets/img/categorie/best-seller.jpg">
 	<div class="banner-small__text">
 
 		<h2 class="banner-small__title">

@@ -146,12 +146,13 @@
                     </div>
                   </li>
                 </ul>
-              </div>
-              <?php if ( is_active_sidebar( 'sidebar-1' ) ) { ?>
+				    <?php if ( is_active_sidebar( 'sidebar-1' ) ) { ?>
               <aside class="in-header widget-area right" role="complementary">
                 <?php dynamic_sidebar( 'sidebar-1' ); ?>
               </aside>
               <?php } ?>
+              </div>
+            
 
             </li>
             <div class="pre-navbar pre-navbar--mobile">

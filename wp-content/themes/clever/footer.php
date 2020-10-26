@@ -141,7 +141,7 @@
   </div>
   <?php if (get_theme_mod('whatsapp_'.lang().'') != NULL) { ?>  
   <div class="main-whatsapp">
-    <a href="https://api.whatsapp.com/send?phone=<?php echo get_theme_mod('whatsapp_'.lang().''); ?>">
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=<?php echo get_theme_mod('whatsapp_'.lang().''); ?>">
       <img alt="icon whatsapp" src="<?php echo get_template_directory_uri();?>/assets/img/whatsapp.png">
     </a>
   <?php } ?>  
