@@ -1,16 +1,0 @@
-2020-08-25T00:45:18+00:00 CRITICAL syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 227
-
-2020-08-25T00:45:44+00:00 CRITICAL syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 227
-
-2020-08-25T00:46:27+00:00 CRITICAL syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 227
-
-2020-08-25T00:52:08+00:00 CRITICAL syntax error, unexpected ',' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 235
-
-2020-08-25T00:52:31+00:00 CRITICAL syntax error, unexpected ';' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 235
-
-2020-08-25T00:52:45+00:00 CRITICAL syntax error, unexpected ';' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 235
-
-2020-08-25T23:48:36+00:00 CRITICAL Object of class WP_Post could not be converted to string in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\content-single-product.php on line 55
-
-2020-08-25T23:50:07+00:00 CRITICAL Object of class WP_Post could not be converted to string in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\content-single-product.php on line 55
-

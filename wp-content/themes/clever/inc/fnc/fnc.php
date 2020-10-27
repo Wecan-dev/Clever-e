@@ -1052,3 +1052,27 @@ function termmeta_value_img( $meta_key, $post_id ){
 
 }
 
+/***************** Terms Id *****************/
+function terms_id( $cat ){
+            global $wpdb;  
+              $result_link = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix."terms WHERE slug = '$cat'"); 
+              foreach($result_link as $r)
+              {
+                      $value = $r->term_id;                      
+              }              
+              return $value;
+
+}
+
+/***************** Terms silueta *****************/
+function terms_silueta( $cat_id ){
+            global $wpdb;  
+              $result_link = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix."term_taxonomy WHERE term_id = '$cat_id'"); 
+              foreach($result_link as $r)
+              {
+                      $value = $r->taxonomy;                      
+              }              
+              return $value;
+
+}
+
