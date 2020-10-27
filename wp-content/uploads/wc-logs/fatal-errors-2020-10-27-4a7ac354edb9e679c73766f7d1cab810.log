@@ -6,3 +6,11 @@ Stack trace:
 #3 {main}
   thrown in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\archive-product.php on line 442
 
+2020-10-27T03:39:09+00:00 CRITICAL syntax error, unexpected ')', expecting ',' or ';' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\content-single-product.php on line 100
+
+2020-10-27T03:39:41+00:00 CRITICAL syntax error, unexpected ')', expecting ',' or ';' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\content-single-product.php on line 100
+
+2020-10-27T03:42:34+00:00 CRITICAL syntax error, unexpected '==' (T_IS_EQUAL) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\content-single-product.php on line 99
+
+2020-10-27T04:01:04+00:00 CRITICAL syntax error, unexpected '?>' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\content-single-product.php on line 86
+
