@@ -111,7 +111,7 @@
                   <li class="nav-item dropdown drop-money">
                     <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><?php if (lang() == 'es'){ echo "Idioma"; }else{ echo "Language"; } $url = explode('en', $_SERVER['REQUEST_URI'], 2); ?></a>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item woocs_flag_view_item" title="English" lang="en-US" hreflang="en-US" href="<?php echo $url[0]; ?>/en/">English</a>
+                      <a class="dropdown-item woocs_flag_view_item" title="English" lang="en-US" hreflang="en-US" href="<?php echo $url[0]; ?>en/">English</a>
                       <a class="dropdown-item woocs_flag_view_item" title="Español"lang="es-CO" hreflang="es-CO" href="<?php echo $url[0]; ?>">Español</a>
                     </div>
                   </li>
@@ -160,7 +160,7 @@
                   <li class="nav-item dropdown drop-money">
                     <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><?php if (lang() == 'es'){ echo "Idioma"; }else{ echo "Language"; } $url = explode('en', $_SERVER['REQUEST_URI'], 2); ?></a>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item woocs_flag_view_item" title="English" lang="en-US" hreflang="en-US" href="<?php echo $url[0]; ?>/en/">English</a>
+                      <a class="dropdown-item woocs_flag_view_item" title="English" lang="en-US" hreflang="en-US" href="<?php echo $url[0]; ?>en/">English</a>
                       <a class="dropdown-item woocs_flag_view_item" title="Español"lang="es-CO" hreflang="es-CO" href="<?php echo $url[0]; ?>">Español</a>
                     </div>
                   </li>
@@ -285,7 +285,7 @@
                   <li class="nav-item dropdown drop-money">
                     <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><?php if (lang() == 'es'){ echo "Idioma"; }else{ echo "Language"; } $url = explode('en', $_SERVER['REQUEST_URI'], 2); ?></a>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item woocs_flag_view_item" title="English" lang="en-US" hreflang="en-US" href="<?php echo $url[0]; ?>/en/">English</a>
+                      <a class="dropdown-item woocs_flag_view_item" title="English" lang="en-US" hreflang="en-US" href="<?php echo $url[0]; ?>en/">English</a>
                       <a class="dropdown-item woocs_flag_view_item" title="Español"lang="es-CO" hreflang="es-CO" href="<?php echo $url[0]; ?>">Español</a>
                     </div>
                   </li>
