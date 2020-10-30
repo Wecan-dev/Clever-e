@@ -109,7 +109,7 @@
               </ul>  
                 <ul class="navbar-nav mr-autos">
                   <li class="nav-item dropdown drop-money">
-                    <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><?php if (lang() == 'es'){ echo "Español";}else{ echo "English";}?></a>
+                    <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button">Idioma</a>
                     <div class="dropdown-menu">
                       <a class="dropdown-item woocs_flag_view_item" title="English" lang="en-US" hreflang="en-US" href="http://localhost/Clever-e/en/">English</a>
                       <a class="dropdown-item woocs_flag_view_item" title="Español"lang="es-CO" hreflang="es-CO" href="http://localhost/Clever-e/">Español</a>
@@ -158,7 +158,7 @@
 
                 <ul class="navbar-nav mr-autos">
                   <li class="nav-item dropdown drop-money">
-                    <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><?php if (lang() == 'es'){ echo "Español";}else{ echo "English";}?></a>
+                    <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button">Idioma</a>
                     <div class="dropdown-menu">
                       <a class="dropdown-item woocs_flag_view_item" lang="en-US" hreflang="en-US" href="http://localhost/Clever-e/en/">English</a>
                       <a class="dropdown-item woocs_flag_view_item" data-currency="COP" title="COP, $ Peso Colombiano"lang="es-CO" hreflang="es-CO" href="http://localhost/Clever-e/">Español</a>
@@ -283,7 +283,7 @@
 
                 <ul class="navbar-nav mr-autos">
                   <li class="nav-item dropdown drop-money">
-                    <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><?php if (lang() == 'es'){ echo "Español";}else{ echo "English";}?></a>
+                    <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button">Idioma</a>
                     <div class="dropdown-menu">
                       <a class="dropdown-item woocs_flag_view_item" title="English" lang="en-US" hreflang="en-US" href="http://localhost/Clever-e/en/">English</a>
                       <a class="dropdown-item woocs_flag_view_item" title="Español"lang="es-CO" hreflang="es-CO" href="http://localhost/Clever-e/">Español</a>
