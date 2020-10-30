@@ -983,14 +983,14 @@ button:focus {
 
 .nav-money img {
   width: 69px;
-  height: 66px;
+  height: 22px;
   margin-top: 5px;
   object-fit: contain;
 }
 
 .nav-world img {
   width: 32px;
-     height: 27px;
+     height: 23px;
   object-fit: contain;
   margin: 0 5px;
 }
