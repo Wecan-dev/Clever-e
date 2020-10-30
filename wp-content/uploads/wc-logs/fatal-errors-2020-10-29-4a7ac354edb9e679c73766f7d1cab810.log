@@ -8,3 +8,5 @@
 
 2020-10-29T17:33:03+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\Clever-e\wp-includes\class-requests.php on line 145
 
+2020-10-29T18:08:15+00:00 CRITICAL syntax error, unexpected 'public' (T_PUBLIC), expecting end of file in C:\xampp\htdocs\Clever-e\wp-content\themes\clever\functions.php on line 279
+
