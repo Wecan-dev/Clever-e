@@ -25,7 +25,7 @@
           <?php echo get_theme_mod('prenavbar'.$i.'_line2_'.lang().''); ?>
         </p>
         <a class="main-general__button" href="<?php echo get_theme_mod('prenavbar'.$i.'_urlbutton_'.lang().''); ?>"><?php echo get_theme_mod('prenavbar'.$i.'_button_'.lang().''); ?><img class="icon-tarjeta" src="<?php echo get_template_directory_uri();?>/assets/img/next.png"></a>
-      </div>
+      </div>t
     </div>
    <?php }} ?>
   </div>
@@ -106,12 +106,21 @@
                     <a href="?wmc-currency=COP" class="dropdown-item woocs_flag_view_item" data-currency="COP" title="COP, $ Peso Colombiano">COP, $</a>
                   </div>
                 </li>
-              </ul>              
-              <?php if ( is_active_sidebar( 'sidebar-1' ) ) { ?>
+              </ul>  
+                <ul class="navbar-nav mr-autos">
+                  <li class="nav-item dropdown drop-money">
+                    <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><?php if (lang() == 'es'){ echo "Idioma";}else{ echo "Language";}?></a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item woocs_flag_view_item" title="English" lang="en-US" hreflang="en-US" href="http://localhost/Clever-e/en/">English</a>
+                      <a class="dropdown-item woocs_flag_view_item" title="Español"lang="es-CO" hreflang="es-CO" href="http://localhost/Clever-e/">Español</a>
+                    </div>
+                  </li>
+                </ul>                          
+              <!--<?php if ( is_active_sidebar( 'sidebar-1' ) ) { ?>
               <aside class="in-header widget-area right" role="complementary">
                 <?php dynamic_sidebar( 'sidebar-1' ); ?>
               </aside>
-              <?php } ?>
+              <?php } ?>-->
             </li>
             <li class="nav-item nav-flex">
               <div class="content-icon">
@@ -146,11 +155,22 @@
                     </div>
                   </li>
                 </ul>
-				    <?php if ( is_active_sidebar( 'sidebar-1' ) ) { ?>
+
+                <ul class="navbar-nav mr-autos">
+                  <li class="nav-item dropdown drop-money">
+                    <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><?php if (lang() == 'es'){ echo "Idioma";}else{ echo "Language";}?></a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item woocs_flag_view_item" lang="en-US" hreflang="en-US" href="http://localhost/Clever-e/en/">English</a>
+                      <a class="dropdown-item woocs_flag_view_item" data-currency="COP" title="COP, $ Peso Colombiano"lang="es-CO" hreflang="es-CO" href="http://localhost/Clever-e/">Español</a>
+                    </div>
+                  </li>
+                </ul> 
+
+              <!--<?php if ( is_active_sidebar( 'sidebar-1' ) ) { ?>
               <aside class="in-header widget-area right" role="complementary">
                 <?php dynamic_sidebar( 'sidebar-1' ); ?>
               </aside>
-              <?php } ?>
+              <?php } ?>-->
               </div>
             
 
@@ -260,11 +280,21 @@
                   </li>
                 </ul>              
               </div>
-              <?php if ( is_active_sidebar( 'sidebar-1' ) ) { ?>
+
+                <ul class="navbar-nav mr-autos">
+                  <li class="nav-item dropdown drop-money">
+                    <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><?php if (lang() == 'es'){ echo "Idioma";}else{ echo "Language";}?></a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item woocs_flag_view_item" title="English" lang="en-US" hreflang="en-US" href="http://localhost/Clever-e/en/">English</a>
+                      <a class="dropdown-item woocs_flag_view_item" title="Español"lang="es-CO" hreflang="es-CO" href="http://localhost/Clever-e/">Español</a>
+                    </div>
+                  </li>
+                </ul>              
+              <!--<?php if ( is_active_sidebar( 'sidebar-1' ) ) { ?>
               <aside class="in-header widget-area right" role="complementary">
                 <?php dynamic_sidebar( 'sidebar-1' ); ?>
               </aside>
-              <?php } ?>
+              <?php } ?>-->
 
             </li>
             <li class="nav-item nav-flex">

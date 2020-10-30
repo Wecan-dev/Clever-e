@@ -288,14 +288,15 @@ class PLL_Walker_List extends Walker {
   public function start_el( &$output, $element, $depth = 0, $args = array(), $current_object_id = 0 ) {
     if (lang() == 'es'){
       $img_lang = get_template_directory_uri().'/assets/img/esp.png';
+      $text_lang = "Español";
     }
     if (lang() == 'en'){
       $img_lang = get_template_directory_uri().'/assets/img/eng.png';
-    }    
+      $text_lang = "Inglès";
+    }   
 
-    $output .= sprintf(
-      '<a lang="%2$s" class="%1$s" hreflang="%2$s" href="%3$s"><img src="'.$img_lang.'"><i class="fa fa-angle-right"></i>
-      </a>',
+$output .= sprintf(
+      '%6$s<li class="%1$s"><a lang="%2$s" hreflang="%2$s" href="%3$s">%2$s</a></li>%7$s',
       esc_attr( implode( ' ', $element->classes ) ),
       esc_attr( $element->locale ),
       esc_url( $element->url ),
@@ -304,6 +305,8 @@ class PLL_Walker_List extends Walker {
       'discard' === $args['item_spacing'] ? '' : "\t",
       'discard' === $args['item_spacing'] ? '' : "\n"
     );
+
+    
  
   }
 
