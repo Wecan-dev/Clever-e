@@ -879,7 +879,7 @@ button:focus {
 
 .nav-item {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -970,7 +970,6 @@ button:focus {
 }
 
 .nav-item__custom {
-  margin-bottom: 23px;
 }
 
 .nav-icon img {
@@ -1052,7 +1051,7 @@ a.nav-world {
 .nav-flex {
   align-items: flex-end;
   margin-left: 20px;
-  flex-direction: column;
+  flex-direction: column;    justify-content: center;
 }
 
 .content-icon .navbar-nav {
@@ -1063,6 +1062,7 @@ a.nav-world {
   margin: 0 !important;
 	    padding: 5px!important;
 	    padding-top: 0!important;
+	    padding-bottom: 0!important;
 }
 
 .drop-money {

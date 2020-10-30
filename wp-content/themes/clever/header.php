@@ -25,7 +25,7 @@
           <?php echo get_theme_mod('prenavbar'.$i.'_line2_'.lang().''); ?>
         </p>
         <a class="main-general__button" href="<?php echo get_theme_mod('prenavbar'.$i.'_urlbutton_'.lang().''); ?>"><?php echo get_theme_mod('prenavbar'.$i.'_button_'.lang().''); ?><img class="icon-tarjeta" src="<?php echo get_template_directory_uri();?>/assets/img/next.png"></a>
-      </div>t
+      </div>
     </div>
    <?php }} ?>
   </div>
