@@ -259,7 +259,8 @@ else { ?>
 	<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade modal-size" id="exampleModal" role="dialog" tabindex="-1">
 		<div class="modal-dialog" role="document">
         <?php if (terms_silueta( terms_id( $_GET["cat"] ) ) == "pa_silueta" OR terms_silueta( terms_id( $_GET["cat"] ) ) == "pa_silhouette") { ?>
-            <div class="modal-content" style="background-image: url(<?php echo termmeta_value_img( 'image_banner_categories', terms_id( $_GET["cat"] ) ); ?>);">
+            <div class="modal-content" >
+				<img src="<?php echo termmeta_value_img( 'image_banner_categories', terms_id( $_GET["cat"] ) ); ?>">
         <?php }else { ?>
 	        <div class="modal-content">
 	    <?php } ?>			
