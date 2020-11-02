@@ -1,0 +1,38 @@
+2020-10-30T17:14:10+00:00 INFO Generating payment form for order 2026. Notify URL: http://159.89.229.55/Clever-e/wc-api/WC_Gateway_Paypal/
+2020-10-30T17:14:10+00:00 INFO PayPal Request Args for order 2026: Array
+(
+    [cmd] => _cart
+    [business] => ventasonline@clevermoda.com
+    [no_note] => 1
+    [currency_code] => USD
+    [charset] => utf-8
+    [rm] => 1
+    [upload] => 1
+    [return] => http://159.89.229.55/Clever-e/checkout/order-received/2026/?key=wc_order_keETPTu8tXBwH&utm_nooverride=1
+    [cancel_return] => http://159.89.229.55/Clever-e/en/cart/?cancel_order=true&order=wc_order_keETPTu8tXBwH&order_id=2026&redirect&_wpnonce=5ecd780625
+    [page_style] => 
+    [image_url] => 
+    [paymentaction] => sale
+    [invoice] => WC-2026
+    [custom] => {"order_id":2026,"order_key":"wc_order_keETPTu8tXBwH"}
+    [notify_url] => http://159.89.229.55/Clever-e/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_a] => ***
+    [night_phone_b] => ***
+    [no_shipping] => 1
+    [tax_cart] => 0.00
+    [item_name_1] => Inside Boxer (Colors: Dark Blue, Sizes: M)
+    [quantity_1] => 1
+    [amount_1] => 39
+    [item_number_1] => 0157088
+    [bn] => WooThemes_Cart
+)
+
