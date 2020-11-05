@@ -97,6 +97,18 @@ background-size: 14px;    border:0;
     display: inline-block;
 	    background-color: #c3c3c3;
 }
+	
+	@media (min-width: 0px) and (max-width: 997px) {
+		
+		.buttons {
+			margin-left: 11px;
+		
+		}
+		
+		.button {
+
+		}
+	}
 </style>
 <script>
 // get video element id

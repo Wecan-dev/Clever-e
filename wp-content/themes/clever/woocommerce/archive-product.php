@@ -91,7 +91,12 @@ $args = arg($_GET["cat"],$_GET["tax"],$_GET["lower"],$_GET["upper"],$_GET['order
 <?php } 
 else { ?>
   <section class="banner-small">
-    <img class="banner-small__img" src="<?php echo termmeta_value_img( 'image_banner_categories', $category_id ); ?>">
+	     <?php   if ( wp_is_mobile() ) {  ?>
+	     <img src="<?php echo wp_get_attachment_url( get_woocommerce_term_meta( $category_id, 'thumbnail_id', true ) );?>">
+	        <?php    } else {  ?>
+	      <img class="banner-small__img" src="<?php echo termmeta_value_img( 'image_banner_categories', $category_id ); ?>">
+
+	   <?php  } ?>
     <div class="banner-small__text">
       <h2 class="banner-small__title">
         <?php echo single_cat_title("", false); ?>
@@ -254,7 +259,8 @@ else { ?>
 	<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade modal-size" id="exampleModal" role="dialog" tabindex="-1">
 		<div class="modal-dialog" role="document">
         <?php if (terms_silueta( terms_id( $_GET["cat"] ) ) == "pa_silueta" OR terms_silueta( terms_id( $_GET["cat"] ) ) == "pa_silhouette") { ?>
-            <div class="modal-content" style="background-image: url(<?php echo termmeta_value_img( 'image_banner_categories', terms_id( $_GET["cat"] ) ); ?>);">
+            <div class="modal-content" >
+				<img src="<?php echo termmeta_value_img( 'image_banner_categories', terms_id( $_GET["cat"] ) ); ?>">
         <?php }else { ?>
 	        <div class="modal-content">
 	    <?php } ?>			
@@ -262,49 +268,8 @@ else { ?>
 					<span aria-hidden="true">×</span>
 				</button>
 				<div class="modal-body">
-					<h2 class="modal-size__title">
-						<?php if(lang() == 'es'){echo "Tabla de <br><span>Medidas</span>";}else{echo "measurement <br><span>table</span>";} ?>
-					</h2>
-					<div class="modal-size-tab">
-						<img src="<?php echo get_template_directory_uri();?>/assets/img/categorie/lines.png">
-						<p class="modal-size__header">
-							<?php if(lang() == 'es'){echo "Prendas inferiores";}else{echo "Lower garments";} ?>
-						</p>
-						<div class="modal-size__ref">
-							<div class="modal-size__item">
-								<p><?php if(lang() == 'es'){echo "Categorías";}else{echo "Categories";} ?></p>
-							</div>
-							<div class="modal-size__item">
-								<p>S</p>
-							</div>
-							<div class="modal-size__item">
-								<p>M</p>
-							</div>
-							<div class="modal-size__item">
-								<p>L</p>
-							</div>
-							<div class="modal-size__item">
-								<p>XL</p>
-							</div>
-						</div>
-						<div class="modal-size__row">
-							<div class="modal-size__row--item">
-								<p><?php if(lang() == 'es'){echo "Cintura";}else{echo "Waist";} ?></p>
-							</div>
-							<div class="modal-size__row--item">
-								<p>28-30</p>
-							</div>
-							<div class="modal-size__row--item">
-								<p>30-32</p>
-							</div>
-							<div class="modal-size__row--item">
-								<p>32-36</p>
-							</div>
-							<div class="modal-size__row--item">
-								<p>34-36</p>
-							</div>
-						</div>
-					</div>
+			
+		
 				</div>
 			</div>
 		</div>

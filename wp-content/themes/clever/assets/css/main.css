@@ -375,6 +375,10 @@ body {
     left: 44%;
     transform: translateX(-44%);
   }
+	
+	.main-video {
+		    padding: 0 20px;
+	}
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -875,7 +879,7 @@ button:focus {
 
 .nav-item {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -906,7 +910,6 @@ button:focus {
   display: flex;
   color: #fff;
   font-weight: bold;
-  align-items: center;
 }
 
 .nav-item a:hover {
@@ -966,7 +969,6 @@ button:focus {
 }
 
 .nav-item__custom {
-  margin-bottom: 23px;
 }
 
 .nav-icon img {
@@ -980,14 +982,14 @@ button:focus {
 
 .nav-money img {
   width: 69px;
-  height: 66px;
+  height: 22px;
   margin-top: 5px;
   object-fit: contain;
 }
 
 .nav-world img {
   width: 32px;
-     height: 27px;
+     height: 23px;
   object-fit: contain;
   margin: 0 5px;
 }
@@ -1048,7 +1050,7 @@ a.nav-world {
 .nav-flex {
   align-items: flex-end;
   margin-left: 20px;
-  flex-direction: column;
+  flex-direction: column;    justify-content: center;
 }
 
 .content-icon .navbar-nav {
@@ -1059,6 +1061,7 @@ a.nav-world {
   margin: 0 !important;
 	    padding: 5px!important;
 	    padding-top: 0!important;
+	    padding-bottom: 0!important;
 }
 
 .drop-money {
@@ -2731,6 +2734,12 @@ display: flex;
   position: relative;
 }
 
+.banner-small img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
 @media (min-width: 0px) and (max-width: 767px) {
   .banner-small {
     margin-top: 104px;
@@ -3039,13 +3048,18 @@ display: flex;
   background-position: center;
   align-items: center;
   background-image: url("../img/categorie/medidas-clever.jpg");
-  height: 850px;
+  height: 100%;
   overflow: hidden;
+}
+
+.categories-sidebar__size .modal-content img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
   .categories-sidebar__size .modal-content {
-    padding: 1rem;
     height: auto;
   }
 }
