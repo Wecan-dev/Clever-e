@@ -256,6 +256,7 @@ else { ?>
 		<p><?php if(lang() == 'es'){echo "Tabla de medidas de <br> acuerdo con tu cuerpo";}else{echo "Measurement table <br> according to your body";} ?></p>
 		<a data-target="#exampleModal" data-toggle="modal"><?php if(lang() == 'es'){echo "VER MÁS";}else{echo "SEE MORE";} ?></a>
 	</div>
+
 	<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade modal-size" id="exampleModal" role="dialog" tabindex="-1">
 		<div class="modal-dialog" role="document">
         <?php if (terms_silueta( terms_id( $_GET["cat"] ) ) == "pa_silueta" OR terms_silueta( terms_id( $_GET["cat"] ) ) == "pa_silhouette") { ?>
@@ -263,6 +264,7 @@ else { ?>
 				<img src="<?php echo termmeta_value_img( 'image_banner_categories', terms_id( $_GET["cat"] ) ); ?>">
         <?php }else { ?>
 	        <div class="modal-content">
+	        	<img src="<?php echo get_template_directory_uri();?>/assets//img/categorie/medidas-clever.jpg">
 	    <?php } ?>			
 				<button aria-label="Close" class="close" data-dismiss="modal" type="button">
 					<span aria-hidden="true">×</span>
