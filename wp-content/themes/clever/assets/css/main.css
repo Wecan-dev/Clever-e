@@ -789,7 +789,7 @@ button:focus {
 .nav-padding {
   padding-left: 145px;
   width: 100%;
-  padding-right: 25px;
+     padding-right: 47px;
   display: flex;
   align-items: center;
 }
@@ -953,6 +953,10 @@ button:focus {
     display: flex;
     justify-content: space-between;
   }
+	
+	.navbar .navbar-nav {
+  min-height: initial;
+}
 }
 
 .fixed {
@@ -988,15 +992,13 @@ button:focus {
 }
 
 .nav-world img {
-  width: 32px;
-     height: 23px;
+width: auto;
+     height: 22px;
   object-fit: contain;
-  margin: 0 5px;
 }
 
 .nav-world2 img {
-  width: 32px;
-  height: 32px;
+  height: 24px;
   object-fit: contain;
   margin: 0 5px;
 }
@@ -1007,7 +1009,7 @@ a.nav-world {
 
 .content-icon {
   display: flex;
-  align-items: flex-start;
+    align-items: center;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -1186,6 +1188,10 @@ a.nav-world {
   object-fit: contain;
 }
 
+.drop-idioma img{
+height: 24px;	
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .navbar-brand img {
     width: 11rem;
@@ -1282,7 +1288,7 @@ a.nav-world {
 }
 
 .pre-navbar {
-  padding: 9px 34px;
+  padding: 9px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2285,6 +2291,27 @@ display: flex;
   margin-right: 5px;
   height: 16px;
   object-fit: contain;
+}
+
+.img-pasarelas img {
+	    height: 46px!important;
+	    width: 46px!important;
+	object-fit: contain;
+	margin-left: 8px;
+	
+}
+
+.img-pasarelas {
+	display: flex;
+	align-items: center;
+	right: 24px;
+	    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.main-footer {
+	    position: relative;
 }
 
 .main-footer .list-contact a {

@@ -76,6 +76,7 @@
                 <?php if(lang() == 'es'){echo "Nuestra Historia";}if(lang() == 'en'){echo "Our History";}?>
               </a>
             </li>
+			 
           </ul>
         </div>
         <div class="main-footer__item">
@@ -129,6 +130,12 @@
             </li>
           </ul>
         </div>
+		   <div class="img-pasarelas" >
+			  <img src="<?php echo get_template_directory_uri();?>/assets/img/epayco.png">
+			  <img src="<?php echo get_template_directory_uri();?>/assets/img/paypal.png">
+			  <img src="<?php echo get_template_directory_uri();?>/assets/img/payu.png">
+				  
+			  </div>
       </div>
     </div>
   </footer>
