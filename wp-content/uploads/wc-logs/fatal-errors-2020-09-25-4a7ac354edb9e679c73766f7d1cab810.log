@@ -1,8 +1,0 @@
-2020-09-25T18:56:30+00:00 CRITICAL syntax error, unexpected '<<' (T_SL) en /var/www/html/clever-e/wp-content/themes/clever/woocommerce/archive-product.php en la línea 57
-
-2020-09-25T18:56:40+00:00 CRITICAL syntax error, unexpected '<<' (T_SL) en /var/www/html/clever-e/wp-content/themes/clever/woocommerce/archive-product.php en la línea 57
-
-2020-09-25T19:29:36+00:00 CRITICAL syntax error, unexpected '<<' (T_SL) en /var/www/html/clever-e/wp-content/themes/clever/woocommerce/archive-product.php en la línea 57
-
-2020-09-25T20:14:11+00:00 CRITICAL syntax error, unexpected '<<' (T_SL) en /var/www/html/clever-e/wp-content/themes/clever/woocommerce/archive-product.php en la línea 57
-

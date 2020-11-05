@@ -8,3 +8,7 @@
 
 2020-10-30T13:59:59+00:00 CRITICAL syntax error, unexpected '{' en C:\xampp\htdocs\Clever-e\wp-content\themes\clever\header.php en la línea 152
 
+2020-10-30T15:24:25+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\Clever-e\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\API\Reports\SqlQuery.php on line 10
+
+2020-10-30T15:55:59+00:00 CRITICAL syntax error, unexpected '$url' (T_VARIABLE), expecting ',' or ';' in C:\xampp\htdocs\Clever-e\wp-content\themes\clever\header.php on line 163
+
