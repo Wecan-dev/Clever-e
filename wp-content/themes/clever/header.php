@@ -75,13 +75,13 @@
               <a class="nav-link nav-link-p" data="offcanvas" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "contacto";}else{echo "contact ";} ?>"><?php if(lang() == 'es'){echo "Contacto";}if(lang() == 'en'){echo "Contact ";} ?></a>
             </li>            
             <li class="nav-item nav-responsive">
-              <div class="">
-                <a class="nav-item" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "mi-cuenta";}else{echo "my-account";} ?>">
-                  <?php if (lang() == 'es'){ echo "Mi Cuenta"; }else{ echo "My Account"; } ?>
+              <div class="content-icon">
+                <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "mi-cuenta";}else{echo "my-account";} ?>">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/user.png">
                 </a>
                <?php if(is_user_logged_in() != NULL){ ?>
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "lista-de-deseos";}else{echo "wishlist";} ?>">
-                  <?php if (lang() == 'es'){ echo "Lista de Deseos"; }else{ echo "Wishlist"; } ?>
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
                   <span class="nav-item__number">
                   <?php $wishlist_count = YITH_WCWL()->count_products(); echo esc_html( $wishlist_count ); ?>
                   </span>
@@ -91,8 +91,8 @@
                       <img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
                     </div>                
                 <?php } ?>
-                <a class="nav-item" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "carrito";}else{echo "cart";} ?>">
-                  <?php if (lang() == 'es'){ echo "Carrito"; }else{ echo "Cart"; } ?>
+                <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "carrito";}else{echo "cart";} ?>">
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/card.png">
                   <span class="nav-item__number">
                     <?php echo wp_kses_data(WC()->cart->get_cart_contents_count()); ?>
                   </span>
@@ -100,9 +100,7 @@
               </div>
               <ul class="navbar-nav mr-autos">
                 <li class="nav-item dropdown drop-money">
-                  <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link" data-toggle="" >
-					  <?php if (lang() == 'es'){ echo "Moneda"; }else{ echo "Currency"; } ?>
-					</a>
+                  <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link" data-toggle="" href="catalogo.html"><img src="<?php echo get_template_directory_uri();?>/assets/img/world.png"></a>
                   <div class="dropdown-menu">
                     <a class="dropdown-item woocs_flag_view_item" href="?wmc-currency=USD" data-currency="USD" title="USD, $ USA dollar">USD, $</a>
                     <a href="?wmc-currency=COP" class="dropdown-item woocs_flag_view_item" data-currency="COP" title="COP, $ Peso Colombiano">COP, $</a>
@@ -111,9 +109,8 @@
               </ul>  
                 <ul class="navbar-nav mr-autos">
                   <li class="nav-item dropdown drop-money">
-                    <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" role="button">
-					  <?php if (lang() == 'es'){ echo "Idioma"; }else{ echo "Language"; } $url = explode('en', $_SERVER['REQUEST_URI'], 2); ?>
-					  </a>
+                    <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><?php $url = explode('?', $_SERVER['REQUEST_URI'], 2);
+                      if (lang() == 'es'){ echo "Idioma"; }else{ echo "Language"; $url = explode('en', $_SERVER['REQUEST_URI'], 2);}  ?></a>
                     <div class="dropdown-menu">
                       <a class="dropdown-item woocs_flag_view_item" title="English" lang="en-US" hreflang="en-US" href="<?php echo $url[0]; ?>en/">English</a>
                       <a class="dropdown-item woocs_flag_view_item" title="Español"lang="es-CO" hreflang="es-CO" href="<?php echo $url[0]; ?>">Español</a>
@@ -152,7 +149,7 @@
                 </a>              
                 <ul class="navbar-nav mr-autos">
                   <li class="nav-item dropdown drop-money">
-                    <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><img style="margin-left:5px" src="<?php echo get_template_directory_uri();?>/assets/img/world.png"></a>
+                    <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><img src="<?php echo get_template_directory_uri();?>/assets/img/world.png"></a>
                     <div class="dropdown-menu">
                       <a class="dropdown-item woocs_flag_view_item" href="?wmc-currency=USD" data-currency="USD" title="USD, $ USA dollar">USD, $</a>
                       <a href="?wmc-currency=COP" class="dropdown-item woocs_flag_view_item" data-currency="COP" title="COP, $ Peso Colombiano">COP, $</a>
@@ -161,10 +158,9 @@
                 </ul>
 
                 <ul class="navbar-nav mr-autos">
-                  <li class="nav-item dropdown drop-money drop-idioma">
-                    <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button">
-					    <img src="<?php echo get_template_directory_uri();?>/assets/img/world-2.png">
-					  </a>
+                  <li class="nav-item dropdown drop-money">
+                    <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><?php $url = explode('?', $_SERVER['REQUEST_URI'], 2);
+                      if (lang() == 'es'){ echo "Idioma"; }else{ echo "Language"; $url = explode('en', $_SERVER['REQUEST_URI'], 2);}  ?></a>
                     <div class="dropdown-menu">
                       <a class="dropdown-item woocs_flag_view_item" title="English" lang="en-US" hreflang="en-US" href="<?php echo $url[0]; ?>en/">English</a>
                       <a class="dropdown-item woocs_flag_view_item" title="Español"lang="es-CO" hreflang="es-CO" href="<?php echo $url[0]; ?>">Español</a>
@@ -289,9 +285,8 @@
 
                 <ul class="navbar-nav mr-autos">
                   <li class="nav-item dropdown drop-money">
-                    <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button">
-					    <img src="<?php echo get_template_directory_uri();?>/assets/img/world-2.png">
-					  </a>
+                    <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><?php $url = explode('?', $_SERVER['REQUEST_URI'], 2);
+                      if (lang() == 'es'){ echo "Idioma"; }else{ echo "Language"; $url = explode('en', $_SERVER['REQUEST_URI'], 2);}  ?></a>
                     <div class="dropdown-menu">
                       <a class="dropdown-item woocs_flag_view_item" title="English" lang="en-US" hreflang="en-US" href="<?php echo $url[0]; ?>en/">English</a>
                       <a class="dropdown-item woocs_flag_view_item" title="Español"lang="es-CO" hreflang="es-CO" href="<?php echo $url[0]; ?>">Español</a>
