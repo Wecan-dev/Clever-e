@@ -91,12 +91,9 @@ $args = arg($_GET["cat"],$_GET["tax"],$_GET["lower"],$_GET["upper"],$_GET['order
 <?php } 
 else { ?>
   <section class="banner-small">
-	     <?php   if ( wp_is_mobile() ) {  ?>
-	     <img src="<?php echo wp_get_attachment_url( get_woocommerce_term_meta( $category_id, 'thumbnail_id', true ) );?>">
-	        <?php    } else {  ?>
-	      <img class="banner-small__img" src="<?php echo termmeta_value_img( 'image_banner_categories', $category_id ); ?>">
+	     <img class="banner-small__img--mobile" src="<?php echo wp_get_attachment_url( get_woocommerce_term_meta( $category_id, 'thumbnail_id', true ) );?>">
+	      <img class="banner-small__img banner-small__img--desktop" src="<?php echo termmeta_value_img( 'image_banner_categories', $category_id ); ?>">
 
-	   <?php  } ?>
     <div class="banner-small__text">
       <h2 class="banner-small__title">
         <?php echo single_cat_title("", false); ?>

@@ -2819,17 +2819,35 @@ display: flex;
 	height: 100%;
 	object-fit: cover;
 }
-
+	.banner-small__img--mobile {
+		display: none;
+	}
 @media (min-width: 0px) and (max-width: 767px) {
   .banner-small {
     margin-top: 104px;
   }
+	
+	.banner-small__img--mobile {
+		display: block;
+	}
+	
+	.banner-small__img--desktop {
+		display: none;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .banner-small {
     margin-top: 104px;
   }
+	
+		.banner-small__img--mobile {
+		display: block;
+	}
+	
+	.banner-small__img--desktop {
+		display: none;
+	}
 }
 
 .banner-small .banner-small__img {
