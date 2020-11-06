@@ -1,0 +1,248 @@
+.error_field{
+    border-color:red !important;
+}
+
+/*VIDEO METABOX*/
+.wc-metaboxes-wrapper#ywcfav_video_data .toolbar.toolbar-top{
+    height: 30px;
+}
+.wc-metaboxes-wrapper#ywcfav_video_data .expand-close {
+    float: right;
+    line-height: 28px;
+}
+
+.wc-metaboxes-wrapper .wc-metabox table td.ywcfav_video_image{
+    width: 200px;
+}
+
+.wc-metaboxes-wrapper .wc-metabox table td.ywcfav_thumbn_error, .wc-metaboxes-wrapper .wc-metabox table td.ywcfav_video_image{
+    padding: 0;
+}
+
+.wc-metaboxes-wrapper .wc-metabox table td.ywcfav_video_image a.ywcfav_upload_image_button{
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.wc-metaboxes-wrapper .wc-metabox table td.ywcfav_video_image a.ywcfav_upload_image_button .ywcfav_thumbn{
+    width: 100%;
+}
+
+.wc-metaboxes-wrapper .wc-metabox table td.ywcfav_video_image a.ywcfav_upload_image_button:before{
+    content: "\f317";
+    font-family: Dashicons;
+    display: none;
+    position: absolute;
+    font-size: 26px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    top: 50%;
+    left: 50%;
+    margin-left: -13px;
+    margin-top: -13px;
+}
+.wc-metaboxes-wrapper .wc-metabox table td.ywcfav_video_image a.ywcfav_upload_image_button:hover:before{
+    display: block;
+}
+
+.wc-metaboxes-wrapper .wc-metabox table td.ywcfav_thumbn_error .ywcfav_thumbn_error_container
+{
+    border:1px solid red;
+    border-left: none;
+    background: #fff4f4;
+    font-size: 12px;
+    font-weight: bold;
+    color:red;
+    width: 92%;
+    padding: 11px;
+    text-align: left;
+    margin-top: 21px;
+    display: inline-block;
+    height: 80%;
+}
+
+.wc-metaboxes-wrapper .wc-metabox table td.ywcfav_thumbn_error .ywcfav_thumbn_error_container .ywcfav_icon_error:before{
+    content: "\f153";
+    font-family: Dashicons;
+    font-size: 17px;
+    color:red;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: bottom;
+}
+
+.wc-metaboxes-wrapper .wc-metabox table td.ywcfav_thumbn_error .ywcfav_thumbn_error_container .ywcfav_txt_error{
+
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.ywcfav_video_host_label{
+    text-transform: capitalize;
+    font-style: italic;
+}
+.ywcfav_video_host_label.youtube{
+    color:#CC181E;
+}
+
+.ywcfav_video_content_label{
+    font-style: italic;
+}
+.ywcfav_video_host_label.vimeo
+{
+color:#4bf;
+}
+
+.ywcfav_video_host_type,.ywcfav_video_content{
+
+    padding-top: 15px;
+}
+
+#ywcfav_form_container{
+
+    padding: 10px;
+}
+
+/*END*/
+/* AUDIO METABOXES*/
+.wc-metaboxes-wrapper#ywcfav_audio_data .toolbar.toolbar-top{
+    height: 30px;
+}
+.wc-metaboxes-wrapper#ywcfav_audio_data .expand-close {
+    float: right;
+    line-height: 28px;
+}
+
+#ywcfav_form_audio_container{
+    padding: 10px;
+
+}
+
+#ywcfav_form_audio_container .audio_url, #ywcfav_form_audio_container .audio_name {
+    width: 40%;
+    float: left;
+}
+#ywcfav_form_audio_container .audio_button button{
+   margin-top: 20px;
+}
+
+.wc-metaboxes-wrapper .wc-metabox table td.ywcfav_audio_image{
+    width: 200px;
+}
+
+.wc-metaboxes-wrapper .wc-metabox table td.ywcfav_thumbn_error, .wc-metaboxes-wrapper .wc-metabox table td.ywcfav_audio_image{
+    padding: 0;
+}
+
+.wc-metaboxes-wrapper .wc-metabox table td.ywcfav_audio_image a.ywcfav_upload_image_button{
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.wc-metaboxes-wrapper .wc-metabox table td.ywcfav_audio_image a.ywcfav_upload_image_button .ywcfav_thumbn{
+    width: 100%;
+}
+
+.wc-metaboxes-wrapper .wc-metabox table td.ywcfav_audio_image a.ywcfav_upload_image_button:before{
+    content: "\f317";
+    font-family: Dashicons;
+    display: none;
+    position: absolute;
+    font-size: 26px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    top: 50%;
+    left: 50%;
+    margin-left: -13px;
+    margin-top: -13px;
+}
+.wc-metaboxes-wrapper .wc-metabox table td.ywcfav_audio_image a.ywcfav_upload_image_button:hover:before{
+    display: block;
+}
+
+.wc-metaboxes-wrapper .wc-metabox table td.ywcfav_thumbn_error .ywcfav_thumbn_error_container
+{
+    border:1px solid red;
+    border-left: none;
+    background: #fff4f4;
+    font-size: 12px;
+    font-weight: bold;
+    color:red;
+    width: 92%;
+    padding: 11px;
+    text-align: left;
+    margin-top: 21px;
+    display: inline-block;
+    height: 80%;
+}
+
+.wc-metaboxes-wrapper .wc-metabox table td.ywcfav_thumbn_error .ywcfav_thumbn_error_container .ywcfav_icon_error:before{
+    content: "\f153";
+    font-family: Dashicons;
+    font-size: 17px;
+    color:red;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: bottom;
+}
+/*END*/
+
+/*VIDEO IN PRODUCT VARIATION*/
+
+.ywcfav_variable_video_container .img_field a.ywcfav_variation_upload_image_button{
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.ywcfav_variable_video_container .img_field a.ywcfav_variation_upload_image_button .ywcfav_variation_thumbn{
+    width: 100%;
+}
+
+.ywcfav_variable_video_container .img_field a.ywcfav_variation_upload_image_button:before{
+    content: "\f317";
+    font-family: Dashicons;
+    display: none;
+    position: absolute;
+    font-size: 26px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    top: 50%;
+    left: 50%;
+    margin-left: -13px;
+    margin-top: -13px;
+}
+.ywcfav_variable_video_container .img_field .ywcfav_variation_upload_image_button:hover:before{
+    display: block;
+}
+
+.ywcfav_variable_video_container .img_field .ywcfav_thumbn_error .ywcfav_thumbn_error_container
+{
+    border:1px solid red;
+    background: #fff4f4;
+    font-size: 12px;
+    font-weight: bold;
+    color:red;
+    width: 92%;
+    padding: 11px;
+    text-align: left;
+    margin-top: 21px;
+    display: inline-block;
+    height: 80%;
+}
+
+.ywcfav_variable_video_container .ywcfav_thumbn_error .ywcfav_thumbn_error_container .ywcfav_icon_error:before{
+    content: "\f153";
+    font-family: Dashicons;
+    font-size: 17px;
+    color:red;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: bottom;
+}
+
+.ywcfav_variable_video_container .ywcfav_thumbn_error .ywcfav_thumbn_error_container .ywcfav_txt_error{
+
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+

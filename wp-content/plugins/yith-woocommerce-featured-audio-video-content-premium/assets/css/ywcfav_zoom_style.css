@@ -1,0 +1,12 @@
+
+.ywcfav_variation_content{
+    transition:all 1s ease-in;
+    overflow:hidden;
+    height: 0;
+    background-color: #eeeeee;
+}
+
+.ywcfav_variation_content:not(:empty){
+    height:auto;
+    background-color:initial;
+}

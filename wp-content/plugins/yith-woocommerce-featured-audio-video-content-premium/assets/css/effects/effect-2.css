@@ -1,0 +1,18 @@
+/* Effects */
+.vbox-overlay .vbox-inline {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transform: translateY(50px) translateX(50px);
+	transform: translateY(50px) translateX(50px);
+	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s, visibility 0s 0.5s;
+	transition: opacity 0.5s, transform 0.5s, visibility 0s 0.5s;
+}
+
+.vbox-overlay.open .vbox-inline {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: translateY(0) translateX(0);
+	transform: translateY(0) translateX(0);
+	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+	transition: opacity 0.5s, transform 0.5s;
+}

@@ -1,0 +1,653 @@
+# Copyright (C) 2019 YITH WooCommerce Featured Audio and Video Content Premium
+# This file is distributed under the same license as the YITH WooCommerce Featured Audio and Video Content Premium package.
+msgid ""
+msgstr ""
+"Project-Id-Version: YITH WooCommerce Featured Audio and Video Content "
+"Premium 1.3.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/init\n"
+"POT-Creation-Date: 2019-11-29 16:18:40+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: includes/classes/class.ywcfav-admin-premium.php:122
+#: includes/classes/class.ywcfav-admin.php:137
+msgid "Video Settings"
+msgstr ""
+
+#: includes/classes/class.ywcfav-admin-premium.php:123
+msgid "Audio Settings"
+msgstr ""
+
+#: includes/classes/class.ywcfav-admin-premium.php:124
+#: plugin-options/general-settings-options.php:10
+msgid "Modal Settings"
+msgstr ""
+
+#: includes/classes/class.ywcfav-admin-premium.php:125
+msgid "Gallery Settings"
+msgstr ""
+
+#: includes/classes/class.ywcfav-admin-premium.php:142
+#: includes/classes/widgets/class.yith-favc-slider-widget.php:43
+#: templates/metaboxes/views/html-product-variation-video.php:70
+#: templates/metaboxes/views/html-product-video.php:88
+msgid "Video"
+msgstr ""
+
+#: includes/classes/class.ywcfav-admin-premium.php:147
+#: includes/classes/widgets/class.yith-favc-slider-widget.php:44
+msgid "Audio"
+msgstr ""
+
+#: includes/classes/class.ywcfav-admin-premium.php:180
+msgid "Please select a Video"
+msgstr ""
+
+#: includes/classes/class.ywcfav-admin-premium.php:380
+msgid "Featured Video or Audio"
+msgstr ""
+
+#: includes/classes/class.ywcfav-admin.php:138
+msgid "Premium Version"
+msgstr ""
+
+#: includes/classes/class.ywcfav-admin.php:144
+msgid "Featured Audio Video Content"
+msgstr ""
+
+#: includes/classes/class.ywcfav-admin.php:169
+msgid "Featured Video URL"
+msgstr ""
+
+#: includes/classes/class.ywcfav-admin.php:170
+#: templates/metaboxes/yith-wcfav-video-metabox.php:67
+#: templates/metaboxes/yith-wcfav-video-product-variations.php:42
+msgid "Video URL"
+msgstr ""
+
+#: includes/classes/class.ywcfav-admin.php:172
+msgid ""
+"Enter the URL for the video you want to show in place of the featured image "
+"in the product detail page. (the services enabled are: YouTube and Vimeo )."
+msgstr ""
+
+#: includes/classes/widgets/class.yith-favc-slider-widget.php:15
+msgid "YITH WooCommerce Featured Audio Video - Slider Video"
+msgstr ""
+
+#: includes/classes/widgets/class.yith-favc-slider-widget.php:16
+msgid "Show your video or audio content in sidebar!"
+msgstr ""
+
+#: includes/classes/widgets/class.yith-favc-slider-widget.php:37
+msgid "Title"
+msgstr ""
+
+#: includes/classes/widgets/class.yith-favc-slider-widget.php:41
+msgid "Choose a content to show"
+msgstr ""
+
+#: includes/classes/widgets/class.yith-favc-slider-widget.php:81
+msgid "Videos"
+msgstr ""
+
+#: includes/functions.yith-wc-featured-audio-video.php:301
+msgid "Copy Featured content from %s"
+msgstr ""
+
+#: init.php:45
+msgid ""
+"YITH WooCommerce Featured Audio and Video Content Premium is enabled but not "
+"effective. It requires WooCommerce in order to work."
+msgstr ""
+
+#: plugin-options/addon-settings-options.php:12
+#: plugin-options/video-settings-options.php:11
+msgid "General Settings"
+msgstr ""
+
+#: plugin-options/addon-settings-options.php:17
+msgid "Video and Audio gallery mode"
+msgstr ""
+
+#: plugin-options/addon-settings-options.php:22
+msgid "WooCommerce Gallery"
+msgstr ""
+
+#: plugin-options/addon-settings-options.php:23
+msgid "Plugin gallery"
+msgstr ""
+
+#: plugin-options/addon-settings-options.php:26
+msgid ""
+"By choosing WooCommerce Gallery, videos and audio files (featured ones "
+"excluded) will show in WooCommerce gallery. By choosing Plugin Gallery, "
+"videos and audio (featured ones excluded) will show in the related gallery"
+msgstr ""
+
+#: plugin-options/addon-settings-options.php:29
+msgid "Video and Audio in the slider"
+msgstr ""
+
+#: plugin-options/addon-settings-options.php:30
+msgid ""
+"It shows audios and videos in slider, replacing the featured image. This "
+"option is possible only if YITH WooCommerce Zoom Magnifier is enabled."
+msgstr ""
+
+#: plugin-options/addon-settings-options.php:38
+msgid "Video and Audio in sidebar"
+msgstr ""
+
+#: plugin-options/addon-settings-options.php:39
+msgid ""
+"Show the audio and video sliders in a sidebar instead of under the product "
+"image gallery"
+msgstr ""
+
+#: plugin-options/audio-settings-options.php:10
+msgid "SoundCloud Settings"
+msgstr ""
+
+#: plugin-options/audio-settings-options.php:15
+msgid "Show Artwork"
+msgstr ""
+
+#: plugin-options/audio-settings-options.php:20
+msgid "Show or hide the item's artwork"
+msgstr ""
+
+#: plugin-options/audio-settings-options.php:23
+#: plugin-options/video-settings-options.php:50
+msgid "AutoPlay"
+msgstr ""
+
+#: plugin-options/audio-settings-options.php:28
+msgid "If the browser support it, the audio will be autoplayed"
+msgstr ""
+
+#: plugin-options/audio-settings-options.php:32
+#: plugin-options/video-settings-options.php:67
+msgid "Volume"
+msgstr ""
+
+#: plugin-options/audio-settings-options.php:33
+#: plugin-options/video-settings-options.php:68
+msgid "Set volume, 0 mute , 1 high volume"
+msgstr ""
+
+#: plugin-options/audio-settings-options.php:45
+msgid "Show Comments"
+msgstr ""
+
+#: plugin-options/audio-settings-options.php:46
+msgid "Hide/Show comments"
+msgstr ""
+
+#: plugin-options/audio-settings-options.php:55
+msgid "Show sharing button"
+msgstr ""
+
+#: plugin-options/audio-settings-options.php:60
+msgid "Show or hide share buttons"
+msgstr ""
+
+#: plugin-options/audio-settings-options.php:64
+#: plugin-options/video-settings-options.php:121
+#: plugin-options/video-settings-options.php:152
+#: plugin-options/video-settings-options.php:222
+msgid "Color"
+msgstr ""
+
+#: plugin-options/audio-settings-options.php:69
+msgid "Set the color for the player button and other options"
+msgstr ""
+
+#: plugin-options/general-settings-options.php:16
+msgid "Video in modal"
+msgstr ""
+
+#: plugin-options/general-settings-options.php:17
+msgid "Show featured video in a modal window"
+msgstr ""
+
+#: plugin-options/general-settings-options.php:25
+msgid "Audio in modal"
+msgstr ""
+
+#: plugin-options/general-settings-options.php:26
+msgid "Show featured audio in a modal window"
+msgstr ""
+
+#: plugin-options/general-settings-options.php:35
+msgid "Modal displaying effect"
+msgstr ""
+
+#: plugin-options/general-settings-options.php:39
+#: templates/metaboxes/views/html-product-variation-video.php:16
+#: templates/metaboxes/views/html-product-video.php:27
+msgid "None"
+msgstr ""
+
+#: plugin-options/general-settings-options.php:40
+msgid "Huge Inc"
+msgstr ""
+
+#: plugin-options/general-settings-options.php:41
+msgid "Corner"
+msgstr ""
+
+#: plugin-options/general-settings-options.php:42
+msgid "Slide down"
+msgstr ""
+
+#: plugin-options/general-settings-options.php:43
+msgid "Scale"
+msgstr ""
+
+#: plugin-options/general-settings-options.php:44
+msgid "Little genie"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:17
+msgid "Aspect Ratio"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:21
+#: plugin-options/video-settings-options.php:27
+msgid "Custom Aspect Ratio"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:22
+msgid "Choose the aspect ratio for your video"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:30
+msgid "Set your custom aspect ratio for your video. Example: 3:2,21:9 "
+msgstr ""
+
+#: plugin-options/video-settings-options.php:38
+msgid "Enter two values separated by :"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:41
+msgid "Player Controls"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:42
+msgid ""
+"This option sets whether the player has usable controls by users. ( Only on "
+"Youtube and Video uploaded )."
+msgstr ""
+
+#: plugin-options/video-settings-options.php:51
+msgid "If checked, the video will start playing as soon as page is loaded"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:59
+msgid "Loop"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:60
+msgid "The loop attribute causes the video to start over as soon as it ends"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:81
+msgid "Stoppable videos"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:82
+msgid "Allow users to pause videos"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:96
+msgid "Youtube Settings"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:101
+msgid "Show Related"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:105
+msgid ""
+"If unchecked the related videos will come from the same channel as the video "
+"that was just played."
+msgstr ""
+
+#: plugin-options/video-settings-options.php:109
+msgid "Theme"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:113
+msgid "Dark"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:114
+msgid "Light"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:118
+msgid "Set the Youtube player style"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:125
+msgid "Red"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:126
+msgid "White"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:129
+msgid "Sets the color used in the player progress bar"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:140
+msgid "Vimeo Settings"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:144
+msgid "Show Video Title"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:149
+msgid "Choose whether to show the video title in the Vimeo player or not"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:157
+msgid "Set the playback controls color for the Vimeo player"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:167
+msgid "VideoJS Player Style"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:174
+msgid "Style"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:178
+msgid "Default"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:179
+msgid "Custom"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:183
+msgid "Set the default style or customize with different colors"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:187
+msgid "Main Font Colors"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:188
+msgid "The colors of text the icons (icon font)"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:201
+msgid "Control background color"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:202
+msgid ""
+"The default background color of the controls is black, with a little bit of "
+"blue so it can still be seen on all black video frames, which are common."
+msgstr ""
+
+#: plugin-options/video-settings-options.php:215
+msgid "Slider Color"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:218
+msgid "Set the color for progress and volume bars and for the background"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:227
+msgid "Background Color"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:241
+msgid "Big Play Button Border Color"
+msgstr ""
+
+#: plugin-options/video-settings-options.php:243
+msgid "Set the border color of the big Play button"
+msgstr ""
+
+#: templates/metaboxes/views/html-product-audio.php:20
+#: templates/metaboxes/views/html-product-video.php:25
+msgid "Featured"
+msgstr ""
+
+#: templates/metaboxes/views/html-product-audio.php:25
+#: templates/metaboxes/views/html-product-video.php:32
+msgid "Remove"
+msgstr ""
+
+#: templates/metaboxes/views/html-product-audio.php:26
+#: templates/metaboxes/views/html-product-video.php:33
+msgid "Click to toggle"
+msgstr ""
+
+#: templates/metaboxes/views/html-product-audio.php:35
+msgid "Audio Thumbnail:"
+msgstr ""
+
+#: templates/metaboxes/views/html-product-audio.php:36
+#: templates/metaboxes/views/html-product-variation-video.php:22
+#: templates/metaboxes/views/html-product-video.php:43
+msgid "Select Thumbnail"
+msgstr ""
+
+#: templates/metaboxes/views/html-product-audio.php:47
+msgid "Audio Title"
+msgstr ""
+
+#: templates/metaboxes/views/html-product-audio.php:51
+msgid "Audio Url"
+msgstr ""
+
+#: templates/metaboxes/views/html-product-variation-video.php:21
+msgid "Featured Video"
+msgstr ""
+
+#: templates/metaboxes/views/html-product-variation-video.php:35
+#: templates/metaboxes/views/html-product-video.php:54
+#: templates/metaboxes/yith-wcfav-video-product-variations.php:33
+msgid "Video Title"
+msgstr ""
+
+#: templates/metaboxes/views/html-product-variation-video.php:41
+#: templates/metaboxes/views/html-product-video.php:58
+msgid "Video Host:"
+msgstr ""
+
+#: templates/metaboxes/views/html-product-variation-video.php:51
+#: templates/metaboxes/views/html-product-video.php:70
+msgid "Id"
+msgstr ""
+
+#: templates/metaboxes/views/html-product-variation-video.php:55
+#: templates/metaboxes/views/html-product-video.php:74
+msgid "Url"
+msgstr ""
+
+#: templates/metaboxes/views/html-product-variation-video.php:60
+#: templates/metaboxes/views/html-product-video.php:79
+msgid "Embedded Code"
+msgstr ""
+
+#: templates/metaboxes/views/html-product-variation-video.php:65
+#: templates/metaboxes/views/html-product-video.php:83
+#: templates/metaboxes/yith-wcfav-video-metabox.php:76
+#: templates/metaboxes/yith-wcfav-video-product-variations.php:61
+msgid "Upload"
+msgstr ""
+
+#: templates/metaboxes/views/html-product-variation-video.php:80
+msgid "Remove Video"
+msgstr ""
+
+#: templates/metaboxes/views/html-product-video.php:42
+msgid "Video Thumbnail:"
+msgstr ""
+
+#: templates/metaboxes/yith-wcfav-audio-metabox.php:13
+msgid "Insert the"
+msgstr ""
+
+#: templates/metaboxes/yith-wcfav-audio-metabox.php:13
+msgid "SoundCloud.com"
+msgstr ""
+
+#: templates/metaboxes/yith-wcfav-audio-metabox.php:13
+msgid "song URL"
+msgstr ""
+
+#: templates/metaboxes/yith-wcfav-audio-metabox.php:18
+#: templates/metaboxes/yith-wcfav-video-metabox.php:16
+msgid "Expand"
+msgstr ""
+
+#: templates/metaboxes/yith-wcfav-audio-metabox.php:18
+#: templates/metaboxes/yith-wcfav-video-metabox.php:16
+msgid "Close"
+msgstr ""
+
+#: templates/metaboxes/yith-wcfav-audio-metabox.php:20
+msgid "Product Audio"
+msgstr ""
+
+#: templates/metaboxes/yith-wcfav-audio-metabox.php:42
+msgid "Audio Name"
+msgstr ""
+
+#: templates/metaboxes/yith-wcfav-audio-metabox.php:48
+msgid "Audio URL"
+msgstr ""
+
+#: templates/metaboxes/yith-wcfav-audio-metabox.php:52
+msgid "Add Audio Track"
+msgstr ""
+
+#: templates/metaboxes/yith-wcfav-select-video-featured-metabox.php:19
+msgid "Choose featured content"
+msgstr ""
+
+#: templates/metaboxes/yith-wcfav-video-metabox.php:18
+msgid "Product Video"
+msgstr ""
+
+#: templates/metaboxes/yith-wcfav-video-metabox.php:40
+#: templates/metaboxes/yith-wcfav-video-metabox.php:81
+#: templates/metaboxes/yith-wcfav-video-product-variations.php:22
+#: templates/metaboxes/yith-wcfav-video-product-variations.php:58
+msgid "Add Video"
+msgstr ""
+
+#: templates/metaboxes/yith-wcfav-video-metabox.php:42
+#: templates/metaboxes/yith-wcfav-video-product-variations.php:24
+msgid "Select By..."
+msgstr ""
+
+#: templates/metaboxes/yith-wcfav-video-metabox.php:43
+#: templates/metaboxes/yith-wcfav-video-product-variations.php:25
+msgid "By ID"
+msgstr ""
+
+#: templates/metaboxes/yith-wcfav-video-metabox.php:44
+#: templates/metaboxes/yith-wcfav-video-product-variations.php:26
+msgid "By URL"
+msgstr ""
+
+#: templates/metaboxes/yith-wcfav-video-metabox.php:45
+#: templates/metaboxes/yith-wcfav-video-product-variations.php:27
+msgid "By Embedded code"
+msgstr ""
+
+#: templates/metaboxes/yith-wcfav-video-metabox.php:46
+#: templates/metaboxes/yith-wcfav-video-product-variations.php:28
+msgid "By Upload"
+msgstr ""
+
+#: templates/metaboxes/yith-wcfav-video-metabox.php:50
+msgid "Video Name"
+msgstr ""
+
+#: templates/metaboxes/yith-wcfav-video-metabox.php:54
+#: templates/metaboxes/yith-wcfav-video-product-variations.php:51
+msgid "Host"
+msgstr ""
+
+#: templates/metaboxes/yith-wcfav-video-metabox.php:56
+#: templates/metaboxes/yith-wcfav-video-product-variations.php:53
+msgid "YouTube"
+msgstr ""
+
+#: templates/metaboxes/yith-wcfav-video-metabox.php:57
+#: templates/metaboxes/yith-wcfav-video-product-variations.php:54
+msgid "Vimeo"
+msgstr ""
+
+#: templates/metaboxes/yith-wcfav-video-metabox.php:61
+#: templates/metaboxes/yith-wcfav-video-product-variations.php:37
+msgid "Video ID"
+msgstr ""
+
+#: templates/metaboxes/yith-wcfav-video-metabox.php:62
+#: templates/metaboxes/yith-wcfav-video-metabox.php:68
+#: templates/metaboxes/yith-wcfav-video-product-variations.php:37
+#: templates/metaboxes/yith-wcfav-video-product-variations.php:42
+msgid "YouTube and Vimeo are supported"
+msgstr ""
+
+#: templates/metaboxes/yith-wcfav-video-metabox.php:72
+#: templates/metaboxes/yith-wcfav-video-product-variations.php:46
+msgid "Embedded code"
+msgstr ""
+
+#: templates/metaboxes/yith-wcfav-video-metabox.php:76
+#: templates/metaboxes/yith-wcfav-video-product-variations.php:61
+msgid "Select Video"
+msgstr ""
+
+#: templates/woocommerce/single-product/product-audio-thumbnails.php:32
+msgid "Featured Audios"
+msgstr ""
+
+#: templates/woocommerce/single-product/product-video-thumbnails.php:18
+msgid "Featured Videos"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "YITH WooCommerce Featured Audio and Video Content Premium"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"https://yithemes.com/themes/plugins/yith-woocommerce-featured-audio-video-"
+"content/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"<code><strong>YITH WooCommerce Featured Audio and Video Content</strong></"
+"code> allows you to set a video or audio instead of the featured image on "
+"the single product page. Also, you can add video or audio to a different "
+"gallery under the featured content. <a href=\"https://yithemes.com\">Get "
+"more plugins for your e-commerce shop on <strong>YITH</strong></a>."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "YITH"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://yithemes.com/"
+msgstr ""

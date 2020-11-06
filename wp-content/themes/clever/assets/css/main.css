@@ -863,6 +863,7 @@ button:focus {
   .pre-navbar--mobile {
     display: flex !important;
     padding: 0 1.2rem !important;
+	      padding-left: 0!important;
   }
 }
 
@@ -922,6 +923,7 @@ button:focus {
     letter-spacing: 0.2px;
     text-transform: uppercase;
     color: #161616;
+	      padding-left: 0!important;
   }
 }
 
@@ -972,6 +974,10 @@ button:focus {
   margin-right: 5px;
 }
 
+.nav-idioma img {
+	    height: 24px!important;
+}
+
 .nav-item__custom {
 }
 
@@ -1009,12 +1015,13 @@ a.nav-world {
 
 .content-icon {
   display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
   .content-icon {
     margin-top: 0;
+	  flex-direction: column;
   }
 }
 
@@ -1068,6 +1075,7 @@ a.nav-world {
 
 .drop-money {
   align-items: start;
+	    margin-left: 6px;
 }
 
 .drop-money a {
@@ -1118,13 +1126,27 @@ a.nav-world {
   padding-right: 1.2rem !important;
   padding-left: 1.2rem !important;
 }
+.nav-responsive .nav-icon {
+	    margin: .5rem 0;
+	    padding: .5rem 1rem;
+}
+
 
 @media (min-width: 0px) and (max-width: 767px) {
   .nav-responsive {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+	  padding-left: 0!important;
   }
+	
+	.drop-money {
+		margin-left: 0;
+		   
+	}
+	.drop-money a{ 
+	 padding-left: 0!important;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

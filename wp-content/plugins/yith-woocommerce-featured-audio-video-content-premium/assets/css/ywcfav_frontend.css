@@ -1,0 +1,155 @@
+.ywcfav_hide {
+    display: none;
+}
+
+.woocommerce span.onsale, .woocommerce-page span.onsale {
+    z-index: 10;
+}
+
+.ywcfav-video-content {
+
+    position: relative;
+    overflow: hidden;
+}
+
+.ywcfav-video-content iframe {
+    width: 100%!important;
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.yith_featured_thumbnail {
+    position: relative;
+}
+
+.yith_featured_thumbnail:before,.ywcfav_video_modal_container a:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    content: "\f01d";
+    font-family: FontAwesome;
+    font-size: 30px;
+    color: #fff;
+    opacity: .8;
+    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    z-index: 999;
+}
+
+.yith_featured_thumbnail:hover:before,.ywcfav_video_modal_container a:hover:before {
+    opacity: 1;
+}
+
+.vbox-inline.figlio{
+    width: 90% !important;
+    height: auto;
+    background: transparent!important;
+}
+
+
+.ywcfav_video_modal_container a{
+    position: relative;
+    display: block!important;
+}
+
+.ywcfav_video_modal_container a:before{
+    font-size: 50px;
+}
+
+/*THUMBNAIL AUDIO VIDEO*/
+
+.ywcfav_thumbnails_video_container, .ywcfav_thumbnails_audio_container {
+    width: 100%;
+
+}
+
+
+.ywcfav_slider_info{
+
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ywcfav_slider_wrapper{
+    position: relative;
+}
+.ywcfav_slider_wrapper .owl-carousel .owl-stage-outer{
+    overflow: visible;
+}
+
+.ywcfav_slider_wrapper .ywcfav_slider{
+    overflow: hidden;
+    position: relative;
+}
+.ywcfav_slider_name{
+    float:left;
+}
+
+.ywcfav_slider_control{
+    float: right;
+    margin-top: 4px;
+}
+
+.ywcfav_slider_control .ywcfav_left{
+    background: url(../images/sx.png);
+    background-size: 10px 18px;
+    width:10px ;
+    height: 18px;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+.ywcfav_slider_control .ywcfav_right{
+    background: url(../images/dx.png);
+    background-size: 10px 18px;
+    width:10px ;
+    height: 18px;
+    float: right;
+    cursor: pointer;
+}
+
+.ywcfav_thumbnails_video_container, .ywcfav_thumbnails_audio_container{
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    clear: both;
+}
+
+.ywcfav_thumbnails_video_container .ywcfav_video_modal_container a:before,
+.ywcfav_thumbnails_audio_container .ywcfav_video_modal_container a:before
+{
+    z-index: 999;
+    font-size: 35px;
+}
+
+/**QUICK VIEW FIX*/
+
+.yith-quick-view-thumbs div.yith_featured_thumbnail {
+    position: relative;
+}
+
+.yith-quick-view-thumbs div.yith_featured_thumbnail:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    content: "\f01d";
+    font-family: FontAwesome;
+    font-size: 30px;
+    color: #fff;
+    opacity: .8;
+    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+.yith-quick-view-thumbs div.yith_featured_thumbnail:before {
+    opacity: 1;
+}
