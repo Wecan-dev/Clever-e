@@ -110,7 +110,7 @@
           <?php } ?> 
           <?php if (get_theme_mod('phone2_'.lang().'') != NULL) { ?>         
             <li>
-              <a href="tel:<?php echo get_theme_mod('phone1_'.lang().''); ?>">
+              <a href="tel:<?php echo get_theme_mod('phone2_'.lang().''); ?>">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/phone.png">
                 <?php echo get_theme_mod('phone2_'.lang().''); ?>
               </a>
