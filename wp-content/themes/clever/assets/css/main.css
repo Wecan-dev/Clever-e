@@ -1028,7 +1028,19 @@ a.nav-world {
 @media (min-width: 768px) and (max-width: 991px) {
   .content-icon {
     margin-top: 0;
+	  flex-direction: column;
   }
+		.navbar .navbar-nav {
+  min-height: initial;
+}
+	
+	.nav-responsive .content-icon a{
+		    margin-bottom: 18px!important;
+	}
+	
+	.drop-money {
+		    margin-bottom: 18px!important;
+	}
 }
 
 .dropdown:hover>.dropdown-menu {
@@ -1154,7 +1166,8 @@ a.nav-world {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  }
+      padding-left: 0!important;
+	}
 }
 
 .nav-link {
