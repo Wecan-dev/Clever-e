@@ -1023,6 +1023,20 @@ a.nav-world {
     margin-top: 0;
 	  flex-direction: column;
   }
+	
+	
+	.nav-item__number {
+		margin-left: 3px;
+	}
+}
+
+.collection-item__icon {
+	    font-size: 16px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    color: #161616;
+	padding-left: 0!important;
+	    font-weight: bold;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1040,6 +1054,10 @@ a.nav-world {
 	
 	.drop-money {
 		    margin-bottom: 18px!important;
+	}
+	
+	.nav-item__number {
+		margin-left: 3px;
 	}
 }
 

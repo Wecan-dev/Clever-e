@@ -88,7 +88,7 @@
                 </a>
                 <?php }else { ?>
                     <div data-toggle="tooltip" data-placement="top" title="" data-original-title="<?php if(lang() == 'es'){echo "Debes estar iniciar sesión";}else{echo "You must be logged";} ?>" class="collection-item__icon nav-icon" >
-                      <img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
+                  <?php if (lang() == 'es'){ echo "Lista de deseos"; }else{ echo "Wishlist"; } ?>
                     </div>                
                 <?php } ?>
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "carrito";}else{echo "cart";} ?>">
@@ -251,57 +251,47 @@
             <li class="nav-item">
               <a class="nav-link nav-link-p" data="offcanvas" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "contacto";}else{echo "contact ";} ?>"><?php if(lang() == 'es'){echo "Contacto";}if(lang() == 'en'){echo "Contact ";} ?></a>
             </li>
-            <li class="nav-item nav-responsive">
-              
+          <li class="nav-item nav-responsive">
               <div class="content-icon">
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "mi-cuenta";}else{echo "my-account";} ?>">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/user.png">
+                  <?php if (lang() == 'es'){ echo "Mi Cuenta"; }else{ echo "My Account"; } ?>
                 </a>
-                <?php if(is_user_logged_in() != NULL){ ?> 
+               <?php if(is_user_logged_in() != NULL){ ?>
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "lista-de-deseos";}else{echo "wishlist";} ?>">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
+                  <?php if (lang() == 'es'){ echo "Lista de deseos"; }else{ echo "Wishlist"; } ?>
                   <span class="nav-item__number">
                   <?php $wishlist_count = YITH_WCWL()->count_products(); echo esc_html( $wishlist_count ); ?>
                   </span>
                 </a>
                 <?php }else { ?>
                     <div data-toggle="tooltip" data-placement="top" title="" data-original-title="<?php if(lang() == 'es'){echo "Debes estar iniciar sesión";}else{echo "You must be logged";} ?>" class="collection-item__icon nav-icon" >
-                      <img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
+                    <?php if (lang() == 'es'){ echo "Lista de deseos"; }else{ echo "Wishlist"; } ?>
                     </div>                
                 <?php } ?>
                 <a class="nav-icon" href="<?php echo get_home_url() ?>/<?php if(lang() == 'es'){echo "carrito";}else{echo "cart";} ?>">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/card.png">
+                  <?php if (lang() == 'es'){ echo "Carrito"; }else{ echo "Cart"; } ?>
                   <span class="nav-item__number">
                     <?php echo wp_kses_data(WC()->cart->get_cart_contents_count()); ?>
                   </span>
-                </a>                
-                <ul class="navbar-nav mr-autos">
-                  <li class="nav-item dropdown drop-money">
-                    <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><img src="<?php echo get_template_directory_uri();?>/assets/img/world.png"></a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item woocs_flag_view_item" href="?wmc-currency=USD" data-currency="USD" title="USD, $ USA dollar">USD, $</a>
-                      <a href="?wmc-currency=COP" class="dropdown-item woocs_flag_view_item" data-currency="COP" title="COP, $ Peso Colombiano">COP, $</a>
-                    </div>
-                  </li>
-                </ul>              
+                </a>              
               </div>
-
-                <ul class="navbar-nav mr-autos">
-                  <li class="nav-item dropdown drop-money">
-                    <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown" href="catalogo.html" role="button"><?php $url = explode('?', $_SERVER['REQUEST_URI'], 2);
-                      if (lang() == 'es'){ echo "Idioma"; }else{ echo "Language"; $url = explode('en', $_SERVER['REQUEST_URI'], 2);}  ?></a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item woocs_flag_view_item" title="English" lang="en-US" hreflang="en-US" href="<?php echo $url[0]; ?>en/">English</a>
-                      <a class="dropdown-item woocs_flag_view_item" title="Español"lang="es-CO" hreflang="es-CO" href="<?php echo $url[0]; ?>">Español</a>
-                    </div>
-                  </li>
-                </ul>               
+              <ul class="navbar-nav mr-autos">
+                <li class="nav-item dropdown drop-money">
+                  <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link" data-toggle="" >
+					<?php if (lang() == 'es'){ echo "Moneda"; }else{ echo "Currency"; } ?>
+					</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item woocs_flag_view_item" href="?wmc-currency=USD" data-currency="USD" title="USD, $ USA dollar">USD, $</a>
+                    <a href="?wmc-currency=COP" class="dropdown-item woocs_flag_view_item" data-currency="COP" title="COP, $ Peso Colombiano">COP, $</a>
+                  </div>
+                </li>
+              </ul>  
+                          
               <!--<?php if ( is_active_sidebar( 'sidebar-1' ) ) { ?>
               <aside class="in-header widget-area right" role="complementary">
                 <?php dynamic_sidebar( 'sidebar-1' ); ?>
               </aside>
               <?php } ?>-->
-
             </li>
             <li class="nav-item nav-flex">
               <div class="content-icon">
