@@ -46,32 +46,32 @@
         <div class="main-footer__item">
           <ul class="list-contact">
             <li>
-              <a href="<?php echo file_customizer(get_theme_mod('envios_online_'.lang().'')); ?>" download="Envios Online">
+              <a target="_blank" href="<?php echo file_customizer(get_theme_mod('shipping_online_'.lang().'')); ?>" >
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/business.png">
                 <?php if(lang() == 'es'){echo "Envios Online";}if(lang() == 'en'){echo "Shipping Online";}?>
               </a>
             </li>
             <li>
-              <a href="<?php echo file_customizer(get_theme_mod('terms_conditions_'.lang().'')); ?>" download="Términos y Condiciones">
+              <a target="_blank" href="<?php echo file_customizer(get_theme_mod('terms_conditions_'.lang().'')); ?>">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/symbol.png">
                 <?php if(lang() == 'es'){echo "Términos y Condiciones";}if(lang() == 'en'){echo "Terms and Conditions";}?>
               </a>
             </li>
             <li>
-              <a href="<?php echo file_customizer(get_theme_mod('personal_data_processing_policy_'.lang().'')); ?>" download="Política de Tratamiento de Datos Personales">
+              <a target="_blank" href="<?php echo file_customizer(get_theme_mod('personal_data_processing_policy_'.lang().'')); ?>">
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/tools-and-utensils.png">
                 <?php if(lang() == 'es'){echo "Política de Tratamiento de Datos Personales";}if(lang() == 'en'){echo "Personal Data Processing Policy";}?>
               </a>
             </li>
             <li>
-              <a href="<?php echo file_customizer(get_theme_mod('guarantee_policy_'.lang().'')); ?>" download="Política de Garantía">
+              <a target="_blank" href="<?php echo file_customizer(get_theme_mod('guarantee_policy_'.lang().'')); ?>" >
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/dollar.png">
                 <?php if(lang() == 'es'){echo "Política de Garantía";}if(lang() == 'en'){echo "Guarantee Policy";}?>
               </a>
             </li>
   
             <li>
-              <a href="<?php echo file_customizer(get_theme_mod('our_history_'.lang().'')); ?>" download="Nuestra Historia">
+              <a target="_blank" href="<?php echo file_customizer(get_theme_mod('our_history_'.lang().'')); ?>" >
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/history.png">
                 <?php if(lang() == 'es'){echo "Nuestra Historia";}if(lang() == 'en'){echo "Our History";}?>
               </a>

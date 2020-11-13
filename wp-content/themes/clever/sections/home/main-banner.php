@@ -35,10 +35,11 @@
 				
             </h2> 
 				  	  	<div class="buttons">
-  <button class="uk-button button uk-button-primary first" onclick="pauseVid()" type="button">
-    <i class="uk-icon-pause fa fa-pause"></i></button>
-  <button class="uk-button button uk-button-primary second" onclick="playVid()" type="button">
+							  <button class="uk-button button uk-button-primary first" onclick="playVid()" type="button">
     <i class="uk-icon-play fa fa-play"></i></button>
+  <button class="uk-button button uk-button-primary second" onclick="pauseVid()" type="button">
+    <i class="uk-icon-pause fa fa-pause"></i></button>
+
 							<button class="mute-video"></button>
 </div>
 			  </div>
@@ -54,7 +55,7 @@
 		  <div class="main-banner__img">
         
         
-          <video id="myVideo" src="<?php the_field('banner_video'); ?>"> </video>
+          <video autoplay="true" muted="true" id="myVideo" src="<?php the_field('banner_video'); ?>"> </video>
 		
          </div>
   </div>

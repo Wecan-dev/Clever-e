@@ -21,6 +21,7 @@
         <div class="main-products__item">
           <div class="main-products__img">
             <div class="main-products__mask">
+				<a  href="<?php the_permalink(); ?>" class="product-link" > </a>
               <div class="main-products__icon">
               <?php if (variation(get_the_ID()) <= 0){ ?>
                 <a href="?add-to-cart=<?php echo get_the_ID(); ?>">
