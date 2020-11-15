@@ -131,10 +131,16 @@
           </ul>
         </div>
 		   <div class="img-pasarelas" >
+			   <p>
+				   Medios de Pago
+			   </p>
+			   <div class="d-flex">
+				   
 			  <img src="<?php echo get_template_directory_uri();?>/assets/img/epayco.png">
 			  <img src="<?php echo get_template_directory_uri();?>/assets/img/paypal.png">
 			  <img src="<?php echo get_template_directory_uri();?>/assets/img/payu.png">
-				  
+				  			   </div>
+
 			  </div>
       </div>
     </div>

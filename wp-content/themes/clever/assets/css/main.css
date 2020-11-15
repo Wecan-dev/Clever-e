@@ -2346,17 +2346,22 @@ display: flex;
   height: 16px;
   object-fit: contain;
 }
-
+.img-pasarelas p {
+	font-weight: 500;
+    color: #161616;
+    margin-bottom: 0;
+    font-size: 15px;
+    letter-spacing: normal;
+}
 .img-pasarelas img {
-	    height: 46px!important;
-	    width: 46px!important;
+    height: 57px!important;
+    width: 57px!important;
 	object-fit: contain;
-	margin-left: 8px;
+    margin-right: 10px;
 	
 }
 
 .img-pasarelas {
-	display: flex;
 	align-items: center;
 	right: 24px;
 	    position: absolute;
@@ -2394,7 +2399,6 @@ display: flex;
 .main-footer .main-footer__description {
   font-weight: 500;
   color: #161616;
-  text-align: justify;
   margin-bottom: 25px;
   font-size: 15px;
   letter-spacing: normal;
@@ -4716,7 +4720,7 @@ display: flex;
   gap: 15px;
 }
 
-.woocommerce-product-gallery__wrapper img {
+.woocommerce-product-gallery__wrapper img, .video-js {
   width: 100%;
   object-fit: cover;
   height: 778px !important;
@@ -5005,7 +5009,7 @@ ol.flex-control-nav.flex-control-thumbs img.flex-active {
     margin: 0;
   }
 
-  .woocommerce-product-gallery__wrapper img {
+  .woocommerce-product-gallery__wrapper img, .video-js {
     height: 440px !important;
   }
 
