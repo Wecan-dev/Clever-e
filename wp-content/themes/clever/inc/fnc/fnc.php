@@ -1076,3 +1076,20 @@ function terms_silueta( $cat_id ){
 
 }
 
+/***************** Meta IMG *****************/
+function meta_value_img( $meta_key, $post_id ){
+            global $wpdb;  
+              $result_link = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix."postmeta WHERE meta_key = '$meta_key' and post_id = '$post_id'"); 
+              foreach($result_link as $r)
+              {
+                      $value = $r->meta_value;                      
+              }
+              $result_link1 = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix."posts WHERE ID = '$value'"); 
+              foreach($result_link1 as $r1)
+               {
+                      $value_img = $r1->guid;                      
+              }              
+              return $value_img;
+
+}
+

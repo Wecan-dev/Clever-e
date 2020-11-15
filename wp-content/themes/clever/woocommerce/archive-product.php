@@ -261,7 +261,7 @@ else { ?>
 				<img src="<?php echo termmeta_value_img( 'image_banner_categories', terms_id( $_GET["cat"] ) ); ?>">
         <?php }else { ?>
 	        <div class="modal-content">
-	        	<img src="<?php echo get_template_directory_uri();?>/assets/img/categorie/medidas-clever.jpg">
+	        	<img src="<?php echo get_template_directory_uri();?>/assets//img/categorie/medidas-clever.jpg">
 	    <?php } ?>			
 				<button aria-label="Close" class="close" data-dismiss="modal" type="button">
 					<span aria-hidden="true">×</span>
@@ -334,15 +334,15 @@ else { ?>
 												<img src="<?php echo get_template_directory_uri();?>/assets/img/card.png">
 											</a>
 											<?php } ?> 
-											<?php if (is_user_logged_in()){ ?>               							
+											<?php //if (is_user_logged_in()){ ?>               							
 											<a href="?add_to_wishlist=<?php echo get_the_ID(); ?>">
 												<img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
 											</a>
-                                            <?php }else { ?>  
-                                                <div data-toggle="tooltip" data-placement="top" title="" data-original-title="<?php if(lang() == 'es'){echo "Debes estar iniciar sesión";}else{echo "You must be logged";} ?>" class="collection-item__icon" >
+                                            <?php //}else { ?>  
+                                                <!--<div data-toggle="tooltip" data-placement="top" title="" data-original-title="<?php if(lang() == 'es'){echo "Debes estar iniciar sesión";}else{echo "You must be logged";} ?>" class="collection-item__icon" >
                                                   <img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
-                                                </div>              
-                                            <?php } ?>											
+                                                </div>-->              
+                                            <?php// } ?>											
 											<a href="<?php the_permalink(); ?>">
 												<img src="<?php echo get_template_directory_uri();?>/assets/img/search.png">
 											</a>
@@ -409,13 +409,13 @@ else { ?>
 													<a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/card.png"></a>
 													<?php } ?> 
 													<a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/search.png"></a> 
-													<?php if (is_user_logged_in()){ ?>   
+													<?php// if (is_user_logged_in()){ ?>   
 													   <a href="?add_to_wishlist=<?php echo get_the_ID(); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png"></a>  
-															<?php }else { ?>  
-															<div data-toggle="tooltip" data-placement="top" title="" data-original-title="<?php if(lang() == 'es'){echo "Debes estar iniciar sesión";}else{echo "You must be logged";} ?>" class="collection-item__icon" >
+															<?php// }else { ?>  
+															<!--<div data-toggle="tooltip" data-placement="top" title="" data-original-title="<?php if(lang() == 'es'){echo "Debes estar iniciar sesión";}else{echo "You must be logged";} ?>" class="collection-item__icon" >
 																<img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
-															</div>              
-															<?php } ?>
+															</div> -->             
+															<?php //} ?>
 												</span>             
 											</td>                    
 										</tr>    

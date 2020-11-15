@@ -53,7 +53,7 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 } // Exit if accessed directly
 
 ?>
-<?php if(is_user_logged_in() != NULL){ ?>
+<?php if(is_user_logged_in() == NULL OR is_user_logged_in() != NULL){ ?>
 <!-- WISHLIST TABLE -->
 <section class=" wishlist-section" >
 	<div class="wishlist-section__line"></div>
@@ -342,24 +342,8 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 
 </div>
 </section>
-<?php } else { ?>
-<section class=" wishlist-section" >
-<div class="woocommerce-notices-wrapper">
-	<div class="woocommerce-message" role="alert">
-	    <?php if(lang() == 'es'){ ?>    
-		    <a href="<?php echo get_home_url() ?>/mi-cuennta" tabindex="1" class="button wc-forward">Iniciar Sesión</a> Debes inicar sesión para ver la lista de deseos</div>
-        <?php } else{ ?>    
-		    <a href="<?php echo get_home_url() ?>/my-account" tabindex="1" class="button wc-forward">Sign In</a> You must be logged in to wishlist.</div>		    
-</div>  <?php } ?>
-<dir class="wishlist_title"></dir>
-</section>
+<?php } //else { ?>
 
-<style type="text/css">
-  .border-cart{
-    display: none;
-  }
-</style>
-<?php } ?>
 <script type="text/javascript">
     $(document).ready(function() {       
         var langu = "<?= get_bloginfo('language') ?>";         
