@@ -1,0 +1,38 @@
+2020-11-13T19:18:24+00:00 INFO Generating payment form for order 2408. Notify URL: http://159.89.229.55/Clever-e/wc-api/WC_Gateway_Paypal/
+2020-11-13T19:18:24+00:00 INFO PayPal Request Args for order 2408: Array
+(
+    [cmd] => _cart
+    [business] => ventasonline@clevermoda.com
+    [no_note] => 1
+    [currency_code] => USD
+    [charset] => utf-8
+    [rm] => 1
+    [upload] => 1
+    [return] => http://159.89.229.55/Clever-e/checkout/order-received/2408/?key=wc_order_mqu8YOk6tO3mX&utm_nooverride=1
+    [cancel_return] => http://159.89.229.55/Clever-e/en/cart/?cancel_order=true&order=wc_order_mqu8YOk6tO3mX&order_id=2408&redirect&_wpnonce=8c49d1c94b
+    [page_style] => 
+    [image_url] => 
+    [paymentaction] => sale
+    [invoice] => WC-2408
+    [custom] => {"order_id":2408,"order_key":"wc_order_mqu8YOk6tO3mX"}
+    [notify_url] => http://159.89.229.55/Clever-e/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_a] => ***
+    [night_phone_b] => ***
+    [no_shipping] => 1
+    [tax_cart] => 0.00
+    [item_name_1] => Ethereal Long Pant (Color: Gris, Silueta: Licras, Talla: S)
+    [quantity_1] => 1
+    [amount_1] => 58.6
+    [item_number_1] => 0160133
+    [bn] => WooThemes_Cart
+)
+
