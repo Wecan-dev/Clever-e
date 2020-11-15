@@ -261,7 +261,7 @@ else { ?>
 				<img src="<?php echo termmeta_value_img( 'image_banner_categories', terms_id( $_GET["cat"] ) ); ?>">
         <?php }else { ?>
 	        <div class="modal-content">
-	        	<img src="<?php echo get_template_directory_uri();?>/assets//img/categorie/medidas-clever.jpg">
+	        	<img src="<?php echo get_template_directory_uri();?>/assets/img/categorie/medidas-clever.jpg">
 	    <?php } ?>			
 				<button aria-label="Close" class="close" data-dismiss="modal" type="button">
 					<span aria-hidden="true">×</span>
