@@ -9,65 +9,61 @@
         </h2>
       </div>
       <div class="main-products__carousel">
-        <?php $product_categories = get_categories( array( 'taxonomy' => 'product_cat', 'orderby' => 'menu_order', 'order' => 'asc' ));
+        <?php $j = 0; $product_categories = get_categories( array( 'taxonomy' => 'product_cat', 'orderby' => 'menu_order', 'order' => 'asc' ));
           foreach($product_categories as $category):  global $wpdb;
           $result = $wpdb->get_results ("SELECT * FROM ".$wpdb->prefix."term_taxonomy where taxonomy = 'product_cat'");
-          $array_cat[] = $category->slug;
-          endforeach;
-          $count_cat=count($array_cat);
+          $count_cat = $count_cat + 1;
+          endforeach;          
+          
+        ?>   
+        <?php 
+         for ($ca=0; $ca < 10 ; $ca++) { 
+ 
+        ?>       
+        <?php $j = 0;  $c = 0; $product_categories = get_categories( array( 'taxonomy' => 'product_cat', 'orderby' => 'menu_order', 'order' => 'asc' ));
+          foreach($product_categories as $category):  global $wpdb;
+          $result = $wpdb->get_results ("SELECT * FROM ".$wpdb->prefix."term_taxonomy where taxonomy = 'product_cat'");
+             $cate = $category->name;    
+          
         ?>  
         <?php
-          for ($i=0; $i < $count_cat; $i++) { 
-              $j = 0;         
               $args = array (
                  'post_type' => 'product',
-                 'posts_per_page' => 10,
+                 'posts_per_page' => 1,
                  'post_status' => 'publish',
                  'order'=> 'ASC',
+                  'offset'=> $ca,
                  'tax_query' => array(
                  'relation'=>'AND', // 'AND' 'OR' ...
                    array(
                    'taxonomy'        => 'product_cat',
                    'field'           => 'slug',
-                   'terms'           => array($array_cat[$i]),
+                   'terms'           => array($category->slug),
                    'operator'        => 'IN',
                   )),               
               );
               $loop = new WP_Query( $args ); 
               while ( $loop->have_posts() ) : $loop->the_post(); global $product;     
-              $array[$i][$j] = get_the_ID();  
-              $j = $j + 1;
-              endwhile; 
-           }
- 
-           $count_mat=count($array);  
-           for ($a=0; $a <=10 ; $a++) { 
-             for ($j=0; $j <=$count_cat ; $j++) { 
-              $id_cat = $array[$j][$a];    
-
-              $cont = $cont +1;
-              if ($id_cat != NULL) {
-   
 
         ?>
               
               <div class="main-products__item">
                 <div class="main-products__img">
                   <div class="main-products__mask">
-                    <a href="<?php echo get_post($id_cat)->guid; ?>" class="product-link" > </a>
+                    <a href="<?php the_permalink(); ?>" class="product-link" > </a>
                     <div class="main-products__icon">
-                    <?php if (variation($id_cat) <= 0){ ?>
-                      <a href="?add-to-cart=<?php echo $id_cat; ?>">
+                    <?php if (variation(get_the_ID()) <= 0){ ?>
+                      <a href="?add-to-cart=<?php echo get_the_ID(); ?>">
                         <img src="<?php echo get_template_directory_uri();?>/assets/img/card.png">
                       </a>
                     <?php } ?>  
-                    <?php if (variation($id_cat) > 0){ ?>
-                     <a href="<?php echo get_post($id_cat)->guid; ?>">
+                    <?php if (variation(get_the_ID()) > 0){ ?>
+                     <a href="<?php the_permalink(); ?>">
                         <img src="<?php echo get_template_directory_uri();?>/assets/img/card.png">
                       </a>              
                     <?php } ?> 
                     <?php// if (is_user_logged_in()){ ?>    
-                      <a href="?add_to_wishlist=<?php echo $id_cat; ?>">
+                      <a href="?add_to_wishlist=<?php echo get_the_ID(); ?>">
                         <img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
                       </a>
                     <?php// }else { ?>  
@@ -75,35 +71,38 @@
                       <img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
                     </div> -->             
                     <?php// } ?>
-                      <a href="<?php echo get_post($id_cat)->guid; ?>">
+                      <a href="<?php the_permalink(); ?>">
                         <img src="<?php echo get_template_directory_uri();?>/assets/img/search.png">
                       </a>
                     </div>
                   </div>
-                  <img src="<?php echo meta_value_img( '_thumbnail_id', $id_cat );?>">
+                  <img src="<?php the_post_thumbnail_url('full');?>">
                 </div>
                 <div class="main-products__body">
-                  <a class="main-products__title" href="<?php echo get_post($id_cat)->guid; ?>">
+                  <a class="main-products__title" href="<?php the_permalink(); ?>">
                     <?php echo get_post($id_cat)->post_title; ?>
                   </a>
                   <p class="main-products__categorie">
                     <?php if(lang() == 'es'){echo "categoría: ";}if(lang() == 'en'){echo "category: ";}  
-                    $product_categories = wp_get_post_terms( $id_cat, 'product_cat' ); $i = 0;
+                    $product_categories = wp_get_post_terms( get_the_ID(), 'product_cat' ); $i = 0;
                     foreach($product_categories as $category):
                       if ($i > 0 ) {echo " / "; } echo $category->name; $i=$i+1;
                     endforeach;?>
                   </p>
                   <p class="main-products__price">
-                    <?php $product = new WC_Product($id_cat);  echo $product->get_price_html(); ?>
+                    <?php $product = new WC_Product(get_the_ID());  echo $product->get_price_html(); ?>
                   </p>
                 </div>
               </div>
 
             <?php
            
-             }}
-           }
-           
+            endwhile;
+   
+
+            endforeach;
+            }
+         
         ?>      
      
       <?php// endwhile; ?>   

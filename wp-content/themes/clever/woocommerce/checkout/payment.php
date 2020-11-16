@@ -59,3 +59,12 @@ if ( ! is_ajax() ) {
 if ( ! is_ajax() ) {
 	do_action( 'woocommerce_review_order_after_payment' );
 }
+?>
+<script type="text/javascript">
+  $(document).ready(function() {       
+    var cur = "<?= get_woocommerce_currency() ?>";         
+    if (cur == 'COP'){       
+           $(".payment_method_epayco").parent().hide();
+    } 
+  }); 
+</script>
