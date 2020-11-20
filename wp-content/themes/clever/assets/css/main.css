@@ -811,7 +811,13 @@ button:focus {
     padding: 15px;
   }
 }
+.pre-navbar__carousel {
+overflow: hidden;	
+}
 
+.pre-navbar__item {
+	overflow: hidden;
+}
 .navbar {
   background-color: transparent;
   transition: .3s ease-in-out;
@@ -1345,20 +1351,46 @@ height: 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+	
+	    height: max-content;
+    overflow: hidden;
+    width: 100%;
+}
+.pre-navbar__carousel, .pre-navbar__item {
+	    height: 44px;
+    overflow: hidden;
+    width: 100%;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
   .pre-navbar {
     display: none;
   }
+		.pre-navbar__carousel, .pre-navbar__item {
+	    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .pre-navbar {
     display: none;
   }
+	
+	.pre-navbar__carousel, .pre-navbar__item {
+	    height: 100%;
+    overflow: hidden;
+    width: 100%;
 }
-
+}
+@media (min-width: 992px) and (max-width: 1024px) { 
+	.pre-navbar__carousel, .pre-navbar__item {
+	    height: 66px;
+    overflow: hidden;
+    width: 100%;
+}
+}
 .pre-navbar .icon-tarjeta {
   width: 24px;
   height: 24px;
@@ -1926,6 +1958,12 @@ display: flex;
 
 .main-club {
   background: rgba(240, 240, 240, 0.55);
+}
+.main-club .frm_error {
+    font-weight: 600;
+    margin-top: -8px;
+	    margin-bottom: 8px;
+	    font-size: 12px;
 }
 
 .main-club .container-grid {
@@ -3428,10 +3466,16 @@ display: flex;
   object-fit: contain;
 }
 
+
+
 .orderby {
+	    border-bottom: 1.444px solid #c7c7c7;
+    cursor: pointer;
+	border-top: none;
+	border-right: none;
+border-left: none;	
   background: none;
   padding-right: 58px;
-  border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -3447,9 +3491,15 @@ display: flex;
   font-size: 15px;
   letter-spacing: 1px;
   line-height: 41px;
+	
+	transition: .3s;
   text-transform: uppercase;
 }
-
+.orderby:hover {
+	transition: .3s;
+	    border-bottom: 1.444px solid #000;
+	
+}
 .categories-paginator {
   width: 100%;
   justify-content: center;
