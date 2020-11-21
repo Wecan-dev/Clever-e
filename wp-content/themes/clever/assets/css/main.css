@@ -4935,6 +4935,10 @@ border-left: none;
   color: #000000;
   margin-bottom: 38px;
 }
+.variations .variation a.reset_variations {
+	    color: #000;
+    font-weight: 600;
+}
 
 .variations .value .variation_button span.phoen_swatches {
   font-size: 15px;
