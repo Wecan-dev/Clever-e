@@ -79,7 +79,7 @@ $('.main-video__carousel').slick({
 
 
 $('.main-products__carousel').slick({
-  infinite: true,
+  infinite: false,
   slidesToShow: 5,
   slidesToScroll: 5,
 
