@@ -267,7 +267,7 @@ else { ?>
 					<span aria-hidden="true">×</span>
 				</button>
 				<div class="modal-body">
-			
+		
 		
 				</div>
 			</div>
@@ -317,8 +317,10 @@ else { ?>
 				<div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
 					<div class="categorie-product__grid">
+					
 						<?php $loop = new WP_Query( $args ); ?>
-						<?php while ( $loop->have_posts() ) : $loop->the_post(); global $product;?>			
+						<?php while ( $loop->have_posts() ) : $loop->the_post(); global $product;?>	
+						
 							<div class="main-products__item">
 								<div class="main-products__img">
 									<div class="main-products__mask">
@@ -461,6 +463,7 @@ else { ?>
 								</div>
 							</div>
 						</div>
+					</div>
 					</div>
 
 
