@@ -2114,6 +2114,18 @@ display: flex;
   background-size: contain;
   /* background-image: url('../img/user.png'); */
 }
+.main-club__form .frm_checkbox label {
+	border: none;
+	    padding: 0!important;
+}
+.main-club__form .frm_checkbox label::before {
+	display: none;
+}
+
+.main-club__form .frm_checkbox input {
+	    margin-right: 8px;
+    width: initial;
+}
 
 @media (min-width: 0px) and (max-width: 767px) {
   .main-club__form label {
@@ -4046,7 +4058,11 @@ border-left: none;
   text-align: center;
   color: #010101;
 }
-
+.checkout-custom .woocommerce-message .restore-item{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
 .select2-container .select2-selection--single {
   height: 40px !important;
   border-radius: 0 !important;

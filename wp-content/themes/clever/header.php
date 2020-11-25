@@ -326,6 +326,17 @@
                     </div>
                   </li>
                 </ul>
+				      <ul class="navbar-nav mr-autos">
+                  <li class="nav-item dropdown  nav-idioma  drop-money">
+                    <a aria-expanded="false" aria-haspopup="true" class="nav-world nav-link dropdown-toggle" data-toggle="dropdown"  role="button">
+					  <img src="<?php echo get_template_directory_uri();?>/assets/img/world-2.png">
+					  </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item woocs_flag_view_item" title="English" lang="en-US" hreflang="en-US" href="<?php echo $url[0]; ?>en/">English</a>
+                      <a class="dropdown-item woocs_flag_view_item" title="Español"lang="es-CO" hreflang="es-CO" href="<?php echo $url[0]; ?>">Español</a>
+                    </div>
+                  </li>
+                </ul>    
               </div>
       
 
