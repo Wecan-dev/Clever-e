@@ -1,5 +1,5 @@
 <section class="banner-small banner-catalogo">
-    <img class="banner-small__img" src="<?php echo get_template_directory_uri();?>/assets/img/my-account.png">
+    <img class="banner-small__img" src="<?php echo get_template_directory_uri();?>/assets/img/perfil-01.jpg">
     <div class="banner-small__text">
       <h2 class="banner-small__title">
         <?php if (lang() == "es"){ echo "Mi perfil"; }else{ echo "My Profile"; } ?>
