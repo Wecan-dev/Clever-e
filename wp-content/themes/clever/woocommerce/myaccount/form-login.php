@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
             if(lang() == 'es'){
-            	$re = "Recuerdame";
+            	$re = "Recuérdame";
             	$pass = "Perdiste tu contraseña";
             	$acc = "Crea una cuenta";
             	$log = "Iniciar sesión";
