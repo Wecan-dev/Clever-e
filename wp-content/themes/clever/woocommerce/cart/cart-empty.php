@@ -22,7 +22,7 @@ defined( 'ABSPATH' ) || exit;
  */
 ?>
  <section class="banner-small banner-catalogo">
-    <img class="banner-small__img" src="<?php echo get_template_directory_uri();?>/assets/img/cart.png">
+    <img class="banner-small__img" src="<?php echo get_template_directory_uri();?>/assets/img/carritodecompra.jpg">
     <div class="banner-small__text">
     
       <h2 class="banner-small__title">
