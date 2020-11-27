@@ -163,6 +163,49 @@
     <img src="<?php echo get_template_directory_uri();?>/assets/img/up.png">
   </a>
   <script src="<?php echo get_template_directory_uri();?>/assets/js/setting-slick.js"></script>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade modal-promo" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+		<img src="<?php echo get_template_directory_uri();?>/assets/img/promo.png">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+			<img src="<?php echo get_template_directory_uri();?>/assets/img/close.png">
+			</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h2 class="modal-promo__title" >
+          Promociones
+        </h2>
+        <p class="modal-promo__description">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s.
+        </p>
+        <form class="modal-promo__form">
+            <label for="">
+              <img src="<?php echo get_template_directory_uri();?>/assets/img/icon.png">
+            <input id="" name="" placeholder="Tu correo electrónico" type="text">
+            </label>
+            <a href="" class="main-general__button">
+              Subscribirse
+            </a>
+          </form>
+          <div class="modal-promo__check" >
+            <input type="checkbox" placeholder="no mostrar">
+            No mostrar esta promoción de nuevo
+          </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
 </body>
 <script type="text/javascript">
   $(document).ready(function() {       

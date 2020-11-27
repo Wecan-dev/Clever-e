@@ -175,7 +175,7 @@
     </div>
   </section>
   <section class="contact-sitemap">
-    <?php the_field('map_contacto'); ?>
+    <?php the_field('map-contacto'); ?>
   </section>
 <?php } ?> 
 
