@@ -1,16 +1,0 @@
-2020-10-27T00:38:01+00:00 CRITICAL Uncaught Error: Call to undefined function terms_silueta() in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\archive-product.php:442
-Stack trace:
-#0 C:\xampp2\htdocs\Clever-e\wp-includes\template-loader.php(106): include()
-#1 C:\xampp2\htdocs\Clever-e\wp-blog-header.php(19): require_once('C:\\xampp2\\htdoc...')
-#2 C:\xampp2\htdocs\Clever-e\index.php(17): require('C:\\xampp2\\htdoc...')
-#3 {main}
-  thrown in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\archive-product.php on line 442
-
-2020-10-27T03:39:09+00:00 CRITICAL syntax error, unexpected ')', expecting ',' or ';' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\content-single-product.php on line 100
-
-2020-10-27T03:39:41+00:00 CRITICAL syntax error, unexpected ')', expecting ',' or ';' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\content-single-product.php on line 100
-
-2020-10-27T03:42:34+00:00 CRITICAL syntax error, unexpected '==' (T_IS_EQUAL) in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\content-single-product.php on line 99
-
-2020-10-27T04:01:04+00:00 CRITICAL syntax error, unexpected '?>' in C:\xampp2\htdocs\Clever-e\wp-content\themes\clever\woocommerce\content-single-product.php on line 86
-

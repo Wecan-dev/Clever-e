@@ -5345,7 +5345,10 @@ ol.flex-control-nav.flex-control-thumbs img.flex-active {
   .variations_button {
     flex-wrap: wrap;
   }
-
+	
+	.banner-small .banner-small__title {
+    font-size: 35px;
+	}
   .grid-woocommerce {
     margin-top: 130px;
   }
