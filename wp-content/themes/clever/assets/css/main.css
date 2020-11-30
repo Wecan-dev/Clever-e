@@ -815,7 +815,7 @@ button:focus {
 .pre-navbar__carousel {
 overflow: hidden;	
 	position: fixed;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     /* height: 31px; */
     top: 0;
@@ -1454,12 +1454,14 @@ height: 24px;
   position: absolute;
   width: 100%;
   z-index: 99;
+    margin-top: 44px;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
   .nav-custom {
     position: fixed !important;
     background: #fff;
+	  margin-top: 0;
   }
 }
 
@@ -1467,6 +1469,7 @@ height: 24px;
   .nav-custom {
     position: fixed !important;
     background: #fff;
+	   margin-top: 0;
   }
 }
 
@@ -3095,7 +3098,8 @@ display: flex;
 	}
 @media (min-width: 0px) and (max-width: 767px) {
   .banner-small {
-    margin-top: 104px;
+    margin-top: 70px;
+	      height: 191px;
   }
 	
 	.banner-small__img--mobile {
@@ -3137,7 +3141,8 @@ display: flex;
 
 @media (min-width: 0px) and (max-width: 767px) {
   .banner-small .banner-small__title {
-    font-size: 36px;
+       font-size: 27px;
+	  letter-spacing: 1;
   }
 }
 
@@ -4124,7 +4129,8 @@ border-left: none;
   }
 
   .main-banner .main-banner__text .main-banner__title {
-      font-size: 33px;
+    font-size: 27px!important;
+	  letter-spacing: 1;
   }
 
   .main-banner .main-banner__width {
@@ -5500,7 +5506,8 @@ ol.flex-control-nav.flex-control-thumbs img.flex-active {
   }
 	
 	.banner-small .banner-small__title {
-    font-size: 35px;
+  font-size: 27px;
+	  letter-spacing: 1;
 	}
   .grid-woocommerce {
     margin-top: 130px;
