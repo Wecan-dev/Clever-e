@@ -1,0 +1,1603 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-02 15:26+0000\n"
+"PO-Revision-Date: 2020-09-02 15:26+0000\n"
+"Last-Translator: Rostislav Sofronov\n"
+"Language-Team: English (United States)\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.3; wp-5.5.1"
+
+#: classes/woocs_before_33.php:509 classes/woocs_after_33.php:645
+#, php-format
+msgid ""
+"The following options affect how prices are displayed on the frontend. "
+"WooCommerce Currency Switcher is activated. Set default currency %s please."
+msgstr ""
+
+#: classes/woocs_before_33.php:509 classes/woocs_after_33.php:645
+msgid "here"
+msgstr ""
+
+#: classes/woocs_before_33.php:650 classes/woocs_after_33.php:779
+#, php-format
+msgid "<strong>Base currency of the site is: %s</strong>"
+msgstr ""
+
+#: classes/woocs_before_33.php:731 classes/woocs_after_33.php:865
+msgid "Settings"
+msgstr ""
+
+#: classes/woocs_before_33.php:732 classes/woocs_after_33.php:866
+msgid "Documentation"
+msgstr ""
+
+#: classes/woocs_before_33.php:777 classes/woocs_after_33.php:921
+#: classes/woocs_after_33.php:923
+msgid "WOOCS Order Info"
+msgstr ""
+
+#: classes/woocs_before_33.php:944 classes/woocs_after_33.php:1129
+msgid "loading"
+msgstr ""
+
+#: classes/woocs_before_33.php:979 classes/woocs_after_33.php:1164
+#: views/plugin_options.php:324 views/plugin_options.php:339
+#: views/shortcodes/woocs_rates.php:60 views/shortcodes/woocs_rates.php:68
+msgid "Currency"
+msgstr ""
+
+#: classes/woocs_before_33.php:1702 classes/woocs_after_33.php:2020
+msgid "Current currency is:"
+msgstr ""
+
+#: classes/woocs_before_33.php:1739
+#, php-format
+msgid ""
+"Your country is: <b>%s</b>. <br /><i style=\"color:black; font-size:11px; "
+"font-weight:normal;\">(defined by woocommerce GeoIP functionality)</i>"
+msgstr ""
+
+#: classes/woocs_before_33.php:1741 classes/woocs_after_33.php:2063
+msgid "Your country is not defined! Troubles with GeoIp service."
+msgstr ""
+
+#: classes/woocs_before_33.php:1812 classes/woocs_before_33.php:1849
+#: classes/woocs_before_33.php:1862 classes/woocs_before_33.php:1868
+#: classes/woocs_before_33.php:1888 classes/woocs_before_33.php:1909
+#: classes/woocs_before_33.php:1926 classes/woocs_before_33.php:1932
+#: classes/woocs_before_33.php:1969 classes/woocs_before_33.php:1986
+#: classes/woocs_before_33.php:1992 classes/woocs_before_33.php:2025
+#: classes/woocs_before_33.php:2038 classes/woocs_before_33.php:2044
+#: classes/woocs_before_33.php:2066 classes/woocs_before_33.php:2072
+#: classes/woocs_after_33.php:2308 classes/woocs_after_33.php:2346
+#: classes/woocs_after_33.php:2359 classes/woocs_after_33.php:2365
+#: classes/woocs_after_33.php:2385 classes/woocs_after_33.php:2406
+#: classes/woocs_after_33.php:2421 classes/woocs_after_33.php:2427
+#: classes/woocs_after_33.php:2446 classes/woocs_after_33.php:2463
+#: classes/woocs_after_33.php:2498 classes/woocs_after_33.php:2515
+#: classes/woocs_after_33.php:2521 classes/woocs_after_33.php:2555
+#: classes/woocs_after_33.php:2568 classes/woocs_after_33.php:2574
+#: classes/woocs_after_33.php:2601 classes/woocs_after_33.php:2607
+#: classes/woocs_after_33.php:2632 classes/woocs_after_33.php:2658
+#: classes/woocs_after_33.php:2684 classes/woocs_after_33.php:2702
+#: classes/woocs_after_33.php:2706 classes/woocs_after_33.php:2725
+#: classes/woocs_after_33.php:2740 classes/woocs_after_33.php:2755
+#: classes/woocs_after_33.php:2772 classes/woocs_after_33.php:2777
+#: classes/woocs_after_33.php:2803 classes/woocs_after_33.php:2814
+#: classes/woocs_after_33.php:2835
+#, php-format
+msgid "no data for %s"
+msgstr ""
+
+#: classes/woocs_before_33.php:2155 classes/woocs_after_33.php:2922
+msgid "Total in basic currency: "
+msgstr ""
+
+#: classes/woocs_before_33.php:2457 classes/woocs_after_33.php:3302
+#, php-format
+msgid "The maximum spend for this coupon is %s."
+msgstr ""
+
+#: classes/woocs_before_33.php:2462 classes/woocs_after_33.php:3307
+#, php-format
+msgid "The minimum spend for this coupon is %s."
+msgstr ""
+
+#: classes/woocs_before_33.php:3534 classes/woocs_after_33.php:4523
+#, php-format
+msgid "(Approx. %s)"
+msgstr ""
+
+#: classes/statistic.php:276
+msgid "Currencies popularity"
+msgstr ""
+
+#: classes/statistic.php:279
+msgid "Countries popularity"
+msgstr ""
+
+#: classes/rate_alert.php:46
+msgid "support"
+msgstr ""
+
+#: classes/rate_alert.php:62
+msgid "Nope, maybe later!"
+msgstr ""
+
+#: classes/rate_alert.php:66
+msgid "Ok, you deserve it"
+msgstr ""
+
+#: classes/rate_alert.php:70
+msgid "Thank you, I did it!"
+msgstr ""
+
+#: classes/woocs_after_33.php:171
+msgid "EU countries"
+msgstr ""
+
+#: classes/woocs_after_33.php:623
+msgid "WOOCS Currency Options"
+msgstr ""
+
+#: classes/woocs_after_33.php:2061
+#, php-format
+msgid "Your country is: %s. (defined by woocommerce GeoIP functionality)"
+msgstr ""
+
+#: classes/woocs_after_33.php:2585 classes/woocs_after_33.php:2616
+#: classes/woocs_after_33.php:2641 classes/woocs_after_33.php:2667
+msgid "Please use the API key"
+msgstr ""
+
+#: classes/woocs_after_33.php:4878
+msgid "change the rate and this description to the right values"
+msgstr ""
+
+#: classes/woocs_after_33.php:5113
+msgid "Recalculate all orders"
+msgstr ""
+
+#: classes/woocs_after_33.php:5113
+msgid ""
+"Recalculate all orders with basic currency. Recommended test this option on "
+"the clone of your site! Read the documentation of the plugin about it!"
+msgstr ""
+
+#: classes/woocs_after_33.php:5190
+msgid "No such profile"
+msgstr ""
+
+#: classes/woocs_after_33.php:5193
+msgid "Profile is deleted"
+msgstr ""
+
+#: classes/woocs_after_33.php:5208
+msgid "New profile"
+msgstr ""
+
+#: classes/woocs_after_33.php:5220
+msgid "is updated!"
+msgstr ""
+
+#: classes/woocs_after_33.php:5224
+msgid "is added!"
+msgstr ""
+
+#: views/plugin_options.php:64
+msgid "Welcome currency"
+msgstr ""
+
+#: views/plugin_options.php:65
+msgid ""
+"In wich currency show prices for first visit of your customer on your site. "
+"Do not do it private to avoid logic mess!"
+msgstr ""
+
+#: views/plugin_options.php:74
+msgid "Currency aggregator"
+msgstr ""
+
+#: views/plugin_options.php:75
+msgid ""
+"Currency aggregators. Note: If you know aggregator which not is represented "
+"in WOOCS write request on support please with suggestion to add it!"
+msgstr ""
+
+#: views/plugin_options.php:84
+msgid "Aggregator API key"
+msgstr ""
+
+#: views/plugin_options.php:85
+msgid "Some aggregators require an API key. See the hint below how to get it!"
+msgstr ""
+
+#: views/plugin_options.php:94
+msgid "Currency storage"
+msgstr ""
+
+#: views/plugin_options.php:95
+msgid ""
+"In some servers there is troubles with sessions, and after currency "
+"selecting its reset to welcome currency or geo ip currency. In such case use "
+"transient!"
+msgstr ""
+
+#: views/plugin_options.php:101
+msgid "session"
+msgstr ""
+
+#: views/plugin_options.php:102
+msgid "transient"
+msgstr ""
+
+#: views/plugin_options.php:107
+msgid "Rate auto update"
+msgstr ""
+
+#: views/plugin_options.php:108
+msgid "Currencies rate auto update by WordPress cron."
+msgstr ""
+
+#: views/plugin_options.php:114
+msgid "no auto update"
+msgstr ""
+
+#: views/plugin_options.php:115
+msgid "hourly"
+msgstr ""
+
+#: views/plugin_options.php:116
+msgid "twicedaily"
+msgstr ""
+
+#: views/plugin_options.php:117
+msgid "daily"
+msgstr ""
+
+#: views/plugin_options.php:118
+msgid "weekly"
+msgstr ""
+
+#: views/plugin_options.php:119
+msgid "monthly"
+msgstr ""
+
+#: views/plugin_options.php:120
+msgid "special: each minute"
+msgstr ""
+
+#: views/plugin_options.php:121
+msgid "special: each 5 minutes"
+msgstr ""
+
+#: views/plugin_options.php:122
+msgid "special: each 15 minutes"
+msgstr ""
+
+#: views/plugin_options.php:123
+msgid "special: each 30 minutes"
+msgstr ""
+
+#: views/plugin_options.php:124
+msgid "special: each 45 minutes"
+msgstr ""
+
+#: views/plugin_options.php:129
+msgid "Custom money signs"
+msgstr ""
+
+#: views/plugin_options.php:130
+msgid ""
+"Add your money symbols in your shop. Example: $USD,AAA,AUD$,DDD - separated "
+"by commas"
+msgstr ""
+
+#: views/plugin_options.php:139
+msgid "Custom price format"
+msgstr ""
+
+#: views/plugin_options.php:140
+msgid ""
+"Set your format how to display price on front. Use keys: __CODE__,__PRICE__. "
+"Leave it empty to use default format. Example: __PRICE__ (__CODE__)"
+msgstr ""
+
+#: views/plugin_options.php:149
+msgid "Prices without cents"
+msgstr ""
+
+#: views/plugin_options.php:150
+msgid ""
+"Recount prices without cents everywhere like in JPY and TWD which by its "
+"nature have not cents. Use comma. Example: UAH,RUB. Test it for checkout "
+"after setup!"
+msgstr ""
+
+#: views/plugin_options.php:166
+#, php-format
+msgid "WooCommerce Currency Switcher v.%s"
+msgstr ""
+
+#: views/plugin_options.php:167
+#, php-format
+msgid "Actualized for WooCommerce v.%s.x"
+msgstr ""
+
+#: views/plugin_options.php:175
+#, php-format
+msgid ""
+"Your version of WooCommerce plugin is too obsolete. Update minimum to %s "
+"version to avoid malfunctionality!"
+msgstr ""
+
+#: views/plugin_options.php:190
+msgid "Currencies"
+msgstr ""
+
+#: views/plugin_options.php:196
+msgid "Options"
+msgstr ""
+
+#: views/plugin_options.php:201
+msgid "Advanced"
+msgstr ""
+
+#: views/plugin_options.php:208
+msgid "Side switcher"
+msgstr ""
+
+#: views/plugin_options.php:217
+msgid "Payments"
+msgstr ""
+
+#: views/plugin_options.php:228
+msgid "GeoIP"
+msgstr ""
+
+#: views/plugin_options.php:238 views/plugin_options.php:665
+#: views/plugin_options.php:676
+msgid "Statistic"
+msgstr ""
+
+#: views/plugin_options.php:247
+msgid "Help"
+msgstr ""
+
+#: views/plugin_options.php:260
+msgid "Add Currency"
+msgstr ""
+
+#: views/plugin_options.php:261
+msgid "Update all rates"
+msgstr ""
+
+#: views/plugin_options.php:262
+msgid "Add custom money sign"
+msgstr ""
+
+#: views/plugin_options.php:269
+msgid "Not styled drop-down"
+msgstr ""
+
+#: views/plugin_options.php:270
+msgid "Style #1"
+msgstr ""
+
+#: views/plugin_options.php:271
+msgid "Style #2"
+msgstr ""
+
+#: views/plugin_options.php:272
+msgid "Style #3"
+msgstr ""
+
+#: views/plugin_options.php:273
+msgid "Flags (as images)"
+msgstr ""
+
+#: views/plugin_options.php:275
+msgid "ddslick drop-down"
+msgstr ""
+
+#: views/plugin_options.php:276
+msgid "Chosen drop-down"
+msgstr ""
+
+#: views/plugin_options.php:277
+msgid "Chosen dark drop-down"
+msgstr ""
+
+#: views/plugin_options.php:278
+msgid "wSelect drop-down"
+msgstr ""
+
+#: views/plugin_options.php:284
+msgid ""
+"How to display currency switcher (by default) on the site front. (NEW) Make "
+"your attention on skins with numbers - you can use them on the same page "
+"with different designs in shortcode [woocs] described in its attribute style "
+"and style number (see Codex page in Info Help tab)!"
+msgstr ""
+
+#: views/plugin_options.php:323 views/plugin_options.php:338
+msgid "Basic"
+msgstr ""
+
+#: views/plugin_options.php:325 views/plugin_options.php:340
+msgid "Symbol"
+msgstr ""
+
+#: views/plugin_options.php:326 views/plugin_options.php:341
+msgid "Position"
+msgstr ""
+
+#: views/plugin_options.php:327 views/plugin_options.php:342
+msgid "Decimal"
+msgstr ""
+
+#: views/plugin_options.php:328 views/plugin_options.php:343
+msgid "Rate and Interest"
+msgstr ""
+
+#: views/plugin_options.php:329 views/plugin_options.php:344
+msgid "Cents"
+msgstr ""
+
+#: views/plugin_options.php:330 views/plugin_options.php:345
+msgid "Visibility"
+msgstr ""
+
+#: views/plugin_options.php:331 views/plugin_options.php:346
+msgid "Description"
+msgstr ""
+
+#: views/plugin_options.php:332 views/plugin_options.php:347
+#: views/plugin_options.php:1448 views/shortcodes/woocs_rates.php:59
+#: views/shortcodes/woocs_rates.php:67
+msgid "Flag"
+msgstr ""
+
+#: views/plugin_options.php:383
+msgid ""
+"Read wiki about Currency Active codes  <-  Get right currencies codes here "
+"if you are not sure about it!"
+msgstr ""
+
+#: views/plugin_options.php:399
+msgid "Show flags by default"
+msgstr ""
+
+#: views/plugin_options.php:400
+msgid "Show/hide flags on the front drop-down"
+msgstr ""
+
+#: views/plugin_options.php:409
+msgid "No GET data in link"
+msgstr ""
+
+#: views/plugin_options.php:410
+msgid ""
+"Switches currency without GET properties (?currency=USD) in the link. Works "
+"in woocommerce > 3.3.0."
+msgstr ""
+
+#: views/plugin_options.php:419
+msgid "Show money signs"
+msgstr ""
+
+#: views/plugin_options.php:420
+msgid "Show/hide money signs on the front drop-down"
+msgstr ""
+
+#: views/plugin_options.php:430
+msgid "Show price info icon"
+msgstr ""
+
+#: views/plugin_options.php:431
+msgid ""
+"Show info icon near the price of the product which while its under hover "
+"shows prices of products in all currencies"
+msgstr ""
+
+#: views/plugin_options.php:441
+msgid "Email notice about \"Rate auto update\" results"
+msgstr ""
+
+#: views/plugin_options.php:442
+msgid ""
+"After cron done - new currency rates will be sent on the site admin email. "
+"ATTENTION: if you not got emails - it is mean that PHP function mail() "
+"doesnt work on your server or sending emails by this function is locked."
+msgstr ""
+
+#: views/plugin_options.php:452
+msgid "Hide switcher on checkout page"
+msgstr ""
+
+#: views/plugin_options.php:453
+msgid ""
+"Hide switcher on checkout page for any of your reason. Better restrike for "
+"users change currency on checkout page in multiple mode."
+msgstr ""
+
+#: views/plugin_options.php:463 views/plugin_options.php:901
+msgid "Payments rules"
+msgstr ""
+
+#: views/plugin_options.php:464
+msgid ""
+"Hide/Show payments systems on checkout page depending on the current currency"
+msgstr ""
+
+#: views/plugin_options.php:474
+msgid "Show approx. amount"
+msgstr ""
+
+#: views/plugin_options.php:475
+msgid ""
+"Show approximate amount on the checkout and the cart page with currency of "
+"user defined by IP in the GeoIp rules tab. Works only with currencies rates "
+"data and NOT with fixed prices rules and geo rules."
+msgstr ""
+
+#: views/plugin_options.php:485
+msgid "Show approx. price"
+msgstr ""
+
+#: views/plugin_options.php:486
+msgid ""
+"Show approximate price on the shop and the single product page with currency "
+"of user defined by IP in the GeoIp rules tab. Works only with currencies "
+"rates data and NOT with fixed prices rules and geo rules."
+msgstr ""
+
+#: views/plugin_options.php:498
+msgid "I am using cache plugin on my site"
+msgstr ""
+
+#: views/plugin_options.php:499
+msgid ""
+"Set Yes here ONLY if you are REALLY use cache plugin for your site, for "
+"example like Super cache or Hiper cache (doesn matter). + Set \"Custom price "
+"format\", for example: __PRICE__ (__CODE__). After enabling this feature - "
+"clean your cache to make it works. It will allow show prices in selected "
+"currency on all pages of site. Fee for this feature - additional AJAX "
+"queries for products prices redrawing."
+msgstr ""
+
+#: views/plugin_options.php:508
+msgid "Prices preloader"
+msgstr ""
+
+#: views/plugin_options.php:509
+msgid "For ajax  redraw."
+msgstr ""
+
+#: views/plugin_options.php:519
+msgid "Show options button on top admin bar."
+msgstr ""
+
+#: views/plugin_options.php:520
+msgid ""
+"Show WOOCS options button on top admin bar for quick access. Very handy for "
+"active work. Visible for site administrators only!"
+msgstr ""
+
+#: views/plugin_options.php:529
+msgid "Disable on pages"
+msgstr ""
+
+#: views/plugin_options.php:530
+msgid ""
+"Disabling or Enabling WOOCS on the described pages only. Use comma and pages "
+"slugs. Example: blog,account"
+msgstr ""
+
+#: views/plugin_options.php:535
+msgid "Direct use"
+msgstr ""
+
+#: views/plugin_options.php:536
+msgid "Reverse use"
+msgstr ""
+
+#: views/plugin_options.php:543
+msgid "Reverse this option"
+msgstr ""
+
+#: views/plugin_options.php:565 views/plugin_options.php:576
+msgid "Is multiple allowed"
+msgstr ""
+
+#: views/plugin_options.php:566
+msgid ""
+"Customer will pay with selected currency (Yes) or with default currency (No)."
+msgstr ""
+
+#: views/plugin_options.php:571 views/plugin_options.php:671
+msgid "No"
+msgstr ""
+
+#: views/plugin_options.php:572 views/plugin_options.php:672
+msgid "Yes"
+msgstr ""
+
+#: views/plugin_options.php:588
+msgid "Individual fixed prices rules for each product"
+msgstr ""
+
+#: views/plugin_options.php:589
+msgid ""
+"You will be able to set FIXED prices for simple and variable products. "
+"ATTENTION: 'Is multiple allowed' should be enabled!"
+msgstr ""
+
+#: views/plugin_options.php:598 views/plugin_options.php:659
+msgid "Watch video instructions"
+msgstr ""
+
+#: views/plugin_options.php:605
+msgid "Checkout by GeoIP rules"
+msgstr ""
+
+#: views/plugin_options.php:606
+msgid ""
+"Force the customers to pay on checkout page by rules defined in 'GeoIP "
+"rules' tab. <b>ATTENTION</b>: this feature has logical sense if you enabled "
+"'Enable fixed pricing' and also installed fixed prices rules in the products "
+"for different currencies!"
+msgstr ""
+
+#: views/plugin_options.php:609
+#, php-format
+msgid "Your country is: %s"
+msgstr ""
+
+#: views/plugin_options.php:611
+msgid ""
+"Your country is not defined! Troubles with internet connection or GeoIp "
+"service."
+msgstr ""
+
+#: views/plugin_options.php:623
+msgid "Individual fixed amount for coupon"
+msgstr ""
+
+#: views/plugin_options.php:624
+msgid ""
+"You will be able to set FIXED amount for coupon for each currency. ATTENTION:"
+" 'Is multiple allowed' should be enabled!"
+msgstr ""
+
+#: views/plugin_options.php:633
+msgid "Individual fixed amount for shipping"
+msgstr ""
+
+#: views/plugin_options.php:634
+msgid ""
+"You will be able to set FIXED amount for each currency for free and all "
+"another shipping ways. ATTENTION: 'Is multiple allowed' should be enabled!"
+msgstr ""
+
+#: views/plugin_options.php:642
+msgid "Individual prices based on user role"
+msgstr ""
+
+#: views/plugin_options.php:643
+msgid "Gives ability to set different prices for each user role"
+msgstr ""
+
+#: views/plugin_options.php:652
+msgid "Individual GeoIP rules for each product"
+msgstr ""
+
+#: views/plugin_options.php:653
+msgid ""
+"You will be able to set different prices for each product (in BASIC currency)"
+" for different countries"
+msgstr ""
+
+#: views/plugin_options.php:660
+msgid "a hint"
+msgstr ""
+
+#: views/plugin_options.php:666
+msgid ""
+"Collect currencies switching statistic for business purposes. No any private "
+"data of customers collects, only currency, country and time of switching. "
+"Also statistic for order currencies is there."
+msgstr ""
+
+#: views/plugin_options.php:689
+msgid "Notes*"
+msgstr ""
+
+#: views/plugin_options.php:694
+msgid ""
+"Native WooCommerce price filter is blind for all data generated by marked "
+"features"
+msgstr ""
+
+#: views/plugin_options.php:714
+msgid "Enable/Disable"
+msgstr ""
+
+#: views/plugin_options.php:715
+msgid "Enable/Disable the side currency switcher on your page"
+msgstr ""
+
+#: views/plugin_options.php:729
+msgid "Skin"
+msgstr ""
+
+#: views/plugin_options.php:730
+msgid "Style of the switcher on the site front"
+msgstr ""
+
+#: views/plugin_options.php:735
+msgid "Classic blocks"
+msgstr ""
+
+#: views/plugin_options.php:736
+msgid "Roll blocks"
+msgstr ""
+
+#: views/plugin_options.php:738
+msgid "Round select"
+msgstr ""
+
+#: views/plugin_options.php:742
+msgid "Choise skin"
+msgstr ""
+
+#: views/plugin_options.php:749
+msgid "enter roll width"
+msgstr ""
+
+#: views/plugin_options.php:756
+msgid "Side"
+msgstr ""
+
+#: views/plugin_options.php:757
+msgid "The side where the switcher is be placed"
+msgstr ""
+
+#: views/plugin_options.php:762
+msgid "Left"
+msgstr ""
+
+#: views/plugin_options.php:763
+msgid "Right"
+msgstr ""
+
+#: views/plugin_options.php:767
+msgid "Choise side"
+msgstr ""
+
+#: views/plugin_options.php:776
+msgid "Top margin"
+msgstr ""
+
+#: views/plugin_options.php:777
+msgid ""
+"Distance from the top of the screen to the switcher html block. You can set "
+"in px or in %. Example 1: 100px. Example 2: 10%."
+msgstr ""
+
+#: views/plugin_options.php:794
+msgid "Main color"
+msgstr ""
+
+#: views/plugin_options.php:795
+msgid "Main color which coloring the switcher elements"
+msgstr ""
+
+#: views/plugin_options.php:804
+msgid "Hover color"
+msgstr ""
+
+#: views/plugin_options.php:805
+msgid "The switcher color when mouse hovering"
+msgstr ""
+
+#: views/plugin_options.php:827
+msgid "Basic field(s)"
+msgstr ""
+
+#: views/plugin_options.php:828
+msgid ""
+"What content to show in the switcher after the site page loading. Variants:  "
+"__CODE__ __FLAG___ __SIGN__ __DESCR__"
+msgstr ""
+
+#: views/plugin_options.php:839
+msgid "Hover field(s)"
+msgstr ""
+
+#: views/plugin_options.php:840
+msgid ""
+"What content to show in the switcher after mouse hover on any currency there."
+" Variants:  __CODE__ __FLAG___ __SIGN__ __DESCR__"
+msgstr ""
+
+#: views/plugin_options.php:851
+msgid "Show on the pages"
+msgstr ""
+
+#: views/plugin_options.php:852
+msgid ""
+"Where on the site the switcher should be visible. If any value is presented "
+"here switcher will be hidden on all another pages which not presented in "
+"this field. You can use pages IDs using comma, example: 28,34,232. Also you "
+"can use special words as: product, shop, checkout, front_page, woocommerce"
+msgstr ""
+
+#: views/plugin_options.php:863
+msgid "Hide on the pages"
+msgstr ""
+
+#: views/plugin_options.php:864
+msgid ""
+"Where on the site the switcher should be hidden. If any value is presented "
+"here switcher will be hidden on that pages and visible on all another ones. "
+"You can use pages IDs using comma, example: 28,34,232. Also you can use "
+"special words as: product, shop, checkout, front_page, woocommerce"
+msgstr ""
+
+#: views/plugin_options.php:875
+msgid "Behavior for devices"
+msgstr ""
+
+#: views/plugin_options.php:876
+msgid "Show/Hide on mobile device (highest priority)"
+msgstr ""
+
+#: views/plugin_options.php:881
+msgid "Show on all devices"
+msgstr ""
+
+#: views/plugin_options.php:882
+msgid "Show on mobile devices only"
+msgstr ""
+
+#: views/plugin_options.php:883
+msgid "Hide on mobile devices"
+msgstr ""
+
+#: views/plugin_options.php:887
+msgid "Choise behavior"
+msgstr ""
+
+#: views/plugin_options.php:907
+msgid "Payments behavior"
+msgstr ""
+
+#: views/plugin_options.php:908
+msgid ""
+"Should be payments system be hidden for selected currencies or vice versa "
+"shown!"
+msgstr ""
+
+#: views/plugin_options.php:913
+msgid "Is hidden"
+msgstr ""
+
+#: views/plugin_options.php:914
+msgid "Is shown"
+msgstr ""
+
+#: views/plugin_options.php:918
+msgid "Behavior"
+msgstr ""
+
+#: views/plugin_options.php:940
+msgid "Choise currencies"
+msgstr ""
+
+#: views/plugin_options.php:957 views/plugin_options.php:1010
+msgid "select all"
+msgstr ""
+
+#: views/plugin_options.php:957 views/plugin_options.php:1010
+msgid "clear all"
+msgstr ""
+
+#: views/plugin_options.php:974
+msgid "GeoIP rules"
+msgstr ""
+
+#: views/plugin_options.php:979
+msgid ""
+"GeoIP works from v.2.3 of the WooCommerce plugin and no with minor versions "
+"of WooCommerce!!"
+msgstr ""
+
+#: views/plugin_options.php:985
+msgid ""
+"WooCommerce GeoIP functionality doesn't work on your site. Maybe <a "
+"href='https://wordpress.org/support/topic/geolocation-not-working-1/?"
+"replies=10' target='_blank'>this</a> will help you."
+msgstr ""
+
+#: views/plugin_options.php:1022 views/fixed/product_price_data.php:69
+msgid "GeoIP profiles"
+msgstr ""
+
+#: views/plugin_options.php:1024
+#, php-format
+msgid ""
+"Here you can create set of countries profiles to apply it then in the "
+"products by your business logic. %s!"
+msgstr ""
+
+#: views/plugin_options.php:1024
+msgid "This make work on rules settings for each product more fast"
+msgstr ""
+
+#: views/plugin_options.php:1027
+msgid "Set title"
+msgstr ""
+
+#: views/plugin_options.php:1035
+msgid "Add new profile"
+msgstr ""
+
+#: views/plugin_options.php:1036
+msgid "Update profile"
+msgstr ""
+
+#: views/plugin_options.php:1039
+msgid "Cancel"
+msgstr ""
+
+#: views/plugin_options.php:1046
+msgid "Profiles"
+msgstr ""
+
+#: views/plugin_options.php:1064
+msgid "Edit profile"
+msgstr ""
+
+#: views/plugin_options.php:1065
+msgid "Delete profile"
+msgstr ""
+
+#: views/plugin_options.php:1072
+msgid "Add to:"
+msgstr ""
+
+#: views/plugin_options.php:1076
+msgid "Select currency..."
+msgstr ""
+
+#: views/plugin_options.php:1110
+msgid "Chart type: pie"
+msgstr ""
+
+#: views/plugin_options.php:1111
+msgid "Chart type: bar"
+msgstr ""
+
+#: views/plugin_options.php:1118
+#, php-format
+msgid ""
+"If you have ideas about scenarios of the statistic please share and discuss "
+"them on %s"
+msgstr ""
+
+#: views/plugin_options.php:1118
+msgid "the plugin forum"
+msgstr ""
+
+#: views/plugin_options.php:1120 views/plugin_options.php:1262
+#: views/plugin_options.php:1267 views/plugin_options.php:1273
+msgid "Note"
+msgstr ""
+
+#: views/plugin_options.php:1120
+msgid ""
+"If in tab Options activated option I am using cache plugin on my site - to "
+"avoid double data for statistical data registration in tab Options activate "
+"option No GET data in link!"
+msgstr ""
+
+#: views/plugin_options.php:1130
+msgid "currency"
+msgstr ""
+
+#: views/plugin_options.php:1131
+msgid "orders (completed)"
+msgstr ""
+
+#: views/plugin_options.php:1147
+msgid "from"
+msgstr ""
+
+#: views/plugin_options.php:1152 views/shortcodes/woocs_converter.php:45
+msgid "to"
+msgstr ""
+
+#: views/plugin_options.php:1154
+msgid ""
+"For currencies - aggregated data about selected currencies on the site front."
+" For orders - count of orders made in the selected currencies."
+msgstr ""
+
+#: views/plugin_options.php:1155
+msgid ""
+"For currencies - aggregated data about count of countries which users "
+"selected currencies on the site front. For orders - count of orders made "
+"from countries, detected by selected country in the billing address."
+msgstr ""
+
+#: views/plugin_options.php:1170
+msgid "WooCommerce Currency Switcher SUPPORT"
+msgstr ""
+
+#: views/plugin_options.php:1175
+msgid ""
+"If you have an idea about css+js template - send request on support please "
+"where describe your vision."
+msgstr ""
+
+#: views/plugin_options.php:1177
+msgid "Free flags images"
+msgstr ""
+
+#: views/plugin_options.php:1179
+msgid "FAQ"
+msgstr ""
+
+#: views/plugin_options.php:1181
+msgid "Codex"
+msgstr ""
+
+#: views/plugin_options.php:1183
+msgid "Video tutorials"
+msgstr ""
+
+#: views/plugin_options.php:1185
+msgid "Read wiki about Currency Active codes"
+msgstr ""
+
+#: views/plugin_options.php:1187 views/plugin_options.php:1273
+msgid ""
+"If WOOCS settings panel looks incorrect or you have JavaScript errors (after "
+"update) - firstly"
+msgstr ""
+
+#: views/plugin_options.php:1187 views/plugin_options.php:1273
+msgid "reset the browser cache"
+msgstr ""
+
+#: views/plugin_options.php:1203
+msgid "I cant add flags! What to do?"
+msgstr ""
+
+#: views/plugin_options.php:1204
+msgid "Using Geolocation causes problems, doesn’t seem to work for me"
+msgstr ""
+
+#: views/plugin_options.php:1209
+msgid "Quick introduction"
+msgstr ""
+
+#: views/plugin_options.php:1215
+msgid "More power for your shop"
+msgstr ""
+
+#: views/plugin_options.php:1261
+msgid "Hint"
+msgstr ""
+
+#: views/plugin_options.php:1261
+msgid ""
+"If you want let your customers pay in their selected currency in tab "
+"Advanced set the option Is multiple allowed to Yes."
+msgstr ""
+
+#: views/plugin_options.php:1262
+msgid "Get free API key for:"
+msgstr ""
+
+#: views/plugin_options.php:1263
+msgid "The Free Currency Converter"
+msgstr ""
+
+#: views/plugin_options.php:1264 views/plugin_options.php:1269
+msgid "OR"
+msgstr ""
+
+#: views/plugin_options.php:1265
+msgid "Fixer"
+msgstr ""
+
+#: views/plugin_options.php:1267
+msgid "Get API key for:"
+msgstr ""
+
+#: views/plugin_options.php:1268
+msgid "Open exchange rates"
+msgstr ""
+
+#: views/plugin_options.php:1270
+msgid "Currencylayer"
+msgstr ""
+
+#: views/plugin_options.php:1283
+msgid "UPGRADE to Full version"
+msgstr ""
+
+#: views/plugin_options.php:1284
+msgid "full version of the plugin"
+msgstr ""
+
+#: views/plugin_options.php:1288 views/plugin_options.php:1289
+msgid "WOOF - WooCommerce Products Filter"
+msgstr ""
+
+#: views/plugin_options.php:1293 views/plugin_options.php:1294
+msgid "WOOBE - WooCommerce Bulk Editor Professional"
+msgstr ""
+
+#: views/plugin_options.php:1298 views/plugin_options.php:1299
+msgid "WOOT - WooCommerce Active Products Tables"
+msgstr ""
+
+#: views/plugin_options.php:1315
+msgid ""
+"Native WooCommerce price filter does not see data generated by this feature."
+msgstr ""
+
+#: views/plugin_options.php:1316
+msgid "Loading"
+msgstr ""
+
+#: views/plugin_options.php:1317
+msgid "Save changes please!"
+msgstr ""
+
+#: views/plugin_options.php:1327
+msgid ""
+"Set etalon main currency. This should be the currency in which the price of "
+"goods exhibited!"
+msgstr ""
+
+#: views/plugin_options.php:1332
+msgid "Exmpl.: USD,EUR"
+msgstr ""
+
+#: views/plugin_options.php:1336
+msgid "Money signs"
+msgstr ""
+
+#: views/plugin_options.php:1345
+msgid "Select symbol position"
+msgstr ""
+
+#: views/plugin_options.php:1351
+msgid "P$ - right"
+msgstr ""
+
+#: views/plugin_options.php:1355
+msgid "P $ - right space"
+msgstr ""
+
+#: views/plugin_options.php:1359
+msgid "$ P - left space"
+msgstr ""
+
+#: views/plugin_options.php:1363
+msgid "$P - left"
+msgstr ""
+
+#: views/plugin_options.php:1373
+msgid "Decimals"
+msgstr ""
+
+#: views/plugin_options.php:1387
+msgid "exchange rate"
+msgstr ""
+
+#: views/plugin_options.php:1387
+msgid "interest"
+msgstr ""
+
+#: views/plugin_options.php:1387
+msgid "+ to your interest in the rate, for example: 0.15"
+msgstr ""
+
+#: views/plugin_options.php:1388
+msgid ""
+"Press this button if you want get currency rate from the selected aggregator "
+"above!"
+msgstr ""
+
+#: views/plugin_options.php:1396
+msgid "Show cents"
+msgstr ""
+
+#: views/plugin_options.php:1397
+msgid "Hide cents"
+msgstr ""
+
+#: views/plugin_options.php:1418
+msgid "Public"
+msgstr ""
+
+#: views/plugin_options.php:1419
+msgid "Private"
+msgstr ""
+
+#: views/plugin_options.php:1427
+msgid ""
+"Show currency for all on the site front or Hide for private moments in wp "
+"admin panel using only."
+msgstr ""
+
+#: views/plugin_options.php:1436 views/widgets/selector_form.php:54
+msgid "description"
+msgstr ""
+
+#: views/plugin_options.php:1448
+msgid "Click to select the flag"
+msgstr ""
+
+#: views/plugin_options.php:1451
+msgid "remove"
+msgstr ""
+
+#: views/plugin_options.php:1453
+msgid "drag and drop"
+msgstr ""
+
+#: views/plugin_options.php:1453
+msgid "move"
+msgstr ""
+
+#: views/woocs_order_metabox.php:17
+msgid "Order currency"
+msgstr ""
+
+#: views/woocs_order_metabox.php:25
+msgid "Currency in which the customer paid."
+msgstr ""
+
+#: views/woocs_order_metabox.php:25
+#, php-format
+msgid "THIS order currency is changed manually %s!"
+msgstr ""
+
+#: views/woocs_order_metabox.php:26
+msgid "Base currency"
+msgstr ""
+
+#: views/woocs_order_metabox.php:27
+msgid "Order currency rate"
+msgstr ""
+
+#: views/woocs_order_metabox.php:27
+msgid "Currency rate when the customer paid "
+msgstr ""
+
+#: views/woocs_order_metabox.php:28
+msgid "Total amount"
+msgstr ""
+
+#: views/woocs_order_metabox.php:34
+msgid "Change order currency"
+msgstr ""
+
+#: views/woocs_order_metabox.php:34
+msgid "For new manual order ONLY!!"
+msgstr ""
+
+#: views/woocs_order_metabox.php:35
+msgid "cancel"
+msgstr ""
+
+#: views/woocs_order_metabox.php:40
+msgid "Recalculate order"
+msgstr ""
+
+#: views/woocs_order_metabox.php:40
+msgid ""
+"Recalculate current order with basic currency. Recommended test this option "
+"on the clone of your site! Read the documentation of the plugin about it!"
+msgstr ""
+
+#: classes/widgets/widget-woocs-selector.php:7
+#: classes/widgets/widget-woocs-selector.php:36
+msgid "WooCommerce Currency Switcher"
+msgstr ""
+
+#: classes/widgets/widget-woocs-selector.php:9
+msgid "WooCommerce Currency Switcher by realmag777"
+msgstr ""
+
+#: classes/widgets/widget-currency-rates.php:9
+#: classes/widgets/widget-currency-rates.php:38
+msgid "WooCommerce Currency Rates"
+msgstr ""
+
+#: classes/widgets/widget-currency-rates.php:11
+msgid "WooCommerce Currency Rates by realmag777"
+msgstr ""
+
+#: classes/widgets/widget-currency-converter.php:9
+#: classes/widgets/widget-currency-converter.php:38
+msgid "WooCommerce Currency Converter"
+msgstr ""
+
+#: classes/widgets/widget-currency-converter.php:11
+msgid "WooCommerce Currency Converter by realmag777"
+msgstr ""
+
+#: classes/fixed/fixed_shipping_free.php:28
+#, php-format
+msgid "Minimum order amount in %s"
+msgstr ""
+
+#: classes/fixed/fixed_shipping_free.php:30 classes/fixed/fixed_shipping.php:30
+#: views/fixed/product_user_role_data.php:22
+#: views/fixed/product_user_role_data.php:28
+#: views/fixed/product_price_data.php:13 views/fixed/product_price_data.php:19
+#: views/fixed/product_price_data.php:43 views/fixed/product_price_data.php:49
+#: views/fixed/product_coupon_restriction_data.php:12
+#: views/fixed/product_coupon_restriction_data.php:16
+#: views/fixed/product_coupon_data.php:12
+msgid "auto"
+msgstr ""
+
+#: classes/fixed/fixed_shipping.php:28
+#, php-format
+msgid "Fixed cost %s"
+msgstr ""
+
+#: views/widgets/rates_form.php:5 views/widgets/converter_form.php:5
+#: views/widgets/selector_form.php:5
+msgid "Title"
+msgstr ""
+
+#: views/widgets/rates_form.php:11 views/widgets/converter_form.php:11
+msgid "Currencies excluding from view"
+msgstr ""
+
+#: views/widgets/rates_form.php:13 views/widgets/converter_form.php:13
+msgid "Examples: EUR,GBP,UAH"
+msgstr ""
+
+#: views/widgets/rates_form.php:18 views/widgets/converter_form.php:18
+msgid "Precision"
+msgstr ""
+
+#: views/widgets/rates_form.php:20 views/widgets/converter_form.php:20
+msgid "Count of digits after point"
+msgstr ""
+
+#: views/widgets/selector_form.php:11
+msgid "Width"
+msgstr ""
+
+#: views/widgets/selector_form.php:13
+msgid "Examples: 300px,100%,auto"
+msgstr ""
+
+#: views/widgets/selector_form.php:26
+msgid "Show flags"
+msgstr ""
+
+#: views/widgets/selector_form.php:32
+msgid "Flag position"
+msgstr ""
+
+#: views/widgets/selector_form.php:35
+msgid "right"
+msgstr ""
+
+#: views/widgets/selector_form.php:36
+msgid "left"
+msgstr ""
+
+#: views/widgets/selector_form.php:44
+msgid "For ddslick script only!"
+msgstr ""
+
+#: views/widgets/selector_form.php:50
+msgid "Drop-down options text type"
+msgstr ""
+
+#: views/widgets/selector_form.php:53
+msgid "code"
+msgstr ""
+
+#: views/widgets/selector_form.php:62
+msgid ""
+"Which text display in the drop-down options - currency code OR description "
+"text. Looks good for all dropdowns except ddslick."
+msgstr ""
+
+#: views/shortcodes/woocs.php:6 views/shortcodes/woocs_rates.php:4
+#: views/shortcodes/woocs_converter.php:6
+msgid "Warning: Woocommerce is not activated"
+msgstr ""
+
+#: views/shortcodes/woocs_rates.php:45
+#, php-format
+msgid "1 %s is"
+msgstr ""
+
+#: views/shortcodes/woocs_rates.php:61 views/shortcodes/woocs_rates.php:69
+msgid "Rate"
+msgstr ""
+
+#: views/shortcodes/woocs_converter.php:25
+msgid "enter amount"
+msgstr ""
+
+#: views/shortcodes/woocs_converter.php:64
+msgid "results"
+msgstr ""
+
+#: views/shortcodes/woocs_converter.php:66
+msgid "Convert"
+msgstr ""
+
+#: views/fixed/product_user_role_data.php:5
+msgid "The price based on user role"
+msgstr ""
+
+#: views/fixed/product_user_role_data.php:21
+#: views/fixed/product_price_data.php:12 views/fixed/product_price_data.php:42
+msgid "Regular price"
+msgstr ""
+
+#: views/fixed/product_user_role_data.php:27
+#: views/fixed/product_price_data.php:18 views/fixed/product_price_data.php:48
+msgid "Sale price"
+msgstr ""
+
+#: views/fixed/product_user_role_data.php:33
+#: views/fixed/product_price_data.php:24 views/fixed/product_price_data.php:54
+#: views/fixed/product_coupon_restriction_data.php:21
+#: views/fixed/product_coupon_data.php:17
+msgid "Remove"
+msgstr ""
+
+#: views/fixed/product_user_role_data.php:42
+msgid "select user role"
+msgstr ""
+
+#: views/fixed/product_user_role_data.php:58
+msgid "WOOCS - the price based on user role"
+msgstr ""
+
+#: views/fixed/product_user_role_data.php:58
+msgid ""
+"Gives ability to set different prices for each user role. Native WooCommerce "
+"price filter is blind for this data!"
+msgstr ""
+
+#: views/fixed/product_user_role_data.php:60
+#: views/fixed/product_price_data.php:154
+msgid "Add group"
+msgstr ""
+
+#: views/fixed/product_price_data.php:61
+msgid "select some countries"
+msgstr ""
+
+#: views/fixed/product_price_data.php:84
+msgid "Load countries from profile"
+msgstr ""
+
+#: views/fixed/product_price_data.php:98
+msgid "The product fixed prices rules"
+msgstr ""
+
+#: views/fixed/product_price_data.php:102
+msgid "The product custom GeoIP rules"
+msgstr ""
+
+#: views/fixed/product_price_data.php:116
+msgid "WOOCS - the product fixed prices"
+msgstr ""
+
+#: views/fixed/product_price_data.php:116
+msgid ""
+"Here you can set FIXED price for the product for any currency you want. In "
+"the case of empty price field recounting by rate will work!"
+msgstr ""
+
+#: views/fixed/product_price_data.php:127
+#: views/fixed/product_coupon_restriction_data.php:58
+#: views/fixed/product_coupon_data.php:53
+msgid "Add"
+msgstr ""
+
+#: views/fixed/product_price_data.php:128
+#: views/fixed/product_coupon_restriction_data.php:59
+#: views/fixed/product_coupon_data.php:54
+msgid "Add all"
+msgstr ""
+
+#: views/fixed/product_price_data.php:152
+msgid "WOOCS - the product custom GeoIP rules"
+msgstr ""
+
+#: views/fixed/product_price_data.php:152
+msgid ""
+"Here you can set prices in the basic currency for different countries, and "
+"recount will be done relatively of this values. ATTENTION: fixed price for "
+"currencies has higher priority!"
+msgstr ""
+
+#: views/fixed/product_coupon_restriction_data.php:11
+msgid "Minimum spend"
+msgstr ""
+
+#: views/fixed/product_coupon_restriction_data.php:15
+msgid "Maximum spend"
+msgstr ""
+
+#: views/fixed/product_coupon_restriction_data.php:35
+msgid "The coupon fixed Minimum and Maximum spend rules"
+msgstr ""
+
+#: views/fixed/product_coupon_restriction_data.php:47
+msgid "WOOCS - the <b>fixed</b> Minimum and Maximum spend "
+msgstr ""
+
+#: views/fixed/product_coupon_restriction_data.php:47
+#: views/fixed/product_coupon_data.php:42
+msgid ""
+"Here you can set FIXED amount for the coupon for any currency you want. In "
+"the case of empty amount field recounting by rate will work!"
+msgstr ""
+
+#: views/fixed/product_coupon_data.php:11
+msgid "Coupon amount"
+msgstr ""
+
+#: views/fixed/product_coupon_data.php:31
+msgid "The coupon fixed amount rules"
+msgstr ""
+
+#: views/fixed/product_coupon_data.php:42
+msgid "WOOCS - the coupon fixed amount"
+msgstr ""
+
+#: views/shortcodes/styles/style-3/index.php:83
+msgid "Select Currency"
+msgstr ""
+
+#. Name of the plugin
+msgid "WOOCS - WooCommerce Currency Switcher"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Currency Switcher for WooCommerce that allows to the visitors and customers "
+"on your woocommerce store site switch currencies and optionally apply "
+"selected currency on checkout"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://currency-switcher.com/"
+msgstr ""
+
+#. Author of the plugin
+msgid "realmag777"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://pluginus.net/"
+msgstr ""

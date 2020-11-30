@@ -1,0 +1,47 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Adomx - Responsive Bootstrap 4 Admin Template
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    01. Template default CSS
+    02. Elements CSS
+        Baisc ---------
+        - Accordion
+        - Alert
+        - Avatar
+        - Badge
+        - Button
+        - Card
+        - List
+        - Pagination
+        - Progress
+        - Spinner
+        - Tab
+        Advance ---------
+        - Fullcalendar
+        - Media Player
+        - Ratting
+        - Sweetalert
+        - Toastr
+    03. Form CSS
+        - Basic
+        - Checkbox (Custom)
+        - Radio (Custom)
+        - Range Slider
+        - Select
+        - Switch (Custom)
+
+-----------------------------------------------------------------------------------*/
+@import 'scss/variabls';
+@import 'scss/common';
+@import 'scss/elements';
+@import 'scss/form';
+@import 'scss/main';
+@import 'scss/wp_picker';
+@import 'scss/customize';
+@import 'scss/select2';

@@ -1,0 +1,307 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Multi Currency\n"
+"POT-Creation-Date: 2019-09-07 06:12:54+0000\n"
+"PO-Revision-Date: 2019-10-08 12:59+0600\n"
+"Last-Translator: \n"
+"Language-Team: appsbd\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "0"
+msgstr "0"
+
+msgid "1"
+msgstr "1"
+
+msgid "2"
+msgstr "2"
+
+msgid "3"
+msgstr "3"
+
+msgid "4"
+msgstr "4"
+
+msgid "5"
+msgstr "5"
+
+msgid "6"
+msgstr "6"
+
+msgid "7"
+msgstr "7"
+
+msgid "8"
+msgstr "8"
+
+msgid "9"
+msgstr "9"
+
+msgid "General"
+msgstr "General"
+
+msgid "Location"
+msgstr "Location"
+
+msgid "Default"
+msgstr "Default"
+
+msgid "check one"
+msgstr "check one"
+
+msgid "Show"
+msgstr "Show"
+
+msgid "Hide"
+msgstr "Hide"
+
+msgid "Currency"
+msgstr "Currency"
+
+msgid "Design"
+msgstr "Design"
+
+msgid "Advance"
+msgstr "Advance"
+
+msgid "Currency's Payment Gateway"
+msgstr "Currency's Payment Gateway"
+
+msgid "Countries"
+msgstr "Countries"
+
+msgid "Actions"
+msgstr "Actions"
+
+msgid "Remove All"
+msgstr "Remove All"
+
+msgid "Select All"
+msgstr "Select All"
+
+msgid "Empty"
+msgstr "Empty"
+
+msgid "Select All Country"
+msgstr "Select All Country"
+
+msgid "Settings"
+msgstr "Settings"
+
+msgid "Payment Gateway"
+msgstr "Payment Gateway"
+
+msgid "Paypal"
+msgstr "Paypal"
+
+msgid "Stripe"
+msgstr "Stripe"
+
+msgid "Cash on Delivery"
+msgstr "Cash on Delivery"
+
+msgid "Enable"
+msgstr "Enable"
+
+msgid "Save"
+msgstr "Save"
+
+msgid "Location Based Currency"
+msgstr "Location Based Currency"
+
+msgid "Currency's payment Gateway"
+msgstr "Currency's payment Gateway"
+
+msgid "Select Currency"
+msgstr "Select Currency"
+
+msgid "Left %s99"
+msgstr "Left %s99"
+
+msgid "Right 99%s"
+msgstr "Right 99%s"
+
+msgid "Left with space %s 99"
+msgstr "Left with space %s 99"
+
+msgid "Left with space 99 %s"
+msgstr "Left with space 99 %s"
+
+msgid "Position"
+msgstr "Position"
+
+msgid "Rate"
+msgstr "Rate"
+
+msgid "Exchange Rate"
+msgstr "Exchange Rate"
+
+msgid "Exchange Fee"
+msgstr "Exchange Fee"
+
+msgid "Decimals"
+msgstr "Decimals"
+
+msgid "Custom Symbol"
+msgstr "Custom Symbol"
+
+msgid "Ex.Fee"
+msgstr "Ex.Fee"
+
+msgid "Are you sure to change the default currency?"
+msgstr "Are you sure to change the default currency?"
+
+msgid "Confirmation"
+msgstr "Confirmation"
+
+msgid "Unknown error"
+msgstr "Unknown error"
+
+msgid "Successfully updated"
+msgstr "Successfully updated"
+
+msgid "Are you sure to delete?"
+msgstr "Are you sure to delete?"
+
+msgid "Successfully deleted"
+msgstr "Successfully deleted"
+
+msgid "Remove"
+msgstr "Remove"
+
+msgid "The currency has been set as default. You can't delete it."
+msgstr "The currency has been set as default. You can't delete it."
+
+msgid "ID is required"
+msgstr "ID is required"
+
+msgid "Successfully found"
+msgstr "Successfully found"
+
+msgid "Are you sure to update all rates?"
+msgstr "Are you sure to update all rates?"
+
+msgid "Update All Rates"
+msgstr "Update All Rates"
+
+msgid "Add Currency"
+msgstr "Add Currency"
+
+msgid "No change for update"
+msgstr "No change for update"
+
+msgid "Saved Successfully"
+msgstr "Saved Successfully"
+
+msgid "Are you sure to change the default currency? If yes then your need to review rate of other currency"
+msgstr "Are you sure to change the default currency? If yes then your need to review rate of other currency"
+
+msgid "Not Update Yet"
+msgstr "Not Update Yet"
+
+msgid "Not selected yet"
+msgstr "Not selected yet"
+
+msgid "Select"
+msgstr "Select"
+
+msgid "Auto rate failed, please try again later or set manually"
+msgstr "Auto rate failed, please try again later or set manually"
+
+msgid "Select your currency"
+msgstr "Select your currency"
+
+msgid "Chat Background Pattern"
+msgstr "Chat Background Pattern"
+
+msgid "Widget Position"
+msgstr "Widget Position"
+
+msgid "Enable Widget"
+msgstr "Enable Widget"
+
+msgid "Widget Design"
+msgstr "Widget Design"
+
+msgid "Color"
+msgstr "Color"
+
+msgid "Payment Gateways"
+msgstr "Payment Gateways"
+
+msgid "Custom symbol"
+msgstr "Custom symbol"
+
+msgid "Final rate will be Rate + Exchange Fee"
+msgstr "Final rate will be Rate + Exchange Fee"
+
+msgid "Final Rate = Rate + Exchange Fee"
+msgstr "Final Rate = Rate + Exchange Fee"
+
+msgid "The following currency options are available in %s"
+msgstr "The following currency options are available in %s"
+
+msgid "The following currency options are available in"
+msgstr "The following currency options are available in"
+
+msgid "Unlock It"
+msgstr "Unlock It"
+
+msgid "Other Design Customization"
+msgstr "Other Design Customization"
+
+msgid "Design Customization"
+msgstr "Design Customization"
+
+msgid "Currency Information"
+msgstr "Currency Information"
+
+msgid "Exchage Rate"
+msgstr "Exchage Rate"
+
+msgid "Rate + Exchange Fee"
+msgstr "Rate + Exchange Fee"
+
+msgid "Rate %f + Exchange Fee %f"
+msgstr "Rate %f + Exchange Fee %f"
+
+msgid "Rate %.2f + Exchange Fee %f"
+msgstr "Rate %.2f + Exchange Fee %f"
+
+msgid "Rate %.2f + Exchange Fee %.2f"
+msgstr "Rate %.2f + Exchange Fee %.2f"
+
+msgid "Currency: %s"
+msgstr "Currency: %s"
+
+msgid "The %s was disabled, when the order has been created"
+msgstr "The %s was disabled, when the order has been created"
+
+msgid "Based On Currency"
+msgstr "Based On Currency"
+
+msgid "%s widget one"
+msgstr "%s widget one"
+
+msgid "Title:"
+msgstr "Title:"
+
+msgid "Please enter your title"
+msgstr "Please enter your title"
+
+msgid "%s widget two"
+msgstr "%s widget two"
+
+msgid "%s Flag only"
+msgstr "%s Flag only"
+
+msgid "%s Currency List with flag"
+msgstr "%s Currency List with flag"
+
+msgid "%s Currency List"
+msgstr "%s Currency List"

@@ -80,7 +80,7 @@ $args = arg($_GET["cat"],$_GET["tax"],$_GET["lower"],$_GET["upper"],$_GET['order
     <?php } ?>    
     <?php if ($page_name1 != 1){ ?>
     <section class="banner-small banner-small--bs">
-	    <img class="banner-small__img" src="<?php echo get_template_directory_uri();?>/assets/img/categorie/best-seller.jpg">
+	    <img class="banner-small__img" src="<?php echo get_template_directory_uri();?>/assets/img/tienda.jpg">
 	    <div class="banner-small__text">
 		    <h2 class="banner-small__title">
 		        <?php if(lang() == 'es'){echo "Tienda"; $urlsinparametros = get_home_url()."/tienda";}else{echo "Shop"; $urlsinparametros = get_home_url()."/shop";} ?>		       
@@ -376,55 +376,64 @@ else { ?>
 
 				</div>
 				<div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+										<div class="categorie-product__list">
+
 					<?php $loop = new WP_Query( $args ); ?>
 					<?php while ( $loop->have_posts() ) : $loop->the_post(); global $product;?>             
-						<div class="list_div" id="view" style="display:">
-							<table class="shop_table cart wishlist_table wishlist_view traditional responsive  list_table " data-pagination="no" data-per-page="5" data-page="1" data-id="5" data-token="6OL1RPFP5C1P">  
-								<tbody class="wishlist-items-wrapper list">
-									<tr id="yith-wcwl-row-20 " class="list-product" data-row-id="20">        
-										<td class="product-thumbnail list">
+							<div class="main-products__item">
+								<div class="main-products__img">
+									<div class="main-products__mask">
+										<a  href="<?php the_permalink(); ?>" class="product-link" > </a>
+								
+									</div>
+									<img src="<?php the_post_thumbnail_url('full');?>">
+								</div>
+								<div class="main-products__body">
+									<a class="main-products__title" href="<?php the_permalink(); ?>">
+										<?php the_title();?>
+									</a>
+									<p class="main-products__categorie">
+										<?php if(lang() == 'es'){echo "categoría: ";}if(lang() == 'en'){echo "category: ";}  
+										$product_categories = wp_get_post_terms( get_the_ID(), 'product_cat' ); $i = 0;
+										foreach($product_categories as $category):
+											if ($i > 0 ) {echo " / "; } echo $category->name; $i=$i+1;
+										endforeach;?>
+
+									</p>
+									<p class="main-products__price">
+										<?php echo $product->get_price_html(); ?>
+									</p>
+									<div class="main-products__txt" href="<?php the_permalink(); ?>">
+										<?php the_content();?>
+									</div>
+											<div class="main-products__icon">
+											<?php if (variation(get_the_ID()) <= 0){ ?>
+											<a href="?add-to-cart=<?php echo get_the_ID(); ?>">
+												<img src="<?php echo get_template_directory_uri();?>/assets/img/card.png">
+											</a>
+											<?php } ?>  
+											<?php if (variation(get_the_ID()) > 0){ ?>	
 											<a href="<?php the_permalink(); ?>">
-												<img class="list" src="<?php the_post_thumbnail_url('full'); ?>">          
-											</a> 
-											<table class="list_table">
-												<tr>
-													<td class="listt"> <a href="<?php the_permalink(); ?>" class="collection-item__title list"><?php the_title(); ?></a></td>
-												</tr>
-												<tr>
-													<td class="listd"><p class="main-products__categorie"><?php if(lang() == 'es'){echo "Categoría: ";}if(lang() == 'en'){echo "Category: ";}  
-														$product_categories = wp_get_post_terms( get_the_ID(), 'product_cat' ); $i = 0;
-														foreach($product_categories as $category):
-															if ($i > 0 ) {echo " / "; } echo $category->name; $i=$i+1;
-														endforeach;?></p></td>
-												</tr>          
-											</table>                         
-										</td>  
-										<td class="product-price list">              
-											<span class="woocommerce-Price-amount amount list"><?php echo $product->get_price_html(); ?>
-											</td>
-											<td class="product-add-to-cart list">
-												<span>
-													<?php if (variation(get_the_ID()) <= 0){ ?>
-													<a href="?add-to-cart=<?php echo get_the_ID(); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/card.png"></a>
-													<?php } ?>  
-													<?php if (variation(get_the_ID()) > 0){ ?>
-													<a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/card.png"></a>
-													<?php } ?> 
-													<a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/search.png"></a> 
-													<?php// if (is_user_logged_in()){ ?>   
-													   <a href="?add_to_wishlist=<?php echo get_the_ID(); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png"></a>  
-															<?php// }else { ?>  
-															<!--<div data-toggle="tooltip" data-placement="top" title="" data-original-title="<?php if(lang() == 'es'){echo "Debes estar iniciar sesión";}else{echo "You must be logged";} ?>" class="collection-item__icon" >
-																<img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
-															</div> -->             
-															<?php //} ?>
-												</span>             
-											</td>                    
-										</tr>    
-									</tbody>
-								</table>
+												<img src="<?php echo get_template_directory_uri();?>/assets/img/card.png">
+											</a>
+											<?php } ?> 
+											<?php //if (is_user_logged_in()){ ?>               							
+											<a href="?add_to_wishlist=<?php echo get_the_ID(); ?>">
+												<img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
+											</a>
+                                            <?php //}else { ?>  
+                                                <!--<div data-toggle="tooltip" data-placement="top" title="" data-original-title="<?php if(lang() == 'es'){echo "Debes estar iniciar sesión";}else{echo "You must be logged";} ?>" class="collection-item__icon" >
+                                                  <img src="<?php echo get_template_directory_uri();?>/assets/img/heart.png">
+                                                </div>-->              
+                                            <?php// } ?>											
+											<a href="<?php the_permalink(); ?>">
+												<img src="<?php echo get_template_directory_uri();?>/assets/img/search.png">
+											</a>
+										</div>
+									<a class="main-general__button" href="<?php //the_permalink(); ?>"><?php if(lang() == 'es'){echo "Comprar";}if(lang() == 'en'){echo "To buy";}?></a>
+								</div>
 							</div>
-						<?php endwhile; ?>        	
+					<?php endwhile; ?>        	
 					</div>
 				</div>
 

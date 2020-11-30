@@ -982,7 +982,10 @@ overflow: hidden;
     padding-left: 0;
     justify-content: space-around;
     flex-wrap: wrap;
-  }
+	}
+	.modal-promo .modal-body {
+		padding: 15px;
+	}
 }
 
 @media (min-width: 0px) and (max-width: 767px) and (min-width: 0px) and (max-width: 767px) {
@@ -1016,6 +1019,9 @@ overflow: hidden;
     display: flex !important;
     padding: 0 1.2rem !important;
   }
+		.modal-promo .modal-body {
+		padding: 15px;
+	}
 }
 
 .pre-navbar--mobile p {
@@ -3196,17 +3202,89 @@ display: flex;
   gap: 87px 28px;
   grid-template-columns: repeat(4, 1fr);
 }
+.categories .categorie-product__list {
+display: grid;
+	gap: 40px;
+    grid-template-columns: 1fr 1fr;	
+}
+.categories .categorie-product__list .main-products__item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+	gap: 40px;
+}
+.categorie-product__list .main-products__img{
+    height: 258px;
+	margin-bottom: 0;
+} 
+.categorie-product__list .main-products__img img{
+	object-fit: contain;
+}
+
+
+.categorie-product__list .main-products__icon img {
+    /* width: 22px; */
+    height: 22px;
+    object-fit: contain;
+	
+    margin-right: 12px;
+}
+.categorie-product__list .main-products__icon {
+	margin-bottom: 17px;
+}
+
+.categorie-product__list .main-products__categorie {
+margin-bottom: 10px;	
+}
+
+.main-products__txt p{
+	display: -webkit-box;
+    display: -moz-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    overflow: hidden;
+}
+   
+
+.categorie-product__list .main-products__item .main-products__img img {
+}
 
 @media (min-width: 0px) and (max-width: 767px) {
   .categories .categorie-product__grid {
     grid-template-columns: 100%;
   }
+	
+	.categories .categorie-product__list {
+	 grid-template-columns: 100%;	
+	}
+	
+	.main-products__txt p {
+	    -webkit-line-clamp: 1;
+	}
+	 .categorie-product__list .main-products__item .main-general__button {
+		display: none;
+	}
+	
+	.categories .categorie-product__list .main-products__item {
+    	gap: 10px;
+	}
+	
+	
+.categorie-product__list .main-products__img {
+    height: 164px;
+	}
+	.categorie-product__list .main-products__item .main-products__title {
+		font-size: 14px;align-content}
+	
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .categories .categorie-product__grid {
     grid-template-columns: repeat(2, 1fr);
   }
+	.categories .categorie-product__list {
+	 grid-template-columns: 100%;	
+	}
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -3312,6 +3390,11 @@ display: flex;
   border: 0;
   width: 12px;
   border-radius: 50%;
+}
+
+.categories-sidebar__list label input:checked~.span::before {
+	content:"";
+	position: absolute;
 }
 
 .categories-sidebar__list li input {

@@ -164,13 +164,9 @@
   </a>
   <script src="<?php echo get_template_directory_uri();?>/assets/js/setting-slick.js"></script>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>
-
 <!-- Modal -->
-<div class="modal fade modal-promo" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<div class="modal fade modal-promo" id="modal-promooo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
     <div class="modal-content">
       <div class="modal-header">
 		<img src="<?php echo get_template_directory_uri();?>/assets/img/promo.png">
@@ -208,6 +204,10 @@
 
 </body>
 <script type="text/javascript">
+	    $(document).ready(function()
+      {
+         $("#modal-promo").modal("show");
+      });
   $(document).ready(function() {       
     var langu = "<?= get_bloginfo('language') ?>";         
     if (langu == 'en-US'){ 
