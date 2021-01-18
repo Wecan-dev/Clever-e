@@ -104,6 +104,7 @@ else { ?>
 <section class="categories <?php if ($page_name == "Best Seller"){ echo "categories-bs";}?>">
 	<div class="container-grid">
 		<div class="categories-sidebar">
+     
 			<div class="categories-sidebar__item">
 				<h2 class="categories-sidebar__title">
 					<?php if(lang() == 'es'){echo "Precio";}else{echo "Price";} ?>

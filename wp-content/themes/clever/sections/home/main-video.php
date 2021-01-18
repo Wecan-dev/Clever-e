@@ -15,7 +15,7 @@
       <?php $loop = new WP_Query( $args ); ?>
       <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>        
         <div class="main-video__item">
-        <video src="<?php the_field('video_items_video'); ?>" controls>
+        <video src="<?php the_field('video_items_video'); ?>" poster="<?php the_field('image_items_video'); ?>" controls> 
         </video>
         </div>
       <?php endwhile; ?> 

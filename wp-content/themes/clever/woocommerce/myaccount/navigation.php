@@ -24,12 +24,24 @@ do_action( 'woocommerce_before_account_navigation' );
 
 <nav class="woocommerce-MyAccount-navigation">
 	<ul>
+    <li class="<?php echo wc_get_account_menu_item_classes( $endpoint ); ?>">
+				<a href="<?php echo esc_url( wc_get_account_endpoint_url( $endpoint ) ); ?>">Lista de deseos</a>
+			</li>
 		<?php foreach ( wc_get_account_menu_items() as $endpoint => $label ) : ?>
 			<li class="<?php echo wc_get_account_menu_item_classes( $endpoint ); ?>">
 				<a href="<?php echo esc_url( wc_get_account_endpoint_url( $endpoint ) ); ?>"><?php echo esc_html( $label ); ?></a>
 			</li>
 		<?php endforeach; ?>
+					
 	</ul>
 </nav>
-
+<style>
+.woocommerce-MyAccount-navigation ul {
+display: flex;
+    flex-direction: column;
+}
+body > div.woocommerce > div > div > nav > ul > li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--dashboard {
+order: -1;
+}
+</style>
 <?php do_action( 'woocommerce_after_account_navigation' ); ?>

@@ -1,0 +1,6144 @@
+# Copyright (C) 2020 Loïc Blascos
+# This file is distributed under the same license as the WP Grid Builder plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Grid Builder 1.2.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-grid-builder\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-04-13T13:01:27+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.2.0\n"
+"X-Domain: wp-grid-builder\n"
+
+#. Plugin Name of the plugin
+msgid "WP Grid Builder"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://www.wpgridbuilder.com"
+msgstr ""
+
+#. Description of the plugin
+#: wp-grid-builder.php:52
+msgid "Build advanced grid layouts with real time faceted search for your eCommerce, blog, portfolio, and more..."
+msgstr ""
+
+#. Author of the plugin
+msgid "Loïc Blascos"
+msgstr ""
+
+#. translators: %d: number of deleted items
+#: admin/class-actions.php:70
+msgid "%d items have been deleted!"
+msgstr ""
+
+#. translators: %d: number of duplicated items
+#: admin/class-actions.php:97
+msgid "%d items have been duplicated!"
+msgstr ""
+
+#: admin/class-async.php:84
+msgid "You are not allowed to perform this action. Please contact site administrator for further information."
+msgstr ""
+
+#: admin/class-async.php:110
+msgid "An error occurred. Please try to refresh the page or logout and login again."
+msgstr ""
+
+#: admin/class-async.php:129
+#: admin/class-localize.php:151
+#: admin/class-localize.php:225
+#: frontend/class-async.php:215
+msgid "Sorry, an unknown error occurred."
+msgstr ""
+
+#: admin/class-cards.php:63
+msgid "Post Blocks"
+msgstr ""
+
+#: admin/class-cards.php:64
+msgid "Product Blocks"
+msgstr ""
+
+#: admin/class-cards.php:65
+msgid "User Blocks"
+msgstr ""
+
+#: admin/class-cards.php:66
+msgid "Term Blocks"
+msgstr ""
+
+#: admin/class-cards.php:67
+msgid "Buttons &#38; Icons Blocks"
+msgstr ""
+
+#: admin/class-cards.php:68
+msgid "Custom Blocks"
+msgstr ""
+
+#: admin/class-cards.php:214
+msgid "Please, enter a card name"
+msgstr ""
+
+#: admin/class-cards.php:227
+#: admin/class-facets.php:100
+#: admin/class-grids.php:109
+#: admin/class-metabox.php:167
+#: admin/class-settings.php:72
+msgid "Settings Saved!"
+msgstr ""
+
+#. translators: %d: number of items exported
+#: admin/class-export.php:73
+msgid "%d items have been exported!"
+msgstr ""
+
+#: admin/class-facets.php:73
+msgid "Please, enter a facet name"
+msgstr ""
+
+#: admin/class-grids.php:97
+msgid "Please, enter a grid name"
+msgstr ""
+
+#: admin/class-grids.php:263
+#: admin/settings/grid.php:912
+#: admin/views/tables/grids.php:22
+msgid "Metro"
+msgstr ""
+
+#: admin/class-grids.php:264
+#: admin/settings/builder.php:2840
+#: admin/settings/grid.php:911
+#: admin/views/tables/grids.php:20
+msgid "Masonry"
+msgstr ""
+
+#: admin/class-grids.php:265
+#: admin/settings/grid.php:913
+#: admin/views/tables/grids.php:21
+msgid "Justified"
+msgstr ""
+
+#. Translators: %1$s: grid type, %2$s: card names.
+#: admin/class-grids.php:273
+msgid "The following Masonry card is not compatible with the current grid layout (%1$s): <strong>%2$s</strong>."
+msgid_plural "The following Masonry cards are not compatible with the current grid layout (%1$s): <strong>%2$s</strong>."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-grids.php:283
+msgid "You need to change cards set under <strong>Card Styles</strong> panel or to change the type of layout under <strong>Grid Layout</strong> panel."
+msgstr ""
+
+#: admin/class-grids.php:284
+msgid "A default card will be used in the grid instead."
+msgstr ""
+
+#: admin/class-import.php:98
+msgid "File format is invalid. Please upload a .json file."
+msgstr ""
+
+#: admin/class-import.php:143
+msgid "Sorry, an error occured while fetching content."
+msgstr ""
+
+#: admin/class-import.php:148
+msgid "Content correctly fetched!"
+msgstr ""
+
+#. translators: %d: number of imported items
+#: admin/class-import.php:198
+msgid "%d item has been imported!"
+msgid_plural "%d items have been imported!"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-import.php:235
+#: admin/class-menu.php:77
+#: admin/class-menu.php:256
+#: admin/views/layout/header.php:51
+#: admin/views/panels/export.php:61
+#: includes/settings/fields/class-builder.php:252
+msgid "Settings"
+msgstr ""
+
+#. translators: %.1f: Indexer progress value
+#: admin/class-index.php:302
+#: admin/class-index.php:310
+msgid "Indexing&hellip; %.1f&#37;"
+msgstr ""
+
+#: admin/class-index.php:315
+msgid "Cancelling&hellip;"
+msgstr ""
+
+#: admin/class-index.php:318
+msgid "Pending&hellip;"
+msgstr ""
+
+#. translators: %s: Human time diff
+#: admin/class-list-table.php:310
+#: admin/settings/builder.php:3541
+#: frontend/blocks/post.php:747
+msgid "%s ago"
+msgstr ""
+
+#: admin/class-list-table.php:312
+msgid "Y/m/d"
+msgstr ""
+
+#: admin/class-localize.php:113
+msgid "Delete Item(s)"
+msgstr ""
+
+#: admin/class-localize.php:114
+#: admin/class-localize.php:132
+msgid "Are you sure you want to delete this?"
+msgstr ""
+
+#: admin/class-localize.php:115
+#: admin/class-localize.php:133
+msgid "Yes, delete"
+msgstr ""
+
+#: admin/class-localize.php:116
+#: admin/class-localize.php:122
+#: admin/class-localize.php:128
+#: admin/class-localize.php:134
+msgid "Cancel"
+msgstr ""
+
+#: admin/class-localize.php:119
+msgid "Duplicate Item(s)"
+msgstr ""
+
+#: admin/class-localize.php:120
+msgid "Are you sure you want to duplicate this?"
+msgstr ""
+
+#: admin/class-localize.php:121
+msgid "Yes, duplicate"
+msgstr ""
+
+#: admin/class-localize.php:125
+msgid "Reset Settings"
+msgstr ""
+
+#: admin/class-localize.php:126
+msgid "Are you sure you want to reset your settings?"
+msgstr ""
+
+#: admin/class-localize.php:127
+msgid "Yes, reset"
+msgstr ""
+
+#: admin/class-localize.php:131
+#: admin/settings/builder.php:3582
+#: admin/settings/builder.php:3645
+msgid "Delete Block"
+msgstr ""
+
+#: admin/class-localize.php:152
+msgid "You have unsaved changes. If you proceed, they will be lost."
+msgstr ""
+
+#: admin/class-localize.php:153
+msgid "Please, select an action to apply."
+msgstr ""
+
+#: admin/class-localize.php:154
+msgid "Please, select at least one item."
+msgstr ""
+
+#: admin/class-localize.php:155
+msgid "Please, select a content type to export."
+msgstr ""
+
+#: admin/class-localize.php:156
+msgid "Shortcode copied to clipboard"
+msgstr ""
+
+#: admin/class-localize.php:157
+msgid "Please wait. Processing..."
+msgstr ""
+
+#: admin/class-localize.php:158
+msgid "Please wait. Reading file content..."
+msgstr ""
+
+#: admin/class-localize.php:159
+msgid "Please wait. Importing items..."
+msgstr ""
+
+#: admin/class-localize.php:160
+msgid "Installing..."
+msgstr ""
+
+#: admin/class-localize.php:161
+msgid "Activating..."
+msgstr ""
+
+#: admin/class-localize.php:162
+msgid "Please wait. Activating licence..."
+msgstr ""
+
+#: admin/class-localize.php:163
+msgid "Please wait. Deactivating licence..."
+msgstr ""
+
+#: admin/class-localize.php:164
+msgid "Please wait. Refreshing license info..."
+msgstr ""
+
+#: admin/class-localize.php:165
+msgid "Please wait. Clearing cache..."
+msgstr ""
+
+#: admin/class-localize.php:166
+msgid "Please wait. Saving changes..."
+msgstr ""
+
+#: admin/class-localize.php:167
+msgid "Please wait. Reset settings..."
+msgstr ""
+
+#: admin/class-localize.php:168
+msgid "Please wait. Stopping indexer..."
+msgstr ""
+
+#: admin/class-localize.php:169
+msgid "Please wait. Clearing index table..."
+msgstr ""
+
+#: admin/class-localize.php:170
+msgid "Please wait. Deleting style sheets..."
+msgstr ""
+
+#: admin/class-localize.php:171
+msgid "Checking..."
+msgstr ""
+
+#: admin/class-localize.php:172
+msgid "Pending..."
+msgstr ""
+
+#: admin/class-localize.php:173
+msgid "Indexing..."
+msgstr ""
+
+#: admin/class-localize.php:174
+msgid "Complete"
+msgstr ""
+
+#: admin/class-localize.php:190
+#: admin/settings/builder.php:1013
+msgid "Color"
+msgstr ""
+
+#: admin/class-localize.php:191
+msgid "Solid Color"
+msgstr ""
+
+#: admin/class-localize.php:192
+msgid "Gradient Color"
+msgstr ""
+
+#: admin/class-localize.php:193
+msgid "Linear"
+msgstr ""
+
+#: admin/class-localize.php:194
+msgid "Radial"
+msgstr ""
+
+#: admin/class-localize.php:195
+msgid "Reverse"
+msgstr ""
+
+#: admin/class-localize.php:196
+msgid "Presets"
+msgstr ""
+
+#: admin/class-localize.php:197
+#: admin/settings/builder.php:62
+#: admin/settings/builder.php:247
+msgid "Position"
+msgstr ""
+
+#: admin/class-localize.php:198
+msgid "Delete Point"
+msgstr ""
+
+#: admin/class-localize.php:199
+msgid "Edit Color"
+msgstr ""
+
+#: admin/class-localize.php:200
+msgid "Add Point"
+msgstr ""
+
+#: admin/class-localize.php:222
+#: admin/settings/defaults/facet.php:68
+#: admin/settings/facet.php:753
+#: frontend/class-localize.php:140
+msgid "Please enter 1 or more characters."
+msgstr ""
+
+#: admin/class-localize.php:223
+msgid "Searching..."
+msgstr ""
+
+#: admin/class-localize.php:224
+msgid "No results found."
+msgstr ""
+
+#: admin/class-menu.php:72
+#: admin/views/layout/header.php:21
+msgid "Dashboard"
+msgstr ""
+
+#: admin/class-menu.php:73
+#: admin/views/pages/grids.php:28
+#: admin/views/panels/export.php:50
+msgid "All Grids"
+msgstr ""
+
+#: admin/class-menu.php:74
+#: admin/views/pages/cards.php:28
+#: admin/views/panels/export.php:54
+msgid "All Cards"
+msgstr ""
+
+#: admin/class-menu.php:75
+#: admin/views/pages/facets.php:28
+#: admin/views/panels/export.php:58
+msgid "All Facets"
+msgstr ""
+
+#: admin/class-menu.php:76
+#: admin/views/layout/header.php:45
+msgid "Add-ons"
+msgstr ""
+
+#: admin/class-menu.php:256
+msgid "Got to plugin settings"
+msgstr ""
+
+#: admin/class-menu.php:257
+msgid "Go to plugin documentation"
+msgstr ""
+
+#: admin/class-menu.php:257
+msgid "Docs"
+msgstr ""
+
+#: admin/class-plugin.php:88
+msgid "Plugin license successfully activated!"
+msgstr ""
+
+#: admin/class-plugin.php:115
+msgid "Your license has been deactivated."
+msgstr ""
+
+#: admin/class-plugin.php:142
+msgid "License info refreshed!"
+msgstr ""
+
+#: admin/class-plugin.php:184
+msgid "Sorry, you are not allowed to install plugins on this site."
+msgstr ""
+
+#: admin/class-plugin.php:197
+msgid "Sorry, the plugin package was not found."
+msgstr ""
+
+#. translators: %s: Add-on name
+#: admin/class-plugin.php:212
+msgid "There was an error installing %s."
+msgstr ""
+
+#: admin/class-plugin.php:241
+msgid "Sorry, you are not allowed to activate plugins on this site."
+msgstr ""
+
+#. translators: %s: Add-on name
+#: admin/class-plugin.php:256
+msgid "There was an error activating %s."
+msgstr ""
+
+#: admin/class-preview.php:150
+#: frontend/sources/class-cards.php:149
+msgid "Edit Card"
+msgstr ""
+
+#. translators: %d: number of user posts
+#: admin/class-search.php:75
+msgid "%d post"
+msgid_plural "%d posts"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: term name, %d: number of posts
+#: admin/class-search.php:150
+#: includes/class-helpers.php:797
+#: includes/class-helpers.php:847
+msgid "%1$s (%2$d)"
+msgstr ""
+
+#. translators: %s: term name, %d: number of posts
+#: admin/class-search.php:158
+msgid "%1$s <span>(%2$d post)</span>"
+msgid_plural "%1$s <span>(%2$d posts)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: page title, %d: page ID
+#: admin/class-search.php:263
+msgid "%1$s <span>(ID %2$d)</span>"
+msgstr ""
+
+#: admin/class-search.php:587
+msgid "WordPress Custom Fields"
+msgstr ""
+
+#: admin/class-settings.php:130
+msgid "Settings were correctly reset!"
+msgstr ""
+
+#: admin/class-settings.php:173
+msgid "Indexer Stopped!"
+msgstr ""
+
+#. translators: %1$s Number of rows in index table, %2$s Index table length.
+#: admin/class-settings.php:207
+msgid "Index table: &#126;%1$d row (&#126;%2$.2fMB)"
+msgid_plural "Index table: &#126;%1$d rows (&#126;%2$.2fMB)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-settings.php:229
+msgid "Index table cleared!"
+msgstr ""
+
+#: admin/class-settings.php:243
+msgid "Cache cleared!"
+msgstr ""
+
+#: admin/class-settings.php:259
+msgid "Style sheets deleted!"
+msgstr ""
+
+#: admin/class-tinymce.php:110
+msgid "Shortcode Type"
+msgstr ""
+
+#: admin/class-tinymce.php:113
+#: includes/widgets/class-grid-widget.php:35
+#: admin/assets/js/gutenberg.js:10
+msgid "Grid"
+msgstr ""
+
+#: admin/class-tinymce.php:118
+#: includes/widgets/class-facet-widget.php:35
+#: admin/assets/js/gutenberg.js:10
+msgid "Facet"
+msgstr ""
+
+#: admin/class-tinymce.php:126
+msgid "Select a Facet"
+msgstr ""
+
+#: admin/class-tinymce.php:129
+#: admin/class-tinymce.php:140
+#: admin/settings/builder.php:162
+#: admin/settings/builder.php:1212
+#: admin/settings/builder.php:1228
+#: admin/settings/builder.php:2235
+#: admin/settings/builder.php:2269
+#: admin/settings/builder.php:2395
+#: admin/settings/builder.php:2875
+#: admin/settings/facet.php:1282
+#: admin/settings/grid.php:500
+#: admin/settings/grid.php:533
+#: admin/settings/grid.php:565
+#: admin/settings/post.php:188
+#: admin/settings/post.php:259
+#: admin/settings/post.php:270
+#: frontend/facets/class-select.php:77
+msgid "None"
+msgstr ""
+
+#: admin/class-tinymce.php:137
+msgid "Select a Grid"
+msgstr ""
+
+#: admin/settings/builder.php:40
+msgid "Block Name"
+msgstr ""
+
+#: admin/settings/builder.php:41
+msgid "Select a block"
+msgstr ""
+
+#: admin/settings/builder.php:69
+msgctxt "CSS Position property"
+msgid "Position"
+msgstr ""
+
+#: admin/settings/builder.php:72
+msgid "Relative"
+msgstr ""
+
+#: admin/settings/builder.php:73
+msgid "Absolute"
+msgstr ""
+
+#: admin/settings/builder.php:80
+msgctxt "CSS Display property"
+msgid "Display"
+msgstr ""
+
+#: admin/settings/builder.php:83
+#: admin/settings/builder.php:1214
+msgid "Block"
+msgstr ""
+
+#: admin/settings/builder.php:84
+msgid "Inline"
+msgstr ""
+
+#: admin/settings/builder.php:85
+msgid "Inline-block"
+msgstr ""
+
+#: admin/settings/builder.php:99
+#: admin/settings/builder.php:254
+msgid "Overflow"
+msgstr ""
+
+#: admin/settings/builder.php:101
+#: admin/settings/builder.php:256
+msgid "Overflow property is only applied in preview mode."
+msgstr ""
+
+#: admin/settings/builder.php:102
+#: admin/settings/builder.php:257
+msgctxt "Overflow default value"
+msgid "None"
+msgstr ""
+
+#: admin/settings/builder.php:104
+#: admin/settings/builder.php:259
+#: admin/settings/builder.php:1137
+msgid "Visible"
+msgstr ""
+
+#: admin/settings/builder.php:105
+#: admin/settings/builder.php:260
+#: admin/settings/builder.php:1138
+msgid "Hidden"
+msgstr ""
+
+#: admin/settings/builder.php:112
+msgid "Vertical Alignment"
+msgstr ""
+
+#: admin/settings/builder.php:113
+msgctxt "Vertical Alignment default value"
+msgid "None"
+msgstr ""
+
+#: admin/settings/builder.php:115
+#: admin/settings/builder.php:185
+#: admin/settings/builder.php:324
+#: admin/settings/builder.php:372
+#: admin/settings/builder.php:485
+#: admin/settings/builder.php:1610
+#: admin/settings/builder.php:2876
+#: admin/settings/grid.php:1251
+#: admin/settings/grid.php:1298
+msgid "Top"
+msgstr ""
+
+#: admin/settings/builder.php:116
+msgid "Middle"
+msgstr ""
+
+#: admin/settings/builder.php:117
+#: admin/settings/builder.php:205
+#: admin/settings/builder.php:344
+#: admin/settings/builder.php:392
+#: admin/settings/builder.php:505
+#: admin/settings/builder.php:1630
+#: admin/settings/builder.php:2877
+#: admin/settings/grid.php:1271
+#: admin/settings/grid.php:1318
+msgid "Bottom"
+msgstr ""
+
+#: admin/settings/builder.php:136
+msgid "Float"
+msgstr ""
+
+#: admin/settings/builder.php:137
+msgctxt "Float default value"
+msgid "None"
+msgstr ""
+
+#: admin/settings/builder.php:139
+#: admin/settings/builder.php:163
+#: admin/settings/builder.php:215
+#: admin/settings/builder.php:354
+#: admin/settings/builder.php:402
+#: admin/settings/builder.php:515
+#: admin/settings/builder.php:724
+#: admin/settings/builder.php:802
+#: admin/settings/builder.php:1640
+#: admin/settings/builder.php:2901
+#: admin/settings/grid.php:1069
+#: admin/settings/grid.php:1281
+#: admin/settings/grid.php:1328
+#: admin/settings/grid.php:1349
+msgid "Left"
+msgstr ""
+
+#: admin/settings/builder.php:140
+#: admin/settings/builder.php:164
+#: admin/settings/builder.php:195
+#: admin/settings/builder.php:334
+#: admin/settings/builder.php:382
+#: admin/settings/builder.php:495
+#: admin/settings/builder.php:726
+#: admin/settings/builder.php:804
+#: admin/settings/builder.php:1620
+#: admin/settings/builder.php:2902
+#: admin/settings/grid.php:1071
+#: admin/settings/grid.php:1261
+#: admin/settings/grid.php:1308
+#: admin/settings/grid.php:1351
+msgid "Right"
+msgstr ""
+
+#: admin/settings/builder.php:159
+msgid "Clear Floats"
+msgstr ""
+
+#: admin/settings/builder.php:160
+msgctxt "Clear default value"
+msgid "None"
+msgstr ""
+
+#: admin/settings/builder.php:165
+msgctxt "Clear Floats default value"
+msgid "Both"
+msgstr ""
+
+#: admin/settings/builder.php:179
+msgid "Positions"
+msgstr ""
+
+#: admin/settings/builder.php:234
+#: admin/settings/builder.php:267
+msgid "Z-index (Stacking Order)"
+msgstr ""
+
+#: admin/settings/builder.php:280
+msgid "Sizing"
+msgstr ""
+
+#: admin/settings/builder.php:287
+msgid "Width"
+msgstr ""
+
+#: admin/settings/builder.php:297
+msgid "Height"
+msgstr ""
+
+#: admin/settings/builder.php:311
+#: admin/settings/builder.php:1604
+msgid "Spacing"
+msgstr ""
+
+#: admin/settings/builder.php:318
+#: admin/settings/grid.php:1246
+msgid "Margin"
+msgstr ""
+
+#: admin/settings/builder.php:366
+#: admin/settings/grid.php:1293
+msgid "Padding"
+msgstr ""
+
+#: admin/settings/builder.php:418
+msgid "Border"
+msgstr ""
+
+#: admin/settings/builder.php:425
+msgid "In order to apply border radius, you generally need to set \"overflow\" property to \"hidden\" under \"position\" tab."
+msgstr ""
+
+#: admin/settings/builder.php:431
+msgid "Border Radius"
+msgstr ""
+
+#: admin/settings/builder.php:437
+msgid "Top/Left"
+msgstr ""
+
+#: admin/settings/builder.php:447
+msgid "Top/Right"
+msgstr ""
+
+#: admin/settings/builder.php:457
+msgid "Bottom/Right"
+msgstr ""
+
+#: admin/settings/builder.php:467
+msgid "Bottom/Left"
+msgstr ""
+
+#: admin/settings/builder.php:479
+msgid "Border Width"
+msgstr ""
+
+#: admin/settings/builder.php:527
+msgid "Border Style"
+msgstr ""
+
+#: admin/settings/builder.php:528
+msgctxt "Border Style default value"
+msgid "None"
+msgstr ""
+
+#: admin/settings/builder.php:530
+msgid "Solid"
+msgstr ""
+
+#: admin/settings/builder.php:531
+msgid "Dotted"
+msgstr ""
+
+#: admin/settings/builder.php:532
+msgid "Dashed"
+msgstr ""
+
+#: admin/settings/builder.php:533
+msgid "Double"
+msgstr ""
+
+#: admin/settings/builder.php:534
+msgid "Groove"
+msgstr ""
+
+#: admin/settings/builder.php:535
+msgid "Ridge"
+msgstr ""
+
+#: admin/settings/builder.php:536
+msgid "Inset"
+msgstr ""
+
+#: admin/settings/builder.php:543
+msgid "Border Color"
+msgstr ""
+
+#: admin/settings/builder.php:544
+#: admin/settings/builder.php:621
+#: admin/settings/builder.php:640
+#: admin/settings/builder.php:880
+#: admin/settings/builder.php:971
+#: frontend/facets/class-date.php:99
+#: includes/settings/fields/class-color.php:54
+msgid "Clear"
+msgstr ""
+
+#: admin/settings/builder.php:555
+msgid "Box Shadow"
+msgstr ""
+
+#: admin/settings/builder.php:562
+#: admin/settings/builder.php:934
+msgid "Shadow Horizontal Position"
+msgstr ""
+
+#: admin/settings/builder.php:574
+#: admin/settings/builder.php:946
+msgid "Shadow Vertical Position"
+msgstr ""
+
+#: admin/settings/builder.php:586
+#: admin/settings/builder.php:958
+msgid "Shadow Blur Radius"
+msgstr ""
+
+#: admin/settings/builder.php:598
+msgid "Shadow Spread Radius"
+msgstr ""
+
+#: admin/settings/builder.php:610
+msgid "Shadow Type"
+msgstr ""
+
+#: admin/settings/builder.php:612
+msgid "Outer Shadow"
+msgstr ""
+
+#: admin/settings/builder.php:613
+msgid "Inner Shadow"
+msgstr ""
+
+#: admin/settings/builder.php:620
+#: admin/settings/builder.php:970
+msgid "Shadow Color"
+msgstr ""
+
+#: admin/settings/builder.php:632
+msgid "Background"
+msgstr ""
+
+#: admin/settings/builder.php:639
+#: admin/settings/global.php:553
+#: admin/settings/grid.php:1340
+#: admin/settings/grid.php:1754
+msgid "Background Color"
+msgstr ""
+
+#: admin/settings/builder.php:648
+msgid "Background Image"
+msgstr ""
+
+#: admin/settings/builder.php:654
+msgid "Image URL"
+msgstr ""
+
+#: admin/settings/builder.php:655
+msgid "Enter an URL or select a file"
+msgstr ""
+
+#: admin/settings/builder.php:663
+msgid "Size"
+msgstr ""
+
+#: admin/settings/builder.php:664
+msgctxt "Size default value"
+msgid "None"
+msgstr ""
+
+#: admin/settings/builder.php:666
+msgid "Contain"
+msgstr ""
+
+#: admin/settings/builder.php:667
+msgid "Cover"
+msgstr ""
+
+#: admin/settings/builder.php:674
+#: admin/settings/builder.php:678
+msgid "Repeat"
+msgstr ""
+
+#: admin/settings/builder.php:675
+msgctxt "Repeat default value"
+msgid "None"
+msgstr ""
+
+#: admin/settings/builder.php:677
+msgid "No repeat"
+msgstr ""
+
+#: admin/settings/builder.php:679
+msgid "Repeat X"
+msgstr ""
+
+#: admin/settings/builder.php:680
+msgid "Repeat Y"
+msgstr ""
+
+#: admin/settings/builder.php:681
+msgid "Round"
+msgstr ""
+
+#: admin/settings/builder.php:682
+msgid "Space"
+msgstr ""
+
+#: admin/settings/builder.php:689
+msgid "Position X"
+msgstr ""
+
+#: admin/settings/builder.php:699
+msgid "Position Y"
+msgstr ""
+
+#: admin/settings/builder.php:715
+msgid "Alignment"
+msgstr ""
+
+#: admin/settings/builder.php:722
+msgid "Blocks Alignment"
+msgstr ""
+
+#: admin/settings/builder.php:725
+#: admin/settings/builder.php:803
+#: admin/settings/grid.php:1070
+#: admin/settings/grid.php:1350
+#: includes/settings/fields/class-builder.php:250
+msgid "Center"
+msgstr ""
+
+#: admin/settings/builder.php:743
+msgid "Font"
+msgstr ""
+
+#: admin/settings/builder.php:750
+msgid "Font Family"
+msgstr ""
+
+#: admin/settings/builder.php:753
+#: admin/settings/grid.php:1523
+#: admin/settings/post.php:64
+msgid "Default"
+msgstr ""
+
+#: admin/settings/builder.php:755
+msgid "Default Fonts"
+msgstr ""
+
+#: admin/settings/builder.php:777
+msgid "Font Weight"
+msgstr ""
+
+#: admin/settings/builder.php:780
+msgid "100 - Thin"
+msgstr ""
+
+#: admin/settings/builder.php:781
+msgid "200 - Extra Light"
+msgstr ""
+
+#: admin/settings/builder.php:782
+msgid "300 - Light"
+msgstr ""
+
+#: admin/settings/builder.php:783
+msgid "400 - Normal"
+msgstr ""
+
+#: admin/settings/builder.php:784
+msgid "500 - Medium"
+msgstr ""
+
+#: admin/settings/builder.php:785
+msgid "600 - Semi Bold"
+msgstr ""
+
+#: admin/settings/builder.php:786
+msgid "700 - Bold"
+msgstr ""
+
+#: admin/settings/builder.php:787
+msgid "800 - Extra Bold"
+msgstr ""
+
+#: admin/settings/builder.php:788
+msgid "900 - Black"
+msgstr ""
+
+#: admin/settings/builder.php:795
+msgid "Font Alignment"
+msgstr ""
+
+#: admin/settings/builder.php:805
+msgid "Justify"
+msgstr ""
+
+#: admin/settings/builder.php:821
+msgid "Font Style"
+msgstr ""
+
+#: admin/settings/builder.php:828
+msgid "Italic"
+msgstr ""
+
+#: admin/settings/builder.php:839
+msgid "Uppercase"
+msgstr ""
+
+#: admin/settings/builder.php:840
+msgid "Capitalize"
+msgstr ""
+
+#: admin/settings/builder.php:852
+msgid "Underline"
+msgstr ""
+
+#: admin/settings/builder.php:853
+msgid "Line Through"
+msgstr ""
+
+#: admin/settings/builder.php:866
+msgid "Font Color Scheme"
+msgstr ""
+
+#: admin/settings/builder.php:867
+msgid "Color scheme will be overridden if a font color is set."
+msgstr ""
+
+#: admin/settings/builder.php:869
+msgid "Primary"
+msgstr ""
+
+#: admin/settings/builder.php:870
+msgid "Secondary"
+msgstr ""
+
+#: admin/settings/builder.php:871
+msgid "Tertiary"
+msgstr ""
+
+#: admin/settings/builder.php:872
+msgid "Accent"
+msgstr ""
+
+#: admin/settings/builder.php:879
+msgid "Font Color"
+msgstr ""
+
+#: admin/settings/builder.php:887
+msgid "Font Size"
+msgstr ""
+
+#: admin/settings/builder.php:899
+msgid "Line Height"
+msgstr ""
+
+#: admin/settings/builder.php:911
+msgid "Letter Spacing"
+msgstr ""
+
+#: admin/settings/builder.php:927
+msgid "Text Shadow"
+msgstr ""
+
+#: admin/settings/builder.php:982
+msgid "Filters"
+msgstr ""
+
+#: admin/settings/builder.php:989
+msgid "Filter properties are only applied in preview mode to prevent any conflicts. Filters properties will only work in modern browsers."
+msgstr ""
+
+#: admin/settings/builder.php:996
+msgid "Blend Mode"
+msgstr ""
+
+#: admin/settings/builder.php:997
+msgctxt "Blend Mode default value"
+msgid "None"
+msgstr ""
+
+#: admin/settings/builder.php:999
+msgid "Normal"
+msgstr ""
+
+#: admin/settings/builder.php:1000
+msgid "Multiply"
+msgstr ""
+
+#: admin/settings/builder.php:1001
+msgid "Screen"
+msgstr ""
+
+#: admin/settings/builder.php:1002
+msgid "Overlay"
+msgstr ""
+
+#: admin/settings/builder.php:1003
+msgid "Darken"
+msgstr ""
+
+#: admin/settings/builder.php:1004
+msgid "Lighten"
+msgstr ""
+
+#: admin/settings/builder.php:1005
+msgid "Color Dodge"
+msgstr ""
+
+#: admin/settings/builder.php:1006
+msgid "Color Burn"
+msgstr ""
+
+#: admin/settings/builder.php:1007
+msgid "Hard Light"
+msgstr ""
+
+#: admin/settings/builder.php:1008
+msgid "Soft Light"
+msgstr ""
+
+#: admin/settings/builder.php:1009
+msgid "Difference"
+msgstr ""
+
+#: admin/settings/builder.php:1010
+msgid "Exclusion"
+msgstr ""
+
+#: admin/settings/builder.php:1011
+msgid "Hue"
+msgstr ""
+
+#: admin/settings/builder.php:1012
+#: admin/settings/builder.php:1045
+msgid "Saturation"
+msgstr ""
+
+#: admin/settings/builder.php:1014
+msgid "Luminosity"
+msgstr ""
+
+#: admin/settings/builder.php:1021
+msgid "Contrast"
+msgstr ""
+
+#: admin/settings/builder.php:1033
+msgid "Brightness"
+msgstr ""
+
+#: admin/settings/builder.php:1057
+msgid "Sepia"
+msgstr ""
+
+#: admin/settings/builder.php:1069
+msgid "Greyscale"
+msgstr ""
+
+#: admin/settings/builder.php:1081
+msgid "Invert"
+msgstr ""
+
+#: admin/settings/builder.php:1093
+msgid "Hue Rotate"
+msgstr ""
+
+#: admin/settings/builder.php:1105
+msgid "Blur"
+msgstr ""
+
+#: admin/settings/builder.php:1121
+#: admin/settings/builder.php:1134
+msgid "Visibility"
+msgstr ""
+
+#: admin/settings/builder.php:1128
+msgid "Visibility properties are only applied in preview mode to prevent any conflicts."
+msgstr ""
+
+#: admin/settings/builder.php:1135
+msgctxt "Visibility default value"
+msgid "None"
+msgstr ""
+
+#: admin/settings/builder.php:1145
+msgid "Opacity"
+msgstr ""
+
+#: admin/settings/builder.php:1160
+#: admin/settings/builder.php:3139
+#: admin/settings/grid.php:2266
+msgid "Custom CSS"
+msgstr ""
+
+#: admin/settings/builder.php:1168
+msgid "CSS Declarations"
+msgstr ""
+
+#: admin/settings/builder.php:1170
+#: admin/settings/builder.php:1182
+#: admin/settings/builder.php:1195
+msgid "Only enter CSS declarations:"
+msgstr ""
+
+#: admin/settings/builder.php:1180
+msgid "::before CSS Declarations"
+msgstr ""
+
+#: admin/settings/builder.php:1193
+msgid "::after CSS Declarations"
+msgstr ""
+
+#: admin/settings/builder.php:1211
+#: admin/settings/builder.php:1227
+msgid "Apply hover state from"
+msgstr ""
+
+#: admin/settings/builder.php:1215
+#: admin/settings/builder.php:1231
+msgid "Parent"
+msgstr ""
+
+#: admin/settings/builder.php:1216
+#: admin/settings/builder.php:1232
+msgid "Card"
+msgstr ""
+
+#: admin/settings/builder.php:1230
+msgid "Layer"
+msgstr ""
+
+#: admin/settings/builder.php:1243
+msgid "Class Name"
+msgstr ""
+
+#: admin/settings/builder.php:1254
+msgid "HTML tag"
+msgstr ""
+
+#: admin/settings/builder.php:1256
+msgid "Auto"
+msgstr ""
+
+#: admin/settings/builder.php:1270
+#: admin/settings/builder.php:1302
+#: admin/settings/facet.php:287
+#: admin/settings/facet.php:309
+#: admin/settings/facet.php:1285
+msgid "Post Field"
+msgstr ""
+
+#: admin/settings/builder.php:1271
+#: admin/settings/builder.php:1335
+msgid "Product Field"
+msgstr ""
+
+#: admin/settings/builder.php:1272
+#: admin/settings/builder.php:1364
+#: admin/settings/facet.php:288
+#: admin/settings/facet.php:335
+#: admin/settings/facet.php:1294
+msgid "User Field"
+msgstr ""
+
+#: admin/settings/builder.php:1273
+#: admin/settings/builder.php:1394
+#: admin/settings/facet.php:289
+#: admin/settings/facet.php:361
+#: admin/settings/facet.php:1304
+msgid "Term Field"
+msgstr ""
+
+#: admin/settings/builder.php:1274
+#: admin/settings/builder.php:1934
+#: admin/settings/builder.php:2317
+#: admin/settings/builder.php:2351
+#: admin/settings/builder.php:3549
+#: admin/settings/facet.php:184
+#: admin/settings/facet.php:386
+#: admin/settings/facet.php:1312
+#: admin/settings/facet.php:1314
+#: admin/settings/facet.php:1334
+#: admin/settings/grid.php:602
+#: admin/views/tables/facets.php:21
+#: admin/views/tables/facets.php:22
+#: admin/views/tables/facets.php:23
+msgid "Custom Field"
+msgstr ""
+
+#: admin/settings/builder.php:1275
+msgid "Raw Content"
+msgstr ""
+
+#: admin/settings/builder.php:1276
+msgid "Lightbox &#38; Play Button"
+msgstr ""
+
+#: admin/settings/builder.php:1277
+msgid "Social Share Button"
+msgstr ""
+
+#: admin/settings/builder.php:1278
+#: admin/settings/builder.php:2108
+msgid "SVG Icon"
+msgstr ""
+
+#: admin/settings/builder.php:1282
+msgid "Custom Block"
+msgstr ""
+
+#: admin/settings/builder.php:1291
+#: admin/views/tables/layout/header.php:22
+msgid "Source Type"
+msgstr ""
+
+#: admin/settings/builder.php:1304
+#: admin/settings/grid.php:501
+msgid "Post ID"
+msgstr ""
+
+#: admin/settings/builder.php:1305
+#: admin/views/tables/facets.php:39
+msgid "Title"
+msgstr ""
+
+#: admin/settings/builder.php:1306
+#: admin/settings/builder.php:1397
+#: admin/views/tables/facets.php:27
+#: admin/views/tables/layout/header.php:21
+msgid "Name"
+msgstr ""
+
+#: admin/settings/builder.php:1307
+#: admin/settings/builder.php:3667
+msgid "Content"
+msgstr ""
+
+#: admin/settings/builder.php:1308
+msgid "Excerpt"
+msgstr ""
+
+#: admin/settings/builder.php:1309
+#: admin/settings/builder.php:3533
+#: admin/views/tables/grids.php:23
+msgid "Post Type"
+msgstr ""
+
+#: admin/settings/builder.php:1310
+#: admin/settings/builder.php:3534
+msgid "Post Format"
+msgstr ""
+
+#: admin/settings/builder.php:1311
+#: admin/settings/builder.php:3535
+msgid "Post Status"
+msgstr ""
+
+#: admin/settings/builder.php:1312
+#: admin/settings/builder.php:1957
+#: admin/settings/grid.php:730
+#: admin/views/tables/facets.php:37
+#: frontend/facets/class-date.php:82
+msgid "Date"
+msgstr ""
+
+#: admin/settings/builder.php:1313
+#: admin/views/tables/facets.php:38
+msgid "Modified Date"
+msgstr ""
+
+#: admin/settings/builder.php:1314
+#: admin/settings/grid.php:631
+msgid "Taxonomy Terms"
+msgstr ""
+
+#: admin/settings/builder.php:1315
+msgid "Post Author"
+msgstr ""
+
+#: admin/settings/builder.php:1316
+msgid "Author Avatar"
+msgstr ""
+
+#: admin/settings/builder.php:1317
+msgid "Comment Count"
+msgstr ""
+
+#: admin/settings/builder.php:1337
+msgid "Full Price"
+msgstr ""
+
+#: admin/settings/builder.php:1338
+msgid "Regular price"
+msgstr ""
+
+#: admin/settings/builder.php:1339
+msgid "Active Price"
+msgstr ""
+
+#: admin/settings/builder.php:1340
+#: includes/third-party/class-woo.php:66
+msgid "Sale Price"
+msgstr ""
+
+#: admin/settings/builder.php:1341
+msgid "Cart Button"
+msgstr ""
+
+#: admin/settings/builder.php:1342
+msgid "Star Rating"
+msgstr ""
+
+#: admin/settings/builder.php:1343
+msgid "Text Rating"
+msgstr ""
+
+#: admin/settings/builder.php:1344
+msgid "On Sale Badge"
+msgstr ""
+
+#: admin/settings/builder.php:1345
+msgid "In Stock Badge"
+msgstr ""
+
+#: admin/settings/builder.php:1346
+msgid "Out of Stock Badge"
+msgstr ""
+
+#: admin/settings/builder.php:1366
+#: admin/settings/grid.php:534
+msgid "User ID"
+msgstr ""
+
+#: admin/settings/builder.php:1367
+#: admin/settings/builder.php:3550
+#: admin/views/tables/facets.php:31
+#: frontend/sources/class-cards.php:388
+msgid "Display Name"
+msgstr ""
+
+#: admin/settings/builder.php:1368
+#: admin/settings/builder.php:3551
+#: admin/views/tables/facets.php:32
+#: frontend/sources/class-cards.php:389
+msgid "First Name"
+msgstr ""
+
+#: admin/settings/builder.php:1369
+#: admin/settings/builder.php:3552
+#: admin/views/tables/facets.php:33
+#: frontend/sources/class-cards.php:390
+msgid "Last Name"
+msgstr ""
+
+#: admin/settings/builder.php:1370
+#: admin/settings/builder.php:3553
+#: admin/views/tables/facets.php:34
+#: frontend/sources/class-cards.php:391
+msgid "Nickname"
+msgstr ""
+
+#: admin/settings/builder.php:1371
+#: admin/settings/builder.php:3554
+#: frontend/sources/class-cards.php:392
+msgid "Username"
+msgstr ""
+
+#: admin/settings/builder.php:1372
+msgid "Biography"
+msgstr ""
+
+#: admin/settings/builder.php:1373
+#: admin/settings/builder.php:1906
+#: admin/settings/builder.php:3555
+msgid "Email"
+msgstr ""
+
+#: admin/settings/builder.php:1374
+msgid "Website"
+msgstr ""
+
+#: admin/settings/builder.php:1375
+#: admin/views/tables/facets.php:35
+msgid "Roles"
+msgstr ""
+
+#: admin/settings/builder.php:1376
+#: admin/settings/builder.php:1402
+msgid "Post Count"
+msgstr ""
+
+#: admin/settings/builder.php:1396
+#: admin/settings/grid.php:566
+msgid "Term ID"
+msgstr ""
+
+#: admin/settings/builder.php:1398
+#: admin/views/tables/facets.php:28
+msgid "Slug"
+msgstr ""
+
+#: admin/settings/builder.php:1399
+#: admin/settings/facet.php:182
+#: admin/settings/facet.php:191
+#: admin/views/tables/facets.php:29
+msgid "Taxonomy"
+msgstr ""
+
+#: admin/settings/builder.php:1400
+#: admin/settings/facet.php:206
+msgid "Parent Term"
+msgstr ""
+
+#: admin/settings/builder.php:1401
+msgid "Description"
+msgstr ""
+
+#: admin/settings/builder.php:1420
+msgid "Excerpt Length"
+msgstr ""
+
+#: admin/settings/builder.php:1469
+msgid "Excerpt Suffix"
+msgstr ""
+
+#: admin/settings/builder.php:1519
+#: admin/settings/facet.php:894
+msgid "Date Format"
+msgstr ""
+
+#: admin/settings/builder.php:1538
+msgid "You can enter any PHP date format. Enter \"ago\" to display human readable format such as \"1 hour ago\"."
+msgstr ""
+
+#: admin/settings/builder.php:1560
+msgid "Include Taxonomies"
+msgstr ""
+
+#: admin/settings/builder.php:1561
+msgctxt "Include Taxonomies default value"
+msgid "Any"
+msgstr ""
+
+#: admin/settings/builder.php:1582
+msgid "Separator"
+msgstr ""
+
+#: admin/settings/builder.php:1665
+msgid "Term Colors"
+msgstr ""
+
+#: admin/settings/builder.php:1666
+msgid "Apply colors on each term in the list defined from plugin options."
+msgstr ""
+
+#: admin/settings/builder.php:1685
+msgid "Link to Archive template"
+msgstr ""
+
+#: admin/settings/builder.php:1707
+msgid "Author Prefix"
+msgstr ""
+
+#: admin/settings/builder.php:1731
+msgid "Format Type"
+msgstr ""
+
+#: admin/settings/builder.php:1734
+#: admin/settings/builder.php:1811
+#: admin/settings/builder.php:1955
+#: admin/settings/grid.php:459
+msgid "Text"
+msgstr ""
+
+#: admin/settings/builder.php:1735
+#: admin/settings/builder.php:1956
+msgid "Number"
+msgstr ""
+
+#: admin/settings/builder.php:1785
+msgid "Website Text"
+msgstr ""
+
+#: admin/settings/builder.php:1808
+msgid "Badge Type"
+msgstr ""
+
+#: admin/settings/builder.php:1812
+msgid "Icon"
+msgstr ""
+
+#: admin/settings/builder.php:1832
+msgid "Badge Label"
+msgstr ""
+
+#: admin/settings/builder.php:1833
+#: admin/settings/facet.php:1120
+#: admin/settings/facet.php:1141
+#: admin/settings/facet.php:1192
+#: admin/settings/facet.php:1275
+msgid "Enter a label"
+msgstr ""
+
+#: admin/settings/builder.php:1872
+msgid "Badge Icon"
+msgstr ""
+
+#: admin/settings/builder.php:1900
+msgid "Social Network"
+msgstr ""
+
+#: admin/settings/builder.php:1935
+#: admin/settings/builder.php:2352
+#: admin/settings/facet.php:387
+#: admin/settings/facet.php:1335
+#: admin/settings/grid.php:603
+msgid "Enter a field name"
+msgstr ""
+
+#: admin/settings/builder.php:1952
+#: admin/settings/facet.php:285
+#: admin/settings/grid.php:724
+msgid "Field Type"
+msgstr ""
+
+#: admin/settings/builder.php:1972
+msgid "Input Date Format"
+msgstr ""
+
+#: admin/settings/builder.php:1973
+msgid "Auto (e.g: y-m-d)"
+msgstr ""
+
+#: admin/settings/builder.php:1992
+msgid "Output Date Format"
+msgstr ""
+
+#: admin/settings/builder.php:1993
+msgid "Default (e.g: F j, Y)"
+msgstr ""
+
+#: admin/settings/builder.php:2012
+#: admin/settings/facet.php:865
+msgid "Decimal Places"
+msgstr ""
+
+#: admin/settings/builder.php:2032
+#: admin/settings/facet.php:857
+msgid "Decimal Separator"
+msgstr ""
+
+#: admin/settings/builder.php:2052
+#: admin/settings/facet.php:849
+msgid "Thousands Separator"
+msgstr ""
+
+#: admin/settings/builder.php:2073
+msgid "Prefix"
+msgstr ""
+
+#: admin/settings/builder.php:2089
+msgid "Suffix"
+msgstr ""
+
+#: admin/settings/builder.php:2123
+msgid "Icon Stroke Width"
+msgstr ""
+
+#: admin/settings/builder.php:2182
+msgid "Lightbox Icon"
+msgstr ""
+
+#: admin/settings/builder.php:2197
+msgid "Play Button Icon"
+msgstr ""
+
+#: admin/settings/builder.php:2215
+msgid "Raw Content (text/HTML)"
+msgstr ""
+
+#: admin/settings/builder.php:2234
+msgid "On Click"
+msgstr ""
+
+#: admin/settings/builder.php:2237
+msgid "Redirect To"
+msgstr ""
+
+#: admin/settings/builder.php:2238
+msgid "Open lightbox or play media"
+msgstr ""
+
+#: admin/settings/builder.php:2246
+msgid "Open Link in"
+msgstr ""
+
+#: admin/settings/builder.php:2249
+msgid "Same Window"
+msgstr ""
+
+#: admin/settings/builder.php:2250
+msgid "New Window"
+msgstr ""
+
+#: admin/settings/builder.php:2265
+msgid "Rel Attribute"
+msgstr ""
+
+#: admin/settings/builder.php:2298
+msgid "Aria Label"
+msgstr ""
+
+#: admin/settings/builder.php:2312
+msgid "URL"
+msgstr ""
+
+#: admin/settings/builder.php:2314
+msgid "Single Post/Page"
+msgstr ""
+
+#: admin/settings/builder.php:2315
+msgid "Author Archive Page"
+msgstr ""
+
+#: admin/settings/builder.php:2316
+#: admin/settings/builder.php:2332
+msgid "Custom URL"
+msgstr ""
+
+#: admin/settings/builder.php:2378
+msgid ""
+"This block natively has an action applied on click.\n"
+"If you need to set an action, please change the source type under Content panel."
+msgstr ""
+
+#: admin/settings/builder.php:2392
+msgid "Animation Presets"
+msgstr ""
+
+#: admin/settings/builder.php:2396
+msgid "Fade"
+msgstr ""
+
+#: admin/settings/builder.php:2397
+msgid "From left"
+msgstr ""
+
+#: admin/settings/builder.php:2398
+msgid "From right"
+msgstr ""
+
+#: admin/settings/builder.php:2399
+msgid "From top"
+msgstr ""
+
+#: admin/settings/builder.php:2400
+msgid "From bottom"
+msgstr ""
+
+#: admin/settings/builder.php:2401
+msgid "Zoom out"
+msgstr ""
+
+#: admin/settings/builder.php:2402
+msgid "Zoom in"
+msgstr ""
+
+#: admin/settings/builder.php:2403
+msgid "Fold up"
+msgstr ""
+
+#: admin/settings/builder.php:2404
+msgid "Flip"
+msgstr ""
+
+#: admin/settings/builder.php:2405
+#: admin/settings/builder.php:2658
+msgid "Rotate"
+msgstr ""
+
+#: admin/settings/builder.php:2406
+msgid "Bounce"
+msgstr ""
+
+#: admin/settings/builder.php:2429
+msgid "Animation Behaviour"
+msgstr ""
+
+#: admin/settings/builder.php:2435
+msgid "Animate From"
+msgstr ""
+
+#: admin/settings/builder.php:2437
+msgid "Parent Container"
+msgstr ""
+
+#: admin/settings/builder.php:2438
+msgid "Whole Card"
+msgstr ""
+
+#: admin/settings/builder.php:2445
+msgid "Reverse Animation"
+msgstr ""
+
+#: admin/settings/builder.php:2462
+msgid "Animation Timing"
+msgstr ""
+
+#: admin/settings/builder.php:2468
+msgid "Easing"
+msgstr ""
+
+#: admin/settings/builder.php:2500
+#: admin/settings/grid.php:1675
+msgid "Custom Easing"
+msgstr ""
+
+#: admin/settings/builder.php:2507
+msgid "Cubic Bezier"
+msgstr ""
+
+#: admin/settings/builder.php:2520
+msgid "Duration"
+msgstr ""
+
+#: admin/settings/builder.php:2532
+msgid "Delay"
+msgstr ""
+
+#: admin/settings/builder.php:2547
+msgid "Starting Opacity"
+msgstr ""
+
+#: admin/settings/builder.php:2566
+msgid "Transform Origin"
+msgstr ""
+
+#: admin/settings/builder.php:2572
+#: admin/settings/builder.php:2618
+#: admin/settings/builder.php:2664
+#: admin/settings/builder.php:2710
+#: admin/settings/builder.php:2756
+msgid "X axis"
+msgstr ""
+
+#: admin/settings/builder.php:2582
+#: admin/settings/builder.php:2628
+#: admin/settings/builder.php:2674
+#: admin/settings/builder.php:2720
+#: admin/settings/builder.php:2766
+msgid "Y axis"
+msgstr ""
+
+#: admin/settings/builder.php:2592
+#: admin/settings/builder.php:2638
+#: admin/settings/builder.php:2684
+#: admin/settings/builder.php:2730
+msgid "Z axis"
+msgstr ""
+
+#: admin/settings/builder.php:2612
+msgid "Translate"
+msgstr ""
+
+#: admin/settings/builder.php:2704
+msgid "Scale"
+msgstr ""
+
+#: admin/settings/builder.php:2750
+msgid "skew"
+msgstr ""
+
+#: admin/settings/builder.php:2786
+msgid "Perspective"
+msgstr ""
+
+#: admin/settings/builder.php:2814
+#: admin/settings/builder.php:2821
+msgid "Card Name"
+msgstr ""
+
+#: admin/settings/builder.php:2823
+msgid "Enter a card name"
+msgstr ""
+
+#: admin/settings/builder.php:2830
+msgid "Card Layout"
+msgstr ""
+
+#: admin/settings/builder.php:2838
+msgid "Card Type"
+msgstr ""
+
+#: admin/settings/builder.php:2841
+msgid "Metro / Justified"
+msgstr ""
+
+#: admin/settings/builder.php:2854
+msgid "Card Alignment"
+msgstr ""
+
+#: admin/settings/builder.php:2856
+msgid "Vertical"
+msgstr ""
+
+#: admin/settings/builder.php:2857
+msgid "Horizontal"
+msgstr ""
+
+#: admin/settings/builder.php:2873
+#: admin/settings/builder.php:2899
+msgid "Content Position"
+msgstr ""
+
+#: admin/settings/builder.php:2878
+msgctxt "Content Position"
+msgid "Both"
+msgstr ""
+
+#: admin/settings/builder.php:2923
+msgid "Media Width"
+msgstr ""
+
+#: admin/settings/builder.php:2948
+msgid "Switch to Verical Alignment (browser width)"
+msgstr ""
+
+#: admin/settings/builder.php:2973
+msgid "Card Layers"
+msgstr ""
+
+#: admin/settings/builder.php:2980
+msgid "Card Media"
+msgstr ""
+
+#: admin/settings/builder.php:3005
+msgid "Flexible Media"
+msgstr ""
+
+#: admin/settings/builder.php:3006
+msgid "Media thumbnail will fit content height. In this case thumbnail will be cropped."
+msgstr ""
+
+#: admin/settings/builder.php:3041
+#: admin/settings/builder.php:3574
+msgid "Media Overlay"
+msgstr ""
+
+#: admin/settings/builder.php:3079
+msgid "Card Footer"
+msgstr ""
+
+#: admin/settings/builder.php:3107
+msgid "Card Sizing"
+msgstr ""
+
+#: admin/settings/builder.php:3114
+msgid "Responsive Font"
+msgstr ""
+
+#: admin/settings/builder.php:3122
+msgid "Card Width"
+msgstr ""
+
+#: admin/settings/builder.php:3123
+msgid "The card width is a builder helper and will not be applied in your grid."
+msgstr ""
+
+#: admin/settings/builder.php:3156
+msgid "Search blocks"
+msgstr ""
+
+#: admin/settings/builder.php:3526
+msgid "Select Icon"
+msgstr ""
+
+#: admin/settings/builder.php:3527
+#: includes/settings/fields/class-color.php:50
+msgid "Select Color"
+msgstr ""
+
+#: admin/settings/builder.php:3528
+msgid "Upload"
+msgstr ""
+
+#: admin/settings/builder.php:3531
+#: frontend/sources/class-cards.php:313
+msgid "The post title"
+msgstr ""
+
+#: admin/settings/builder.php:3532
+#: frontend/sources/class-cards.php:314
+msgid "The post name"
+msgstr ""
+
+#: admin/settings/builder.php:3536
+msgid "Post Date"
+msgstr ""
+
+#: admin/settings/builder.php:3537
+msgid "Post Terms"
+msgstr ""
+
+#: admin/settings/builder.php:3538
+#: frontend/sources/class-cards.php:336
+msgid "Author Name"
+msgstr ""
+
+#: admin/settings/builder.php:3542
+#: admin/views/tables/facets.php:23
+#: admin/views/tables/facets.php:26
+#: admin/views/tables/grids.php:25
+msgid "Term"
+msgstr ""
+
+#: admin/settings/builder.php:3543
+#: frontend/blocks/post.php:1085
+msgid "1 Comment"
+msgstr ""
+
+#: admin/settings/builder.php:3544
+msgid "4.5 out of 5"
+msgstr ""
+
+#: admin/settings/builder.php:3545
+#: frontend/blocks/product.php:631
+msgid "Sale!"
+msgstr ""
+
+#: admin/settings/builder.php:3546
+#: frontend/blocks/product.php:672
+msgid "In stock"
+msgstr ""
+
+#: admin/settings/builder.php:3547
+#: frontend/blocks/product.php:707
+msgid "Out of stock"
+msgstr ""
+
+#: admin/settings/builder.php:3548
+msgid "Add to Cart"
+msgstr ""
+
+#: admin/settings/builder.php:3556
+#: admin/views/tables/facets.php:40
+msgid "Author"
+msgstr ""
+
+#: admin/settings/builder.php:3557
+#: admin/settings/builder.php:3562
+msgid "10 posts"
+msgstr ""
+
+#: admin/settings/builder.php:3558
+#: frontend/sources/class-cards.php:400
+msgid "Term Name"
+msgstr ""
+
+#: admin/settings/builder.php:3559
+#: frontend/sources/class-cards.php:401
+msgid "Term Slug"
+msgstr ""
+
+#: admin/settings/builder.php:3560
+#: frontend/sources/class-cards.php:402
+msgid "Term Taxonomy"
+msgstr ""
+
+#: admin/settings/builder.php:3561
+#: frontend/sources/class-cards.php:403
+msgid "Term Parent"
+msgstr ""
+
+#: admin/settings/builder.php:3563
+msgid "Block not founded"
+msgstr ""
+
+#: admin/settings/builder.php:3565
+msgid "No custom blocks were founded"
+msgstr ""
+
+#: admin/settings/builder.php:3566
+msgid "No custom block selected"
+msgstr ""
+
+#: admin/settings/builder.php:3570
+msgid "Card Holder"
+msgstr ""
+
+#: admin/settings/builder.php:3571
+msgid "Header Holder"
+msgstr ""
+
+#: admin/settings/builder.php:3572
+msgid "Media Holder"
+msgstr ""
+
+#: admin/settings/builder.php:3573
+msgid "Media Thumbnail"
+msgstr ""
+
+#: admin/settings/builder.php:3575
+msgid "Media Content"
+msgstr ""
+
+#: admin/settings/builder.php:3576
+msgid "Body Holder"
+msgstr ""
+
+#: admin/settings/builder.php:3577
+msgid "Footer Holder"
+msgstr ""
+
+#: admin/settings/builder.php:3580
+msgid "Edit Settings"
+msgstr ""
+
+#: admin/settings/builder.php:3581
+#: admin/settings/builder.php:3650
+msgid "Duplicate Block"
+msgstr ""
+
+#: admin/settings/builder.php:3585
+msgid "Sorry, no blocks were found!"
+msgstr ""
+
+#: admin/settings/builder.php:3610
+#: admin/settings/global.php:47
+msgid "General"
+msgstr ""
+
+#: admin/settings/builder.php:3615
+msgid "Editor"
+msgstr ""
+
+#: admin/settings/builder.php:3620
+msgid "Blocks"
+msgstr ""
+
+#: admin/settings/builder.php:3625
+msgid "CSS"
+msgstr ""
+
+#: admin/settings/builder.php:3639
+msgid "Edit Block"
+msgstr ""
+
+#: admin/settings/builder.php:3655
+msgid "Move Up"
+msgstr ""
+
+#: admin/settings/builder.php:3660
+msgid "Move Down"
+msgstr ""
+
+#: admin/settings/builder.php:3671
+#: admin/settings/builder.php:3738
+msgid "Action"
+msgstr ""
+
+#: admin/settings/builder.php:3675
+#: admin/settings/builder.php:3742
+#: admin/settings/grid.php:2183
+msgid "Appearance"
+msgstr ""
+
+#: admin/settings/builder.php:3679
+#: admin/settings/builder.php:3746
+msgid "Idle State"
+msgstr ""
+
+#: admin/settings/builder.php:3684
+#: admin/settings/builder.php:3751
+msgid "Hover State"
+msgstr ""
+
+#: admin/settings/builder.php:3691
+#: admin/settings/builder.php:3758
+msgid "Animation"
+msgstr ""
+
+#: admin/settings/builder.php:3734
+msgid "Edit Layer"
+msgstr ""
+
+#: admin/settings/defaults/builder.php:17
+msgid "New Card"
+msgstr ""
+
+#: admin/settings/defaults/facet.php:45
+msgid "+ Show [number] more"
+msgstr ""
+
+#: admin/settings/defaults/facet.php:46
+msgid "- Show less"
+msgstr ""
+
+#: admin/settings/defaults/facet.php:56
+#: admin/settings/defaults/facet.php:106
+#: admin/settings/facet.php:142
+#: admin/settings/global.php:25
+#: frontend/functions/facets.php:111
+msgid "Reset"
+msgstr ""
+
+#: admin/settings/defaults/facet.php:60
+#: frontend/facets/class-date.php:83
+msgid "Select a Date"
+msgstr ""
+
+#: admin/settings/defaults/facet.php:66
+#: admin/settings/facet.php:708
+#: frontend/class-localize.php:144
+msgid "No Results Found."
+msgstr ""
+
+#: admin/settings/defaults/facet.php:67
+#: admin/settings/defaults/facet.php:101
+#: admin/settings/facet.php:723
+#: frontend/class-localize.php:141
+msgid "Loading..."
+msgstr ""
+
+#: admin/settings/defaults/facet.php:73
+msgctxt "Default Facet Label"
+msgid "All"
+msgstr ""
+
+#: admin/settings/defaults/facet.php:75
+msgctxt "Select Placeholder"
+msgid "None"
+msgstr ""
+
+#: admin/settings/defaults/facet.php:91
+#: includes/class-paginate.php:70
+msgid "&laquo; Previous"
+msgstr ""
+
+#: admin/settings/defaults/facet.php:92
+#: includes/class-paginate.php:71
+msgid "Next &raquo;"
+msgstr ""
+
+#: admin/settings/defaults/facet.php:100
+msgid "Load more"
+msgstr ""
+
+#: admin/settings/defaults/facet.php:103
+msgid "1 post found"
+msgstr ""
+
+#: admin/settings/defaults/facet.php:104
+msgid "[from] - [to] of [total] posts"
+msgstr ""
+
+#: admin/settings/defaults/global.php:68
+msgid "Sorry, an error occured while loading the content..."
+msgstr ""
+
+#: admin/settings/defaults/global.php:69
+#: frontend/templates/carousel/prev-button.php:22
+msgid "Previous slide"
+msgstr ""
+
+#: admin/settings/defaults/global.php:70
+#: frontend/templates/carousel/next-button.php:22
+msgid "Next slide"
+msgstr ""
+
+#: admin/settings/defaults/global.php:71
+msgid "Close lightbox"
+msgstr ""
+
+#. translators: %s: Carousel page dot selected placeholder
+#: admin/settings/defaults/grid.php:176
+msgid "Page dot %s"
+msgstr ""
+
+#: admin/settings/defaults/preview.php:20
+#: admin/views/tables/cards.php:30
+msgid "Sorry, no cards were found!"
+msgstr ""
+
+#: admin/settings/facet.php:20
+msgid "New Facet"
+msgstr ""
+
+#: admin/settings/facet.php:87
+msgid "Facet Name"
+msgstr ""
+
+#: admin/settings/facet.php:88
+msgid "Enter a facet name"
+msgstr ""
+
+#: admin/settings/facet.php:96
+msgid "Facet Slug"
+msgstr ""
+
+#: admin/settings/facet.php:97
+msgid "Enter a facet slug"
+msgstr ""
+
+#: admin/settings/facet.php:98
+msgid "Slug is used as query string in the url to dynamically filter content. The slug must be unique."
+msgstr ""
+
+#: admin/settings/facet.php:106
+msgid "Facet Title"
+msgstr ""
+
+#: admin/settings/facet.php:107
+msgid "Enter a facet title"
+msgstr ""
+
+#: admin/settings/facet.php:108
+msgid "Title is optional and it is displayed above the facet."
+msgstr ""
+
+#: admin/settings/facet.php:115
+#: admin/settings/grid.php:139
+msgid "Generated CSS Class"
+msgstr ""
+
+#: admin/settings/facet.php:116
+msgid "The facet ID is used as CSS class name for your facet."
+msgstr ""
+
+#: admin/settings/facet.php:125
+#: admin/settings/grid.php:149
+msgid "Generated Shortcode"
+msgstr ""
+
+#: admin/settings/facet.php:126
+#: admin/settings/grid.php:153
+msgid "Copy/paste this shortcode anywhere in a post/page to display a grid."
+msgstr ""
+
+#: admin/settings/facet.php:139
+msgid "Filter"
+msgstr ""
+
+#: admin/settings/facet.php:140
+msgid "Load"
+msgstr ""
+
+#: admin/settings/facet.php:141
+#: frontend/functions/facets.php:107
+msgid "Sort"
+msgstr ""
+
+#: admin/settings/facet.php:180
+#: admin/views/tables/layout/header.php:31
+msgid "Data Source"
+msgstr ""
+
+#: admin/settings/facet.php:183
+msgid "WordPress Field"
+msgstr ""
+
+#: admin/settings/facet.php:207
+msgctxt "Parent Term default value"
+msgid "None"
+msgstr ""
+
+#: admin/settings/facet.php:208
+msgid "Parent term to retrieve direct-child terms of."
+msgstr ""
+
+#: admin/settings/facet.php:229
+#: admin/settings/grid.php:328
+msgid "Include Terms"
+msgstr ""
+
+#: admin/settings/facet.php:230
+#: admin/settings/grid.php:329
+msgctxt "Include Terms default value"
+msgid "None"
+msgstr ""
+
+#: admin/settings/facet.php:257
+#: admin/settings/grid.php:346
+msgid "Exclude Terms"
+msgstr ""
+
+#: admin/settings/facet.php:258
+#: admin/settings/grid.php:347
+msgctxt "Exclude Terms default value"
+msgid "None"
+msgstr ""
+
+#: admin/settings/facet.php:311
+msgid "Post type"
+msgstr ""
+
+#: admin/settings/facet.php:312
+#: admin/settings/facet.php:1290
+#: admin/settings/grid.php:505
+msgid "Post date"
+msgstr ""
+
+#: admin/settings/facet.php:313
+#: admin/settings/facet.php:1291
+#: admin/settings/grid.php:506
+msgid "Post modified date"
+msgstr ""
+
+#: admin/settings/facet.php:314
+#: admin/settings/facet.php:1287
+#: admin/settings/grid.php:502
+msgid "Post title"
+msgstr ""
+
+#: admin/settings/facet.php:315
+#: admin/settings/facet.php:1289
+#: admin/settings/grid.php:504
+msgid "Post author"
+msgstr ""
+
+#: admin/settings/facet.php:337
+#: admin/settings/facet.php:1295
+#: admin/settings/grid.php:535
+msgid "User display name"
+msgstr ""
+
+#: admin/settings/facet.php:338
+msgid "User first name"
+msgstr ""
+
+#: admin/settings/facet.php:339
+msgid "User last name"
+msgstr ""
+
+#: admin/settings/facet.php:340
+msgid "User nickname"
+msgstr ""
+
+#: admin/settings/facet.php:341
+msgid "User roles"
+msgstr ""
+
+#: admin/settings/facet.php:363
+#: admin/settings/facet.php:1306
+#: admin/settings/grid.php:567
+msgid "Term name"
+msgstr ""
+
+#: admin/settings/facet.php:364
+#: admin/settings/facet.php:1307
+#: admin/settings/grid.php:568
+msgid "Term slug"
+msgstr ""
+
+#: admin/settings/facet.php:365
+msgid "Term taxonomy"
+msgstr ""
+
+#: admin/settings/facet.php:366
+#: admin/settings/facet.php:1310
+#: admin/settings/grid.php:571
+msgid "Term group"
+msgstr ""
+
+#: admin/settings/facet.php:407
+#: admin/settings/facet.php:1470
+msgid "Choices Number"
+msgstr ""
+
+#: admin/settings/facet.php:408
+msgid "Maximum number of choices displayed in the filter."
+msgstr ""
+
+#: admin/settings/facet.php:424
+msgid "Limit Choices Number"
+msgstr ""
+
+#: admin/settings/facet.php:425
+msgid "Show a toggle button if the limit is inferior to the number of choices set above."
+msgstr ""
+
+#: admin/settings/facet.php:441
+msgid "Expand Button label"
+msgstr ""
+
+#: admin/settings/facet.php:442
+msgid "Button label used to reveal remaining choices in the list. [number] shortcode can be added to display the number of remaining choices."
+msgstr ""
+
+#: admin/settings/facet.php:456
+msgid "Collapse Button label"
+msgstr ""
+
+#: admin/settings/facet.php:457
+msgid "Button label used to collapse the list of choices."
+msgstr ""
+
+#: admin/settings/facet.php:474
+#: admin/settings/facet.php:1281
+#: admin/settings/grid.php:497
+#: admin/settings/grid.php:530
+#: admin/settings/grid.php:562
+msgid "Order By"
+msgstr ""
+
+#: admin/settings/facet.php:476
+msgid "Choice Count"
+msgstr ""
+
+#: admin/settings/facet.php:477
+msgid "Choice Name"
+msgstr ""
+
+#: admin/settings/facet.php:478
+msgid "Choice Value"
+msgstr ""
+
+#: admin/settings/facet.php:479
+msgid "Term Order"
+msgstr ""
+
+#: admin/settings/facet.php:487
+#: admin/settings/grid.php:591
+msgid "Order"
+msgstr ""
+
+#: admin/settings/facet.php:489
+#: admin/settings/grid.php:593
+msgid "Descending"
+msgstr ""
+
+#: admin/settings/facet.php:490
+#: admin/settings/grid.php:594
+msgid "Ascending"
+msgstr ""
+
+#: admin/settings/facet.php:501
+msgid "Logical Combination"
+msgstr ""
+
+#: admin/settings/facet.php:503
+#: admin/settings/grid.php:658
+#: admin/settings/grid.php:683
+msgid "AND"
+msgstr ""
+
+#: admin/settings/facet.php:504
+#: admin/settings/grid.php:657
+#: admin/settings/grid.php:684
+msgid "OR"
+msgstr ""
+
+#: admin/settings/facet.php:511
+msgid "Multiple Selection"
+msgstr ""
+
+#: admin/settings/facet.php:527
+msgid "Hierarchical"
+msgstr ""
+
+#: admin/settings/facet.php:528
+msgid "Display taxonomy terms in hierarchical list."
+msgstr ""
+
+#: admin/settings/facet.php:546
+msgid "Show Children"
+msgstr ""
+
+#: admin/settings/facet.php:547
+msgid "Show child terms of the selected taxonomy."
+msgstr ""
+
+#: admin/settings/facet.php:580
+msgid "Show Empty Choices"
+msgstr ""
+
+#: admin/settings/facet.php:581
+msgid "Show choices that match not results when filtered."
+msgstr ""
+
+#: admin/settings/facet.php:594
+msgid "Show Choice Count"
+msgstr ""
+
+#: admin/settings/facet.php:595
+msgid "Display the number of results associated to each choice."
+msgstr ""
+
+#: admin/settings/facet.php:608
+msgid "Default Label"
+msgstr ""
+
+#: admin/settings/facet.php:609
+msgid "Label of the default choice used to clear the filter selection. Leave empty to hide the default choice."
+msgstr ""
+
+#: admin/settings/facet.php:631
+msgid "Placeholder"
+msgstr ""
+
+#: admin/settings/facet.php:632
+#: admin/settings/facet.php:903
+msgid "Enter a placeholder"
+msgstr ""
+
+#: admin/settings/facet.php:651
+msgid "Combobox"
+msgstr ""
+
+#: admin/settings/facet.php:652
+msgid "Replace the browser dropdown by a JavaScript based combobox including a search field."
+msgstr ""
+
+#: admin/settings/facet.php:658
+msgid "Clearable List"
+msgstr ""
+
+#: admin/settings/facet.php:671
+msgid "Searchable List"
+msgstr ""
+
+#: admin/settings/facet.php:684
+msgid "Asynchronous Search"
+msgstr ""
+
+#: admin/settings/facet.php:707
+#: admin/settings/grid.php:170
+msgid "No Results Message"
+msgstr ""
+
+#: admin/settings/facet.php:722
+#: admin/settings/facet.php:1200
+msgid "Loading Message"
+msgstr ""
+
+#: admin/settings/facet.php:752
+msgid "Search Message"
+msgstr ""
+
+#: admin/settings/facet.php:784
+msgid "Asynchronous search cannot maintain hierarchical listing."
+msgstr ""
+
+#: admin/settings/facet.php:785
+msgid "Because a search may not match parents and children in one query, this is not possible to maintain a hierarchical listing."
+msgstr ""
+
+#: admin/settings/facet.php:821
+msgid "Value Prefix"
+msgstr ""
+
+#: admin/settings/facet.php:830
+msgid "Value Suffix"
+msgstr ""
+
+#: admin/settings/facet.php:839
+msgid "Step Interval"
+msgstr ""
+
+#: admin/settings/facet.php:872
+msgid "Reset Label"
+msgstr ""
+
+#: admin/settings/facet.php:873
+msgid "Leave empty to hide the reset button."
+msgstr ""
+
+#: admin/settings/facet.php:883
+msgid "Date Type"
+msgstr ""
+
+#: admin/settings/facet.php:885
+msgid "Single Date"
+msgstr ""
+
+#: admin/settings/facet.php:886
+msgid "Range of Dates"
+msgstr ""
+
+#: admin/settings/facet.php:902
+msgid "Date Placeholder"
+msgstr ""
+
+#. Translators: %s: Flatpickr script.
+#: admin/settings/facet.php:906
+msgid "See available <a href=\"%s\" rel=\"external noopener noreferrer\" target=\"_blank\">formatting tokens</a> of Flatpickr library."
+msgstr ""
+
+#. Translators: %1$s: Dat format 1, %2$s: Date format 2
+#: admin/settings/facet.php:917
+msgid "Please, make sure your dates are stored as <strong>%1$s</strong> or <strong>%2$s</strong> formats."
+msgstr ""
+
+#: admin/settings/facet.php:918
+msgid "This is required to correctly filter dates from custom fields. Post dates natively use the right format."
+msgstr ""
+
+#: admin/settings/facet.php:930
+msgid "Search Placeholder"
+msgstr ""
+
+#: admin/settings/facet.php:937
+msgid "Search Engine"
+msgstr ""
+
+#: admin/settings/facet.php:953
+msgid "Search Number"
+msgstr ""
+
+#: admin/settings/facet.php:954
+msgid "Number of results to search. The number of results can significantly impact performance. Generally, a large amount of results is not necessary and may confuse users which will search again to narrow down results."
+msgstr ""
+
+#: admin/settings/facet.php:963
+msgid "Search Relevancy"
+msgstr ""
+
+#: admin/settings/facet.php:964
+msgid "Keep search order relevance. Can be useful when using a plugin like SearchWP with weighting attributes."
+msgstr ""
+
+#: admin/settings/facet.php:971
+msgid "Instant Search"
+msgstr ""
+
+#: admin/settings/facet.php:972
+msgid "Update results and facets while typing."
+msgstr ""
+
+#: admin/settings/facet.php:984
+msgid "Selection facet outputs a list of all selected filter choices from each filter facet."
+msgstr ""
+
+#: admin/settings/facet.php:985
+msgid "Users can unset choices of each filter directly from the selection facet."
+msgstr ""
+
+#: admin/settings/facet.php:1016
+msgid "Pagination Type"
+msgstr ""
+
+#: admin/settings/facet.php:1018
+msgctxt "Pagination type"
+msgid "Numbered"
+msgstr ""
+
+#: admin/settings/facet.php:1019
+#: admin/settings/facet.php:1106
+msgid "Navigation Buttons"
+msgstr ""
+
+#: admin/settings/facet.php:1026
+msgid "All Page Numbers"
+msgstr ""
+
+#: admin/settings/facet.php:1027
+msgid "Show all of the pages instead of a short list of the pages near the current page."
+msgstr ""
+
+#: admin/settings/facet.php:1040
+msgid "Middle Pages Size"
+msgstr ""
+
+#: admin/settings/facet.php:1041
+msgid "How many numbers to either side of current page, but not including current page."
+msgstr ""
+
+#: admin/settings/facet.php:1063
+msgid "End Pages Size"
+msgstr ""
+
+#: admin/settings/facet.php:1064
+msgid "How many numbers on either the start and the end pagination edges."
+msgstr ""
+
+#: admin/settings/facet.php:1086
+msgid "Dots Page Label"
+msgstr ""
+
+#: admin/settings/facet.php:1119
+msgid "Prev Button Label"
+msgstr ""
+
+#: admin/settings/facet.php:1140
+msgid "Next Button Label"
+msgstr ""
+
+#: admin/settings/facet.php:1164
+msgid "Number to Load More"
+msgstr ""
+
+#: admin/settings/facet.php:1174
+msgid "Trigger Loading on"
+msgstr ""
+
+#: admin/settings/facet.php:1176
+msgid "Click"
+msgstr ""
+
+#: admin/settings/facet.php:1177
+msgid "Scroll"
+msgstr ""
+
+#: admin/settings/facet.php:1184
+msgid "Show Remaining Results"
+msgstr ""
+
+#: admin/settings/facet.php:1185
+msgid "Displays the number of remaining results in the load more button."
+msgstr ""
+
+#: admin/settings/facet.php:1191
+#: admin/settings/facet.php:1244
+msgid "Button Label"
+msgstr ""
+
+#: admin/settings/facet.php:1193
+msgid "[number] shortcode allows to display the number of remaining results."
+msgstr ""
+
+#: admin/settings/facet.php:1201
+msgid "Enter a Message"
+msgstr ""
+
+#: admin/settings/facet.php:1211
+msgid "Per Page Options"
+msgstr ""
+
+#: admin/settings/facet.php:1212
+msgid "e.g.: 10, 25, 50, 100"
+msgstr ""
+
+#: admin/settings/facet.php:1213
+msgid "A comma separated list of choices."
+msgstr ""
+
+#: admin/settings/facet.php:1223
+msgid "Count text (Singular)"
+msgstr ""
+
+#: admin/settings/facet.php:1224
+msgid "e.g.: [from] - [to] of [total] post"
+msgstr ""
+
+#: admin/settings/facet.php:1225
+#: admin/settings/facet.php:1234
+msgid "The following shortcodes [from], [to], and [total] can be included in the text."
+msgstr ""
+
+#: admin/settings/facet.php:1232
+msgid "Count text (Plural)"
+msgstr ""
+
+#: admin/settings/facet.php:1233
+msgid "e.g.: [from] - [to] of [total] posts"
+msgstr ""
+
+#: admin/settings/facet.php:1251
+msgid "Reset Facets"
+msgstr ""
+
+#: admin/settings/facet.php:1257
+msgctxt "Reset Facets default value"
+msgid "All"
+msgstr ""
+
+#: admin/settings/facet.php:1267
+msgid "Add Option"
+msgstr ""
+
+#: admin/settings/facet.php:1273
+msgid "Label"
+msgstr ""
+
+#: admin/settings/facet.php:1286
+msgid "Post id"
+msgstr ""
+
+#: admin/settings/facet.php:1288
+#: admin/settings/grid.php:503
+msgid "Post name (slug)"
+msgstr ""
+
+#: admin/settings/facet.php:1292
+#: admin/settings/grid.php:513
+msgid "Number of comments"
+msgstr ""
+
+#: admin/settings/facet.php:1296
+#: admin/settings/grid.php:536
+msgid "User name"
+msgstr ""
+
+#: admin/settings/facet.php:1297
+#: admin/settings/grid.php:537
+msgid "User login"
+msgstr ""
+
+#: admin/settings/facet.php:1298
+#: admin/settings/grid.php:538
+msgid "User nicename"
+msgstr ""
+
+#: admin/settings/facet.php:1299
+#: admin/settings/grid.php:539
+msgid "User email"
+msgstr ""
+
+#: admin/settings/facet.php:1300
+#: admin/settings/grid.php:540
+msgid "User url"
+msgstr ""
+
+#: admin/settings/facet.php:1301
+#: admin/settings/grid.php:541
+msgid "User registered date"
+msgstr ""
+
+#: admin/settings/facet.php:1302
+#: admin/settings/grid.php:543
+msgid "Post count"
+msgstr ""
+
+#: admin/settings/facet.php:1305
+msgid "Term id"
+msgstr ""
+
+#: admin/settings/facet.php:1308
+#: admin/settings/grid.php:569
+msgid "Term description"
+msgstr ""
+
+#: admin/settings/facet.php:1309
+#: admin/settings/grid.php:570
+msgid "Term parent"
+msgstr ""
+
+#: admin/settings/facet.php:1313
+msgid "Taxonomy Term"
+msgstr ""
+
+#: admin/settings/facet.php:1315
+msgid "Custom Field Numeric"
+msgstr ""
+
+#: admin/settings/facet.php:1323
+msgid "Direction"
+msgstr ""
+
+#: admin/settings/facet.php:1326
+msgid "DESC"
+msgstr ""
+
+#: admin/settings/facet.php:1327
+msgid "ASC"
+msgstr ""
+
+#: admin/settings/facet.php:1351
+#: admin/settings/facet.php:1352
+#: admin/settings/grid.php:1859
+#: admin/settings/grid.php:1860
+msgid "Naming"
+msgstr ""
+
+#: admin/settings/facet.php:1353
+msgid "Define the facet name, slug and title."
+msgstr ""
+
+#: admin/settings/facet.php:1358
+#: admin/settings/facet.php:1359
+msgid "Behaviour"
+msgstr ""
+
+#: admin/settings/facet.php:1360
+msgid "Set up the facet's action and behavior."
+msgstr ""
+
+#: admin/settings/facet.php:1368
+msgid "Re-index"
+msgstr ""
+
+#: admin/settings/facet.php:1374
+#: admin/settings/global.php:37
+#: admin/settings/grid.php:1849
+#: admin/views/modules/post-fields.php:41
+msgid "Save Changes"
+msgstr ""
+
+#: admin/settings/facet.php:1392
+msgid "Facet Action"
+msgstr ""
+
+#: admin/settings/facet.php:1399
+msgid "Filter Type"
+msgstr ""
+
+#: admin/settings/facet.php:1413
+msgid "Filter By"
+msgstr ""
+
+#: admin/settings/facet.php:1432
+msgid "Filter Logic"
+msgstr ""
+
+#: admin/settings/facet.php:1451
+msgid "Filter Display"
+msgstr ""
+
+#: admin/settings/facet.php:1489
+msgid "Choices Order"
+msgstr ""
+
+#: admin/settings/facet.php:1508
+#: frontend/functions/facets.php:83
+msgid "Search Field"
+msgstr ""
+
+#: admin/settings/facet.php:1527
+#: frontend/functions/facets.php:71
+msgid "Range Slider"
+msgstr ""
+
+#: admin/settings/facet.php:1546
+#: frontend/functions/facets.php:75
+msgid "Date Picker"
+msgstr ""
+
+#: admin/settings/facet.php:1565
+#: frontend/functions/facets.php:87
+msgid "Selections"
+msgstr ""
+
+#: admin/settings/facet.php:1584
+msgid "Loading Type"
+msgstr ""
+
+#: admin/settings/facet.php:1598
+#: frontend/functions/facets.php:91
+msgid "Pagination"
+msgstr ""
+
+#: admin/settings/facet.php:1617
+#: frontend/functions/facets.php:95
+msgid "Load More"
+msgstr ""
+
+#: admin/settings/facet.php:1636
+#: frontend/functions/facets.php:99
+msgid "Per Page"
+msgstr ""
+
+#: admin/settings/facet.php:1655
+#: frontend/functions/facets.php:103
+msgid "Result Count"
+msgstr ""
+
+#: admin/settings/facet.php:1674
+msgid "Sort Options"
+msgstr ""
+
+#: admin/settings/facet.php:1688
+msgid "Reset Options"
+msgstr ""
+
+#: admin/settings/facet.php:1702
+#: frontend/functions/facets.php:59
+msgid "Dropdown"
+msgstr ""
+
+#: admin/settings/global.php:31
+#: admin/views/panels/export.php:68
+#: admin/views/tables/columns/actions.php:34
+#: admin/views/tables/layout/controls.php:27
+#: frontend/sources/class-cards.php:159
+msgid "Export"
+msgstr ""
+
+#: admin/settings/global.php:48
+msgid "General Settings"
+msgstr ""
+
+#: admin/settings/global.php:49
+msgid "Manage features and settings available in back-office."
+msgstr ""
+
+#: admin/settings/global.php:50
+msgid "Control generated plugin assets and facet's indexer behaviour."
+msgstr ""
+
+#: admin/settings/global.php:55
+#: admin/settings/global.php:56
+msgid "Color Schemes"
+msgstr ""
+
+#: admin/settings/global.php:57
+msgid "Define palettes to globally manage your colors in one place."
+msgstr ""
+
+#: admin/settings/global.php:58
+msgid "You can use the following color schemes in your cards, grids and posts."
+msgstr ""
+
+#: admin/settings/global.php:63
+#: admin/settings/global.php:64
+msgid "Image Sizes"
+msgstr ""
+
+#: admin/settings/global.php:65
+msgid "Define additional image sizes on your WordPress site."
+msgstr ""
+
+#: admin/settings/global.php:66
+msgid "By setting <code>0</code> to the width and height, no additional sizes will be generated on upload."
+msgstr ""
+
+#: admin/settings/global.php:71
+#: admin/settings/global.php:72
+msgid "Lightbox"
+msgstr ""
+
+#: admin/settings/global.php:82
+msgid "Gridbuilder ᵂᴾ comes with a lightbox to open images and videos in a popup."
+msgstr ""
+
+#: admin/settings/global.php:83
+msgid "The plugin is also compatible with the following lightbox plugins:"
+msgstr ""
+
+#: admin/settings/global.php:84
+msgid "Plugin"
+msgstr ""
+
+#: admin/settings/global.php:85
+msgid "Purchase"
+msgstr ""
+
+#: admin/settings/global.php:86
+msgid "Download"
+msgstr ""
+
+#: admin/settings/global.php:96
+msgid "Plugin Settings"
+msgstr ""
+
+#: admin/settings/global.php:103
+msgid "Delete Data on Uninstall"
+msgstr ""
+
+#: admin/settings/global.php:104
+msgid "When enabled, all custom tables and options of the plugin will be deleted on uninstall. So, all your grids, cards and facets will be removed."
+msgstr ""
+
+#: admin/settings/global.php:110
+msgid "Post Formats Support"
+msgstr ""
+
+#: admin/settings/global.php:111
+msgid "Add Post Formats feature to any post type. Useful, if your theme does not support Post Formats."
+msgstr ""
+
+#: admin/settings/global.php:117
+msgid "Display Post Options"
+msgstr ""
+
+#: admin/settings/global.php:118
+msgid "Display plugin settings (Post Formats) on edit post pages. These settings are always available in preview mode of a grid."
+msgstr ""
+
+#: admin/settings/global.php:124
+msgid "Display Term Options"
+msgstr ""
+
+#: admin/settings/global.php:125
+msgid "Display plugin settings (Term Colors) on taxonomy and term edit pages."
+msgstr ""
+
+#: admin/settings/global.php:133
+msgid "Gutenberg Editor"
+msgstr ""
+
+#: admin/settings/global.php:139
+msgid "Render Blocks in Editor"
+msgstr ""
+
+#: admin/settings/global.php:140
+msgid "This is an experimental feature. The plugin uses dynamic blocks to render grids and facets. It may slow down the loading time in Gutenberg."
+msgstr ""
+
+#: admin/settings/global.php:148
+msgid "Facet &#38; Indexer"
+msgstr ""
+
+#: admin/settings/global.php:154
+msgid "Browser's History"
+msgstr ""
+
+#: admin/settings/global.php:155
+msgid "Allow history navigation by pushing facet parameters in url when filtering."
+msgstr ""
+
+#: admin/settings/global.php:161
+msgid "Auto Indexing"
+msgstr ""
+
+#: admin/settings/global.php:162
+msgid "Automatically index facets when saving, duplicating or importing."
+msgstr ""
+
+#: admin/settings/global.php:168
+#: admin/settings/global.php:173
+msgid "Stop Indexer"
+msgstr ""
+
+#: admin/settings/global.php:180
+msgid "Clear Index Table"
+msgstr ""
+
+#: admin/settings/global.php:186
+msgid "Clear Index"
+msgstr ""
+
+#: admin/settings/global.php:188
+msgid "Please refresh the page to get index stats."
+msgstr ""
+
+#: admin/settings/global.php:188
+msgid "Loading index stats..."
+msgstr ""
+
+#: admin/settings/global.php:197
+msgid "Assets & Cache"
+msgstr ""
+
+#: admin/settings/global.php:203
+msgid "Load Polyfills"
+msgstr ""
+
+#: admin/settings/global.php:204
+msgid "When enabled, it will load an additional JS script to add support for older browsers not supporting ECMAScript 2015 like Internet Explorer 11."
+msgstr ""
+
+#: admin/settings/global.php:210
+msgid "Plugin Cache"
+msgstr ""
+
+#: admin/settings/global.php:211
+msgid "The plugin caches some content like facets to prevent additional queries. You can clear the cache at any time to prevent any conflict."
+msgstr ""
+
+#: admin/settings/global.php:216
+msgid "Clear Cache"
+msgstr ""
+
+#: admin/settings/global.php:223
+msgid "Plugin Style Sheets"
+msgstr ""
+
+#: admin/settings/global.php:224
+msgid "The plugin generates style sheets (CSS) for grids and facets display in pages. Style sheets are dynamically generated on first load if missing."
+msgstr ""
+
+#: admin/settings/global.php:229
+msgid "Delete Style Sheets"
+msgstr ""
+
+#: admin/settings/global.php:237
+msgid "<strong>If you use a cache plugin</strong>, and made change to your grids or facets, you may need to clear Gridbuilder ᵂᴾ cache before caching."
+msgstr ""
+
+#: admin/settings/global.php:238
+msgid "<strong>If you use an optimization plugin</strong> which concatenates style sheets (CSS) you may need to delete Gridbuilder ᵂᴾ style sheets before concatenation."
+msgstr ""
+
+#: admin/settings/global.php:246
+msgid "Dark color schemes"
+msgstr ""
+
+#: admin/settings/global.php:252
+#: admin/settings/global.php:284
+msgid "Primary Color"
+msgstr ""
+
+#: admin/settings/global.php:253
+#: admin/settings/global.php:285
+msgid "Default color used for title tags."
+msgstr ""
+
+#: admin/settings/global.php:260
+#: admin/settings/global.php:292
+msgid "Secondary Color"
+msgstr ""
+
+#: admin/settings/global.php:261
+#: admin/settings/global.php:293
+msgid "Default color used for paragraph tags."
+msgstr ""
+
+#: admin/settings/global.php:268
+#: admin/settings/global.php:300
+msgid "Tertiary Color"
+msgstr ""
+
+#: admin/settings/global.php:269
+#: admin/settings/global.php:301
+msgid "Default color used for all other tags."
+msgstr ""
+
+#: admin/settings/global.php:278
+msgid "Light color schemes"
+msgstr ""
+
+#: admin/settings/global.php:310
+#: admin/settings/global.php:316
+msgid "Accent Color"
+msgstr ""
+
+#: admin/settings/global.php:334
+msgid "Size 1"
+msgstr ""
+
+#: admin/settings/global.php:339
+msgid "Size 2"
+msgstr ""
+
+#: admin/settings/global.php:344
+msgid "Size 3"
+msgstr ""
+
+#: admin/settings/global.php:349
+msgid "Size 4"
+msgstr ""
+
+#: admin/settings/global.php:354
+msgid "Size 5"
+msgstr ""
+
+#: admin/settings/global.php:361
+msgid "Width (px)"
+msgstr ""
+
+#: admin/settings/global.php:367
+msgid "Height (px)"
+msgstr ""
+
+#: admin/settings/global.php:373
+msgid "Crop Image"
+msgstr ""
+
+#: admin/settings/global.php:389
+msgid "<strong>Image sizes are only generated when uploading image(s) in your WordPress media library.</strong>"
+msgstr ""
+
+#: admin/settings/global.php:390
+msgid "If you change or add sizes after uploading images, you must regenerate them in order to correctly generate all sizes."
+msgstr ""
+
+#. translators: 1: external url, 2: rel external
+#: admin/settings/global.php:393
+msgid "You can easily regenerate your image sizes thanks to <a href=\"%1$s\" rel=\"%2$s\" target=\"_blank\">Regenerate Thumbnails Plugin</a>."
+msgstr ""
+
+#: admin/settings/global.php:404
+msgid "Lightbox Plugin"
+msgstr ""
+
+#: admin/settings/global.php:410
+msgid "Open Media with"
+msgstr ""
+
+#: admin/settings/global.php:412
+msgctxt "Open Media With default value"
+msgid "None"
+msgstr ""
+
+#: admin/settings/global.php:433
+msgid "Image &#38; Caption"
+msgstr ""
+
+#: admin/settings/global.php:439
+msgid "Image Size"
+msgstr ""
+
+#: admin/settings/global.php:440
+msgid "Image size displayed inside the lightbox."
+msgstr ""
+
+#: admin/settings/global.php:448
+msgid "Caption Title"
+msgstr ""
+
+#: admin/settings/global.php:450
+msgctxt "Caption Title default value"
+msgid "None"
+msgstr ""
+
+#: admin/settings/global.php:452
+#: admin/settings/global.php:466
+msgid "Image Title"
+msgstr ""
+
+#: admin/settings/global.php:453
+#: admin/settings/global.php:467
+msgid "Image Caption"
+msgstr ""
+
+#: admin/settings/global.php:454
+#: admin/settings/global.php:468
+msgid "Image Alt Text"
+msgstr ""
+
+#: admin/settings/global.php:455
+#: admin/settings/global.php:469
+msgid "Image Description"
+msgstr ""
+
+#: admin/settings/global.php:462
+msgid "Caption Description"
+msgstr ""
+
+#: admin/settings/global.php:464
+msgctxt "Caption Description default value"
+msgid "None"
+msgstr ""
+
+#: admin/settings/global.php:485
+msgid "Messages &#38; Labels"
+msgstr ""
+
+#: admin/settings/global.php:491
+msgid "Counter Message"
+msgstr ""
+
+#: admin/settings/global.php:492
+msgid "Message used in the slideshow counter. ([index] : Number of the current slide; [total] : Number of slides opened in the gallery)."
+msgstr ""
+
+#: admin/settings/global.php:499
+msgid "Error Message"
+msgstr ""
+
+#: admin/settings/global.php:500
+msgid "Message displayed when a media fails to load."
+msgstr ""
+
+#: admin/settings/global.php:507
+msgid "Previous Aria Label"
+msgstr ""
+
+#: admin/settings/global.php:508
+#: admin/settings/global.php:516
+#: admin/settings/global.php:524
+msgid "Message used to provide the label to any assistive technologies."
+msgstr ""
+
+#: admin/settings/global.php:515
+msgid "Next Aria Label"
+msgstr ""
+
+#: admin/settings/global.php:523
+msgid "Close Aria Label"
+msgstr ""
+
+#: admin/settings/global.php:540
+msgid "Colors"
+msgstr ""
+
+#: admin/settings/global.php:554
+msgid "Background color of the lightbox overlay."
+msgstr ""
+
+#: admin/settings/global.php:561
+msgid "Button Controls Color"
+msgstr ""
+
+#: admin/settings/global.php:562
+msgid "Previous, next and close boutons, and slideshow counter color."
+msgstr ""
+
+#: admin/settings/global.php:568
+msgid "Loading Spinner Color"
+msgstr ""
+
+#: admin/settings/global.php:574
+msgid "Caption Title Color"
+msgstr ""
+
+#: admin/settings/global.php:580
+msgid "Caption Description Color"
+msgstr ""
+
+#: admin/settings/grid.php:21
+msgid "New Grid"
+msgstr ""
+
+#: admin/settings/grid.php:122
+msgid "Grid Name"
+msgstr ""
+
+#: admin/settings/grid.php:123
+msgid "Enter a grid name"
+msgstr ""
+
+#: admin/settings/grid.php:131
+msgid "Custom CSS Class"
+msgstr ""
+
+#: admin/settings/grid.php:132
+msgid "Enter a class name"
+msgstr ""
+
+#: admin/settings/grid.php:143
+msgid "Useful to target a particular grid with CSS or JS."
+msgstr ""
+
+#: admin/settings/grid.php:162
+msgid "No Content Message"
+msgstr ""
+
+#: admin/settings/grid.php:163
+#: frontend/class-query.php:130
+msgid "Sorry, no content found."
+msgstr ""
+
+#: admin/settings/grid.php:171
+#: frontend/class-query.php:136
+#: frontend/class-template.php:276
+msgid "Sorry, no results match your search criteria."
+msgstr ""
+
+#: admin/settings/grid.php:182
+#: admin/settings/grid.php:381
+#: admin/settings/grid.php:1994
+msgid "Post Types"
+msgstr ""
+
+#: admin/settings/grid.php:183
+msgid "Terms"
+msgstr ""
+
+#: admin/settings/grid.php:184
+msgid "Users"
+msgstr ""
+
+#: admin/settings/grid.php:199
+msgid "Items Per Page"
+msgstr ""
+
+#: admin/settings/grid.php:200
+msgid "\"-1\" to show all items. \"0\" corresponds to the default number of posts per page set in WordPress Settings."
+msgstr ""
+
+#: admin/settings/grid.php:210
+msgid "Offset Items By"
+msgstr ""
+
+#: admin/settings/grid.php:211
+msgid "The \"offset\" parameter is ignored when the number of items per page is set to \"-1\" (show all items)."
+msgstr ""
+
+#: admin/settings/grid.php:231
+msgid "Users Roles"
+msgstr ""
+
+#: admin/settings/grid.php:232
+msgctxt "Users Roles default value"
+msgid "Any"
+msgstr ""
+
+#: admin/settings/grid.php:233
+msgid "Roles that users must match. Users must match each selected role."
+msgstr ""
+
+#: admin/settings/grid.php:243
+msgid "Include Roles"
+msgstr ""
+
+#: admin/settings/grid.php:244
+msgctxt "Include Roles default value"
+msgid "None"
+msgstr ""
+
+#: admin/settings/grid.php:245
+msgid "Users must have at least one of the selected roles."
+msgstr ""
+
+#: admin/settings/grid.php:254
+msgid "Exclude Roles"
+msgstr ""
+
+#: admin/settings/grid.php:255
+msgctxt "Exclude Roles default value"
+msgid "None"
+msgstr ""
+
+#: admin/settings/grid.php:256
+msgid "Users matching one or more of the selected roles will not be included in results."
+msgstr ""
+
+#: admin/settings/grid.php:265
+msgid "Include Users"
+msgstr ""
+
+#: admin/settings/grid.php:266
+msgctxt "Include Users default value"
+msgid "None"
+msgstr ""
+
+#: admin/settings/grid.php:283
+msgid "Exclude Users"
+msgstr ""
+
+#: admin/settings/grid.php:284
+msgctxt "Exclude Users default value"
+msgid "None"
+msgstr ""
+
+#: admin/settings/grid.php:301
+msgid "Has Published Posts In"
+msgstr ""
+
+#: admin/settings/grid.php:302
+msgid "All post types"
+msgstr ""
+
+#: admin/settings/grid.php:303
+msgid "Filter results to users who have published posts in the selected post types."
+msgstr ""
+
+#: admin/settings/grid.php:316
+#: admin/settings/grid.php:2036
+msgid "Taxonomies"
+msgstr ""
+
+#: admin/settings/grid.php:317
+msgctxt "Taxonomies default value"
+msgid "Any"
+msgstr ""
+
+#: admin/settings/grid.php:318
+msgid "Taxonomies, to which results should be limited."
+msgstr ""
+
+#: admin/settings/grid.php:364
+msgid "Hide Empty Terms"
+msgstr ""
+
+#: admin/settings/grid.php:365
+msgid "Whether to hide terms not assigned to any posts."
+msgstr ""
+
+#: admin/settings/grid.php:371
+msgid "Childless Terms"
+msgstr ""
+
+#: admin/settings/grid.php:372
+msgid "Limit results to terms that have no children."
+msgstr ""
+
+#: admin/settings/grid.php:382
+msgctxt "Post Types default value"
+msgid "Any"
+msgstr ""
+
+#: admin/settings/grid.php:392
+msgctxt "plural"
+msgid "Post Status"
+msgstr ""
+
+#: admin/settings/grid.php:393
+msgid "Published (default)"
+msgstr ""
+
+#: admin/settings/grid.php:394
+msgid "Default value is \"published\", but if the user is logged in, \"private\" is added (according to WordPress)."
+msgstr ""
+
+#: admin/settings/grid.php:404
+msgid "Post Authors"
+msgstr ""
+
+#: admin/settings/grid.php:405
+msgctxt "Post Authors default value"
+msgid "Any"
+msgstr ""
+
+#: admin/settings/grid.php:415
+msgid "Include Posts"
+msgstr ""
+
+#: admin/settings/grid.php:416
+msgctxt "Include Posts default value"
+msgid "None"
+msgstr ""
+
+#: admin/settings/grid.php:433
+msgid "Exclude Posts"
+msgstr ""
+
+#: admin/settings/grid.php:434
+msgctxt "Exclude Posts default value"
+msgid "None"
+msgstr ""
+
+#: admin/settings/grid.php:451
+msgid "Mime Types"
+msgstr ""
+
+#: admin/settings/grid.php:452
+msgctxt "Mime Types default value"
+msgid "Any"
+msgstr ""
+
+#: admin/settings/grid.php:456
+msgid "Image"
+msgstr ""
+
+#: admin/settings/grid.php:457
+#: admin/settings/grid.php:751
+#: admin/settings/post.php:67
+#: admin/settings/post.php:148
+msgid "Video"
+msgstr ""
+
+#: admin/settings/grid.php:458
+#: admin/settings/grid.php:750
+#: admin/settings/post.php:66
+#: admin/settings/post.php:117
+msgid "Audio"
+msgstr ""
+
+#: admin/settings/grid.php:460
+msgid "Applications"
+msgstr ""
+
+#: admin/settings/grid.php:479
+msgid "Include Media"
+msgstr ""
+
+#: admin/settings/grid.php:480
+msgid "Drag &#38; drop media to create a custom order (only works if you have \"Media\" as unique post type). If no media are added, all media from your library will be queried."
+msgstr ""
+
+#: admin/settings/grid.php:498
+msgid "Post date (default)"
+msgstr ""
+
+#: admin/settings/grid.php:507
+msgid "Post parent ID"
+msgstr ""
+
+#: admin/settings/grid.php:508
+msgid "Included Posts"
+msgstr ""
+
+#: admin/settings/grid.php:509
+msgid "Random order"
+msgstr ""
+
+#: admin/settings/grid.php:510
+msgid "Menu order"
+msgstr ""
+
+#: admin/settings/grid.php:511
+#: admin/settings/grid.php:544
+#: admin/settings/grid.php:573
+msgid "Custom field"
+msgstr ""
+
+#: admin/settings/grid.php:512
+#: admin/settings/grid.php:545
+#: admin/settings/grid.php:574
+msgid "Numeric custom field"
+msgstr ""
+
+#: admin/settings/grid.php:531
+msgid "User login (default)"
+msgstr ""
+
+#: admin/settings/grid.php:542
+msgid "Included users"
+msgstr ""
+
+#: admin/settings/grid.php:563
+msgid "Term name (default)"
+msgstr ""
+
+#: admin/settings/grid.php:572
+msgid "Included terms"
+msgstr ""
+
+#: admin/settings/grid.php:632
+msgctxt "Taxonomy terms default value"
+msgid "Any"
+msgstr ""
+
+#: admin/settings/grid.php:633
+msgid "Show posts associated with certain taxonomy."
+msgstr ""
+
+#: admin/settings/grid.php:643
+msgid "Terms Operator"
+msgstr ""
+
+#: admin/settings/grid.php:644
+msgid "Operator to test selected terms. By default queried posts must include selected terms."
+msgstr ""
+
+#: admin/settings/grid.php:646
+msgid "Include"
+msgstr ""
+
+#: admin/settings/grid.php:647
+msgid "Exclude"
+msgstr ""
+
+#: admin/settings/grid.php:654
+msgid "Terms Relation"
+msgstr ""
+
+#: admin/settings/grid.php:655
+msgid "Logical relationship between each taxonomy term."
+msgstr ""
+
+#: admin/settings/grid.php:665
+msgid "Child Terms"
+msgstr ""
+
+#: admin/settings/grid.php:666
+msgid "Include children for hierarchical taxonomies."
+msgstr ""
+
+#: admin/settings/grid.php:675
+msgid "Show content associated with a certain custom field."
+msgstr ""
+
+#: admin/settings/grid.php:680
+msgid "Relation"
+msgstr ""
+
+#: admin/settings/grid.php:690
+msgid "Field Key"
+msgstr ""
+
+#: admin/settings/grid.php:696
+msgid "Compare With"
+msgstr ""
+
+#: admin/settings/grid.php:699
+msgid "Equals (=)"
+msgstr ""
+
+#: admin/settings/grid.php:700
+msgid "Does not equal (!=)"
+msgstr ""
+
+#: admin/settings/grid.php:701
+msgid "Greater than (>)"
+msgstr ""
+
+#: admin/settings/grid.php:702
+msgid "Greater than or equal to (>=)"
+msgstr ""
+
+#: admin/settings/grid.php:703
+msgid "Less than (&lt;)"
+msgstr ""
+
+#: admin/settings/grid.php:704
+msgid "Less than or equal to (&lt;=)"
+msgstr ""
+
+#: admin/settings/grid.php:705
+msgid "Like"
+msgstr ""
+
+#: admin/settings/grid.php:706
+msgid "Not like"
+msgstr ""
+
+#: admin/settings/grid.php:707
+msgid "In"
+msgstr ""
+
+#: admin/settings/grid.php:708
+msgid "Not in"
+msgstr ""
+
+#: admin/settings/grid.php:709
+msgid "Between"
+msgstr ""
+
+#: admin/settings/grid.php:710
+msgid "Not between"
+msgstr ""
+
+#: admin/settings/grid.php:711
+msgid "Exists"
+msgstr ""
+
+#: admin/settings/grid.php:712
+msgid "Not exists"
+msgstr ""
+
+#: admin/settings/grid.php:718
+msgid "Field Value"
+msgstr ""
+
+#: admin/settings/grid.php:727
+msgid "Character"
+msgstr ""
+
+#: admin/settings/grid.php:728
+msgid "Numeric"
+msgstr ""
+
+#: admin/settings/grid.php:729
+msgid "Binary"
+msgstr ""
+
+#: admin/settings/grid.php:731
+msgid "Date time"
+msgstr ""
+
+#: admin/settings/grid.php:732
+msgid "Time"
+msgstr ""
+
+#: admin/settings/grid.php:733
+msgid "Decimal"
+msgstr ""
+
+#: admin/settings/grid.php:734
+msgid "Signed"
+msgstr ""
+
+#: admin/settings/grid.php:735
+msgid "Unsigned"
+msgstr ""
+
+#: admin/settings/grid.php:747
+msgid "If no post formats are selected, only image will be displayed in cards (if available)."
+msgstr ""
+
+#: admin/settings/grid.php:749
+#: admin/settings/post.php:65
+#: admin/settings/post.php:97
+msgid "Gallery"
+msgstr ""
+
+#: admin/settings/grid.php:763
+msgid "First Media Content"
+msgstr ""
+
+#: admin/settings/grid.php:764
+msgid "Fetch first media in post content if missing (according to the post format)."
+msgstr ""
+
+#: admin/settings/grid.php:777
+msgid "Gallery Slideshow"
+msgstr ""
+
+#: admin/settings/grid.php:778
+msgid "Enable slideshow for gallery post format."
+msgstr ""
+
+#: admin/settings/grid.php:791
+msgid "Product Image Hover"
+msgstr ""
+
+#: admin/settings/grid.php:792
+msgid "Reveal first gallery image when hovering the main product image (WooCommerce)."
+msgstr ""
+
+#: admin/settings/grid.php:805
+msgid "Embedded Video Posters"
+msgstr ""
+
+#: admin/settings/grid.php:806
+msgid "Automatically fetches embedded video posters (Youtube, Vimeo and Wistia)."
+msgstr ""
+
+#: admin/settings/grid.php:819
+msgid "Open Videos in Lightbox"
+msgstr ""
+
+#: admin/settings/grid.php:820
+msgid "When disabled, videos will be played in cards."
+msgstr ""
+
+#: admin/settings/grid.php:836
+msgid "Add a default thumbnail in each grid card if missing."
+msgstr ""
+
+#: admin/settings/grid.php:845
+msgid "Override Aspect Ratio"
+msgstr ""
+
+#: admin/settings/grid.php:846
+msgid "Allows to set the same image aspect ratio for all thumbnails in the grid."
+msgstr ""
+
+#: admin/settings/grid.php:852
+msgid "Thumbnail Aspect Ratio"
+msgstr ""
+
+#: admin/settings/grid.php:886
+msgid "Desktop Size"
+msgstr ""
+
+#: admin/settings/grid.php:894
+msgid "Mobile Size"
+msgstr ""
+
+#. translators: %s: Settings panel url
+#: admin/settings/grid.php:898
+msgid "Additional image sizes can be set in the <a href=\"%s\" target=\"_blank\">plugin settings</a>."
+msgstr ""
+
+#: admin/settings/grid.php:925
+msgid "Full Width"
+msgstr ""
+
+#: admin/settings/grid.php:926
+msgid "Fills the entire browser width."
+msgstr ""
+
+#: admin/settings/grid.php:935
+msgid "Horizontal Order"
+msgstr ""
+
+#: admin/settings/grid.php:936
+msgid "Lays out cards to (mostly) maintain horizontal left-to-right order. By default, a Masonry grid is ordered vertically from top-to-bottom."
+msgstr ""
+
+#: admin/settings/grid.php:949
+msgid "Fit into Rows"
+msgstr ""
+
+#: admin/settings/grid.php:950
+msgid "Arrange cards into rows. Rows progress vertically. Similar to what you would expect from a classic column layout."
+msgstr ""
+
+#: admin/settings/grid.php:963
+msgid "Equal Height Columns"
+msgstr ""
+
+#: admin/settings/grid.php:964
+msgid "Equalize column heights in each row in order to create a perfect Masonry layout."
+msgstr ""
+
+#: admin/settings/grid.php:977
+msgid "Equal Height Rows"
+msgstr ""
+
+#: admin/settings/grid.php:978
+msgid "Equalize row heights in order to create a perfect Justified layout. This option will crop images."
+msgstr ""
+
+#: admin/settings/grid.php:991
+msgid "Fill Last Row"
+msgstr ""
+
+#: admin/settings/grid.php:992
+msgid "Force the last row to be fully filled by cards. This option will crop images."
+msgstr ""
+
+#: admin/settings/grid.php:1010
+msgid "Center Last Row"
+msgstr ""
+
+#: admin/settings/grid.php:1011
+msgid "Center cards in the lasy row."
+msgstr ""
+
+#: admin/settings/grid.php:1033
+msgid "Standard"
+msgstr ""
+
+#: admin/settings/grid.php:1034
+msgid "Carousel"
+msgstr ""
+
+#: admin/settings/grid.php:1048
+msgid "Initial Slide Index"
+msgstr ""
+
+#: admin/settings/grid.php:1049
+msgid "Zero-based index of the initial selected slide in the carousel."
+msgstr ""
+
+#: admin/settings/grid.php:1058
+msgid "Contain Slides"
+msgstr ""
+
+#: admin/settings/grid.php:1059
+msgid "Contains slides to carousel to prevent excess scroll at beginning or end."
+msgstr ""
+
+#: admin/settings/grid.php:1067
+msgid "Slides Alignment"
+msgstr ""
+
+#: admin/settings/grid.php:1078
+msgid "Groups Cards By"
+msgstr ""
+
+#: admin/settings/grid.php:1079
+msgid "Groups cards together in slides by a number or viewport percent. Flicking, page dots, and previous/next buttons are mapped to group slides."
+msgstr ""
+
+#: admin/settings/grid.php:1090
+msgid "Number of Rows"
+msgstr ""
+
+#: admin/settings/grid.php:1107
+msgid "Auto Play"
+msgstr ""
+
+#: admin/settings/grid.php:1108
+msgid "Auto-playing will pause when mouse is hovered over, and resume when mouse is hovered off."
+msgstr ""
+
+#: admin/settings/grid.php:1122
+msgid "Draggable"
+msgstr ""
+
+#: admin/settings/grid.php:1123
+msgid "Enables dragging and flicking thanks to a pointer (mouse, fingers, etc.)."
+msgstr ""
+
+#: admin/settings/grid.php:1129
+msgid "Free Scroll"
+msgstr ""
+
+#: admin/settings/grid.php:1130
+msgid "Enables content to be freely scrolled and flicked without aligning slides to an end position."
+msgstr ""
+
+#: admin/settings/grid.php:1138
+msgid "Free Scroll Friction"
+msgstr ""
+
+#: admin/settings/grid.php:1139
+msgid "Friction used when free scrolling. When carousel ends are reached, standard friction is used."
+msgstr ""
+
+#: admin/settings/grid.php:1156
+msgid "Friction"
+msgstr ""
+
+#: admin/settings/grid.php:1157
+msgid "Friction slows the movement of carousel. Higher friction makes the carousel feel stickier and less bouncy. Lower friction makes the carousel feel looser and more wobbly."
+msgstr ""
+
+#: admin/settings/grid.php:1167
+msgid "Attraction"
+msgstr ""
+
+#: admin/settings/grid.php:1168
+msgid "Attraction attracts the position of the carousel to the selected slide. Higher attraction makes the carousel move faster. Lower makes it move slower."
+msgstr ""
+
+#: admin/settings/grid.php:1181
+msgid "Prev/next Buttons Size"
+msgstr ""
+
+#: admin/settings/grid.php:1192
+msgid "Prev/Next Color"
+msgstr ""
+
+#: admin/settings/grid.php:1199
+msgid "Prev/Next Background"
+msgstr ""
+
+#: admin/settings/grid.php:1207
+msgid "Page Dots Color"
+msgstr ""
+
+#: admin/settings/grid.php:1215
+msgid "Page Dots Selected Color"
+msgstr ""
+
+#: admin/settings/grid.php:1227
+msgid "Facets can be added anywhere in pages thanks to Gutenberg Blocks, Shortcodes, and Widgets."
+msgstr ""
+
+#: admin/settings/grid.php:1228
+msgid "The following builder is limited and offers a basic solution if you do not use Gutenberg or a page builder."
+msgstr ""
+
+#: admin/settings/grid.php:1229
+msgid "Using Gutenberg or a page builder will offer more possibilities to build your layout."
+msgstr ""
+
+#: admin/settings/grid.php:1235
+msgid "Drag &#38; drop available facets to compose your grid layout. For each layout area you can set alignment, margins, paddings, and background color."
+msgstr ""
+
+#: admin/settings/grid.php:1347
+msgid "Content Alignment"
+msgstr ""
+
+#: admin/settings/grid.php:1363
+msgid "Override Card Sizes"
+msgstr ""
+
+#: admin/settings/grid.php:1364
+msgid "Override all sizes set for each card in the grid."
+msgstr ""
+
+#: admin/settings/grid.php:1370
+#: admin/settings/post.php:213
+msgid "Columns Number"
+msgstr ""
+
+#: admin/settings/grid.php:1387
+#: admin/settings/post.php:223
+msgid "Rows Number"
+msgstr ""
+
+#: admin/settings/grid.php:1413
+msgid "Card spacing set to \"-1\" allows to inherit of the previous value and in a recursive way."
+msgstr ""
+
+#: admin/settings/grid.php:1450
+msgid "Browser (px)"
+msgstr ""
+
+#: admin/settings/grid.php:1459
+msgid "Columns"
+msgstr ""
+
+#: admin/settings/grid.php:1461
+msgid "cols"
+msgstr ""
+
+#: admin/settings/grid.php:1470
+msgid "Row height"
+msgstr ""
+
+#: admin/settings/grid.php:1481
+msgid "Spacing (px)"
+msgstr ""
+
+#: admin/settings/grid.php:1491
+msgid "Aspect ratio"
+msgstr ""
+
+#: admin/settings/grid.php:1528
+#: admin/settings/grid.php:1547
+#: admin/settings/grid.php:1576
+msgid "Default card"
+msgstr ""
+
+#: admin/settings/grid.php:1593
+#: admin/settings/post.php:241
+msgid "Content Background"
+msgstr ""
+
+#: admin/settings/grid.php:1601
+#: admin/settings/post.php:249
+msgid "Overlay Background"
+msgstr ""
+
+#: admin/settings/grid.php:1609
+#: admin/settings/post.php:257
+msgid "Content Color Scheme"
+msgstr ""
+
+#: admin/settings/grid.php:1611
+#: admin/settings/grid.php:1621
+#: admin/settings/post.php:260
+#: admin/settings/post.php:271
+msgid "Light"
+msgstr ""
+
+#: admin/settings/grid.php:1612
+#: admin/settings/grid.php:1622
+#: admin/settings/post.php:261
+#: admin/settings/post.php:272
+msgid "Dark"
+msgstr ""
+
+#: admin/settings/grid.php:1619
+#: admin/settings/post.php:268
+msgid "Overlay Color Scheme"
+msgstr ""
+
+#: admin/settings/grid.php:1632
+msgid "Animation Type"
+msgstr ""
+
+#: admin/settings/grid.php:1633
+msgid "Select an animation"
+msgstr ""
+
+#: admin/settings/grid.php:1642
+msgid "Animation Easing"
+msgstr ""
+
+#: admin/settings/grid.php:1683
+msgid "Cubic Bezier Function"
+msgstr ""
+
+#: admin/settings/grid.php:1696
+msgid "Animation Duration"
+msgstr ""
+
+#: admin/settings/grid.php:1706
+msgid "Animation Delay"
+msgstr ""
+
+#: admin/settings/grid.php:1707
+msgid "Animation delay, in millisecond, between each card in a grid. It allows to stagger card animations."
+msgstr ""
+
+#: admin/settings/grid.php:1722
+msgid "Play Animation"
+msgstr ""
+
+#: admin/settings/grid.php:1732
+msgid "Lazy Load Images"
+msgstr ""
+
+#: admin/settings/grid.php:1733
+msgid "Defer the loading of images until there are visible in the viewport."
+msgstr ""
+
+#: admin/settings/grid.php:1739
+msgid "Loading Spinner"
+msgstr ""
+
+#: admin/settings/grid.php:1740
+msgid "Show a loading animation until the image is loaded."
+msgstr ""
+
+#: admin/settings/grid.php:1747
+msgid "Blurred Image"
+msgstr ""
+
+#: admin/settings/grid.php:1748
+msgid "Display a blurred image during loading. This option generates and uploads additional tiny image sizes on your WordPress site."
+msgstr ""
+
+#: admin/settings/grid.php:1760
+msgid "Spinner Color"
+msgstr ""
+
+#: admin/settings/grid.php:1769
+msgid "Loader"
+msgstr ""
+
+#: admin/settings/grid.php:1770
+msgid "Loader will be displayed when loading content in the grid (loading pages, filtering and sorting)."
+msgstr ""
+
+#: admin/settings/grid.php:1776
+msgid "Loader Color"
+msgstr ""
+
+#: admin/settings/grid.php:1783
+msgid "Loader Size"
+msgstr ""
+
+#: admin/settings/grid.php:1793
+msgid "Loader Type"
+msgstr ""
+
+#: admin/settings/grid.php:1804
+#: admin/settings/grid.php:1823
+msgid "Custom JavaScript"
+msgstr ""
+
+#: admin/settings/grid.php:1810
+msgid "You are not allowed to add/edit JavaScript code."
+msgstr ""
+
+#: admin/settings/grid.php:1811
+msgid "Only user with <code>edit_plugins</code> capability and <code>DISALLOW_FILE_EDIT</code> constant set to <code>false</code> can add/edit JavaScript code."
+msgstr ""
+
+#: admin/settings/grid.php:1812
+msgid "This behaviour is the same as the WordPress plugin editor."
+msgstr ""
+
+#: admin/settings/grid.php:1830
+msgid "Enter your JS code:"
+msgstr ""
+
+#: admin/settings/grid.php:1843
+#: admin/views/pages/card-builder.php:58
+#: admin/views/pages/card-builder.php:59
+#: admin/views/tables/columns/actions.php:28
+msgid "Preview"
+msgstr ""
+
+#: admin/settings/grid.php:1861
+msgid "Define the grid name and messages."
+msgstr ""
+
+#: admin/settings/grid.php:1866
+#: admin/settings/grid.php:1867
+msgid "Content Query"
+msgstr ""
+
+#: admin/settings/grid.php:1868
+msgid "Set up the content type to query and to display in the grid."
+msgstr ""
+
+#: admin/settings/grid.php:1873
+#: admin/settings/grid.php:1874
+msgid "Media Formats"
+msgstr ""
+
+#: admin/settings/grid.php:1875
+msgid "Manage the allowed media formats in the cards and their behaviors."
+msgstr ""
+
+#: admin/settings/grid.php:1880
+#: admin/settings/grid.php:1881
+#: includes/settings/fields/class-builder.php:82
+msgid "Grid Layout"
+msgstr ""
+
+#: admin/settings/grid.php:1882
+msgid "Control the layout of the grid and the card positions."
+msgstr ""
+
+#: admin/settings/grid.php:1887
+#: admin/settings/grid.php:1888
+msgid "Grid Carousel"
+msgstr ""
+
+#: admin/settings/grid.php:1889
+msgid "Set up the layout and behaviour of slides in the carousel."
+msgstr ""
+
+#: admin/settings/grid.php:1894
+#: admin/settings/grid.php:1895
+msgid "Grid Builder"
+msgstr ""
+
+#: admin/settings/grid.php:1896
+msgid "Build the grid layout and add facets to filter the grid content."
+msgstr ""
+
+#: admin/settings/grid.php:1901
+#: admin/settings/grid.php:1902
+msgid "Card Styles"
+msgstr ""
+
+#: admin/settings/grid.php:1904
+msgid "Assign cards to the different types of content queried in the grid."
+msgstr ""
+
+#: admin/settings/grid.php:1907
+msgid "You don't have any card yet. Use the link below to import card demos."
+msgstr ""
+
+#: admin/settings/grid.php:1910
+msgid "Import Card Demos"
+msgstr ""
+
+#: admin/settings/grid.php:1915
+#: admin/views/pages/cards.php:32
+msgid "Create a Card"
+msgstr ""
+
+#: admin/settings/grid.php:1922
+#: admin/settings/grid.php:1923
+msgid "Animations"
+msgstr ""
+
+#: admin/settings/grid.php:1924
+msgid "Add animations to reveal cards when scrolling page."
+msgstr ""
+
+#: admin/settings/grid.php:1929
+#: admin/settings/grid.php:1930
+msgid "Loading"
+msgstr ""
+
+#: admin/settings/grid.php:1931
+msgid "Control the loading of images and content in the grid."
+msgstr ""
+
+#: admin/settings/grid.php:1936
+#: admin/settings/grid.php:1937
+msgid "Customization"
+msgstr ""
+
+#: admin/settings/grid.php:1938
+msgid "Customization is not covered by the scope of the support included with the plugin."
+msgstr ""
+
+#. translators: 1: external url, 2: rel external
+#: admin/settings/grid.php:1941
+msgid "If you are looking for customization service, we recommend <a href=\"%1$s\" rel=\"%2$s\" target=\"_blank\">Codeable.io</a>."
+msgstr ""
+
+#: admin/settings/grid.php:1959
+msgid "Error Messages"
+msgstr ""
+
+#: admin/settings/grid.php:1966
+#: admin/views/panels/export.php:47
+#: admin/views/tables/layout/header.php:29
+msgid "Content Type"
+msgstr ""
+
+#: admin/settings/grid.php:1973
+msgid "Items Number"
+msgstr ""
+
+#: admin/settings/grid.php:1980
+msgid "Ordering"
+msgstr ""
+
+#: admin/settings/grid.php:2008
+msgid "Users & Roles"
+msgstr ""
+
+#: admin/settings/grid.php:2022
+msgid "Taxonomies & Terms"
+msgstr ""
+
+#: admin/settings/grid.php:2050
+msgid "Custom Fields"
+msgstr ""
+
+#: admin/settings/grid.php:2064
+msgid "Supported Formats"
+msgstr ""
+
+#: admin/settings/grid.php:2071
+msgid "Default Thumbnail"
+msgstr ""
+
+#: admin/settings/grid.php:2078
+msgid "Thumbnail Ratio"
+msgstr ""
+
+#: admin/settings/grid.php:2092
+msgid "Thumbnail Sizes"
+msgstr ""
+
+#: admin/settings/grid.php:2106
+msgid "Layout Type"
+msgstr ""
+
+#: admin/settings/grid.php:2113
+msgid "Cards Position"
+msgstr ""
+
+#: admin/settings/grid.php:2127
+msgid "Cards Aspect"
+msgstr ""
+
+#: admin/settings/grid.php:2141
+msgid "Grid Responsivity"
+msgstr ""
+
+#: admin/settings/grid.php:2148
+msgid "Cards Layout"
+msgstr ""
+
+#: admin/settings/grid.php:2155
+msgid "Slide Positions"
+msgstr ""
+
+#: admin/settings/grid.php:2169
+msgid "Physics Behaviour"
+msgstr ""
+
+#: admin/settings/grid.php:2203
+msgid "Default Card"
+msgstr ""
+
+#: admin/settings/grid.php:2210
+msgid "Post Type Cards"
+msgstr ""
+
+#: admin/settings/grid.php:2224
+msgid "Post Format Cards"
+msgstr ""
+
+#: admin/settings/grid.php:2238
+msgid "Card Colors"
+msgstr ""
+
+#: admin/settings/grid.php:2245
+msgid "Cards Animation"
+msgstr ""
+
+#: admin/settings/grid.php:2252
+msgid "Images Loading"
+msgstr ""
+
+#: admin/settings/grid.php:2259
+msgid "Content Loading"
+msgstr ""
+
+#: admin/settings/grid.php:2273
+msgid "Enter your CSS code:"
+msgstr ""
+
+#: admin/settings/post.php:27
+msgid "Media Format"
+msgstr ""
+
+#: admin/settings/post.php:32
+msgid "Card Style"
+msgstr ""
+
+#: admin/settings/post.php:41
+msgid "Custom Link"
+msgstr ""
+
+#: admin/settings/post.php:42
+msgid "Used as alternative link to the permalink."
+msgstr ""
+
+#: admin/settings/post.php:56
+msgid "Custom Format"
+msgstr ""
+
+#: admin/settings/post.php:57
+msgid "Set up a custom media format."
+msgstr ""
+
+#: admin/settings/post.php:76
+msgid "Custom Image"
+msgstr ""
+
+#: admin/settings/post.php:77
+msgid "Alternative image to the featured image."
+msgstr ""
+
+#: admin/settings/post.php:123
+msgid "MP3 file"
+msgstr ""
+
+#: admin/settings/post.php:131
+msgid "OGG file"
+msgstr ""
+
+#: admin/settings/post.php:154
+msgid "MP4 file"
+msgstr ""
+
+#: admin/settings/post.php:162
+msgid "OGV file"
+msgstr ""
+
+#: admin/settings/post.php:170
+msgid "WEBM file"
+msgstr ""
+
+#: admin/settings/post.php:178
+msgid "Embedded URL"
+msgstr ""
+
+#: admin/settings/post.php:179
+msgid "Works with Youtube, Vimeo, and Wistia embedded URL."
+msgstr ""
+
+#: admin/settings/post.php:186
+msgid "Aspect Ratio"
+msgstr ""
+
+#: admin/settings/post.php:189
+msgid "4:3"
+msgstr ""
+
+#: admin/settings/post.php:190
+msgid "16:9"
+msgstr ""
+
+#: admin/settings/post.php:191
+msgid "16:10"
+msgstr ""
+
+#: admin/settings/post.php:207
+msgid "Card Size"
+msgstr ""
+
+#: admin/settings/post.php:235
+msgctxt "Post options colors of the card"
+msgid "Card Colors"
+msgstr ""
+
+#. translators: %s Plugin name
+#: admin/settings/term.php:30
+msgid "%s - Color"
+msgstr ""
+
+#: admin/settings/term.php:33
+msgid "Color used in cards (Taxonomy terms block)"
+msgstr ""
+
+#. translators: %s Plugin name
+#: admin/settings/term.php:41
+msgid "%s - Background"
+msgstr ""
+
+#: admin/settings/term.php:44
+msgid "Background used in cards (Taxonomy terms block)"
+msgstr ""
+
+#: admin/views/layout/header.php:27
+msgid "Grids"
+msgstr ""
+
+#: admin/views/layout/header.php:33
+msgid "Cards"
+msgstr ""
+
+#: admin/views/layout/header.php:39
+msgid "Facets"
+msgstr ""
+
+#: admin/views/modules/grid-preview.php:43
+msgid "Search cards"
+msgstr ""
+
+#: admin/views/modules/grid-preview.php:44
+msgid "Type to search cards"
+msgstr ""
+
+#: admin/views/modules/import-list.php:18
+msgid "item"
+msgstr ""
+
+#: admin/views/modules/import-list.php:19
+msgid "items"
+msgstr ""
+
+#: admin/views/modules/import-list.php:37
+#: frontend/facets/class-search.php:40
+msgid "Search content"
+msgstr ""
+
+#: admin/views/modules/import-list.php:43
+msgid "Select All"
+msgstr ""
+
+#. translators: %d: number of items
+#: admin/views/modules/import-list.php:49
+#: admin/views/tables/layout/header.php:39
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/views/modules/import-list.php:89
+msgid "Sorry, no item was found!"
+msgstr ""
+
+#: admin/views/modules/import-list.php:94
+#: admin/views/panels/import.php:20
+msgid "Import Content"
+msgstr ""
+
+#: admin/views/modules/loader.php:18
+msgid "Please wait, loading..."
+msgstr ""
+
+#: admin/views/modules/post-fields.php:19
+msgid "Post Settings"
+msgstr ""
+
+#: admin/views/modules/post-fields.php:20
+msgid "Term Settings"
+msgstr ""
+
+#: admin/views/modules/post-fields.php:21
+msgid "User Settings"
+msgstr ""
+
+#: admin/views/modules/post-fields.php:44
+msgid "Close"
+msgstr ""
+
+#: admin/views/pages/add-ons.php:27
+msgid "Add maps from Google Maps, Mapbox or Leaflet to display markers and to filter."
+msgstr ""
+
+#: admin/views/pages/add-ons.php:33
+msgid "Speed up loading time when filtering grids by caching content and facets."
+msgstr ""
+
+#: admin/views/pages/add-ons.php:39
+msgid "Add new blocks to the card builder to display courses information."
+msgstr ""
+
+#: admin/views/pages/add-ons.php:45
+msgid "Easily integrate WP Grid Builder with Polylang and WPML plugins."
+msgstr ""
+
+#: admin/views/pages/add-ons.php:57
+msgid "Add-Ons"
+msgstr ""
+
+#: admin/views/pages/add-ons.php:60
+msgid "Easily download and install add-ons for Gridbuilder ᵂᴾ plugin!"
+msgstr ""
+
+#: admin/views/pages/add-ons.php:62
+msgid "Add-ons allow to extend possibilities of the plugin depending of your needs."
+msgstr ""
+
+#. translators: %1&s: Dashboard url, %2$s: plugin name
+#: admin/views/pages/add-ons.php:72
+msgid "In order to download and install add-ons you must <a href=\"%1$s\">activate %2$s</a>."
+msgstr ""
+
+#: admin/views/pages/add-ons.php:78
+msgid "When activated, you will benefit of all add-ons and be able to install them."
+msgstr ""
+
+#: admin/views/pages/add-ons.php:96
+msgid "Activate"
+msgstr ""
+
+#: admin/views/pages/add-ons.php:96
+msgid "Install"
+msgstr ""
+
+#: admin/views/pages/add-ons.php:97
+msgid "Active"
+msgstr ""
+
+#: admin/views/pages/add-ons.php:111
+msgid "Not available"
+msgstr ""
+
+#: admin/views/pages/add-ons.php:113
+msgid "Not allowed"
+msgstr ""
+
+#. translators: %s: Website add-ons url
+#: admin/views/pages/add-ons.php:143
+msgid "Add-ons can also be downloaded on <a href=\"%s\" target=\"_blank\">wpgridbuilder.com</a>."
+msgstr ""
+
+#: admin/views/pages/card-builder.php:19
+msgid "Drop Area"
+msgstr ""
+
+#: admin/views/pages/card-builder.php:37
+#: admin/views/pages/card-builder.php:38
+#: includes/settings/views/toggle.php:23
+#: includes/settings/views/toggle.php:24
+msgid "Collapse menu"
+msgstr ""
+
+#: admin/views/pages/card-builder.php:50
+msgid "No Layer/Block Selected"
+msgstr ""
+
+#: admin/views/pages/card-builder.php:65
+msgid "Save changes"
+msgstr ""
+
+#: admin/views/pages/card-builder.php:138
+msgid "Edit Media Holder"
+msgstr ""
+
+#: admin/views/pages/card-builder.php:144
+msgid "Edit Media Thumbnail"
+msgstr ""
+
+#: admin/views/pages/card-builder.php:150
+msgid "Edit Media Overlay"
+msgstr ""
+
+#: admin/views/pages/card-builder.php:156
+msgid "Edit Media Content"
+msgstr ""
+
+#: admin/views/pages/card-builder.php:204
+msgid "Snap to grid"
+msgstr ""
+
+#: admin/views/pages/cards.php:51
+msgid "You don't have any cards yet!"
+msgstr ""
+
+#: admin/views/pages/cards.php:55
+#: admin/views/pages/facets.php:53
+#: admin/views/pages/grids.php:48
+msgid "Please, find below some demos to get started."
+msgstr ""
+
+#: admin/views/pages/cards.php:57
+msgid "Please, click on \"create a card\" to get started."
+msgstr ""
+
+#. translators: %s: Create facet document guide url
+#: admin/views/pages/cards.php:77
+msgid "To get started with cards, you can take a look at this <a href=\"%s\" target=\"_blank\">documentation guide</a>."
+msgstr ""
+
+#: admin/views/pages/facets.php:32
+msgid "Re-index All"
+msgstr ""
+
+#: admin/views/pages/facets.php:37
+#: includes/settings/fields/class-builder.php:77
+#: includes/widgets/class-facet-widget.php:145
+#: admin/assets/js/gutenberg.js:10
+msgid "Create a Facet"
+msgstr ""
+
+#: admin/views/pages/facets.php:51
+msgid "You don't have any facets yet!"
+msgstr ""
+
+#. translators: %s: Create facet document guide url
+#: admin/views/pages/facets.php:67
+msgid "To get started with facets, you can take a look at this <a href=\"%s\" target=\"_blank\">documentation guide</a>."
+msgstr ""
+
+#: admin/views/pages/grids.php:32
+#: includes/widgets/class-grid-widget.php:135
+#: admin/assets/js/gutenberg.js:10
+msgid "Create a Grid"
+msgstr ""
+
+#: admin/views/pages/grids.php:46
+msgid "You don't have any grids yet!"
+msgstr ""
+
+#: admin/views/pages/grids.php:59
+msgid "Above demos are just for layout settings purpose. Content displayed in demos will depend of your posts."
+msgstr ""
+
+#. translators: %s: Create grid document guide url
+#: admin/views/pages/grids.php:64
+msgid "To get started with grids, you can take a look at this <a href=\"%s\" target=\"_blank\">documentation guide</a>."
+msgstr ""
+
+#: admin/views/panels/export.php:21
+msgid "Export Content"
+msgstr ""
+
+#: admin/views/panels/export.php:24
+msgid "Export your grids, cards, facets, or settings for this site as a .json file."
+msgstr ""
+
+#: admin/views/panels/export.php:26
+msgid "This allows you to easily save/backup your current data and import them into another site."
+msgstr ""
+
+#: admin/views/panels/export.php:44
+msgid "Export items"
+msgstr ""
+
+#: admin/views/panels/export.php:45
+#: frontend/facets/class-select.php:78
+msgid "Select content"
+msgstr ""
+
+#: admin/views/panels/import.php:23
+msgid "Import your grids, cards, facets or settings from a .json file."
+msgstr ""
+
+#: admin/views/panels/import.php:25
+msgid "This file can be obtained by exporting your content using the form above."
+msgstr ""
+
+#: admin/views/panels/import.php:38
+msgid "Browse demos"
+msgstr ""
+
+#: admin/views/panels/import.php:43
+msgid "Upload file"
+msgstr ""
+
+#: admin/views/panels/import.php:46
+msgid "Chose a file or drag it here."
+msgstr ""
+
+#: admin/views/panels/import.php:48
+msgid "Go Back"
+msgstr ""
+
+#: admin/views/panels/plugin.php:22
+msgid "Unknown"
+msgstr ""
+
+#: admin/views/panels/plugin.php:35
+msgid "Plugin License"
+msgstr ""
+
+#: admin/views/panels/plugin.php:39
+msgid "Enter your license email and key to enable remote updates."
+msgstr ""
+
+#: admin/views/panels/plugin.php:41
+msgid "When activated, you will benefit of automatic updates from WordPress dashboard."
+msgstr ""
+
+#: admin/views/panels/plugin.php:43
+msgid "You can refresh information at any time to view change from your account."
+msgstr ""
+
+#: admin/views/panels/plugin.php:61
+msgid "License Email"
+msgstr ""
+
+#: admin/views/panels/plugin.php:62
+msgid "Enter your email"
+msgstr ""
+
+#: admin/views/panels/plugin.php:66
+msgid "License Key"
+msgstr ""
+
+#: admin/views/panels/plugin.php:68
+msgid "Enter your license key"
+msgstr ""
+
+#: admin/views/panels/plugin.php:77
+msgid "Activate License"
+msgstr ""
+
+#. translators: %s: account url
+#: admin/views/panels/plugin.php:85
+msgid "License key is available in order confirmation email or in <a href=\"%s\" target=\"_blank\">your account page</a>."
+msgstr ""
+
+#. translators: %1$d: number of activations, %2$d: number of license
+#: admin/views/panels/plugin.php:105
+msgid "%1$d on %2$s License"
+msgid_plural "%1$d on %2$s Licenses"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/views/panels/plugin.php:113
+msgid "⭐ Lifetime ⭐"
+msgstr ""
+
+#. translators: %1$d: number of activations, %2$d: number of license
+#: admin/views/panels/plugin.php:121
+msgid "%1$d on Unlimited"
+msgstr ""
+
+#: admin/views/panels/plugin.php:135
+msgid "License Type"
+msgstr ""
+
+#: admin/views/panels/plugin.php:142
+msgid "Activations"
+msgstr ""
+
+#: admin/views/panels/plugin.php:147
+msgid "(Dev. Environment)"
+msgstr ""
+
+#: admin/views/panels/plugin.php:155
+msgid "Last Version"
+msgstr ""
+
+#: admin/views/panels/plugin.php:164
+msgid "Expiration Date"
+msgstr ""
+
+#: admin/views/panels/plugin.php:174
+msgid "Renew license"
+msgstr ""
+
+#: admin/views/panels/plugin.php:186
+msgid "Refresh info"
+msgstr ""
+
+#: admin/views/panels/plugin.php:193
+msgid "Deactivate"
+msgstr ""
+
+#: admin/views/panels/plugin.php:200
+msgid "My Account"
+msgstr ""
+
+#: admin/views/panels/system.php:21
+msgid "WordPress Environment"
+msgstr ""
+
+#: admin/views/panels/system.php:24
+msgid "WP Version"
+msgstr ""
+
+#: admin/views/panels/system.php:27
+msgid "The version of WordPress installed on your site."
+msgstr ""
+
+#: admin/views/panels/system.php:30
+msgid "WP Active Plugins"
+msgstr ""
+
+#: admin/views/panels/system.php:33
+msgid "The number of plugins currently activated on your site."
+msgstr ""
+
+#: admin/views/panels/system.php:36
+msgid "WP Debug Mode"
+msgstr ""
+
+#: admin/views/panels/system.php:37
+#: includes/third-party/class-acf.php:611
+msgid "Yes"
+msgstr ""
+
+#: admin/views/panels/system.php:37
+#: includes/third-party/class-acf.php:611
+msgid "No"
+msgstr ""
+
+#: admin/views/panels/system.php:39
+msgid "When activated, PHP errors, notices and warnings will be displayed on your site."
+msgstr ""
+
+#: admin/views/panels/system.php:42
+msgid "WP Memory Usage"
+msgstr ""
+
+#: admin/views/panels/system.php:45
+msgid "Amount of PHP memory currently used in your admin dashboard."
+msgstr ""
+
+#: admin/views/panels/system.php:48
+msgid "WP Max Upload Size"
+msgstr ""
+
+#: admin/views/panels/system.php:51
+msgid "The largest file size that can be uploaded to your WordPress installation."
+msgstr ""
+
+#: admin/views/panels/system.php:56
+msgid "Server Environment"
+msgstr ""
+
+#: admin/views/panels/system.php:59
+msgid "Server Info"
+msgstr ""
+
+#: admin/views/panels/system.php:62
+msgid "Information about the web server that is currently hosting your site."
+msgstr ""
+
+#: admin/views/panels/system.php:65
+msgid "PHP version"
+msgstr ""
+
+#: admin/views/panels/system.php:68
+msgid "The version of PHP installed on your hosting server."
+msgstr ""
+
+#: admin/views/panels/system.php:71
+msgid "PHP Post Max Size"
+msgstr ""
+
+#: admin/views/panels/system.php:74
+msgid "Maximum size of post data that can be contained in a page."
+msgstr ""
+
+#: admin/views/panels/system.php:77
+msgid "PHP Execution Time"
+msgstr ""
+
+#: admin/views/panels/system.php:80
+msgid "Maximum time in seconds a script is allowed to run before it is terminated by the parser."
+msgstr ""
+
+#: admin/views/panels/system.php:83
+msgid "PHP Max Input Vars"
+msgstr ""
+
+#: admin/views/panels/system.php:86
+msgid "The maximum number of variables your server can use for a single function to avoid overloads."
+msgstr ""
+
+#: admin/views/panels/system.php:95
+msgid "System Status"
+msgstr ""
+
+#: admin/views/panels/system.php:98
+msgid "The System Status report can be useful for troubleshooting issues with your site."
+msgstr ""
+
+#. translators: %1$s: Plugin name, %2$s: Minium required WordPress version, %3$s Minium required PHP version
+#: admin/views/panels/system.php:103
+msgid "%1$s requires WordPress %2$s and PHP %3$s at minium."
+msgstr ""
+
+#: admin/views/tables/columns/actions.php:38
+#: admin/views/tables/layout/controls.php:26
+#: frontend/sources/class-cards.php:162
+#: includes/settings/fields/class-meta-query.php:150
+msgid "Delete"
+msgstr ""
+
+#: admin/views/tables/columns/actions.php:42
+#: admin/views/tables/layout/controls.php:25
+#: frontend/sources/class-cards.php:165
+msgid "Duplicate"
+msgstr ""
+
+#: admin/views/tables/columns/actions.php:46
+#: frontend/sources/class-cards.php:168
+#: frontend/sources/class-cards.php:194
+msgid "Edit"
+msgstr ""
+
+#: admin/views/tables/columns/favorite.php:22
+#: frontend/sources/class-cards.php:123
+msgid "Remove from favorites"
+msgstr ""
+
+#: admin/views/tables/columns/favorite.php:24
+#: frontend/sources/class-cards.php:125
+msgid "Add to favorites"
+msgstr ""
+
+#: admin/views/tables/columns/name.php:19
+msgid "Edit Item"
+msgstr ""
+
+#: admin/views/tables/columns/name.php:23
+#: frontend/sources/class-cards.php:144
+msgid "New!"
+msgstr ""
+
+#: admin/views/tables/columns/shortcode.php:19
+msgid "Copy to clipboard"
+msgstr ""
+
+#: admin/views/tables/facets.php:18
+msgid "WordPress Engine"
+msgstr ""
+
+#: admin/views/tables/facets.php:19
+msgid "Relevanssi Engine"
+msgstr ""
+
+#: admin/views/tables/facets.php:20
+msgid "SearchWP Engine"
+msgstr ""
+
+#: admin/views/tables/facets.php:21
+#: admin/views/tables/facets.php:24
+msgid "Post"
+msgstr ""
+
+#: admin/views/tables/facets.php:22
+#: admin/views/tables/facets.php:25
+#: admin/views/tables/grids.php:24
+msgid "User"
+msgstr ""
+
+#: admin/views/tables/facets.php:24
+#: admin/views/tables/facets.php:25
+#: admin/views/tables/facets.php:26
+msgid "Field"
+msgstr ""
+
+#: admin/views/tables/facets.php:30
+msgid "Group"
+msgstr ""
+
+#: admin/views/tables/facets.php:36
+#: admin/views/tables/layout/header.php:20
+msgid "Type"
+msgstr ""
+
+#: admin/views/tables/facets.php:75
+msgid "Sorry, no facets were found!"
+msgstr ""
+
+#: admin/views/tables/grids.php:42
+msgid "Sorry, no grids were found!"
+msgstr ""
+
+#: admin/views/tables/layout/controls.php:22
+msgid "Select bulk action"
+msgstr ""
+
+#: admin/views/tables/layout/controls.php:24
+msgid "Bulk Actions"
+msgstr ""
+
+#: admin/views/tables/layout/controls.php:30
+msgid "Apply"
+msgstr ""
+
+#: admin/views/tables/layout/controls.php:36
+msgid "Search items"
+msgstr ""
+
+#: admin/views/tables/layout/controls.php:37
+msgid "Type to search"
+msgstr ""
+
+#: admin/views/tables/layout/footer.php:28
+msgid "Number of items per page"
+msgstr ""
+
+#: admin/views/tables/layout/footer.php:52
+#: frontend/facets/class-pagination.php:135
+msgid "Prev"
+msgstr ""
+
+#: admin/views/tables/layout/footer.php:53
+#: frontend/facets/class-pagination.php:144
+msgid "Next"
+msgstr ""
+
+#: admin/views/tables/layout/header.php:19
+msgid "Favorite"
+msgstr ""
+
+#: admin/views/tables/layout/header.php:23
+msgid "Shortcode"
+msgstr ""
+
+#: admin/views/tables/layout/header.php:24
+msgid "Modified At"
+msgstr ""
+
+#: admin/views/tables/layout/header.php:25
+msgid "Actions"
+msgstr ""
+
+#. translators: %1$s: Plugin name, %2$s: Minium required WordPress version
+#: compatibility.php:129
+msgid ""
+"<strong>%1$s</strong> requires at least <code>WordPress %2$s</code>.\n"
+"Please update WordPress to activate the plugin."
+msgstr ""
+
+#. translators: %1$s: Plugin name, %2$s: Minium required PHP version
+#: compatibility.php:140
+msgid ""
+"<strong>%1$s</strong> requires at least <code>PHP %2$s</code>.\n"
+"Please contact your hosting provider to upgrade your PHP version."
+msgstr ""
+
+#: frontend/blocks/base.php:394
+msgid "share by email"
+msgstr ""
+
+#. translators: %s: Social media type (Facebook, twitter, etc...)
+#: frontend/blocks/base.php:399
+msgid "share on %s"
+msgstr ""
+
+#: frontend/blocks/base.php:1583
+msgid "Enlarge photo"
+msgstr ""
+
+#. translators: %s: number of comments
+#: frontend/blocks/post.php:1081
+msgid "%s Comment"
+msgid_plural "%s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: frontend/blocks/post.php:1083
+msgid "No Comments"
+msgstr ""
+
+#. translators: %s: average rating
+#: frontend/blocks/product.php:548
+#: frontend/blocks/product.php:584
+msgid "%s out of 5"
+msgstr ""
+
+#. translators: %s: number of posts
+#: frontend/blocks/term.php:282
+#: frontend/blocks/user.php:481
+msgid "%s Post"
+msgid_plural "%s Posts"
+msgstr[0] ""
+msgstr[1] ""
+
+#: frontend/blocks/term.php:284
+#: frontend/blocks/user.php:483
+msgid "No Posts"
+msgstr ""
+
+#: frontend/blocks/term.php:286
+#: frontend/blocks/user.php:485
+msgid "1 Post"
+msgstr ""
+
+#: frontend/blocks/user.php:313
+msgid "Send email"
+msgstr ""
+
+#: frontend/blocks/user.php:362
+msgid "Visit website"
+msgstr ""
+
+#: frontend/class-localize.php:142
+msgid "options cleared."
+msgstr ""
+
+#: frontend/class-localize.php:143
+msgid "Use Up and Down to choose options, press Enter to select the currently focused option, press Escape to collapse the list."
+msgstr ""
+
+#: frontend/class-localize.php:145
+msgid "Press Enter or Space to expand the list."
+msgstr ""
+
+#. translators: %s: Selected option name
+#: frontend/class-localize.php:147
+msgid "option %s, selected."
+msgstr ""
+
+#. translators: %s: Deselected option name
+#: frontend/class-localize.php:149
+msgid "option %s, deselected."
+msgstr ""
+
+#. translators: %s: grid source type
+#: frontend/class-query.php:89
+msgid "The source \"%s\" does not exist."
+msgstr ""
+
+#: frontend/class-settings.php:69
+msgid "Sorry, no grids were found for the requested grid id."
+msgstr ""
+
+#. translators: %d: grid id
+#: frontend/class-settings.php:134
+msgid "No settings found for the grid #%d."
+msgstr ""
+
+#: frontend/class-template.php:137
+msgid ""
+"Invalid \"render_callback\". The callback must be a function or a class method name.\n"
+"The callback must be declared in your functions.php file of your theme or in a plugin."
+msgstr ""
+
+#: frontend/facets/class-hierarchy.php:130
+#: frontend/facets/class-rating.php:166
+#: includes/class-helpers.php:679
+msgid "Any"
+msgstr ""
+
+#: frontend/facets/class-pagination.php:58
+msgid "Page navigation"
+msgstr ""
+
+#. translators: %d: Page number
+#: frontend/facets/class-pagination.php:154
+#: includes/class-paginate.php:292
+msgid "Goto Page %d"
+msgstr ""
+
+#: frontend/facets/class-per-page.php:66
+msgid "Select number per page"
+msgstr ""
+
+#: frontend/facets/class-radio.php:112
+msgid "All"
+msgstr ""
+
+#. translators: %d: number of stars
+#: frontend/facets/class-rating.php:96
+#: frontend/facets/class-selection.php:195
+msgid "%d star"
+msgid_plural "%d stars"
+msgstr[0] ""
+msgstr[1] ""
+
+#: frontend/facets/class-rating.php:206
+msgid "&#38; up"
+msgstr ""
+
+#: frontend/facets/class-sort.php:46
+msgid "Sort content"
+msgstr ""
+
+#: frontend/functions/facets.php:51
+msgid "Checkboxes"
+msgstr ""
+
+#: frontend/functions/facets.php:55
+msgid "Radio"
+msgstr ""
+
+#: frontend/functions/facets.php:63
+msgid "Buttons"
+msgstr ""
+
+#: frontend/functions/facets.php:67
+msgid "Hierarchy"
+msgstr ""
+
+#: frontend/functions/facets.php:79
+msgid "Rating Picker"
+msgstr ""
+
+#: frontend/sources/class-cards.php:202
+msgid "Select Card"
+msgstr ""
+
+#: frontend/sources/class-cards.php:320
+msgid "Term 1"
+msgstr ""
+
+#: frontend/sources/class-cards.php:325
+msgid "Term 2"
+msgstr ""
+
+#: frontend/sources/class-cards.php:330
+msgid "Term 3"
+msgstr ""
+
+#: frontend/sources/class-cards.php:367
+msgid "Add to cart"
+msgstr ""
+
+#: frontend/sources/class-cards.php:393
+msgid "author"
+msgstr ""
+
+#: frontend/sources/class-edd.php:105
+#: frontend/sources/class-edd.php:106
+msgid "Free"
+msgstr ""
+
+#: includes/class-animations.php:45
+msgid "Fade in"
+msgstr ""
+
+#: includes/class-animations.php:54
+msgid "Zoom In"
+msgstr ""
+
+#: includes/class-animations.php:65
+msgid "Zoom Out"
+msgstr ""
+
+#: includes/class-animations.php:76
+msgid "From Bottom"
+msgstr ""
+
+#: includes/class-animations.php:87
+msgid "From Top"
+msgstr ""
+
+#: includes/class-animations.php:98
+msgid "From Left"
+msgstr ""
+
+#: includes/class-animations.php:109
+msgid "From Right"
+msgstr ""
+
+#: includes/class-animations.php:120
+msgid "From Top Left"
+msgstr ""
+
+#: includes/class-animations.php:131
+msgid "From Top Right"
+msgstr ""
+
+#: includes/class-animations.php:142
+msgid "From Bottom/left"
+msgstr ""
+
+#: includes/class-animations.php:153
+msgid "From Bottom/Right"
+msgstr ""
+
+#: includes/class-animations.php:164
+msgid "Rotate in X"
+msgstr ""
+
+#: includes/class-animations.php:175
+msgid "Rotate in Y"
+msgstr ""
+
+#: includes/class-animations.php:186
+msgid "Flip in X"
+msgstr ""
+
+#: includes/class-animations.php:197
+msgid "Flip in Y"
+msgstr ""
+
+#: includes/class-animations.php:208
+msgid "Flip X from Bottom"
+msgstr ""
+
+#: includes/class-animations.php:220
+msgid "Flip Y from Bottom"
+msgstr ""
+
+#: includes/class-animations.php:232
+msgid "Flip X from Top"
+msgstr ""
+
+#: includes/class-animations.php:244
+msgid "Flip Y from Top"
+msgstr ""
+
+#: includes/class-animations.php:256
+msgid "Flip X from Left"
+msgstr ""
+
+#: includes/class-animations.php:268
+msgid "Flip Y from Left"
+msgstr ""
+
+#: includes/class-animations.php:280
+msgid "Flip X from Right"
+msgstr ""
+
+#: includes/class-animations.php:292
+msgid "Flip Y from Right"
+msgstr ""
+
+#: includes/class-database.php:243
+msgid "Sorry, database table could not be reached."
+msgstr ""
+
+#: includes/class-database.php:264
+msgid "Sorry, no data were found."
+msgstr ""
+
+#: includes/class-database.php:300
+msgid "This name already exists. Please, enter another name."
+msgstr ""
+
+#: includes/class-database.php:336
+msgid "This slug already exists. Please, enter another slug."
+msgstr ""
+
+#: includes/class-database.php:898
+#: includes/class-database.php:936
+#: includes/class-database.php:971
+msgid "Sorry, an unknown issue occured."
+msgstr ""
+
+#: includes/class-database.php:911
+msgid "Sorry, item could not be deleted"
+msgstr ""
+
+#: includes/class-helpers.php:295
+#: includes/class-helpers.php:335
+#: includes/class-helpers.php:355
+#: includes/class-helpers.php:379
+msgid "unknown"
+msgstr ""
+
+#: includes/class-license.php:233
+msgid "An unknown error occurred from plugin API."
+msgstr ""
+
+#: includes/class-license.php:259
+msgid "The key you entered belongs to a bundle, please use the product specific license key."
+msgstr ""
+
+#: includes/class-license.php:262
+msgid "Your license key has reached its activation limit. You must upgrade your license to use it on this site."
+msgstr ""
+
+#: includes/class-license.php:266
+msgid "Your license key has been disabled. Please contact support for more information."
+msgstr ""
+
+#: includes/class-license.php:269
+msgid "Your license has expired. You must renew your license in order to use it again."
+msgstr ""
+
+#: includes/class-license.php:273
+msgid "Failed to activate your license, your license key or email does not match."
+msgstr ""
+
+#: includes/class-license.php:276
+msgid "Invalid license. Please visit your account page and verify it."
+msgstr ""
+
+#: includes/class-license.php:280
+msgid "Your license is not active for this URL. Please visit your account page to verify it."
+msgstr ""
+
+#: includes/class-license.php:283
+msgid "There was an error with this license key. Please contact support for more information."
+msgstr ""
+
+#: includes/class-license.php:313
+msgid "Please enter your email and license key."
+msgstr ""
+
+#: includes/class-license.php:322
+msgid "Your email address is not valid."
+msgstr ""
+
+#: includes/class-license.php:365
+msgid "En error occured when deactivating your license."
+msgstr ""
+
+#: includes/class-license.php:403
+msgid "Your license is not active for this URL or invalid or disabled. Please visit your account page to verify it."
+msgstr ""
+
+#: includes/class-loaders.php:45
+msgid "Square Grid Pulse"
+msgstr ""
+
+#: includes/class-loaders.php:50
+msgid "Ball Grid Pulse"
+msgstr ""
+
+#: includes/class-loaders.php:55
+msgid "Ball Clip Rotate"
+msgstr ""
+
+#: includes/class-loaders.php:60
+msgid "Square Spin"
+msgstr ""
+
+#: includes/class-loaders.php:65
+msgid "Ball Pulse Sync"
+msgstr ""
+
+#: includes/class-loaders.php:70
+msgid "Ball Beat"
+msgstr ""
+
+#: includes/class-loaders.php:75
+msgid "Line Scale"
+msgstr ""
+
+#: includes/class-loaders.php:80
+msgid "Cube Transition"
+msgstr ""
+
+#: includes/class-loaders.php:85
+msgid "Ball Zig Zag"
+msgstr ""
+
+#: includes/class-loaders.php:90
+msgid "Ball Scale"
+msgstr ""
+
+#: includes/class-loaders.php:95
+msgid "Ball Spin Fade"
+msgstr ""
+
+#: includes/class-loaders.php:100
+msgid "Line Spin Fade"
+msgstr ""
+
+#: includes/class-loaders.php:105
+msgid "Pacman"
+msgstr ""
+
+#: includes/class-loaders.php:110
+msgid "Square Jelly Box"
+msgstr ""
+
+#: includes/class-loaders.php:115
+msgid "Ball Climbing"
+msgstr ""
+
+#: includes/class-loaders.php:120
+msgid "Square Loader"
+msgstr ""
+
+#: includes/class-loaders.php:125
+msgid "Timer"
+msgstr ""
+
+#: includes/class-loaders.php:130
+msgid "Ball Scale Mulitple"
+msgstr ""
+
+#: includes/class-loaders.php:135
+msgid "Fire Diamonds"
+msgstr ""
+
+#: includes/class-loaders.php:140
+msgid "Ball Spin Rotate"
+msgstr ""
+
+#: includes/class-paginate.php:72
+msgid "&hellip;"
+msgstr ""
+
+#. translators: %d: Page number
+#: includes/class-paginate.php:303
+msgid "Current Page, Page %d"
+msgstr ""
+
+#. translators: %1$s: plugin name, %2$s: plugin update link, %3$s: plugin update link class, %4$s: plugin update version
+#: includes/class-updater.php:214
+msgid "There is a new version of %1$s available. <a href=\"%2$s\" class=\"%3$s\">Update now</a> to version %4$s."
+msgstr ""
+
+#. translators: %d: time in minutes
+#: includes/cron/class-process.php:401
+msgid "Every %d minutes"
+msgstr ""
+
+#: includes/settings/fields/class-builder.php:71
+msgid "Available facets"
+msgstr ""
+
+#: includes/settings/fields/class-builder.php:143
+msgid "Drop Zone"
+msgstr ""
+
+#: includes/settings/fields/class-builder.php:183
+#: includes/settings/fields/class-builder.php:227
+#: includes/settings/fields/class-gallery.php:207
+msgid "Drag &#38; Drop"
+msgstr ""
+
+#: includes/settings/fields/class-builder.php:249
+msgid "Align Left"
+msgstr ""
+
+#: includes/settings/fields/class-builder.php:251
+msgid "Align Right"
+msgstr ""
+
+#: includes/settings/fields/class-builder.php:346
+msgid "Carousel Dots"
+msgstr ""
+
+#: includes/settings/fields/class-card.php:53
+msgid "Browse"
+msgstr ""
+
+#: includes/settings/fields/class-file.php:48
+msgid "upload"
+msgstr ""
+
+#: includes/settings/fields/class-gallery.php:144
+msgid "Add media"
+msgstr ""
+
+#: includes/settings/fields/class-gallery.php:189
+msgid "Delete media"
+msgstr ""
+
+#: includes/settings/fields/class-icons.php:45
+msgid "Select icon"
+msgstr ""
+
+#: includes/settings/fields/class-icons.php:73
+msgid "Search Icons"
+msgstr ""
+
+#: includes/settings/fields/class-image.php:44
+msgid "Delete image"
+msgstr ""
+
+#: includes/settings/fields/class-meta-query.php:135
+msgid "Add Meta Key"
+msgstr ""
+
+#: includes/settings/fields/class-meta-query.php:167
+msgid "Add Relation"
+msgstr ""
+
+#: includes/settings/fields/class-repeater.php:173
+msgid "Drag to sort"
+msgstr ""
+
+#: includes/settings/fields/class-repeater.php:192
+msgid "Delete row"
+msgstr ""
+
+#: includes/settings/fields/class-repeater.php:314
+msgid "Add row"
+msgstr ""
+
+#: includes/third-party/class-edd.php:55
+#: includes/third-party/class-woo.php:65
+msgid "Price"
+msgstr ""
+
+#: includes/third-party/class-edd.php:61
+#: includes/third-party/class-woo.php:72
+msgid "Average Rating"
+msgstr ""
+
+#: includes/third-party/class-woo.php:67
+msgid "Regular Price"
+msgstr ""
+
+#: includes/third-party/class-woo.php:68
+#: includes/third-party/class-woo.php:161
+msgid "On Sale"
+msgstr ""
+
+#: includes/third-party/class-woo.php:69
+msgid "Stock Status"
+msgstr ""
+
+#: includes/third-party/class-woo.php:70
+msgid "Product Type"
+msgstr ""
+
+#: includes/third-party/class-woo.php:71
+msgid "Featured Product"
+msgstr ""
+
+#: includes/third-party/class-woo.php:157
+msgid "In Stock"
+msgstr ""
+
+#: includes/third-party/class-woo.php:157
+msgid "Out of Stock"
+msgstr ""
+
+#: includes/third-party/class-woo.php:169
+#: includes/third-party/class-woo.php:199
+msgid "Featured"
+msgstr ""
+
+#: includes/widgets/class-facet-widget.php:36
+msgid "Displays a facet."
+msgstr ""
+
+#: includes/widgets/class-facet-widget.php:102
+#: includes/widgets/class-grid-widget.php:100
+msgid "Title:"
+msgstr ""
+
+#: includes/widgets/class-facet-widget.php:108
+msgid "Facet:"
+msgstr ""
+
+#: includes/widgets/class-facet-widget.php:116
+msgid "Grid to filter:"
+msgstr ""
+
+#: includes/widgets/class-facet-widget.php:142
+#: admin/assets/js/gutenberg.js:10
+msgid "You don't have any facet yet!"
+msgstr ""
+
+#: includes/widgets/class-grid-widget.php:36
+msgid "Displays a grid."
+msgstr ""
+
+#: includes/widgets/class-grid-widget.php:106
+msgid "Grid:"
+msgstr ""
+
+#: includes/widgets/class-grid-widget.php:132
+#: admin/assets/js/gutenberg.js:10
+msgid "You don't have any grid yet!"
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgid "Edit Facet"
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgid "Loading facets..."
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgid "Select a facet"
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgid "No facets found."
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgid "Select a grid to filter"
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgid "No grids found."
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgid "Facet Settings"
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgid "Facet Block"
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgid "No content found in facet."
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgid "No grids match the facet."
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgid "An unknown error occurred."
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgid "Display a facet from Gridbuilder ᵂᴾ."
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgctxt "Block keyword"
+msgid "grid"
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgctxt "Block keyword"
+msgid "facet"
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgctxt "Block keyword"
+msgid "builder"
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgctxt "Block keyword"
+msgid "filter"
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgid "Edit Grid"
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgid "Loading grids..."
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgid "Select a grid"
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgid "Grid Settings"
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgid "Grid Block"
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgid "Error loading block: %s"
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgid "No results found for selected grid (#%d)."
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgid "No settings found for grid #%d."
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgid "Display a grid from Gridbuilder ᵂᴾ."
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgctxt "Block keyword"
+msgid "metro"
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgctxt "Block keyword"
+msgid "masonry"
+msgstr ""
+
+#: admin/assets/js/gutenberg.js:10
+msgctxt "Block keyword"
+msgid "layout"
+msgstr ""

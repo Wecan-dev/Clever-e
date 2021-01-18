@@ -304,13 +304,11 @@ do_action( 'woocommerce_before_add_to_cart_form' );
 						
 						</div>
 						
-						<?php
+							<?php
 					
 						
 						if ( sizeof( $attributes ) === $loop ) {
-							
-							echo '<a class="reset_variations" href="#reset">Clear Selection</a>';
-							
+							if(lang() == 'es') echo '<a class="reset_variations" href="#reset">Eliminar selección</a>' ; if(lang() == 'en') echo '<a class="reset_variations" href="#reset">Clear Selection</a>';
 						}
 							
 						?>
